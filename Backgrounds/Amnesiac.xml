@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Amnesiac</name>
+		<description>Backgrounds from Steinhardt's Guide to the Eldritch Hunt</description>
+		<update version="0.1.0">
+			<file name="Amnesiac.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Backgrounds/Amnesiac.xml" />
+		</update>
+	</info>
+
+	<!-- Amnesiac -->
+	<element name="Amnesiac" type="Background" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BACKGROUND_AMNESIAC">
+		<description>
+			<p>You woke up one day in the city of Luyarnha, with no memory of who you were or where you came from. You're near-certain that this place is not your home, but all the memories of your past life are a haze of indistinct shapes and sounds. Faint images, like that of a silver lake or a towering mountain, flash through your mind but they provide no concrete details of your origin. You only know that you must find the truth, at any cost.</p>
+			<p class="indent"><b>Skill Proficiencies:</b> Insight, Investigation</p>
+			<p class="indent"><b>Tool Proficiencies:</b> One type of artisan's tools</p>
+			<p class="indent"><b>Languages:</b> Common and Deep Speech</p>
+			<p class="indent"><b>Equipment:</b> A set of common clothes, a small keepsake from your forgotten past, a set of artisan's tools with which you are proficient, and a pouch containing 10 gp</p>
+			<div element="ID_LT_SGEH_BACKGROUND_FEATURE_LINGERING_ECHOES" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>Your amnesia makes you a blank slate, and can make you eager to experience the world anew and desperate to reclaim your lost past. It also can make you feel adrift and disconnected from the people around you.</p>
+		</description>
+		<setters>
+			<set name="short">Insight, Investigation, one type of artisan's tools, Common, Deep Speech. Lingering Echoes feature.</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+            
+			<select type="Proficiency" name="Artisan's Tools Proficiency (Amnesiac)" supports="Artisan tools" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+
+			<grant type="Background Feature" id="ID_LT_SGEH_BACKGROUND_FEATURE_LINGERING_ECHOES" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+			<select type="List" name="Personality Trait (Amnesiac)">
+				<item id="1">I feel a deep sense of loss that I can't explain.</item>
+				<item id="2">I am fascinated by new experiences and sensations.</item>
+				<item id="3">I get frustrated when others know more about me than I do.</item>
+				<item id="4">I feel an inexplicable connection to certain places or things.</item>
+				<item id="5">I have an unquenchable thirst for knowledge, to fill the void left by my forgotten past.</item>
+				<item id="6">I have a wary nature due to the uncertainty of my identity.</item>
+				<item id="7">My dreams are full of cryptic symbols and images that I try to decipher.</item>
+				<item id="8">I have a heightened empathy for the suffering of others.</item>
+			</select>
+			<select type="List" name="Ideal (Amnesiac)">
+				<item id="1"><b>Order.</b> My life is in chaos. I will establish rules to make sense of the world around me. (Lawful)</item>
+				<item id="2"><b>Resilience.</b> I will endure all challenges until I find the answers I seek. (Any)</item>
+				<item id="3"><b>Freedom.</b> I have lost myself once; now I will seize control of my fate and carve my own path, regardless of the rules. (Chaotic)</item>
+				<item id="4"><b>Isolation.</b> The less I involve myself with others, the less harm my past can cause them. (Neutral)</item>
+				<item id="5"><b>Sanity.</b> I must ensure that no one else loses themselves, be it to amnesia, madness or scourge. (Good)</item>
+				<item id="6"><b>Ruthlessness.</b> I will ensure that those responsible for my memory loss pay. (Evil)</item>
+			</select>
+			<select type="List" name="Bond (Amnesiac)">
+				<item id="1">I am drawn to a particular landmark; I must see what’s inside it with my own eyes.</item>
+				<item id="2">An item I carry is the key to my past; I will protect it at all costs.</item>
+				<item id="3">I dream of a person who seems important; I must find them.</item>
+				<item id="4">An unsettling symbol haunts my dreams; I must uncover its meaning.</item>
+				<item id="5">I feel a deep bond with a new acquaintance, a connection that transcends both our memories.</item>
+				<item id="6">The fear in the eyes of Luyarnha’s citizens resonates with me; I must alleviate it.</item>
+			</select>
+			<select type="List" name="Flaw (Amnesiac)">
+				<item id="1">I have a fear of losing my newfound identity.</item>
+				<item id="2">I often hesitate, fearing my past actions might catch up with me.</item>
+				<item id="3">I distrust people, thinking they know more about me than they let on.</item>
+				<item id="4">I avoid forming attachments, afraid they will forget about me too.</item>
+				<item id="5">I obsess over small details, convinced they hold the key to my past.</item>
+				<item id="6">I am overly defensive, afraid that others will take advantage of my amnesia.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Lingering Echoes" type="Background Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BACKGROUND_FEATURE_LINGERING_ECHOES">
+		<supports>Background Feature</supports>
+		<description>
+			<p>The echoes of your lost memories sometimes surface in surprising ways. When you enter a new location or meet a new person, there's a chance something about them will trigger a faint recollection from your past. The GM might allow you to recall a small detail about the world, give you a hint about the situation at hand, or allow you to use your proficiency with a skill or tool you aren't normally proficient with for a single roll.</p>
+		</description>
+		<sheet alt="Lingering Echoes" />
+	</element>
+</elements>

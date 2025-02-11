@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Worthless Husk</name>
+		<description>Background from Steinhardt's Guide to the Eldritch Hunt</description>
+		<update version="0.1.0">
+			<file name="WorthlessHusk.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Backgrounds/WorthlessHusk.xml" />
+		</update>
+	</info>
+
+	<!-- Worthless Husk -->
+	<element name="Worthless Husk" type="Background" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BACKGROUND_WORTHLESS_HUSK">
+		<description>
+			<p>You were born into a world that saw you as utterly worthless, a waste of skin. Deemed talentless and devoid of potential, you were cast aside by those around you. As a Worthless Husk, you have learned to navigate the treacherous environment of the city, using your wits and endurance to survive. Given the chance to grow—a chance which you may never get—you could prove that even the most overlooked souls can make a difference in this twisted world.</p>
+			<p class="indent"><b>Skill Proficiencies:</b> Stealth, Survival</p>
+			<p class="indent"><b>Equipment:</b> A set of common clothes, a small rusted knife, a key to an important location, a pouch containing 1 gold piece</p>
+			<div element="ID_LT_SGEH_BACKGROUND_FEATURE_BOTTOM_DWELLER" />
+            <div element="ID_LT_SGEH_BACKGROUND_FEATURE_WORTHLESS" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Your life has been defined by neglect and devaluation. Deemed worthless by those around you, you've developed a grit and tenacity that allows you to thrive in the harshest conditions. Your perceived weakness could be your greatest strength, and in spite of your circumstances, you remain hopeful of proving your worth.</p>
+		</description>
+		<setters>
+			<set name="short">Stealth, Survival. Bottom Dweller feature, or optional Worthless feature.</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+
+            <!-- Feature Selection: Bottom Dweller OR Worthless -->
+            <select type="Background Feature" name="Worthless Husk Feature" supports="ID_LT_SGEH_BACKGROUND_FEATURE_BOTTOM_DWELLER|ID_LT_SGEH_BACKGROUND_FEATURE_WORTHLESS" />
+
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+			<select type="List" name="Personality Trait (Worthless Husk)">
+				<item id="1">I am quiet and withdrawn, preferring to remain in the background and observe.</item>
+				<item id="2">I am fiercely determined to prove my worth and show that I am more than just a waste of skin.</item>
+				<item id="3">I am quick to mistrust, always suspecting others' motives due to my past experiences.</item>
+				<item id="4">I've developed a sharp sense of humor as a coping mechanism.</item>
+				<item id="5">I have a tendency to hoard items, never knowing when I might need them.</item>
+				<item id="6">I am always scheming, to be ready for whatever life throws at me.</item>
+				<item id="7">I often underestimate my worth and potential, always expecting to fail.</item>
+				<item id="8">I've grown to appreciate the little joys in life, as they are far and few between.</item>
+			</select>
+
+			<select type="List" name="Ideal (Worthless Husk)">
+				<item id="1"><b>Perseverance:</b> No matter how many times I'm knocked down, I will keep getting back up. (Any)</item>
+				<item id="2"><b>Growth:</b> I seek to find my hidden potential and make a difference in this harsh world. (Good)</item>
+				<item id="3"><b>Independence:</b> I will rely on no one but myself. I am all I need. (Chaotic)</item>
+				<item id="4"><b>Vengeance:</b> I will show those who discarded me the error of their ways. (Evil)</item>
+				<item id="5"><b>Acceptance:</b> I strive to find a place where I am accepted as I am. (Neutral)</item>
+				<item id="6"><b>Redemption:</b> I seek to prove that everyone, even someone like me, can change for the better. (Lawful)</item>
+			</select>
+
+      <select type="List" name="Flaw (Worthless Husk)">
+				<item id="1">I possess a crippling fear of abandonment, leading me to cling to unhealthy relationships even when they are detrimental to my well-being.</item>
+				<item id="2">My self-destructive tendencies manifest in addictive behaviors, using substances or vices as a means to escape from my own perceived worthlessness.</item>
+				<item id="3">I have a hard time letting go of any perceived slights or insults, often holding grudges.</item>
+				<item id="4">My survival instincts can make me selfish, often choosing my wellbeing over others.</item>
+				<item id="5">I tend to push people away, afraid that they will eventually discard me like the rest.</item>
+				<item id="6">I am often reckless, after all, I have nothing to lose</item>
+			</select>
+      <select type="List" name="Bond (Worthless Husk)">
+				<item id="1">I will protect the few friends I have made in this dark city, as they have shown me kindness when others would not.</item>
+				<item id="2">I am searching for a person who can help me unlock my true potential and find my place in this world.</item>
+				<item id="3">I am determined to create a better life for the other discarded souls in the city.</item>
+				<item id="4">I harbor a desire to confront those who cast me aside and show them how far I've come.</item>
+				<item id="5">Precious memories, the only thing I have from my past, drives me to keep going.</item>
+				<item id="6">I've made a secret promise to myself that I’d rather die than stay worthless</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Bottom Dweller" type="Background Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BACKGROUND_FEATURE_BOTTOM_DWELLER">
+		<supports>Worthless Husk Feature</supports>
+		<description>
+			<p>Having been discarded by society, you're familiar with desperation. You know the darkest corners of the city like the back of your hand. Whether it's the dank sewers, abandoned buildings, or the shadowy back alleys, you can navigate these places with ease and can often find shelter or a safe passage where others would see only squalor and danger. You require half as much food and water as a regular member of your race to survive, and have advantage on all Survival checks made to maintain a Wretched lifestyle.</p>
+		</description>
+		<sheet alt="Bottom Dweller" />
+	</element>
+
+    <element name="Feature: Worthless" type="Background Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BACKGROUND_FEATURE_WORTHLESS">
+		<supports>Worthless Husk Feature</supports>
+		<description>
+			<p>With your GM’s approval you can pick this feature instead of Bottom Dweller.</p>
+            <p>You are worthless, but you show a sliver of potential. When you choose this background at 1st level, reduce your highest ability score until the sum of your six ability scores is equal to 72 or fewer. Then, reduce each ability score by 1.</p>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2 or you can increase two ability scores of your choice by 1. You can't increase an ability score above 18 using this feature.</p>
+		</description>
+		<sheet alt="Worthless" />
+	</element>
+</elements>

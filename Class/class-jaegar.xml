@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Jaeger" type="Class" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_JAEGER">
+		<description>
+			<p>An unassuming human pounces in the night, his blade and revolver at the ready. A gunshot, followed by the sound of metal against flesh and the splattering of blood over cobblestone. He snickers before plunging his blade anew into his battered prey.</p>
+			<p>An elegant manikin vaults atop a maddened monster, before putting the barrel of her cannon against its skull and pulling the trigger. She always loved explosions.</p>
+			<p>Battleaxe in hand, a massive tiefling brutally decapitates a beast, then leaps towards another, impaling the silvered weapon in the creature’s chest and ripping a gashing wound from neck to groin.</p>
+			<p>Jaegers are defined by their efficiency in battle, using their mastery over both steel and gunpowder to lay waste to all who oppose them. More than just soldiers, their skills represent the last wall of defense of a world fated to extinction; they are unstoppable and unbreakable. They strike fear in the heart of their foes, and bring hope to those they protect.</p>
+			<h4>Engineered Perfection</h4>
+			<p>In the ease and safety that contemporary advancements bring, city dwellers frequently forget how fortunate their lives are. They have all but forgotten the life of pain that would befall them if the system failed. Which is precisely what took place in Luyarnha. </p>
+			<p class="indent">The urbanites were left defenseless when the scourge swept the streets of the city, snapping like twigs in the face of such ferocity. While the denizens of the town struggled against insurmountable odds, the church and the nobility didn’t remain inert, instead concentrating their efforts to engineer the ideal weapon, something capable of annihilating the beasts plaguing the city. This weapon came to be known as the jaegers. </p>
+			<p class="indent">Jaegers thrive in the savagery of the hunt. Their reflexes more honed than that of mere mortals, jaegers are capable of dodging the most vicious of blows and using that momentum to drive their blade deep into the heart of their prey. A jaeger’s thirst for battle is endless; only in inaction can they experience fatigue. They are the perfect weapon against the nightmarish tides of beasts and the sole reason Luyarnha still stands.</p>
+			<h4>Bonds of Blood</h4>
+			<p>One who hunts beasts is a “hunter”, as they are commonly called by civilized society, but few hunters have the jaeger class. Coming from all walks of life, jaegers blend in with their communities, only unleashing their abilities in times of need. They act as guardians for people who are unable to defend themselves, and they serve as the bloody sword of vengeance in a world that is hell-bent on destroying itself. Life in the city-state of Luyarnha is fraught with peril: gang warfare, infectious madness, and harrowing beasts. Amidst this chaos, jaegers are the first to charge into battle so that their brothers and sisters can survive to live another day.</p>
+			<p class="indent">Jaegers rarely leave their home city of Luyarnha; they would rather die than see it fall to the scourge. Following the jaeger's creed—'survive together, or die together'—they never hunt by themselves unless forced to. The nights can be brutal and the beasts are relentless; against such a ferocious onslaught, only a united front can hope to survive. As a result, jaegers are aware of the importance of teamwork and never charge into battle alone, save to retrieve fallen allies. The bonds formed during the hunts are stronger than those of many families. Blood is thicker than water, and the gods know that blood is shed when the hunt rages on.</p>
+			<h3>Creating a JAEGER</h3>
+			<p>Think about the nature of your abilities and what gave rise to them as you construct your jaeger character. Were you one of the numerous orphans whose bodies were experimented on in the jaeger research project? Did you voluntarily join the ranks of hunters, or were you abducted and brainwashed into the ideal soldier? Alternatively, you might have defied the established order and joined the jaegers by a different route, perhaps after finding an eldritch carving and engraving it on your flesh. You might be self-taught—a loner who learned combat skills, tracking, or even a magical connection to the cosmos through the necessity of surviving the hunts. Alternatively, you might have learned from the comrades you now consider family.</p>
+			<p class="indent">What fuels you? Is it a visceral hatred of the beasts that slaughtered your loved ones? Or is it a reflection of your desire to stop these monsters' devastation, committing yourself to reining in their carnage? Is your adventuring career a continuation of your work in annihilating the scourge of beasts, or a significant change? What made you join a band of adventurers? Do you enjoy the break from the hunt that new allies provide, or do you find it difficult to teach them the jaeger ways?</p>
+			<div class="sidebar">
+				<p><b><i>Quick Build</i></b></p>
+				<p>You can make a jaeger quickly by following these guidelines. First, make Dexterity your highest ability score, followed by Constitution, and then Intelligence. Second, pick a background, preferably one that involves the city of Luyarnha.</p>
+			</div>
+			<h3>CLASS FEATURES</h3>
+			<p>As a jaeger, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per jaeger level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per jaeger level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor, medium armor</li>
+                <li><strong>Weapons:</strong> Simple weapons, Martial weapons</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+                <li><strong>Skills:</strong> Choose two from Acrobatics, Arcana, Athletics, History, Investigation, Medicine, Nature, Perception, Religion, Sleight of Hand, Stealth, and Survival</li>
+            </ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a pistol and pouch of 20 bullets or (b) any two simple weapons</li>
+				<li>(a) scale mail or (b) leather armor</li>
+				<li>(a) a dungeoneer’s pack or (b) an explorer’s pack</li>
+			</ul>
+			<h5 class="caption">THE JAEGER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Focus Points</td><td class="col-10">Momentum Die</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>1</td><td>-</td><td class="left">Flexible Combatant, Focus, Eldritch Hunter</td></tr>
+				<tr><td> 2nd</td><td>2</td><td>1d6</td><td class="left">Momentum, Fighting Style</td></tr>
+				<tr><td> 3rd</td><td>2</td><td>1d6</td><td class="left">Jaeger Chapter, Piercing Gaze</td></tr>
+				<tr><td> 4th</td><td>2</td><td>1d6</td><td class="left">Ability Score Improvement, Seasoned Survivor</td></tr>
+				<tr><td> 5th</td><td>3</td><td>1d6</td><td class="left">Extra Attack</td></tr>
+				<tr><td> 6th</td><td>3</td><td>1d6</td><td class="left">Hunter's Pursuit</td></tr>
+				<tr><td> 7th</td><td>3</td><td>1d6</td><td class="left">Jaeger Chapter Feature</td></tr>
+				<tr><td> 8th</td><td>3</td><td>1d6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>4</td><td>1d6</td><td class="left">Evasion</td></tr>
+				<tr><td>10th</td><td>4</td><td>1d6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>11th</td><td>4</td><td>1d8</td><td class="left">Lethal Tempo</td></tr>
+				<tr><td>12th</td><td>4</td><td>1d8</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>5</td><td>1d8</td><td class="left">Relentless Pursuit</td></tr>
+				<tr><td>14th</td><td>5</td><td>1d8</td><td class="left">Jaeger Chapter Feature</td></tr>
+				<tr><td>15th</td><td>5</td><td>1d8</td><td class="left">Inured to Madness</td></tr>
+				<tr><td>16th</td><td>5</td><td>1d8</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>6</td><td>1d10</td><td class="left">Jaeger Chapter Feature</td></tr>
+				<tr><td>18th</td><td>6</td><td>1d10</td><td class="left">Eternal Watch</td></tr>
+				<tr><td>19th</td><td>6</td><td>1d10</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>6</td><td>1d10</td><td class="left">Always Ready</td></tr>
+			</table>
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FLEXIBLE_COMBATANT" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ELDRITCH_HUNTER" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_MOMENTUM" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FIGHTING_STYLE" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_CHAPTER" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_PIERCING_GAZE" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_SEASONED_SURVIVOR" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_EXTRA_ATTACK" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_HUNTERS_PURSUIT" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_EVASION" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_LETHAL_TEMPO" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_RELENTLESS_PURSUIT" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_INURED_TO_MADNESS" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ETERNAL_WATCH" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ALWAYS_READY" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">A class from the Elrtich Hunt.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<select type="Proficiency" name="Skill Proficiency (Jaeger)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FLEXIBLE_COMBATANT" level="1" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS" level="1" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ELDRITCH_HUNTER" level="1" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_MOMENTUM" level="2" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FIGHTING_STYLE" level="2" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_CHAPTER" level="3" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_PIERCING_GAZE" level="3" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_SEASONED_SURVIVOR" level="4" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_HUNTERS_PURSUIT" level="6" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_EVASION" level="9" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_LETHAL_TEMPO" level="11" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_RELENTLESS_PURSUIT" level="13" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_INURED_TO_MADNESS" level="15" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ETERNAL_WATCH" level="18" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ALWAYS_READY" level="20" />
+		</rules>
+	</element>
+	<element name="Flexible Combatant" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FLEXIBLE_COMBATANT">
+		<description>
+			<p>Beginning at 1st level, you can draw or stow two one-handed weapons when you would normally be able to draw or stow only one, and you can reload weapons with the loading, reload, or barrel properties without a free hand.</p>
+			<p class="indent">Additionally, if you are carrying a one-handed melee weapon in one hand, and a one-handed ranged weapon in the other, you do not have disadvantage from being within 5 feet of a hostile creature on attacks made with that ranged weapon.</p>
+		</description>
+		<sheet>
+			<description>You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one, and you can reload weapons with the loading, reload, or barrel properties without a free hand. Additionally, if you are carrying a one-handed melee weapon in one hand, and a one-handed ranged weapon in the other, you do not have disadvantage from being within 5 feet of a hostile creature on attacks made with that ranged weapon.</description>
+		</sheet>
+	</element>
+	<element name="Focus" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS">
+		<description>
+			<p>Starting at 1st level, your concentration during battle is razor sharp, letting you keenly focus during critical moments. You have 1 Focus Point. You gain additional Focus Points at 2nd, 5th, 9th, 13th, and 17th level, as shown on the Jaeger table. You can expend Focus Points to use Focus Arts. You learn two such Focus Arts: Weapon Parry and Dodge Step. You learn one additional Focus Art of your choice at 2nd, 7th, 13th, and 17th level. Your Focus Art options are detailed at the end of the class description.</p>
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_WEAPON_PARRY" />
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_DODGE_STEP" />
+		</description>
+		<sheet usage="Regain on Short/Long Rest">
+			<description>You have {{jaeger:focus points}} focus points. When you roll a 20 on a saving throw or an attack roll against a hostile creature, you regain 1 Focus Point. When you roll initiative and have no Focus Points remaining, you regain 1 Focus Point.</description>
+		</sheet>
+		<rules>
+			<stat name="jaeger:focus points" value="1" />
+			<stat name="jaeger:focus points" value="1" level="2" />
+			<stat name="jaeger:focus points" value="1" level="5" />
+			<stat name="jaeger:focus points" value="1" level="9" />
+			<stat name="jaeger:focus points" value="1" level="13" />
+			<stat name="jaeger:focus points" value="1" level="17" />
+
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_WEAPON_PARRY" />
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_DODGE_STEP" />
+
+			<select type="Class Feature" name="Focus Art (Focus)" supports="Jaeger Focus Art" level="2" />
+			<select type="Class Feature" name="Focus Art (Focus)" supports="Jaeger Focus Art" level="7" />
+			<select type="Class Feature" name="Focus Art (Focus)" supports="Jaeger Focus Art" level="13" />
+			<select type="Class Feature" name="Focus Art (Focus)" supports="Jaeger Focus Art" level="17" />
+		</rules>
+	</element>
+	<element name="Eldritch Hunter" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ELDRITCH_HUNTER">
+		<description>
+			<p>Also at 1st level, when you make an ability check to track or identify an aberration, celestial, fiend, monstrosity, or undead, you can add your proficiency bonus to the ability check. If you are already proficient in the ability check, you can double your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>When you make an ability check to track or identify an aberration, celestial, fiend, monstrosity, or undead, you can add your proficiency bonus to the ability check. If you are already proficient in the ability check, you can double your proficiency bonus.</description>
+		</sheet>
+	</element>
+	<element name="Momentum" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_MOMENTUM">
+		<description>
+			<p>Starting at 2nd level, any time you expend a Focus Point, you gain 1 Momentum die, which is a d6. This die changes as you gain jaeger levels, as shown in the Jaeger table. You can have a maximum number of Momentum dice equal to your proficiency bonus + your Strength or Dexterity modifier (whichever is higher). Whenever you gain a Momentum die, or if you attack or end your turn within 5 feet of a hostile creature, all of your Momentum dice last until the end of your next turn.</p>
+			<p class="indent">While you have 1 or more Momentum dice, you can expend all of your Momentum dice to execute a Finisher. You know the Brutal Finisher. You learn one additional Finisher (listed at the end of the class description) of your choice at 4th, 6th, 8th, and 12th level, and may gain others through Jaeger Chapter features. </p>
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_BRUTAL" />
+			<div class="sidebar">
+				<h5>Clarification: Momentum Dice</h5>
+				<p>Whenever you add the number of Momentum dice expended to damage, roll the expended dice and add the total rolled to the damage, not the number of dice itself.</p>
+			</div>
+		</description>
+		<sheet>
+			<description>Any time you expend a Focus Point, you gain 1 Momentum die, which is a d{{jaeger:momentum die}} (maximum of {{jaeger:momentum max}} dice). Whenever you gain a Momentum die, or if you attack or end your turn within 5 feet of a hostile creature, all of your Momentum dice last until the end of your next turn. &#13;
+				While you have 1 or more Momentum dice, you can expend all of your Momentum dice to execute a Finisher.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_BRUTAL" />
+			<stat name="jaeger:momentum die" value="6" bonus="base" />
+			<stat name="jaeger:momentum die" value="8" bonus="base" level="11" />
+			<stat name="jaeger:momentum die" value="10" bonus="base" level="17" />
+
+			<stat name="jaeger:momentum max" value="strength:modifier" bonus="base" />
+			<stat name="jaeger:momentum max" value="dexterity:modifier" bonus="base" />
+			<stat name="jaeger:momentum max" value="proficiency" />
+
+			<select type="Class Feature" name="Finisher (Momentum)" supports="Jaeger Finisher" level="4" />
+			<select type="Class Feature" name="Finisher (Momentum)" supports="Jaeger Finisher" level="6" />
+			<select type="Class Feature" name="Finisher (Momentum)" supports="Jaeger Finisher" level="8" />
+			<select type="Class Feature" name="Finisher (Momentum)" supports="Jaeger Finisher" level="12" />
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FIGHTING_STYLE">
+		<description>
+			<p>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5 class="caption">DUELING</h5>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			<h5 class="caption">FLEXIBLE FIGHTING</h5>
+			<p>You can engage in two-weapon fighting with any weapons you can wield in one hand, including one-handed ranged weapons and weapons without the light property. When you do so, you gain a +1 bonus to the damage rolls of both weapons.</p>
+			<h5 class="caption">FOCUSED FIGHTING</h5>
+			<p>You learn an additional Focus Art, and you gain 1 additional Focus Point.</p>
+			<h5 class="caption">TWO-WEAPON FIGHTING</h5>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Jaeger" />
+		</rules>
+	</element>
+	<element name="Jaeger Chapter" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_CHAPTER">
+		<description>
+			<p>When you reach 3rd level, you choose a jaeger chapter that suits the means by which you intend to further your powers. Select one of the following: Absolute Chapter, Heretic Chapter, Marauder Chapter, Salvation Chapter, or Sanguine Chapter.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Jaeger Chapter" supports="Jaeger Chapter" />
+		</rules>
+	</element>
+	<element name="Piercing Gaze" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_PIERCING_GAZE">
+		<description>
+			<p>Also at 3rd level, you gain the ability to activate a magical sight at will (no action required), allowing you to effortlessly pierce the gloom and see what lurks within. For 1 hour, you gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases to 120 feet. This vision lets you see normally in dim light and darkness, both magical and nonmagical.</p>
+			<p class="indent">When you reach 7th level, you also gain the effect of see invisibility for the duration, and when you reach 13th level, you additionally gain the effect of true seeing for the duration.</p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="At Will" usage="Long Rest">
+			<description>For 1 hour, you gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases to 120 feet. This vision lets you see normally in dim light and darkness, both magical and nonmagical.</description>
+			<description level="7">For 1 hour, you gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases to 120 feet. This vision lets you see normally in dim light and darkness, both magical and nonmagical, and invisibility.</description>
+			<description level="13">For 1 hour, you gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases to 120 feet. This vision lets you see normally in dim light and darkness, both magical and nonmagical, invisibility, and gain the effect of true seeing.</description>
+		</sheet>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ABILITY_SCORE_IMPROVEMENT">
+		<description>
+			<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Jaeger 4)" supports="Improvement Option,Jaeger,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Jaeger 8)" supports="Improvement Option,Jaeger,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Jaeger 10)" supports="Improvement Option,Jaeger,10" level="10" />
+			<select type="Class Feature" name="Improvement Option (Jaeger 12)" supports="Improvement Option,Jaeger,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Jaeger 16)" supports="Improvement Option,Jaeger,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Jaeger 19)" supports="Improvement Option,Jaeger,19" level="19" />
+		</rules>
+	</element>
+	<element name="Seasoned Survivor" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_SEASONED_SURVIVOR">
+		<description>
+			<p>At 4th level, you gain advantage on Investigation checks made to find secret passages, interpret markings or messages left by other creatures on walls or surfaces, or determine the fate of creatures from blood stains and remains.</p>
+		</description>
+		<sheet>
+			<description>You gain advantage on Investigation checks made to find secret passages, interpret markings or messages left by other creatures on walls or surfaces, or determine the fate of creatures from blood stains and remains.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Hunter's Pursuit" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_HUNTERS_PURSUIT">
+		<description>
+			<p>Starting at 6th level, at the start of your turn, you can expend 1 Focus Point to immediately move up to half your speed without using any of your movement and without provoking opportunity attacks.</p>
+		</description>
+		<sheet usage="1 Focus Point">
+			<description>At the start of your turn, you can expend 1 Focus Point to immediately move up to half your speed without using any of your movement and without provoking opportunity attacks.</description>
+		</sheet>
+	</element>
+	<element name="Evasion" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_EVASION">
+		<description>
+			<p>Beginning at 9th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+	</element>
+	<element name="Lethal Tempo" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_LETHAL_TEMPO">
+		<description>
+			<p>Starting at 11th level, the first time you hit a creature on your turn, you gain 1 Momentum die. You gain 1 additional Momentum die any time you reduce a creature to 0 hit points.</p>
+		</description>
+		<sheet>
+			<description>The first time you hit a creature on your turn, you gain 1 Momentum die. You gain 1 additional Momentum die any time you reduce a creature to 0 hit points.</description>
+		</sheet>
+	</element>
+	<element name="Relentless Pursuit" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_RELENTLESS_PURSUIT">
+		<description>
+			<p>Starting at 13th level, when you use your Hunter's Pursuit, if you end your movement next to a hostile creature, you regain the expended Focus Point.</p>
+		</description>
+		<sheet>
+			<description>When you use your Hunter's Pursuit, if you end your movement next to a hostile creature, you regain the expended Focus Point.</description>
+		</sheet>
+	</element>
+	<element name="Inured to Madness" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_INURED_TO_MADNESS">
+		<description>
+			<p>At 15th level, you gain advantage on saving throws against being charmed or frightened, and against effects that cause madness. If you fail a saving throw against madness, you can expend 1 Focus Point to reroll the die. You must use the new roll.</p>
+		</description>
+		<sheet>
+			<description>You gain advantage on saving throws against being charmed or frightened, and against effects that cause madness. If you fail a saving throw against madness, you can expend 1 Focus Point to reroll the die. You must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Eternal Watch" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ETERNAL_WATCH">
+		<description>
+			<p>Starting at 18th level, you are always under the effect of your Piercing Gaze.</p>
+		</description>
+		<sheet>
+			<description>You are always under the effect of your Piercing Gaze.</description>
+		</sheet>
+	</element>
+	<element name="Always Ready" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_ALWAYS_READY">
+		<description>
+			<p>Starting at 20th level, once per round (beginning at the start of each of your turns), you gain one additional reaction, which you can only use on a Focus Art that requires a reaction (such as Weapon Parry or Dodge Step). When you expend a Focus Point on this special reaction, you immediately regain the expended Focus Point.</p>
+		</description>
+		<sheet>
+			<description>nce per round (beginning at the start of each of your turns), you gain one additional reaction, which you can only use on a Focus Art that requires a reaction (such as Weapon Parry or Dodge Step). When you expend a Focus Point on this special reaction, you immediately regain the expended Focus Point.</description>
+		</sheet>
+	</element>
+
+	<!-- Archetypes -->
+	<element name="Absolute Chapter" type="Archetype" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_JAEGER_ABSOLUTE">
+		<supports>Jaeger Chapter</supports>
+		<description>
+			<p><i>Jaegers of the Absolute Chapter aim for the perfect hunt: to kill their prey without suffering a single hit. Quick hands, quick feet, and quick minds, they never stay still—always one step ahead, always striking with lethal accuracy. They are masters of their craft, refining the core techniques of a jaeger to absolute perfection. Members of the Absolute Chapter are respected by their allies and feared by their enemies.</i></p>
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_COUNTER_STRIKE" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_UNENCUMBERED_MOVEMENT" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_ENCIRCLING_STRIKE" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_MOBILE_PURSUER" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_THE_HUNT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_COUNTER_STRIKE" level="3" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_UNENCUMBERED_MOVEMENT" level="3" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_ENCIRCLING_STRIKE" level="7" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_MOBILE_PURSUER" level="14" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_THE_HUNT" level="17" />
+		</rules>
+	</element>
+	<element name="Counter Strike" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_COUNTER_STRIKE">
+		<description>
+			<p>Starting at 3rd level, when you use the Weapon Parry Focus Art, your damage roll increases by an amount equal to half your level in this class (rounded down). If the amount of damage you block exceeds the damage their attack would deal, and your attack roll would hit their AC, the target takes damage equal to the remainder of the damage roll.</p>
+			<p>Whenever you expend a Focus Point on a Focus Art, you gain advantage on your next weapon attack roll before the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you use the Weapon Parry Focus Art, your damage roll increases by {{level:jaeger:half}}. If the amount of damage you block exceeds the damage their attack would deal, and your attack roll would hit their AC, the target takes damage equal to the remainder of the damage roll. Whenever you expend a Focus Point on a Focus Art, you gain advantage on your next weapon attack roll before the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Unencumbered Movement" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_UNENCUMBERED_MOVEMENT">
+		<description>
+			<p>Also at 3rd level, while you are wearing light armor or no armor, your speed increases by 10 feet, and the distance you can move when using the Dodge Step Focus Art increases by 5 feet.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing light armor or no armor, your speed increases by 10 feet, and the distance you can move when using the Dodge Step Focus Art increases by 5 feet.</description>
+		</sheet>
+	</element>
+	<element name="Encircling Strike" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_ENCIRCLING_STRIKE">
+		<description>
+			<p>At 7th level, if you move to the opposite side of a creature from where you started your turn, or are directly on the opposite side of a creature from an allied creature of yours, you deal extra damage to the target equal to your Momentum die the first time you hit it with a melee weapon attack.</p>
+		</description>
+		<sheet>
+			<description>If you move to the opposite side of a creature from where you started your turn, or are directly on the opposite side of a creature from an allied creature of yours, you deal extra damage to the target equal to your Momentum die the first time you hit it with a melee weapon attack.</description>
+		</sheet>
+	</element>
+	<element name="Mobile Pursuer" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_MOBILE_PURSUER">
+		<description>
+			<p>At 14th level, when you move as part of your Hunter's Pursuit, you ignore difficult terrain, can pass through hostile creatures, and don’t need to spend extra movement to climb or swim.</p>
+		</description>
+		<sheet>
+			<description>When you move as part of your Hunter's Pursuit, you ignore difficult terrain, can pass through hostile creatures, and don’t need to spend extra movement to climb or swim.</description>
+		</sheet>
+	</element>
+	<element name="The Hunt" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_ABSOLUTE_THE_HUNT">
+		<description>
+			<p>Starting at 17th level, you can declare a hunt (no action required). For 1 minute, you are under the effect of freedom of movement and each time you expend a Focus Point, you gain 2 Momentum dice instead of 1.</p>
+			<p class="indent">This effect ends early if you become incapacitated, or end it early as a bonus action. Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="Long Rest">
+			<description>You can declare a hunt at will. For 1 minute, you are under the effect of freedom of movement and each time you expend a Focus Point, you gain 2 Momentum dice instead of 1. This effect ends early if you become incapacitated, or end it early as a bonus action. Once you use this feature, you can’t use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Heretic Chapter" type="Archetype" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_JAEGER_HERETIC">
+		<supports>Jaeger Chapter</supports>
+		<description>
+			<p><i>The Heretic Chapter's jaegers are despised by both religious organizations and their adherents. In a world where acts of faith are required to harness divine powers, these jaegers instead rip these powers from the very gods, tearing away their divine fabric. Through blasphemous rituals, strange ingestions, and direct grafting of powers onto their souls, heretics bind the powers of greater beings to their will. This is a path that calls for a certain madness that is only found in the most ardent of hunters, those who feel the burning need to reach the pinnacle of power and will do anything to achieve it. Some seek such power for its own sake, but most want it to put an end to the nightmare.</i></p>
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_HERETIC_MAGIC" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_ARCANE_ARTS" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_SHROUDED_STEPS" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_MYSTICAL_MOMENTUM" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_DARKNESS_WITHIN" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_HERETIC_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_ARCANE_ARTS" level="3" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_SHROUDED_STEPS" level="7" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_MYSTICAL_MOMENTUM" level="14" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_DARKNESS_WITHIN" level="17" />
+		</rules>
+	</element>
+	<element name="Heretic Magic" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_HERETIC_MAGIC">
+		<description>
+			<p>At 3rd level, you bend dark powers to your service through blasphemous occult rituals, making them your own. You gain the ability to cast spells.</p>
+			<h5>Cantrips</h5>
+			<p>You learn two cantrips of your choice from the warlock spell list. You learn an additional warlock cantrip of your choice at 10th level.</p>
+			<h5>Spell Slots</h5>
+			<p>The Heretic Spellcasting table shows how many spell slots you have, as well as the level of those spell slots. All of your spell slots are of the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.</p>
+			<h5>Spells Known of 1st Level or Higher</h5>
+			<p>At 3rd level, you know two 1st-level spells of your choice from the warlock spell list. The Spells Known column of the Heretic Spellcasting table shows when you learn a new spell of your choice from the warlock spell list. A spell you choose must be of a level you can cast. Additionally, when you finish a long rest, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.</p>
+			<h5>Spellcasting Ability</h5>
+			<p>Intelligence is your spellcasting ability for your warlock spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.</p>
+			<h5>Heretic Spellcasting</h5>
+			<table>
+				<thead>
+					<tr><td>Level</td><td>Cantrips Known</td><td>Spells Known</td><td>Spell Slots</td><td>Slot Level</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>2</td><td>2</td><td>1</td><td>1st</td></tr>
+				<tr><td>4th</td><td>2</td><td>2</td><td>1</td><td>1st</td></tr>
+				<tr><td>5th</td><td>2</td><td>2</td><td>2</td><td>1st</td></tr>
+				<tr><td>6th</td><td>2</td><td>3</td><td>2</td><td>1st</td></tr>
+				<tr><td>7th</td><td>2</td><td>3</td><td>2</td><td>2nd</td></tr>
+				<tr><td>8th</td><td>2</td><td>3</td><td>2</td><td>2nd</td></tr>
+				<tr><td>9th</td><td>2</td><td>4</td><td>2</td><td>2nd</td></tr>
+				<tr><td>10th</td><td>3</td><td>4</td><td>2</td><td>2nd</td></tr>
+				<tr><td>11th</td><td>3</td><td>4</td><td>2</td><td>2nd</td></tr>
+				<tr><td>12th</td><td>3</td><td>5</td><td>2</td><td>2nd</td></tr>
+				<tr><td>13th</td><td>3</td><td>5</td><td>2</td><td>3rd</td></tr>
+				<tr><td>14th</td><td>3</td><td>5</td><td>2</td><td>3rd</td></tr>
+				<tr><td>15th</td><td>3</td><td>6</td><td>2</td><td>3rd</td></tr>
+				<tr><td>16th</td><td>3</td><td>6</td><td>2</td><td>3rd</td></tr>
+				<tr><td>17th</td><td>3</td><td>6</td><td>2</td><td>3rd</td></tr>
+				<tr><td>18th</td><td>3</td><td>7</td><td>2</td><td>3rd</td></tr>
+				<tr><td>19th</td><td>3</td><td>7</td><td>2</td><td>4th</td></tr>
+				<tr><td>20th</td><td>3</td><td>7</td><td>2</td><td>4th</td></tr>
+			</table>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<spellcasting name="Warlock" ability="Charisma" allowReplace="true">
+			<list>Warlock</list>
+		</spellcasting>
+		<rules>
+			<!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_SOLO" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+			<stat name="warlock:spellcasting:slots:count" value="1" level="3"/>
+			<stat name="warlock:spellcasting:slots:count" value="1" level="5"/>
+
+			<stat name="warlock:spellcasting:slot" value="1" level="3" />
+			<stat name="warlock:spellcasting:slot" value="1" level="7" />
+			<stat name="warlock:spellcasting:slot" value="1" level="13" />
+			<stat name="warlock:spellcasting:slot" value="1" level="19" />
+
+			<!-- negative count to remove slots -->
+			<stat name="warlock:spellcasting:slots:1" value="warlock:spellcasting:slots:count" level="3" />
+			<stat name="warlock:spellcasting:slots:1" value="-warlock:spellcasting:slots:count" level="5" />
+			<stat name="warlock:spellcasting:slots:2" value="warlock:spellcasting:slots:count" level="5" />
+
+			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="3" number="2" spellcasting="Warlock" />
+			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="10" spellcasting="Warlock" />
+
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="2" spellcasting="Warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" spellcasting="Warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="12" spellcasting="Warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="18" spellcasting="Warlock"/>
+		</rules>
+	</element>
+	<element name="Arcane Arts" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_ARCANE_ARTS">
+		<description>
+			<p>Also at 3rd level, you learn the Spell Flurry Focus Art. This does not count against your Focus Arts known.</p>
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_SPELL_FLURRY" />
+		</description>
+		<sheet display="false">
+			<description>Your arcane research and the magic bestowed on you by your patron have given you facility with spells. You have {{warlock:spellcasting:slots:count}} slots of level {{warlock:spellcasting:slot}}</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_SPELL_FLURRY" />
+		</rules>
+	</element>
+	<element name="Shrouded Steps" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_SHROUDED_STEPS">
+		<description>
+			<p>At 7th level, when you use a jaeger feature that allows you to move without spending your movement (such as Jaeger’s Rush or Chasing Finisher), you can teleport the distance moved instead. When you do so for Dodge Step, you automatically succeed on the the saving throw to evade the attack.</p>
+		</description>
+		<sheet>
+			<description>When you use a jaeger feature that allows you to move without spending your movement (such as Jaeger’s Rush or Chasing Finisher), you can teleport the distance moved instead. When you do so for Dodge Step, you automatically succeed on the the saving throw to evade the attack.</description>
+		</sheet>
+	</element>
+	<element name="Mystical Momentum" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_MYSTICAL_MOMENTUM">
+		<description>
+			<p>Beginning at 14th level, when you expend a spell slot, you gain a number of Momentum dice equal to the level of the spell slot expended.</p>
+		</description>
+		<sheet>
+			<description>When you expend a spell slot, you gain a number of Momentum dice equal to the level of the spell slot expended.</description>
+		</sheet>
+	</element>
+	<element name="Darkness Within" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_HERETIC_DARKNESS_WITHIN">
+		<description>
+			<p>Starting at 17th level, you can unleash the twisted powers you've bound to your soul, taking on a terrifying aspect as a bonus action. For 1 minute, you sprout wings of shadow and become wreathed in darkness. You gain the following effects:</p>
+			<ul>
+				<li>The area within 10 feet of you dims. Bright light becomes dim light, and dim light becomes darkness.</li>
+				<li>You are heavily obscured by swirling shadows.</li>
+				<li>You gain a flying speed of 30 feet.</li>
+				<li>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't silvered.</li>
+			</ul>
+			<p class="indent">These effects end early if you become incapacitated, or end this feature early as a bonus action. Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Long Rest">
+			<description>As a bonus action, for 1 minute, you sprout wings of shadow and become wreathed in darkness. You gain the following effects: &#13;
+				• The area within 10 feet of you dims. Bright light becomes dim light, and dim light becomes darkness. &#13;
+				• You are heavily obscured by swirling shadows. &#13;
+				• You gain a flying speed of 30 feet. &#13;
+				• You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't silvered. &#13;
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Marauder Chapter" type="Archetype" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_JAEGER_MARAUDER">
+		<supports>Jaeger Chapter</supports>
+		<description>
+			<p><i>A jaeger of the Marauder Chapter embodies raw slaughter. Vengeance, wrath, and death, all rolled into one swing that never ceases, endlessly scything through monsters, leaving a bloody wake of destruction. Each marauder is a symbol of the Chapter's determination and ferocity, striking fear into the hearts of their enemies with every swing of their weapon. They are unstoppable warriors, driven by a thirst for vengeance and the need to protect humanity from the monstrous hordes.</i></p>
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_PATH_OF_GORE" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_MARAUDER_MOMENTUM" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_LEAP_ATTACK" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_FELL_THE_LEVIATHAN" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_TITANIC_STRENGTH" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_PATH_OF_GORE" level="3" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_MARAUDER_MOMENTUM" level="3" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_LEAP_ATTACK" level="7" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_FELL_THE_LEVIATHAN" level="14" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_TITANIC_STRENGTH" level="17" />
+		</rules>
+	</element>
+	<element name="Path of Gore" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_PATH_OF_GORE">
+		<description>
+			<p>Starting at 3rd level, you learn the Great Cleave Finisher. This does not count against your Finishers known.</p>
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_GREAT_CLEAVE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_GREAT_CLEAVE" />
+		</rules>
+	</element>
+	<element name="Marauder Momentum" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_MARAUDER_MOMENTUM">
+		<description>
+			<p>Also at 3rd level, while you are wielding a melee weapon with the two-handed property, the size of your Momentum die is increased by one step (from a d6 to a d8, to a d10 at 11th level, and to a d12 at 17th level).</p>
+			<p class="indent">Additionally, while you are wearing medium armor, you can add your Constitution modifier (to a maximum of +2) instead of your Dexterity modifier to determine your Armor Class.</p>
+		</description>
+		<sheet>
+			<description>While you are wielding a melee weapon with the two-handed property, the size of your Momentum die is increased by one step (from a d6 to a d8, to a d10 at 11th level, and to a d12 at 17th level).</description>
+		</sheet>
+		<rules>
+			<stat name="ac:armored:dexterity" value="constitution:modifier" bonus="modifier" equipped="[armor:medium]" maximum="ac:armored:dexterity:cap" />
+		</rules>
+	</element>
+	<element name="Leap Attack" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_LEAP_ATTACK">
+		<description>
+			<p>At 7th level, once per turn, if you move more than 15 feet toward a creature (or fall 10 feet or more) immediately before making a weapon attack against them, you deal extra damage on a hit equal to your Momentum die.</p>
+			<p class="indent">When falling, you can make this attack prior to hitting the ground if there is a target creature in range where you would fall. On a hit, any falling damage you take is reduced by half, and you do not fall prone from the fall.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Once per turn, if you move more than 15 feet toward a creature (or fall 10 feet or more) immediately before making a weapon attack against them, you deal extra damage on a hit equal to your Momentum die. When falling, you can make this attack prior to hitting the ground if there is a target creature in range where you would fall. On a hit, any falling damage you take is reduced by half, and you do not fall prone from the fall.</description>
+		</sheet>
+	</element>
+	<element name="Fell the Leviathan" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_FELL_THE_LEVIATHAN">
+		<description>
+			<p>Starting at 14th level, whenever you use a Finisher, the target must succeed on a Strength saving throw (DC = 8 + your Strength modifier + your proficiency bonus) or be knocked prone. Creatures that are Large or larger have disadvantage on this saving throw.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use a Finisher, the target must succeed on a Strength saving throw (DC {{jaeger:fell the leviathan:dc}}) or be knocked prone. Creatures that are Large or larger have disadvantage on this saving throw.</description>
+		</sheet>
+		<rules>
+			<stat name="jaeger:fell the leviathan:dc" value="8" />
+			<stat name="jaeger:fell the leviathan:dc" value="proficiency" />
+			<stat name="jaeger:fell the leviathan:dc" value="strength:modifier" />
+		</rules>
+	</element>
+	<element name="Titanic Strength" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_MARAUDER_TITANIC_STRENGTH">
+		<description>
+			<p>Starting at 17th level, your strength is so great that you can wield a two-handed weapon in one hand, and can use two-weapon fighting even when the weapons you are wielding aren't light (including using two-handed weapons).</p>
+			<p class="indent">If you use two hands to wield a two-handed weapon, your attacks with it deal extra damage equal to half your Strength modifier (rounded up) on a hit.</p>
+			<p class="indent">Additionally, when you use a Finisher, you can double the number of Momentum dice you have (to no more than your maximum Momentum dice + 1). Once you've doubled your dice, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>You can wield a two-handed weapon in one hand, and can use two-weapon fighting even when the weapons you are wielding aren't light (including using two-handed weapons). If you use two hands to wield a two-handed weapon, your attacks with it deal extra damage equal to half your Strength modifier (rounded up) on a hit. &#13;
+				When you use a Finisher, you can double the number of Momentum dice you have (to no more than your maximum Momentum dice + 1). Once you've doubled your dice, you can't do so again until you finish a long rest.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Salvation Chapter" type="Archetype" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_JAEGER_SALVATION">
+		<supports>Jaeger Chapter</supports>
+		<description>
+			<p><i>A divine force endows jaegers of the Salvation Chapter with the ability to defend the world from the horrors, purging evil with one hand while saving the innocent with the other. Favorites of the Radiant Church, they are the light of hope in the darkness where evil dwells. Members of the Salvation Chapter know that prevention is always better than cure, and that murder is the most effective method of prevention. In their zealous righteousness, they offer hope of sanity and sanctuary to those that stand with them in their war against the tides of madness. </i></p>
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_ART_OF_SALVATION" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_SAVIORS_FOCUS" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_SANCTIFYING_LIGHT" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_PURIFYING_SALVATION" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_LIGHT_OF_HOPE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_ART_OF_SALVATION" level="3" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_SAVIORS_FOCUS" level="3" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_SANCTIFYING_LIGHT" level="7" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_PURIFYING_SALVATION" level="14" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_LIGHT_OF_HOPE" level="17" />
+		</rules>
+	</element>
+	<element name="Art of Salvation" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_ART_OF_SALVATION">
+		<description>
+			<p>At 3rd level, you learn the Prayer of Salvation Focus Art. This does not count against your Focus Arts known.</p>
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_PRAYER_OF_SALVATION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_PRAYER_OF_SALVATION" />
+		</rules>
+	</element>
+	<element name="Savior's Focus" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_SAVIORS_FOCUS">
+		<description>
+			<p>Also at 3rd level, you find new strength in the most desperate hours. When an allied creature you can see or hear is reduced to 0 hit points, you regain 1 Focus Point. Once you use this feature, you can’t do so again for 1 minute.</p>
+		</description>
+		<sheet usage="1 Minute">
+			<description>When an allied creature you can see or hear is reduced to 0 hit points, you regain 1 Focus Point. Once you use this feature, you can’t do so again for 1 minute.</description>
+		</sheet>
+	</element>
+	<element name="Sanctifying Light" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_SANCTIFYING_LIGHT">
+		<description>
+			<p>Starting at 7th level, when you expend a Focus Point, you can choose to emit a glow of divine light until the end of your next turn, illuminating a 20-foot radius in bright light and an additional 20 feet in dim light. The light is sunlight. Any allied creature that enters the bright light for the first time on a turn or starts its turn there gains 1d6 + your proficiency bonus hit points. This light is extinguished if you become incapacitated.</p>
+		</description>
+		<sheet>
+			<description>When you expend a Focus Point, you can choose to emit a glow of divine light until the end of your next turn, illuminating a 20-foot radius in bright light and an additional 20 feet in dim light. The light is sunlight. Any allied creature that enters the bright light for the first time on a turn or starts its turn there gains 1d6 + {{proficiency}} bonus hit points. This light is extinguished if you become incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Purifying Salvation" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_PURIFYING_SALVATION">
+		<description>
+			<p>Starting at 14th level, your Prayer of Salvation Focus Art can target an additional creature, and the number of hit points it restores and temporary hit points it grants increases to 1d12.</p>
+			<p class="indent">Additionally, if any of the targets are charmed, frightened, poisoned, or suffering from a short-term madness, you can cleanse the condition from them, ending it.</p>
+		</description>
+		<sheet>
+			<description>Your Prayer of Salvation Focus Art can target an additional creature, and the number of hit points it restores and temporary hit points it grants increases to 1d12. Also, if any of the targets are charmed, frightened, poisoned, or suffering from a short-term madness, you can cleanse the condition from them, ending it.</description>
+		</sheet>
+	</element>
+	<element name="Light of Hope" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SALVATION_LIGHT_OF_HOPE">
+		<description>
+			<p>Starting at 17th level, as a bonus action, you can unleash a blinding light from within for 1 minute, illuminating the darkness. You gain the following benefits for the duration:</p>
+			<ul>
+				<li>The radius of your Sanctifying Light increases to 30 feet of bright light and 30 feet of dim light. You and each creature of your choice within the bright light are under the effect of bless. Creatures in the bright light have advantage on death saving throws, do not die at three failed saves, and becomes stable with three successful saves, even if they have three or more failed saves. A creature that is no longer within the bright light of this effect and is not stable dies if they have failed three or more death saving throws.</li>
+				<li>When you use Prayer of Salvation, you immediately regain the expended Focus Point.</li>
+			</ul>
+			<p class="indent">These benefits end early if you become incapacitated, or end this feature early as a bonus action. Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Long Rest">
+			<description>As a bonus action, you can unleash a blinding light from within for 1 minute, illuminating the darkness. You gain the following benefits for the duration:&#13;
+				• The radius of your Sanctifying Light increases to 30 feet of bright light and 30 feet of dim light. You and each creature of your choice within the bright light are under the effect of bless. Creatures in the bright light have advantage on death saving throws, do not die at three failed saves, and becomes stable with three successful saves, even if they have three or more failed saves. A creature that is no longer within the bright light of this effect and is not stable dies if they have failed three or more death saving throws.&#13;
+				• When you use Prayer of Salvation, you immediately regain the expended Focus Point.&#13;
+				These benefits end early if you become incapacitated, or end this feature early as a bonus action. Once you use this feature, you can’t use it again until you finish a long rest.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Sanguine Chapter" type="Archetype" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_JAEGER_SANGUINE">
+		<supports>Jaeger Chapter</supports>
+		<description>
+			<p>In order to strengthen themselves, jaegers of the Sanguine Chapter rely on the essential essence that is blood. They achieve resilient states of unnatural life and feed their powers with the fruits of their violence. Although some may consider them to be monsters in and of themselves, when faced with the horrors that lurk in the dark recesses of the world, sentiment quickly changes. A jaeger's abilities can hold the line and preserve the tenuous flame of life when it should have long since been extinguished, keeping themselves and their allies alive while draining the strength of their adversaries in an endless crimson parade of blood.</p>
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_VITAL_CONSUMPTION" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_CRIMSON_RAGE" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_BLOOD_HEX" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_EMPOWERED_BLOOD_HEX" />
+			<div element="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_BLOOD_FRENZY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_VITAL_CONSUMPTION" level="3" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_CRIMSON_RAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_BLOOD_HEX" level="7" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_EMPOWERED_BLOOD_HEX" level="14" />
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_BLOOD_FRENZY" level="17" />
+		</rules>
+	</element>
+	<element name="Vital Consumption" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_VITAL_CONSUMPTION">
+		<description>
+			<p>Starting at 3rd level, you gain the ability to draw power from the flowing blood of your foes. You learn the Blood Drain Finisher, which does not count against your Finishers known. Some of your abilities use a Blood Magic save DC, which is calculated as follows:</p>
+			<center>
+				<p><strong>Blood Magic Save DC</strong> = 8 + your Intelligence or Constitution modifier (your choice) + your proficiency modifier.</p>
+			</center>
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_BLOOD_DRAIN" />
+		</description>
+		<sheet>
+			<description>Your Blood Save DC is {{vital consumption:dc}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_BLOOD_DRAIN" />
+			<stat name="vital consumption:dc" value="8" />
+			<stat name="vital consumption:dc" value="proficiency" />
+			<select type="Archetype Feature" name="Vital Consumption DC" supports="Vital Consumption" />
+		</rules>
+	</element>
+	<element name="Intelligence (Vital Consumption)" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_VITAL_CONSUMPTION_INTELLIGENCE_DC">
+		<supports>Vital Consumption</supports>
+		<description>
+			<p>You chose Intelligence for your blood save DC.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="vital consumption:dc" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Constitution (Vital Consumption)" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_VITAL_CONSUMPTION_CONSTITUTION_DC">
+		<supports>Vital Consumption</supports>
+		<description>
+			<p>You chose Constitution for your blood save DC.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="vital consumption:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Crimson Rage" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_CRIMSON_RAGE">
+		<description>
+			<p>Also at 3rd level, when you become bloodied (have half your maximum hit points or fewer), you regain 1 Focus Point and gain 1 Momentum die. You cannot benefit from this feature again for 1 minute.</p>
+		</description>
+		<sheet usage="1/Minute">
+			<description>When you become bloodied (have half your maximum hit points or fewer), you regain 1 Focus Point and gain 1 Momentum die. You cannot benefit from this feature again for 1 minute</description>
+		</sheet>
+	</element>
+	<element name="Blood Hex" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_BLOOD_HEX">
+		<description>
+			<p>Starting at 7th level, when you use your Blood Drain Finisher and the target fails its saving throw, you can invoke a blood hex, selecting one of the following effects:</p>
+			<ul>
+				<li><b>Blood Puppet. </b>The target must use its reaction to move up to 5 feet in a direction of your choice (if the target's reaction is unavailable, it cannot move).</li>
+				<li><b>Bound Blood. </b>The target's speed is reduced by half until the start of your next turn.</li>
+				<li><b>Burning Blood. </b>The target takes fire damage equal to half the necrotic damage dealt.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you use your Blood Drain Finisher and the target fails its saving throw, you can invoke a blood hex, selecting one of the following effects:&#13;
+				• Blood Puppet: The target must use its reaction to move up to 5 feet in a direction of your choice (if the target's reaction is unavailable, it cannot move).&#13;
+				• Bound Blood: The target's speed is reduced by half until the start of your next turn. &#13;
+				• Burning Blood: The target takes fire damage equal to half the necrotic damage dealt.
+			</description>
+		</sheet>
+	</element>
+	<element name="Empowered Blood Hex" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_EMPOWERED_BLOOD_HEX">
+		<description>
+			<p>Starting at 14th level, you can invoke more powerful blood hexes. You gain the following options, each of which are improved versions of the hexes granted by Blood Hex, but cost 2 Focus Points to invoke.</p>
+			<div element="ID_MDM_SGEH_JAEGER_SANGUINE_EMP_BLOOD_HEX_BLOOD_PUPPET" />
+			<div element="ID_MDM_SGEH_JAEGER_SANGUINE_EMP_BLOOD_HEX_BOUND_BLOOD" />
+			<div element="ID_MDM_SGEH_JAEGER_SANGUINE_EMP_BLOOD_HEX_BURNING_BLOOD" />
+		</description>
+		<sheet usage="2 Focus Points">
+			<description>You gain empowered versions of your blood hexes:</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Empowered Blood Hex Default" supports="Empowered Blood Hex" default="ID_MDM_SGEH_JAEGER_SANGUINE_EMP_BLOOD_HEX_BLOOD_PUPPET" />
+			<select type="Archetype Feature" name="Empowered Blood Hex Default" supports="Empowered Blood Hex" default="ID_MDM_SGEH_JAEGER_SANGUINE_EMP_BLOOD_HEX_BOUND_BLOOD" />
+			<select type="Archetype Feature" name="Empowered Blood Hex Default" supports="Empowered Blood Hex" default="ID_MDM_SGEH_JAEGER_SANGUINE_EMP_BLOOD_HEX_BURNING_BLOOD" />
+		</rules>
+	</element>
+	<element name="Blood Puppet (Empowered)" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_JAEGER_SANGUINE_EMP_BLOOD_HEX_BLOOD_PUPPET">
+		<supports>Empowered Blood Hex</supports>
+		<description>
+			<p>The target must use its reaction to move up to 5 feet and make a single weapon attack against a creature of your choice (if the target's reaction is unavailable, it cannot move).</p>
+		</description>
+	</element>
+	<element name="Bound Blood (Empowered)" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_JAEGER_SANGUINE_EMP_BLOOD_HEX_BOUND_BLOOD">
+		<supports>Empowered Blood Hex</supports>
+		<description>
+			<p>The target is restrained until the start of your next turn.</p>
+		</description>
+	</element>
+	<element name="Blood Puppet (Empowered)" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_JAEGER_SANGUINE_EMP_BLOOD_HEX_BURNING_BLOOD">
+		<supports>Empowered Blood Hex</supports>
+		<description>
+			<p>At the start of each of its turns, the target takes fire damage equal to the necrotic damage dealt. The target can repeat the saving throw it made against the Blood Drain Finisher at the end of each of its turns, ending the effect on a success.</p>
+		</description>
+	</element>
+	<element name="Blood Frenzy" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_JAEGER_SANGUINE_BLOOD_FRENZY">
+		<description>
+			<p>Starting at 17th level, while bloodied (have half your maximum hit points or fewer) you gain the following the benefits:</p>
+			<ul>
+				<li>Your speed is increased by 20 feet.</li>
+				<li>When you take the attack action, the number of attacks you make increases to three.</li>
+				<li>All hit points you regain from your jaeger abilities are doubled.</li>
+				<li>You can use the Blood Craze Focus Art.</li>
+			</ul>
+			<div element="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_BLOOD_CRAZE" />
+		</description>
+		<sheet>
+			<description>While bloodied (have half your maximum hit points or fewer) you gain the following the benefits: &#13;
+				• Your speed is increased by 20 feet.&#13;
+				• When you take the attack action, the number of attacks you make increases to three.&#13;
+				• All hit points you regain from your jaeger abilities are doubled.&#13;
+				• You can use the Blood Craze Focus Art.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_BLOOD_CRAZE" level="17" />
+		</rules>
+	</element>
+
+	<!-- Focus Arts -->
+	<element name="Weapon Parry" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_WEAPON_PARRY">
+		<!-- doesnt need supports as it is given -->
+		<description>
+			<p><i>Focus Art, reaction</i></p>
+			<p>As a reaction to being hit by a creature you can see within range of a weapon you are holding, you can expend 1 Focus Point to make a special weapon attack against that creature. This attack does no damage, but instead blocks an amount of damage from the incoming attack equal to the weapon's damage roll (including your ability modifier), unless your attack roll is a 1. On a 20, any weapon damage dice are rolled twice (like a critical hit would be), and if this total fully blocks the incoming attack, the target is stunned until the start of its next turn.</p>
+		</description>
+		<sheet action="Reaction" usage="1 Focus Point">
+			<description>As a reaction to being hit by a creature you can see within range of a weapon you are holding, you can expend 1 Focus Point to make a special weapon attack against that creature. This attack does no damage, but instead blocks an amount of damage from the incoming attack equal to the weapon's damage roll (including your ability modifier), unless your attack roll is a 1. On a 20, any weapon damage dice are rolled twice (like a critical hit would be), and if this total fully blocks the incoming attack, the target is stunned until the start of its next turn.</description>
+		</sheet>
+	</element>
+	<element name="Dodge Step" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_DODGE_STEP">
+		<!-- doesnt need supports as it is given -->
+		<description>
+			<p><i>Focus Art, reaction</i></p>
+			<p>As a reaction to being attacked by a creature you can see, if your speed is not 0, you can expend 1 Focus Point to move 5 feet without provoking opportunity attacks and make a Dexterity saving throw with a DC equal to the attacker's attack roll (including modifiers). On a success, you evade completely and take no damage. On a failure, you halve the attack's damage against you.</p>
+		</description>
+		<sheet action="Reaction" usage="1 Focus Point">
+			<description>As a reaction to being attacked by a creature you can see, if your speed is not 0, you can expend 1 Focus Point to move 5 feet without provoking opportunity attacks and make a Dexterity saving throw with a DC equal to the attacker's attack roll (including modifiers). On a success, you evade completely and take no damage. On a failure, you halve the attack's damage against you.</description>
+		</sheet>
+	</element>
+	<element name="Prayer of Salvation" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_PRAYER_OF_SALVATION">
+		<!-- granted by Salvation Chapter -->
+		<description>
+			<p><i>Focus Art, bonus action</i></p>
+			<p>As a bonus action, you expend 1 Focus Point. You and one creature of your choice you can see within 60 feet of you each regain 1d6 hit points and gain an equal number of temporary hit points.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Focus Point">
+			<description>As a bonus action, you expend 1 Focus Point. You and one creature of your choice you can see within 60 feet of you each regain 1d6 hit points and gain an equal number of temporary hit points.</description>
+		</sheet>
+	</element>
+	<element name="Blood Craze" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_BLOOD_CRAZE">
+		<!-- granted by Sanguine Chapter -->
+		<description>
+			<p><i>Focus Art, reaction</i></p>
+			<p>As a reaction to being reduced to 0 hit points but not killed outright, you can expend 1 Focus Point to drop to 1 hit point instead.</p>
+			<div class="sidebar">
+				<p><b><i>Note: Blood Craze</i></b></p>
+				<p>This is a Focus Art, so it works with Always Ready (which grants an additional reaction), making the Sanguine Chapter fairly difficult to stop at 20th level.</p>
+			</div>
+		</description>
+		<sheet action="Reaction" usage="1 Focus Point">
+			<description>When bloodied, as a reaction to being reduced to 0 hit points but not killed outright, you can expend 1 Focus Point to drop to 1 hit point instead.</description>
+		</sheet>
+	</element>
+	<element name="Spell Flurry" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_SPELL_FLURRY">
+		<!-- granted by Heretic Chapter -->
+		<description>
+			<p><i>Focus Art, bonus action</i></p>
+			<p>When you cast a cantrip or a spell of 1st level or higher, you can expend 1 Focus Point to make a single weapon attack as a bonus action.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Focus Point">
+			<description>When you cast a cantrip or a spell of 1st level or higher, you can expend 1 Focus Point to make a single weapon attack as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Aerial Vault" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_AERIAL_VAULT">
+		<supports>Jaeger Focus Art</supports>
+		<description>
+			<p><i>Focus Art, special</i></p>
+			<p>When you make a jump, you can expend 1 Focus Point to double your jumping distance for that jump, and you can ignore difficult terrain until the end of your turn. When you use this Focus Art, the maximum distance you can jump isn’t limited by your walking speed.</p>
+		</description>
+		<sheet action="Reaction" usage="1 Focus Point">
+			<description>When you make a jump, you can expend 1 Focus Point to double your jumping distance for that jump, and you can ignore difficult terrain until the end of your turn. When you use this Focus Art, the maximum distance you can jump isn’t limited by your walking speed.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Art" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_ELEMENTAL_ART">
+		<supports>Jaeger Focus Art</supports>
+		<description>
+			<p><i>Focus Art, bonus action</i></p>
+			<p>As a bonus action, you expend 1 Focus Point and touch a weapon you're carrying. Choose between acid, cold, fire, or lightning. For 1 minute, the weapon deals that damage type instead of its normal type.</p>
+		</description>
+		<sheet action="Reaction" usage="1 Focus Point">
+			<description>As a bonus action, you expend 1 Focus Point and touch a weapon you're carrying. Choose between acid, cold, fire, or lightning. For 1 minute, the weapon deals that damage type instead of its normal type.</description>
+		</sheet>
+	</element>
+	<element name="Focus Mind" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_FOCUS_MIND">
+		<supports>Jaeger Focus Art</supports>
+		<description>
+			<p><i>Focus Art, reaction</i></p>
+			<p>As a reaction to making a saving throw against being charmed, frightened, or having your mind read or influenced, you can expend 1 Focus Point to gain advantage on the roll. If you already have advantage on the roll, you can reroll one of the dice once.</p>
+		</description>
+		<sheet action="Reaction" usage="1 Focus Point">
+			<description>As a reaction to making a saving throw against being charmed, frightened, or having your mind read or influenced, you can expend 1 Focus Point to gain advantage on the roll. If you already have advantage on the roll, you can reroll one of the dice once.</description>
+		</sheet>
+	</element>
+	<element name="Flourish" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_FLOURISH">
+		<supports>Jaeger Focus Art</supports>
+		<p><i>Focus Art, bonus action</i></p>
+		<p>As a bonus action, you can expend 1 Focus Point and gain 1 additional Momentum die (gaining 2 Momentum dice in total, which includes the die gained through the Momentum feature from expending the Focus Point on Flourish).</p>
+		<sheet action="Bonus Action" usage="1 Focus Point">
+			<description>As a bonus action, you can expend 1 Focus Point and gain 1 additional Momentum die (gaining 2 Momentum dice in total, which includes the die gained through the Momentum feature from expending the Focus Point on Flourish).</description>
+		</sheet>
+	</element>
+	<element name="I Don't Want to Be Eaten Today" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_I_DONT_WANT_TO_BE_EATEN">
+		<supports>Jaeger Focus Art</supports>
+		<description>
+			<p><i>Focus Art, reaction</i></p>
+			<p>As a reaction to becoming grappled or restrained by an effect that has an escape DC or to making a contested roll against these conditions, you can expend 1 Focus Point to attempt to immediately escape the effect, making an Athletics or Acrobatics check against the escape DC, or to gain advantage on the contested roll.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Focus Point">
+			<description>As a reaction to becoming grappled or restrained by an effect that has an escape DC or to making a contested roll against these conditions, you can expend 1 Focus Point to attempt to immediately escape the effect, making an Athletics or Acrobatics check against the escape DC, or to gain advantage on the contested roll.</description>
+		</sheet>
+	</element>
+	<element name="Jaeger's Rush" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_JAEGERS_RUSH">
+		<supports>Jaeger Focus Art</supports>
+		<description>
+			<p><i>Focus Art, bonus action</i></p>
+			<p>As a bonus action, you can expend 1 Focus Point to take the Dash action.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Focus Point">
+			<description>As a bonus action, you can expend 1 Focus Point to take the Dash action.</description>
+		</sheet>
+	</element>
+	<element name="Jaeger's Assessment" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_JAEGERS_ASSESSMENT">
+		<supports>Jaeger Focus Art</supports>
+		<description>
+			<p><i>Focus Art, bonus action</i></p>
+			<p>As a bonus action, you can expend 1 Focus Point to make an Investigation check against a creature you can see within 60 feet of you, contested by its Deception check. On success, you learn its creature type, AC, any resistances or immunities it has to damage or conditions, and any spells it is under the effect of.</p>
+			<p class="indent">Alternatively, when you take this bonus action, you can take the Search action.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Focus Point">
+			<description>As a bonus action, you can expend 1 Focus Point to make an Investigation check against a creature you can see within 60 feet of you, contested by its Deception check. On success, you learn its creature type, AC, any resistances or immunities it has to damage or conditions, and any spells it is under the effect of.&#13;
+				Alternatively, when you take this bonus action, you can take the Search action.
+			</description>
+		</sheet>
+	</element>
+	
+
+
+	<!-- Finishers -->
+	<element name="Brutal Finisher" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_BRUTAL">
+		<!-- doesnt need supports as it is given -->
+		<description>
+			<p><i>Finisher, special</i></p>
+			<p>When you hit a creature with an attack, you can expend all of your Momentum dice and add them to the damage roll. If you reduce the target to 0 hit points with this Finisher, or the target is reduced to 0 hit points before the start of your next turn, you regain 1 Focus Point.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with an attack, you can expend all of your Momentum dice and add them to the damage roll. If you reduce the target to 0 hit points with this Finisher, or the target is reduced to 0 hit points before the start of your next turn, you regain 1 Focus Point.</description>
+		</sheet>
+	</element>
+	<element name="Great Cleave Finisher" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_GREAT_CLEAVE">
+		<!-- granted by Marauder Chapter -->
+		<description>
+			<p><i>Finisher, special</i></p>
+			<p>When you hit a creature with an attack using a weapon with the two-handed property, you can expend all of your Momentum dice. When you do so, the attack deals extra damage equal to 1 Momentum die to the target, and you cleave a number of adjacent targets within reach equal to the number of dice expended. Make a melee weapon attack against each creature targeted. You regain 1 Focus Point for each creature this reduces to 0 hit points, up to your maximum number of Focus Points.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with an attack using a weapon with the two-handed property, you can expend all of your Momentum dice. When you do so, the attack deals extra damage equal to 1 Momentum die to the target, and you cleave a number of adjacent targets within reach equal to the number of dice expended. Make a melee weapon attack against each creature targeted. You regain 1 Focus Point for each creature this reduces to 0 hit points, up to your maximum number of Focus Points.</description>
+		</sheet>
+	</element>
+	<element name="Blood Drain Finisher" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_BLOOD_DRAIN">
+		<!-- granted by Sanguine Chapter -->
+		<description>
+			<p><i>Finisher, special</i></p>
+			<p>As a bonus action, you can expend all of your Momentum dice to drain the blood of a creature within 5 feet of you magically consuming its vitality as your own. The target must make a Constitution saving throw against your Blood Magic save DC. On a failed save, it takes necrotic damage equal to the number rolled on each of the expended Momentum dice. On successful save, it takes half as much damage. Success or failure, you regain hit points equal to half the necrotic damage dealt.</p>
+			<p class="indent">If the target is bloodied (has half its maximum hit points or fewer) after taking the damage from this Finisher or if you use this Finisher against a creature suffering from an effect that makes it bleed (such as Hemorrhaging Wound), you regain 1 Focus Point.</p>
+		</description>
+		<sheet alt="Blood Drain" action="Bonus Action">
+			<description>As a bonus action, you can expend all of your Momentum dice to drain the blood of a creature within 5 feet of you magically consuming its vitality as your own. The target must make a Constitution saving throw against your Blood Magic save DC. On a failed save, it takes necrotic damage equal to the number rolled on each of the expended Momentum dice. On successful save, it takes half as much damage. Success or failure, you regain hit points equal to half the necrotic damage dealt.&#13;
+				If the target is bloodied (has half its maximum hit points or fewer) after taking the damage from this Finisher or if you use this Finisher against a creature suffering from an effect that makes it bleed (such as Hemorrhaging Wound), you regain 1 Focus Point.
+			</description>
+		</sheet>
+	</element>
+	<element name="Breaking Blow Finisher" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_BREAKING_BLOW">
+		<supports>Jaeger Finisher</supports>
+		<description>
+			<p><i>Finisher, special</i></p>
+			<p>When you hit a creature with an attack, you can expend all of your Momentum dice to force the target to make a saving throw, suffering a condition for 1 minute on a failure. The DC of the save is 8 + your Strength or Dexterity modifier (your choice) + your proficiency bonus. The type of saving throw and the condition depend on the number of Momentum dice you have when you use this Finisher. You can choose to inflict a condition that requires fewer Momentum dice than you expend, but all Momentum dice are expended regardless of the condition selected.</p>
+			<p class="indent">The target can repeat its saving throw against the condition at the end of each of its turns, ending the effect on a success. If the condition inflicted is Prone, they do not need to pass a subsequent save and can end the condition by standing as normal instead.</p>
+			<p class="indent">If the target fails its initial save against the effect, you regain 1 Focus Point.</p>
+			<table>
+				<thead>
+					<tr><td>Momentum Dice</td><td>Saving Throw</td><td>Condition</td></tr>
+				</thead>
+				<tr><td>1</td><td>Strength</td><td>Prone</td></tr>
+				<tr><td>2</td><td>Constitution</td><td>Blinded</td></tr>
+				<tr><td>3</td><td>Strength</td><td>Restrained</td></tr>
+				<tr><td>4</td><td>Constitution</td><td>Stunned</td></tr>
+				<tr><td>5+</td><td>Constitution</td><td>Paralyzed</td></tr>
+			</table>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you hit a creature with an attack, you can expend all of your Momentum dice to force the target to make a saving throw (DC {{finisher:breaking blow:dc}}), suffering a condition for 1 minute on a failure. The type of saving throw and the condition depend on the number of Momentum dice you have when you use this Finisher. You can choose to inflict a condition that requires fewer Momentum dice than you expend, but all Momentum dice are expended regardless of the condition selected. &#13;
+				1:Strength:Prone, 2:Constitution:Blinded, 3:Strength:Restrained, 4:Constitution:Stunned, 5+:Constitution:Paralyzed
+			</description>
+		</sheet>
+		<rules>
+			<stat name="finisher:breaking blow:dc" value="8" />
+			<stat name="finisher:breaking blow:dc" value="proficiency" />
+			<stat name="finisher:breaking blow:dc" value="strength:modifier" bonus="base" />
+			<stat name="finisher:breaking blow:dc" value="dexterity:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Chasing Finisher" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_CHASING_FINISHER">
+		<supports>Jaeger Finisher</supports>
+		<description>
+			<p><i>Finisher, bonus action</i></p>
+			<p>As a bonus action, you expend all of your Momentum dice to move 10 feet per die expended before making a melee weapon attack. On a hit, add the expended Momentum dice to the attack’s damage roll.</p>
+			<p class="indent">If you move at least 30 feet using the Finisher, you regain 1 Focus Point.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action, you expend all of your Momentum dice to move 10 feet per die expended before making a melee weapon attack. On a hit, add the expended Momentum dice to the attack’s damage roll. If you move at least 30 feet using the Finisher, you regain 1 Focus Point.</description>
+		</sheet>
+	</element>
+	<element name="Hemorrhaging Wound" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_CHASING_HEMORRHAGING_WOUND">
+		<supports>Jaeger Finisher</supports>
+		<description>
+			<p><i>Finisher, special</i></p>
+			<p>When you hit a creature with an attack, you can expend all of your Momentum dice to rend a vicious bleeding wound. At the end of each of the creature's turns, it loses hit points equal to the Momentum dice expended. Each time it takes damage from this effect, the number of dice of damage it takes at the end of its next turn is reduced by 1, and the bleeding stops when the number of dice would be reduced to 0. A bleeding creature can make a Constitution saving throw at the end of each of its turns, after taking the damage, ending the effect on a success. The DC of the save is 8 + your Strength or Dexterity modifier (your choice) + your proficiency bonus + half the number of dice remaining, rounded down.</p>
+			<p class="indent">Applying a new bleed while the target is still bleeding does not stack, but instead refreshes the number of dice of damage taken from the bleed to the higher of the two values.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with an attack, you can expend all of your Momentum dice to rend a vicious bleeding wound. At the end of each of the creature's turns, it loses hit points equal to the Momentum dice expended. Each time it takes damage from this effect, the number of dice of damage it takes at the end of its next turn is reduced by 1, and the bleeding stops when the number of dice would be reduced to 0. A bleeding creature can make a Constitution saving throw (DC {{jaeger:hwound:dc}} + half number of dice remaining) at the end of each of its turns, after taking the damage, ending the effect on a success. &#13;
+				Applying a new bleed while the target is still bleeding does not stack, but instead refreshes the number of dice of damage taken from the bleed to the higher of the two values.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="jaeger:hwound:dc" value="8" />
+			<stat name="jaeger:hwound:dc" value="proficiency" />
+			<stat name="jaeger:hwound:dc" value="dexterity:modifier" bonus="base" />
+			<stat name="jaeger:hwound:dc" value="strength:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Opportunistic Shot" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_OPPORTUNISTIC_SHOT">
+		<supports>Jaeger Finisher</supports>
+		<description>
+			<p><i>Finisher, reaction</i></p>
+			<p>As a reaction when a creature within 20 feet of you becomes paralyzed, restrained, or stunned, you can expend all of your Momentum dice and make a single weapon attack with a firearm you are holding. On a hit, the target takes damage equal to the weapon's damage roll plus the expended Momentum dice, it is knocked prone, and you regain 1 Focus Point.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>As a reaction when a creature within 20 feet of you becomes paralyzed, restrained, or stunned, you can expend all of your Momentum dice and make a single weapon attack with a firearm you are holding. On a hit, the target takes damage equal to the weapon's damage roll plus the expended Momentum dice, it is knocked prone, and you regain 1 Focus Point.</description>
+		</sheet>
+	</element>
+	<element name="Vicious Finisher" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_VICIOUS_FINISHER">
+		<supports>Jaeger Finisher</supports>
+		<description>
+			<p><i>Finisher, bonus action</i></p>
+			<p>As a bonus action, you expend all of your Momentum dice to form a spectral beast claw around one hand and make a melee weapon attack with it against a creature within 5 feet of you. You can use your choice of your Strength or Dexterity modifier for the attack and damage rolls of this attack. On a hit, the target takes magical slashing damage equal to 1d12 + your Strength modifier + the Momentum dice expended. This attack has a higher critical hit range based on the number of Momentum dice expended, reducing the roll needed by 2 for each die, up to a maximum of scoring a critical hit on a 10-20 with 5 Momentum dice.</p>
+			<p class="indent">If the Finisher is a critical hit, you regain 1 Focus Point.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action, you expend all of your Momentum dice to form a spectral beast claw around one hand and make a melee weapon attack with it against a creature within 5 feet of you. You can use your choice of your Strength or Dexterity modifier for the attack and damage rolls of this attack. On a hit, the target takes magical slashing damage equal to 1d12 + your Strength modifier + the Momentum dice expended. This attack has a higher critical hit range based on the number of Momentum dice expended, reducing the roll needed by 2 for each die, up to a maximum of scoring a critical hit on a 10-20 with 5 Momentum dice. &#13;
+				If the Finisher is a critical hit, you regain 1 Focus Point.
+			</description>
+		</sheet>
+	</element>
+	<element name="Volley Finisher" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FINISHER_VOLLEY_FINISHER">
+		<supports>Jaeger Finisher</supports>
+		<description>
+			<p><i>Finisher, bonus action</i></p>
+			<p>As a bonus action while you are holding a firearm, you can expend all of your Momentum dice to reload and fire a spray of shots at blinding speed. Each creature in a 30-foot cone must make a Dexterity saving throw (DC = 8 + your Dexterity modifier + your proficiency bonus). On a failure, a creature takes piercing damage equal to the Momentum dice expended.</p>
+			<p class="indent">If the Finisher damages 2 or more creatures, you regain 1 Focus Point.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action while you are holding a firearm, you can expend all of your Momentum dice to reload and fire a spray of shots at blinding speed. Each creature in a 30-foot cone must make a Dexterity saving throw (DC {{jaeger:volley finsiher:dc). On a failure, a creature takes piercing damage equal to the Momentum dice expended. &#13;
+				If the Finisher damages 2 or more creatures, you regain 1 Focus Point.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="jaeger:volley finisher:dc" value="8" />
+			<stat name="jaeger:volley finisher:dc" value="dexterity:modifier" />
+			<stat name="jaeger:volley finisher:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<!-- Fighting Styles -->
+	<element name="Flexible Fighting" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_FIGHTINGSTYLE_FLEXIBLE_FIGHTING">
+		<supports>Fighting Style, Jaeger</supports>
+		<description>
+			<p>You can engage in two-weapon fighting with any weapons you can wield in one hand, including one-handed ranged weapons and weapons without the light property. When you do so, you gain a +1 bonus to the damage rolls of both weapons.</p>
+		</description>
+		<sheet>
+			<description>You can engage in two-weapon fighting with any weapons you can wield in one hand, including one-handed ranged weapons and weapons without the light property. When you do so, you gain a +1 bonus to the damage rolls of both weapons.</description>
+		</sheet>
+	</element>
+	<element name="Focused Fighting" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_FIGHTINGSTYLE_FOCUSED_FIGHTING">
+		<supports>Fighting Style, Jaeger</supports>
+		<description>
+			<p>You learn an additional Focus Art, and you gain 1 additional Focus Point</p>
+		</description>
+		<sheet>
+			<description>You learn an additional Focus Art.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Focus Art (Flexible Fighting)" supports="Jaeger Focus Art" />
+			<stat name="jaeger:focus points" value="1" />
+		</rules>
+	</element>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+		<supports>Jaeger</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+		<supports>Jaeger</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+		<supports>Jaeger</supports>
+	</append>
+	
+</elements>

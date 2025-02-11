@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Manikin</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="Manikin.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Manikin.xml" />
+		</update>
+	</info>
+
+	<!-- Manikin Race -->
+	<element name="Manikin" type="Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACE_MANIKIN">
+		<description>
+			<p>With a touch of gold, a breath of lightning, and hours of meticulous welding and articulation, a manikin is ‘born’. Often called ‘marionettes’ or ‘living dolls’, these creatures were originally the creations of the Scions, a Luyarnhian sect who seek to craft a force capable of protecting the city. Though each manikin looks different—indeed, they can resemble any race— the thin golden stitching that joins the plates of their artificial skin is a giveaway that the creature is a manmade creation.</p>
+			<p><Strong>Free Will.</Strong> Inscribed on human eyes inside their skulls are the instructions which all manikin obey. More often than not, this includes a safety system that ensures adherence to the law and prevents a manikin turning on their master. In some cases, a crafter might even cause the manikin to feel love for their creator. Conceived as animate objects capable of carrying out the instructions, manikin who express thoughts of selfliberation are often disposed of before these thoughts turn into acts. Though the Scions intentions were initially noble, playing god has given them a taste for power and they have no intention of granting free will to their animated servants.</p>
+			<h4>MANIKIN TRAITS</h4>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> As they are not alive, Manikins do not age. However, their materials slowly lose their magic essence over time, meaning they will ultimately lose control over their entire body and turn back into inanimate objects.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. You are also considered a Construct for any prerequisite or effect that requires you to be a Construct.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Manikins can be small puppets or imposing wardens. You are Medium or Small. You choose the size when you select this race.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Born to Serve.</em></strong> Manikins are made to be unable to hate or resent their creators. This lapse in judgment affects you in all circumstances. You have disadvantage on Insight checks.</p>
+			<p class="indent"><strong><em>Lightning Heart.</em></strong> You have resistance to lightning damage.</p>
+			<p class="indent"><strong><em>Living Material.</em></strong> Manikins don’t need to eat, drink, or breathe and are immune to the poisoned condition. In addition, their metallic mind is incorruptible, they have advantage on saving throws against madness.</p>
+			<p class="indent"><strong><em>Modular Gold Plating.</em></strong> Your body has built-in defensive layers, which determine your armor class. You gain no AC benefit from wearing armor, but if you are using a shield, you apply its bonus as normal. Through 8 hours of work in a specialized workshop, you can alter your defensive layers to the Medium Armor or Heavy Armor options below, or back into your Unarmored state.</p>
+			<ul class="unstyled">
+				<li>• Prerequisite: Unarmored; AC = 11 + your Dexterity modifier</li>
+				<li>• Prerequisite: Medium Armor proficiency; 13 + your Dexterity modifier (maximum of 2) or Strength modifier (maximum of 3). Choose which modifier when you gain this state.</li>
+				<li>• Prerequisite: Heavy Armor proficiency; AC = 16 + your Strength modifier (maximum of 2).</li>
+			</ul>
+			<p>If you use your Strength modifier for AC, you have disadvantage on Stealth checks.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Common.</p>
+			<p class="indent"><strong><em>Subraces.</em></strong> Manikins can be created for a variety of purposes, but they are mostly divided into three subraces: Custodian, Handler, and Thespian. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">5'</set>
+			<set name="weight">100 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Constitution +2) -->
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Manikin)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Manikin)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Creature Type -->
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_CONSTRUCT" />
+
+			<!-- Languages (Common) -->
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<!-- Size (Medium or Small) -->
+			<select type="Racial Trait" name="Size (Manikin)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+
+			<!-- Speed (30 ft. walking) -->
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<!-- Born to Serve -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_BORN_TO_SERVE" />
+
+			<!-- Lightning Heart -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_LIGHTNING_HEART" />
+
+			<!-- Living Material -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_LIVING_MATERIAL" />
+
+			<!-- Modular Gold Plating -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_MODULAR_GOLD_PLATING" />
+
+			<!-- Subrace Selection -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_SUBRACE" />
+		</rules>
+	</element>
+
+	<!-- Born to Serve Trait -->
+	<element name="Born to Serve" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_BORN_TO_SERVE">
+		<description>
+			<p>Manikins are made to be unable to hate or resent their creators. This lapse in judgment affects you in all circumstances. You have disadvantage on Insight checks.</p>
+		</description>
+		<sheet>
+			<description>Manikins are made to be unable to hate or resent their creators. This lapse in judgment affects you in all circumstances. You have disadvantage on Insight checks.</description>
+		</sheet>
+	</element>
+
+	<!-- Lightning Heart Trait -->
+	<element name="Lightning Heart" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_LIGHTNING_HEART">
+		<description>
+			<p>You have resistance to lightning damage.</p>
+		</description>
+		<sheet display="false">
+			<description>You have resistance to lightning damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+
+	<!-- Living Material Trait -->
+	<element name="Living Material" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_LIVING_MATERIAL">
+		<description>
+			<p>Manikins don’t need to eat, drink, or breathe and are immune to the poisoned condition. In addition, their metallic mind is incorruptible, they have advantage on saving throws against madness.</p>
+		</description>
+		<sheet>
+			<description>You don’t need to eat, drink, or breathe and are immune to the poisoned condition. In addition, you have advantage on saving throws against madness.</description>
+		</sheet>
+	</element>
+
+	<!-- Modular Gold Plating Trait -->
+	<element name="Modular Gold Plating" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_MODULAR_GOLD_PLATING">
+		<description>
+			<p>Your body has built-in defensive layers, which determine your armor class. You gain no AC benefit from wearing armor, but if you are using a shield, you apply its bonus as normal. Through 8 hours of work in a specialized workshop, you can alter your defensive layers to the Medium Armor or Heavy Armor options below, or back into your Unarmored state.</p>
+			<ul class="unstyled">
+				<li>Prerequisite: Unarmored; AC = 11 + your Dexterity modifier</li>
+				<li>Prerequisite: Medium Armor proficiency; 13 + your Dexterity modifier (maximum of 2) or Strength modifier (maximum of 3). Choose which modifier when you gain this state.</li>
+				<li>Prerequisite: Heavy Armor proficiency; AC = 16 + your Strength modifier (maximum of 2).</li>
+			</ul>
+			<p>If you use your Strength modifier for AC, you have disadvantage on Stealth checks.</p>
+		</description>
+		<sheet display="false">
+			<description>Your body has built-in defensive layers, which determine your armor class. You gain no AC benefit from wearing armor, but if you are using a shield, you apply its bonus as normal. Through 8 hours of work in a specialized workshop, you can alter your defensive layers to the Medium Armor or Heavy Armor options below, or back into your Unarmored state.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Modular Gold Plating (Manikin)" supports="Manikin Armor" />
+		</rules>
+	</element>
+
+	<!-- Unarmored Option -->
+	<element name="Unarmored" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_UNARMORED">
+		<supports>Manikin Armor</supports>
+		<description>
+			<p>Prerequisite: Unarmored; AC = 11 + your Dexterity modifier</p>
+		</description>
+		<sheet>
+			<description>AC = 11 + your Dexterity modifier</description>
+		</sheet>
+		<rules>
+			<stat name="ac:manikin unarmored" value="11" />
+			<stat name="ac:manikin unarmored" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:manikin unarmored" bonus="calculation" equipped="[armor:none]" alt="Manikin Unarmored" />
+		</rules>
+	</element>
+
+
+	<!-- Medium Armor Option -->
+	<element name="Medium Armor" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_MEDIUM_ARMOR">
+		<supports>Manikin Armor</supports>
+		<requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
+		<description>
+			<p>Prerequisite: Medium Armor proficiency; 13 + your Dexterity modifier (maximum of 2) or Strength modifier (maximum of 3). Choose which modifier when you gain this state.</p>
+		</description>
+		<sheet display="false">
+			<description>13 + your Dexterity modifier (maximum of 2) or Strength modifier (maximum of 3). Choose which modifier when you gain this state.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Medium Armor Modifier" supports="Manikin Medium Armor" />
+		</rules>
+	</element>
+
+	<!-- Medium Armor (Dexterity) -->
+	<element name="Medium Armor (Dexterity)" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_MEDIUM_ARMOR_DEXTERITY">
+		<supports>Manikin Medium Armor</supports>
+		<description>
+			<p>AC = 13 + your Dexterity modifier (maximum of 2).</p>
+		</description>
+		<sheet>
+			<description>AC = 13 + your Dexterity modifier (maximum of 2).</description>
+		</sheet>
+		<rules>
+			<stat name="ac:manikin medium" value="13" />
+			<stat name="ac:manikin medium" value="dexterity:modifier" maximum="2"/>
+			<stat name="ac:calculation" value="ac:manikin medium" bonus="calculation" equipped="[armor:none]" alt="Manikin Medium (Dexterity)" />
+		</rules>
+	</element>
+
+	<!-- Medium Armor (Strength) -->
+	<element name="Medium Armor (Strength)" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_MEDIUM_ARMOR_STRENGTH">
+		<supports>Manikin Medium Armor</supports>
+		<description>
+			<p>AC = 13 + your Strength modifier (maximum of 3).</p>
+		</description>
+		<sheet>
+			<description>AC = 13 + your Strength modifier (maximum of 3).</description>
+		</sheet>
+		<rules>
+			<stat name="ac:manikin medium" value="13" />
+			<stat name="ac:manikin medium" value="strength:modifier" maximum="3"/>
+			<stat name="ac:calculation" value="ac:manikin medium" bonus="calculation" equipped="[armor:none]" alt="Manikin Medium (Strength)" />
+		</rules>
+	</element>
+
+	<!-- Heavy Armor Option -->
+	<element name="Heavy Armor" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_HEAVY_ARMOR">
+		<supports>Manikin Armor</supports>
+		<requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</requirements>
+		<description>
+			<p>Prerequisite: Heavy Armor proficiency; AC = 16 + your Strength modifier (maximum of 2).</p>
+			<p>If you use your Strength modifier for AC, you have disadvantage on Stealth checks.</p>
+		</description>
+		<sheet>
+			<description>AC = 16 + your Strength modifier (maximum of 2).</description>
+		</sheet>
+		<rules>
+			<stat name="ac:manikin heavy" value="16" />
+			<stat name="ac:manikin heavy" value="strength:modifier" maximum="2"/>
+			<stat name="ac:calculation" value="ac:manikin heavy" bonus="calculation" equipped="[armor:none]" alt="Manikin Heavy" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+		</rules>
+	</element>
+
+	<!-- Subrace Trait (Placeholder) -->
+	<element name="Manikin Subrace" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_SUBRACE">
+		<description>
+			<p>Manikins can be created for a variety of purposes, but they are mostly divided into three subraces: Custodian, Handler, and Thespian. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Manikin Subrace" supports="Manikin" />
+		</rules>
+	</element>
+
+	<!-- Custodian Subrace -->
+	<element name="Custodian" type="Sub Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_SUBRACE_MANIKIN_CUSTODIAN">
+		<supports>Manikin</supports>
+		<description>
+			<p>Custodians are built as an alternative to golems and commonly find use as butlers, laborers, and cannon fodder. Sentient beings, they are sworn to defend the person –or customer– for whom they were created. The death of their owner often leaves them aimless, wandering the world like masterless hedge knights in search of meaning.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Careful Defender.</em></strong> Designed to protect, you are adept at throwing yourself in the way of harm to shield others. When a creature within 5 feet of you is targeted by an attack, you can use your reaction to jump in front of it. If the creature is willing, you switch places with it, becoming the target of the attack instead. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Strength +1) -->
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Custodian)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Careful Defender -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_CUSTODIAN_CAREFUL_DEFENDER" />
+
+			<!-- Powerful Build -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_CUSTODIAN_POWERFUL_BUILD" />
+		</rules>
+	</element>
+
+	<!-- Careful Defender Trait -->
+	<element name="Careful Defender" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_CUSTODIAN_CAREFUL_DEFENDER">
+		<description>
+			<p>Designed to protect, you are adept at throwing yourself in the way of harm to shield others. When a creature within 5 feet of you is targeted by an attack, you can use your reaction to jump in front of it. If the creature is willing, you switch places with it, becoming the target of the attack instead. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Reaction">
+			<description>Designed to protect, you are adept at throwing yourself in the way of harm to shield others. When a creature within 5 feet of you is targeted by an attack, you can use your reaction to jump in front of it. If the creature is willing, you switch places with it, becoming the target of the attack instead.</description>
+		</sheet>
+	</element>
+
+	<!-- Powerful Build Trait -->
+	<element name="Powerful Build" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_CUSTODIAN_POWERFUL_BUILD">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+	</element>
+
+	<!-- Handler Subrace -->
+	<element name="Handler" type="Sub Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_SUBRACE_MANIKIN_HANDLER">
+		<supports>Manikin</supports>
+		<description>
+			<p>Handlers are designed for espionage. Matte pigments and a slim build help handlers disappear into the shadows, while their hidden weapons can be quickly equipped and stowed for swift assassinations.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Inconspicuous Appearance.</em></strong> You are a master at blending into your surroundings. You gain proficiency in the Stealth skill and with disguise kits.</p>
+			<p class="indent"><strong><em>Embedded Armament.</em></strong> You can have up to two melee weapons embedded within your body. Each weapon must have either the finesse or light property. During a short rest, you can remove one or both weapons and exchange them for other appropriate weapons you are holding. As a bonus action, you can draw or stow one or both of these embedded weapons. You can’t be disarmed of your embedded weapons, short of having your arms cut off.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Dexterity +1) -->
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Handler)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Inconspicuous Appearance -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_HANDLER_INCONSPICUOUS_APPEARANCE" />
+
+			<!-- Embedded Armament -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_HANDLER_EMBEDDED_ARMAMENT" />
+		</rules>
+	</element>
+
+	<!-- Inconspicuous Appearance Trait -->
+	<element name="Inconspicuous Appearance" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_HANDLER_INCONSPICUOUS_APPEARANCE">
+		<description>
+			<p>You are a master at blending into your surroundings. You gain proficiency in the Stealth skill and with disguise kits.</p>
+		</description>
+		<sheet display="false">
+			<description>You are a master at blending into your surroundings. You gain proficiency in the Stealth skill and with disguise kits.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+		</rules>
+	</element>
+
+	<!-- Embedded Armament Trait -->
+	<element name="Embedded Armament" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_HANDLER_EMBEDDED_ARMAMENT">
+		<description>
+			<p>You can have up to two melee weapons embedded within your body. Each weapon must have either the finesse or light property. During a short rest, you can remove one or both weapons and exchange them for other appropriate weapons you are holding. As a bonus action, you can draw or stow one or both of these embedded weapons. You can’t be disarmed of your embedded weapons, short of having your arms cut off.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can have up to two melee weapons embedded within your body. Each weapon must have either the finesse or light property. During a short rest, you can remove one or both weapons and exchange them for other appropriate weapons you are holding. As a bonus action, you can draw or stow one or both of these embedded weapons. You can’t be disarmed of your embedded weapons, short of having your arms cut off.</description>
+		</sheet>
+	</element>
+
+	<!-- Thespian Subrace -->
+	<element name="Thespian" type="Sub Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_SUBRACE_MANIKIN_THESPIAN">
+		<supports>Manikin</supports>
+		<description>
+			<p>Made to entertain, thespians bring joy to nobles, the clergy, and commoners alike. The only type of manikin designed without lethal intent, these manikins’ bodies are supported by invisible, intangible strings, allowing them to move seemingly in defiance of physics. As the plague worsened, the Scions bent their will to producing manikins capable of combating the Scourge, and so the number of thespians has steadily dwindled.</p>
+            <div class="sidebar">
+            <p class="flavor">Thespians are dolls often created in the image of a living being. Sometimes this is borne of innocent adoration. At others, it is the product of malicious obsession.</p></div>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Artist's Puppet.</em></strong> You gain proficiency in the Performance skill.</p>
+			<p class="indent"><strong><em>Ethereal Strings.</em></strong> As a bonus action, you can attach yourself to a willing creature you can see within 30 feet of you via a set of immaterial strings for 1 hour. If the creature you’re attached to doesn’t use all of its movement on its turn (if it has multiple movement speeds, pick the highest one), you can use your reaction at the end of the turn to move a number of feet equal to its remaining movement. Once you attach yourself to a creature in this way, you can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Charisma +1) -->
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Thespian)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Artist's Puppet -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_THESPIAN_ARTISTS_PUPPET" />
+
+			<!-- Ethereal Strings -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_THESPIAN_ETHEREAL_STRINGS" />
+		</rules>
+	</element>
+
+	<!-- Artist's Puppet Trait -->
+	<element name="Artist's Puppet" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_THESPIAN_ARTISTS_PUPPET">
+		<description>
+			<p>You gain proficiency in the Performance skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in the Performance skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+		</rules>
+	</element>
+
+	<!-- Ethereal Strings Trait -->
+	<element name="Ethereal Strings" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_THESPIAN_ETHEREAL_STRINGS">
+		<description>
+			<p>As a bonus action, you can attach yourself to a willing creature you can see within 30 feet of you via a set of immaterial strings for 1 hour. If the creature you’re attached to doesn’t use all of its movement on its turn (if it has multiple movement speeds, pick the highest one), you can use your reaction at the end of the turn to move a number of feet equal to its remaining movement. Once you attach yourself to a creature in this way, you can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Bonus Action">
+			<description>As a bonus action, you can attach yourself to a willing creature you can see within 30 feet of you via a set of immaterial strings for 1 hour. If the creature you’re attached to doesn’t use all of its movement on its turn (if it has multiple movement speeds, pick the highest one), you can use your reaction at the end of the turn to move a number of feet equal to its remaining movement.</description>
+		</sheet>
+	</element>
+</elements>

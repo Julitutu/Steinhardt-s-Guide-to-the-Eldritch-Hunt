@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Demidritch</name>
+		<file name="race-demidritch.xml" url="https://www.monkeydm.com/1-steinhardt" />
+	</info>
+	<element name="Demidritch" type="Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_RACE_DEMIDRITCH">
+		<description>
+			<html>&lt;p&gt;Easily distinguished by their eyes—brightly colored irises that swirl like galaxies in a jet-black sclera— demidritch occupy a precarious precipice in the minds of Luyarnhians, equal parts revered and abhorred. Born of a union between humanoids and eldritch beings, demidritch are often referred to as ‘half-angels’, a misnomer arising from Luyarnhians’ mistaken belief that these creatures are descended from celestials. Stories abound of radiant silhouettes—eldritch creatures wreathed in powerful illusions—appearing unto pregnant Luyarnhians and blessing their progeny with otherworldly powers.&lt;/p&gt;&lt;br&gt;
+&lt;p class="indent"&gt;While the Radiant Church espouses no stance on the morality of such beings, elements amongst their ranks, most notably the bookish Obitus Scholare, prize the demidritch as precious specimens that may provide the key to humanity's survival. The deeds of the righteous demidritch Aitzaz, a first hunter and close friend of Steinhardt, are widely recounted by bards and minstrels across the city. His death at the hands of the ravenous scourge while evacuating schoolchildren precipitated a shift in the treatment of demidritch by Luyarnhians. Though they may have otherworldly origins, the alignment of demidritch, like most humanoids, is a product of their environment and upbringing.&lt;/p&gt;
+
+&lt;h4&gt;TRAITS&lt;/h4&gt;
+&lt;span class="feature"&gt;Ability Score Increase. &lt;/span&gt;Your Charisma score increases by 2.&lt;br /&gt;
+&lt;span class="feature"&gt;Age. &lt;/span&gt;Demidritchs mature faster than humans, reaching adulthood after 10 years. Their eldritch powers cause their body to decay much faster, they can live up to 60 years old.&lt;br /&gt;
+&lt;span class="feature"&gt;Size. &lt;/span&gt;Demidritchs have the same range of height and weight as humans. Your size is Medium.&lt;br /&gt;
+&lt;span class="feature"&gt;Speed. &lt;/span&gt;Your base walking speed is 30 feet.&lt;br /&gt;
+&lt;span class="feature"&gt;Darkvision. &lt;/span&gt;Your many eyes were made to see through the darkness of space. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.&lt;br /&gt;
+&lt;span class="feature"&gt;Shard of Infinity. &lt;/span&gt;You are born of the galaxies and their endless void. You have resistance to cold damage.&lt;br /&gt;
+&lt;span class="feature"&gt;Astral Being. &lt;/span&gt;Your many eyes grant you sight. You have advantage on saving throws against being blinded.&lt;br /&gt;
+&lt;span class="feature"&gt;Languages.&lt;/span&gt;You can speak, read, and write Common and Deep Speech.&lt;br /&gt;
+&lt;span class="feature"&gt;Subraces. &lt;/span&gt;Depending on their lineage, demidritchs have different subraces, which represent their variation. The DC for abilities given by the subraces is equal to 8 + twice your proficiency bonus.&lt;br /&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_MON_SGTTEH_RACIAL_TRAIT_DARKVISION_DEMI" />
+			<grant type="Racial Trait" id="ID_MON_SGTTEH_RACIAL_TRAIT_SHARD_OF_INFINITY" />
+			<grant type="Racial Trait" id="ID_MON_SGTTEH_RACIAL_TRAIT_ASTRAL_BEING" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+			<grant type="Racial Trait" id="ID_MON_SGTTEH_RACIAL_TRAIT_DEMIDRITCH_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Darkvision" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_RACIAL_TRAIT_DARKVISION_DEMI">
+		<description>
+			<html>&lt;p&gt;Your many eyes were made to see through the darkness of space. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Your many eyes were made to see through the darkness of space. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+		</rules>
+	</element>
+	<element name="Shard of Infinity" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_RACIAL_TRAIT_SHARD_OF_INFINITY">
+		<description>
+			<html>&lt;p&gt;Shard of Infinity. You are born of the galaxies and their endless void. You have resistance to cold damage.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You are born of the galaxies and their endless void. You have resistance to cold damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Astral Being" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_RACIAL_TRAIT_ASTRAL_BEING">
+		<description>
+			<html>&lt;p&gt;Your many eyes grant you sight. You have advantage on saving throws against being blinded.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Your many eyes grant you sight. You have advantage on saving throws against being blinded.</description>
+		</sheet>
+	</element>
+	<element name="Demidritch Subrace" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_RACIAL_TRAIT_DEMIDRITCH_SUBRACE">
+		<description>
+			<html>&lt;p&gt;Depending on their lineage, demidritchs have different subraces, which represent their variation. The DC for abilities given by the subraces is equal to 8 + twice your proficiency bonus.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Demidritch Subrace" supports="Demidritch" />
+		</rules>
+	</element>
+	<element name="Oculare" type="Sub Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SUB_RACE_OCULARE">
+		<supports>Demidritch</supports>
+		<description>
+			<html>&lt;p&gt;Also called observers, the many-eyed, and watchers, oculare always possess a greater allocation of eyes than one might expect. Commoners often describe the feeling of being watched when in the presence of oculare; in fact, such individuals commonly find themselves in the employ of the militia or church as investigators, their natural perceptiveness giving them a keen advantage.&lt;/p&gt;
+&lt;h4&gt;TRAITS&lt;/h4&gt;
+&lt;span class="feature"&gt;Ability Score Increase. &lt;/span&gt;Your Constitution score increases by 1.&lt;br /&gt;
+&lt;span class="feature"&gt;All Seeing Eyes. &lt;/span&gt;Starting at 3rd level, you can use your action to unleash your progenitor’s eldritch energy, causing eyes that glow with an ethereal quality to open along your body and clothing for 1 minute. For the duration, creatures within 60 feet of you can’t gain advantage on attack rolls against you as a result of being invisible or unseen.&lt;br&gt; Starting at level 12 you also grow eye-covered eldritch wings which grant you a flying speed of 30 feet and the ability to see invisibility out to a range of 60 feet.&lt;br&gt; Once you use this trait, you can't use it again until you finish a long rest.&lt;br /&gt;
+&lt;span class="feature"&gt;Watchers. &lt;/span&gt;You are proficient in the Perception skill.&lt;br /&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" />
+			<grant type="Racial Trait" id="ID_MON_SGTTEH_RACIAL_TRAIT_ALL_SEEING_EYES" level="3" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+	<element name="Nebulare" type="Sub Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SUB_RACE_NEBULARE">
+		<supports>Demidritch</supports>
+		<description>
+			<html>&lt;p&gt;Beneath the translucent skin of the nebulare flit constellations of multihued lights: galaxy-like swirls and nebulous clouds. In times of great peril, these colorful displays can erupt in a supernova-like display of radiant brilliance, creating localised gravitational fields that help ensure the escape, and continued proliferation, of the nebular demidritch.&lt;/p&gt;
+&lt;p class="indent"&gt;Though the progenitor of the nebulare, an Outer God, has created no new nabulare for some time, the bloodline can go dormant for several generations, manifesting seemingly at random among newborns. Of course, with the Radiant Church experimentation in full swing, whether or not the recurrence of nebulare is really at random is an unanswered question.&lt;/p&gt;
+&lt;h4&gt;TRAITS&lt;/h4&gt;
+&lt;span class="feature"&gt;Ability Score Increase. &lt;/span&gt;Your Strength score increases by 1.&lt;br /&gt;
+&lt;span class="feature"&gt;Astral Attraction. &lt;/span&gt;Starting at 3rd level, you can use your action to unleash the potential energy within yourself, causing your body to erupt with power and transforming it for 1 minute.&lt;br /&gt;
+When you first transform, each creature other than you in a 10-foot radius centered on you must succeed on a Dexterity saving throw or take a number of d6s of radiant damage from the explosion equal to your proficiency bonus.&lt;br /&gt;
+While transformed in this way, you shed bright light in a 10-foot radius and dim light for an additional 10 feet. You generate a powerful gravitational field. The area within a 20-foot radius centered on you is considered difficult terrain for creatures of your choice that you can see. Starting at level 12, this radius increases to 60 feet and you can ignore gravity, granting a flying speed of 30 feet during which you can hover. &lt;br /&gt;
+Once you use this trait, you can't use it again until you finish a long rest.</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" />
+			<grant type="Racial Trait" id="ID_MON_SGTTEH_RACIAL_TRAIT_ASTRAL_ATTRACTION" />
+			<grant type="Racial Trait" id="ID_MON_SGTTEH_RACIAL_TRAIT_GLOW" />
+		</rules>
+	</element>
+	<element name="All Seeing Eyes." type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_RACIAL_TRAIT_ALL_SEEING_EYES">
+		<supports>Demidritch</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, you can use your action to unleash your progenitor’s eldritch energy, causing eyes that glow with an ethereal quality to open along your body and clothing for 1 minute. For the duration, creatures within 60 feet of you can’t gain advantage on attack rolls against you as a result of being invisible or unseen.&lt;/p&gt;
+&lt;p&gt;Starting at level 12 you also grow eye-covered eldritch wings which grant you a flying speed of 30 feet and the ability to see invisibility out to a range of 60 feet.&lt;/p&gt;
+&lt;p&gt;Once you use this trait, you can't use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description level="3">You can use your action to unleash your progenitor’s eldritch energy, causing eyes that glow with an ethereal quality to open along your body and clothing for 1 minute. For the duration, creatures within 60 feet of you can’t gain advantage on attack rolls against you as a result of being invisible or unseen. Once you use this trait, you can't use it again until you finish a long rest.</description>
+			<description level="12">You can use your action to unleash your progenitor’s eldritch energy, causing eyes that glow with an ethereal quality to open along your body and clothing for 1 minute. You also grow eye-covered eldritch wings which grant you a flying speed of 30 feet and the ability to see invisibility out to a range of 60 feet. For the duration, creatures within 60 feet of you can’t gain advantage on attack rolls against you as a result of being invisible or unseen. Once you use this trait, you can't use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Glow" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_RACIAL_TRAIT_GLOW">
+		<supports>Demidritch</supports>
+		<description>
+			<html>&lt;p&gt;You can cast the light cantrip on your own body at will.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You can cast the light cantrip on your own body at will.</description>
+		</sheet>
+	</element>
+	<element name="Astral Attraction" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_RACIAL_TRAIT_ASTRAL_ATTRACTION">
+		<supports>Demidritch</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, you can use your action to unleash the potential energy within yourself, causing your body to erupt with power and transforming it for 1 minute.&lt;/p&gt;
+&lt;p class="indent"&gt;When you first transform, each creature other than you in a 10-foot radius centered on you must succeed on a Dexterity saving throw or take a number of d6s of radiant damage from the explosion equal to your proficiency bonus.&lt;/p&gt;
+&lt;p class="indent"&gt;While transformed in this way, you shed bright light in a 10-foot radius and dim light for an additional 10 feet. You generate a powerful gravitational field. The area within a 20-foot radius centered on you is considered difficult terrain for creatures of your choice that you can see. Starting at level 12, this radius increases to 60 feet and you can ignore gravity, granting a flying speed of 30 feet during which you can hover.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this trait, you can't use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description level="3">You can use your action to unleash the potential energy within yourself, causing your body to erupt with power and transforming it for 1 minute.&lt;br&gt;
+When you first transform, each creature other than you in a 10-foot radius centered on you must succeed on a Dexterity saving throw or take a number of d6s of radiant damage from the explosion equal to your proficiency bonus.&lt;br&gt;
+While transformed in this way, you shed bright light in a 10-foot radius and dim light for an additional 10 feet. You generate a powerful gravitational field. The area within a 20-foot radius centered on you is considered difficult terrain for creatures of your choice that you can see. &lt;br&gt;
+Once you use this trait, you can't use it again until you finish a long rest.</description>
+			<description level="12">You can use your action to unleash the potential energy within yourself, causing your body to erupt with power and transforming it for 1 minute.&lt;br&gt;
+When you first transform, each creature other than you in a 10-foot radius centered on you must succeed on a Dexterity saving throw or take a number of d6s of radiant damage from the explosion equal to your proficiency bonus.&lt;br&gt;
+While transformed in this way, you shed bright light in a 10-foot radius and dim light for an additional 10 feet. You generate a powerful gravitational field. The area within a 60-foot radius centered on you is considered difficult terrain for creatures of your choice that you can see.  You can ignore gravity, granting a flying speed of 30 feet during which you can hover.&lt;br&gt;
+Once you use this trait, you can't use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of the Eldritch Hunt</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="Oath of the Eldritch Hunt.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Oath of the Eldritch Hunt.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Eldritch Hunt" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_PALADIN_OATH_OF_THE_ELDRITCH_HUNT">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of the Eldritch Hunt is sworn to the eradication of the unnatural, the aberrant, and the alien. These hunters tread a fine line, enhancing themselves with their prey’s powers whilst trying to maintain their own sanity. Unfortunately, this frenzied hunger drives many to madness, and it is no rare occurrence for these paladins to have to hunt their own. This oath is found most frequently among paladins of the Radiant Order. Erroneously nicknamed grey templars, witch hunters, and knights aberrant, these oft-deformed warriors devote themselves to obliterating the scourge and its creations.</p>
+			<p class="indent"><b>Tenets of the Eldritch Hunt</b></p>
+			<p><b><i>Resolve.</i></b> Through willpower and tenacity, the strain of the hunt is endured; aching limbs and ailing minds are no reason to fall short.</p>
+			<p><b><i>Respect.</i></b> Take life only when doing so protects others. Kill only when necessary, lest the bloodshed enamour your soul and hunter becomes beast.</p>
+			<p><b><i>Responsibility.</i></b> Many rely on your talent to survive the moonlit nights. No matter the circumstances, do not fail them. Sacrifice your own body so that others can retain the sanctity of their own, untainted forms.</p>
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_OATH_SPELLS" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_CHANNEL_DIVINITY" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_SHARPENED_SENSES" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_FIND_WEAKNESS" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_PERFECT_HUNTER" />
+		</description>
+		<sheet display="false">
+			<description>The Oath of the Eldritch Hunt is sworn to the eradication of the unnatural, the aberrant, and the alien. These hunters tread a fine line, enhancing themselves with their prey’s powers whilst trying to maintain their own sanity.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_SHARPENED_SENSES" level="7" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_FIND_WEAKNESS" level="15" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_PERFECT_HUNTER" level="20" />
+		</rules>
+	</element>
+
+	<element name="Oath Spells" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5>Oath of the Eldritch Hunt Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>faerie fire, spectral slash</i></td></tr>
+				<tr><td>5th</td><td><i>moonbeam, hold person</i></td></tr>
+				<tr><td>9th</td><td><i>displacing maw, spectral fury</i></td></tr>
+				<tr><td>13th</td><td><i>black tentacles, maiden of bones</i></td></tr>
+				<tr><td>17th</td><td><i>contact other plane, hold monster</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_SGEH_SPELL_SPECTRAL_SLASH" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_SGEH_SPELL_DISPLACING_MAW" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_SGEH_SPELL_SPECTRAL_FURY" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLACK_TENTACLES" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_SGEH_SPELL_MAIDEN_OF_BONES" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTACT_OTHER_PLANE" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_CHANNEL_DIVINITY">
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+			<p class="indent"><b><i>Hunt the Prey.</i></b> As a bonus action, you can call upon the sanctified hunt. You designate a creature within 60 feet of you as your prey, marking the target for 1 minute. As part of casting this channel divinity, and as a bonus action on subsequent turns, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the marked target. To teleport in this way, you must be able to see the marked target.</p>
+			<p class="indent"><b><i>Stolen Eldritch Gift.</i></b> As a bonus action, you can use your channel divinity to enhance your body beyond your mortal limits. For 10 minutes, you can add your Charisma modifier to any Athletics, Acrobatics, and Perception checks that you make.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain the following two Channel Divinity options.&#13;
+			• Hunt the Prey. As a bonus action, you can call upon the sanctified hunt. You designate a creature within 60 feet of you as your prey, marking the target for 1 minute. As part of casting this channel divinity, and as a bonus action on subsequent turns, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the marked target. To teleport in this way, you must be able to see the marked target.&#13;
+			• Stolen Eldritch Gift. As a bonus action, you can use your channel divinity to enhance your body beyond your mortal limits. For 10 minutes, you can add your Charisma modifier to any Athletics, Acrobatics, and Perception checks that you make.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_CHANNEL_DIVINITY_HUNT_THE_PREY" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_CHANNEL_DIVINITY_STOLEN_ELDRITCH_GIFT" />
+		</rules>
+	</element>
+
+    <element name="Channel Divinity: Hunt the Prey" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_CHANNEL_DIVINITY_HUNT_THE_PREY">
+        <description>
+            <p>As a bonus action, you can call upon the sanctified hunt. You designate a creature within 60 feet of you as your prey, marking the target for 1 minute. As part of casting this channel divinity, and as a bonus action on subsequent turns, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the marked target. To teleport in this way, you must be able to see the marked target.</p>
+        </description>
+        <sheet action="Bonus Action" usage="Channel Divinity">
+            <description>As a bonus action, you can call upon the sanctified hunt. You designate a creature within 60 feet of you as your prey, marking the target for 1 minute. As part of casting this channel divinity, and as a bonus action on subsequent turns, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the marked target. To teleport in this way, you must be able to see the marked target.</description>
+        </sheet>
+    </element>
+
+    <element name="Channel Divinity: Stolen Eldritch Gift" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_CHANNEL_DIVINITY_STOLEN_ELDRITCH_GIFT">
+        <description>
+            <p>As a bonus action, you can use your channel divinity to enhance your body beyond your mortal limits. For 10 minutes, you can add your Charisma modifier to any Athletics, Acrobatics, and Perception checks that you make.</p>
+        </description>
+        <sheet action="Bonus Action" usage="Channel Divinity">
+            <description>As a bonus action, you can use your channel divinity to enhance your body beyond your mortal limits. For 10 minutes, you can +{{charisma:modifier}} to any Athletics, Acrobatics, and Perception checks that you make.</description>
+        </sheet>
+    </element>
+
+	<element name="Sharpened Senses" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_SHARPENED_SENSES">
+		<description>
+			<p>At 7th level, you have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, within that range, no creature can hide from you.</p>
+			<p class="indent">At 18th level, this range increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You have blindsight with a range of {{blindsight:range}} feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, within that range, no creature can hide from you.</description>
+		</sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+            <stat name="blindsight:range" value="10" bonus="base" />
+            <stat name="blindsight:range" value="30" level="18" bonus="base" />
+        </rules>
+	</element>
+
+	<element name="Find Weakness" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_FIND_WEAKNESS">
+		<description>
+			<p>At 15th level, you have learned to read your prey to find any flaws they might possess. When you deal damage to a creature, you learn any damage resistances, immunities, or vulnerabilities that it has.</p>
+			<p class="indent">In addition, whenever you use your Hunt the Prey channel divinity, you can make a single weapon attack against the marked target when you reappear, as part of the same bonus action.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage to a creature, you learn any damage resistances, immunities, or vulnerabilities that it has.&#13;
+			In addition, whenever you use your Hunt the Prey channel divinity, you can make a single weapon attack against the marked target when you reappear, as part of the same bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Perfect Hunter" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OATH_OF_THE_ELDRITCH_HUNT_PERFECT_HUNTER">
+		<description>
+			<p>At 20th level, you are the embodiment of the eldritch hunt. None can get in the way of your kill. As a bonus action, you activate the power of the true hunter. For the next minute, you gain the following benefits:</p>
+			<ul>
+				<li>You become invisible.</li>
+				<li>You cannot be grappled, restrained, or paralyzed.</li>
+				<li>Your weapon attacks deal an extra 1d8 necrotic damage, which bypasses resistance.</li>
+			</ul>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Bonus Action">
+			<description>As a bonus action, you activate the power of the true hunter. For the next minute, you gain the following benefits:&#13;
+			• You become invisible.&#13;
+			• You cannot be grappled, restrained, or paralyzed.&#13;
+			• Your weapon attacks deal an extra 1d8 necrotic damage, which bypasses resistance.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,175 @@
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from Steinhardt's Guide to the Eldritch Hunt.</description>
+		<update version="0.1.0">
+			<file name="Feats.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/Feats.xml" />
+		</update>
+	</info>
+
+	<element name="Brutal Attacker" type="Feat" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FEAT_BRUTAL_ATTACKER">
+		<prerequisite>1st-level jaeger, Strength 18 or higher</prerequisite>
+		<requirements>[str:18],ID_MDM_SGEH_CLASS_JAEGER</requirements>
+		<description>
+			<p>You master a reckless approach that maximizes your offensive capabilities.</p>
+			<ul>
+				<li>You can wield a two-handed weapon in one hand, as long as your other hand is empty or wielding a one handed weapon.</li>
+				<li>When you reduce a creature to 0 hit points, your next attack roll before the end of your next turn gains advantage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can wield a two-handed weapon in one hand, as long as your other hand is empty or wielding a one handed weapon.&#13;
+			When you reduce a creature to 0 hit points, your next attack roll before the end of your next turn gains advantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Cannoneer" type="Feat" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FEAT_CANNONEER">
+		<prerequisite>8th Level, Strength 19 or higher</prerequisite>
+		<requirements>[str:19],[level:8]</requirements>
+		<description>
+			<p>The best defense is a good offense, and the best offense is a cannon; which you’re an expert at:</p>
+			<ul>
+				<li>Increase your Strength score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency with cannons.</li>
+				<li>You can reload cannons as a bonus action instead of an action. You can use this bonus action only if you haven’t moved during your turn, and after you use the bonus action, your speed is 0 until the end of your turn. Starting at 11th level, this doesn't hinder your movement, and you can use one of your attacks to reload instead. Starting at 20th level, you can ignore the artillery property of cannons.</li>
+				<li>You know how to expertly handle cannons and their ammunition; the weight of cannons and cannonballs count as half for you.</li>
+				<li>Your attacks with cannons deal double damage against objects and structures.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can reload cannons as a bonus action instead of an action. You can use this bonus action only if you haven’t moved during your turn, and after you use it, your speed is 0 until the end of your turn.&#13;
+			The weight of cannons and cannonballs count as half for you.&#13;
+			Your attacks with cannons deal double damage against objects and structures.</description>
+            <description level="11">You can reload cannons as a bonus action instead of an action. You can use this bonus action only if you haven’t moved during your turn, and after you use it, your speed is 0 until the end of your turn.&#13;
+			Reloading doesn't hinder your movement, and you can use one of your attacks to reload instead.&#13;
+			The weight of cannons and cannonballs count as half for you.&#13;
+			Your attacks with cannons deal double damage against objects and structures.</description>
+            <description level="20">You can reload cannons as a bonus action instead of an action. You can use this bonus action only if you haven’t moved during your turn, and after you use it, your speed is 0 until the end of your turn.&#13;
+			Reloading doesn't hinder your movement, and you can use one of your attacks to reload instead.&#13;
+			You can ignore the artillery property of cannons.&#13;
+			The weight of cannons and cannonballs count as half for you.
+			Your attacks with cannons deal double damage against objects and structures.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CANNON" />
+		</rules>
+	</element>
+
+	<element name="Cosmos Touched" type="Feat" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FEAT_COSMOS_TOUCHED">
+		<description>
+			<p>Your exposure to the cosmos has changed you, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li>You learn the alter self spell and one 1st-level abjuration or transmutation spell of your choice. You can cast each of these spells once without expending a spell slot. Once you cast either of these feat’s spells, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is the ability score increased by this feat.</li>
+			</ul>
+		</description>
+		<sheet usage="1 each/Long Rest">
+			<description>You learn the alter self spell and one 1st-level abjuration or transmutation spell of your choice. You can cast each of these spells once without expending a spell slot (recharge on a long rest). You can also cast these spells using spell slots you have of the appropriate level. Your spellcasting ability for these spells is the ability score increased by this feat.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Cosmos Touched)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+
+			<select type="Spell" name="Cosmos Touched" supports="1,(Abjuration||Transmutation)" />
+
+            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" />
+		</rules>
+	</element>
+
+    <element name="Focused Hunter" type="Feat" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FEAT_FOCUSED_HUNTER">
+        <description>
+            <p>During hunts, you are capable of bursts of focus when you need them most. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+                <li>You gain 1 Focus Point (adding to your existing Focus Points if you already have Focus Points), and learn one new Focus Art, choosing from Weapon Parry, Dodge Step, or any of the jaeger’s Additional Focus Arts. You regain all expended Focus Points when you finish a short or long rest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You gain 1 Focus Point, and learn one new Focus Art, choosing from Weapon Parry, Dodge Step, or any of the jaeger’s Additional Focus Arts. You regain all expended Focus Points when you finish a short or long rest.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase (Focused Hunter)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+
+            <stat name="jaeger:focus points" value="1" />
+
+            <select type="Class Feature" name="Focus Art (Focused Hunter)" supports="Jaeger Focus Art|ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_WEAPON_PARRY|ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_DODGE_STEP" />
+        </rules>
+    </element>
+
+    <element name="Marksman" type="Feat" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FEAT_MARKSMAN">
+        <description>
+            <p>You know your firearms inside and out and are a master at handling them. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+                <li>Weapons with the Barrel (S) property count as weapons with the Barrel (F) property for you.</li>
+                <li>You can ignore the Barrel property of weapons with the Barrel (F) property.</li>
+                <li>Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.</li>
+                <li>You do not have disadvantage on ranged attacks against prone creatures within 30 feet of you.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Weapons with the Barrel (S) property count as weapons with the Barrel (F) property for you.&#13;
+            You can ignore the Barrel property of weapons with the Barrel (F) property.&#13;
+            Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.&#13;
+            You do not have disadvantage on ranged attacks against prone creatures within 30 feet of you.</description>
+        </sheet>
+        <rules>
+            <stat name="dexterity" value="1" />
+        </rules>
+    </element>
+
+    <element name="Osteomantic Adept" type="Feat" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FEAT_OSTEOMANTIC_ADEPT">
+        <description>
+            <p>Osteomancy draws from sacrifice. Carve your own flesh to enhance these powers:</p>
+            <ul>
+                <li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+                <li>
+                    When you cast an osteomancy* spell of 1st level or higher, you can sacrifice your life force to empower it, increasing the level this spell is cast at by one. You then roll a number of d6s equal to half the original spell’s level (rounded up, minimum of 1), taking necrotic damage equal to the number rolled, which cannot be reduced in any way.
+                </li>
+            </ul>
+            <p class="flavor">*Osteomancy Spells: Bone Claws, Bone Shield, Fractured Shell, Phalangeal Shot, Arm Cannon, Bone Cocoon, Calcified Memories, Rolling Bones, Rupturing Curse, Skeletal Tail, Displacing Maw, Osseous Cage, Osseous Impalement, Rubber Bones, Dread Scarecrow, Graveyard Shuffle, Maiden of Bones, Chisel Skull, Forest of Dread, Wall of Bones, Amputate, Boneyard, Aspect of Death, Osteophagia.</p>
+        </description>
+        <sheet>
+            <description>When you cast an osteomancy spell of 1st level or higher, you can sacrifice your life force to empower it, increasing the level this spell is cast at by one. You then roll a number of d6s equal to half the original spell’s level (rounded up, minimum of 1), taking necrotic damage equal to the number rolled, which cannot be reduced in any way.
+            </description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase (Osteomantic Adept)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+        </rules>
+    </element>
+
+    <element name="Great Weapon Adept (Optional)" type="Feat" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FEAT_GREAT_WEAPON_ADEPT_OPTIONAL">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+            <p>You've mastered the art of using a weapon's weight to your advantage by using its momentum to strengthen your attacks. You gain the following benefits:</p>
+            <ul>
+                <li>Once on each of your turns when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can immediately make one melee weapon attack (no action required).</li>
+                <li>Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage. You cannot do so if the attack is made with the opposite end of your weapon.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Once on each of your turns when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can immediately make one melee weapon attack (no action required).&#13;
+            Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage. You cannot do so if the attack is made with the opposite end of your weapon.</description>
+        </sheet>
+    </element>
+
+    <element name="Sharp-shooter (Optional)" type="Feat" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FEAT_SHARP_SHOOTER_OPTIONAL">
+        <prerequisite>4th Level</prerequisite>
+        <requirements>[level:4]</requirements>
+        <description>
+        <p>You're a master of ranged warfare and can pull off shots that others call impossible:</p>
+        <ul>
+            <li>The normal and long range of ranged and thrown weapons is doubled for you.</li>
+            <li>Your ranged weapon attacks ignore half cover, and three-quarters cover is considered half cover for you.</li>
+            <li>Once on each of your turns when you make a ranged weapon attack, you can add your proficiency bonus to the damage roll.</li>
+        </ul>
+        </description>
+        <sheet>
+        <description>The normal and long range of ranged and thrown weapons is doubled for you.&#13;
+        Your ranged weapon attacks ignore half cover, and three-quarters cover is considered half cover for you.&#13;
+        Once on each of your turns when you make a ranged weapon attack, you can add {{proficiency}} to the damage roll.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Beast Hunter</name>
+		<description>Background from Steinhardt's Guide to the Eldritch Hunt</description>
+		<update version="0.1.0">
+			<file name="BeastHunter.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Backgrounds/BeastHunter.xml" />
+		</update>
+	</info>
+
+	<!-- Beast Hunter -->
+	<element name="Beast Hunter" type="Background" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BACKGROUND_BEAST_HUNTER">
+		<description>
+			<p>Growing up, the menacing presence of the Scourge loomed over your life in the city. The beasts terrified you, destroyed your homes, and took away people you loved. Driven by vengeance, fear, or a desire for justice, you chose to become a hunter. The Church, a mentor, or the Radiant Order taught you the ways of the hunt, giving you the knowledge and skills needed to defend your city and yourself. Whether you were once a simple citizen turned protector or a seasoned veteran of the First War hardened by countless battles, you have become an essential line of defense against the darkness.</p>
+			<p class="indent"><b>Skill Proficiencies:</b> Choose one between Acrobatic or Athletics; and one between Medicine or Survival</p>
+			<p class="indent"><b>Tool Proficiencies:</b> Herbalism kit</p>
+			<p class="indent"><b>Equipment:</b> A set of common clothes, a trophy from a beast you've slain, a hunter’s kit (includes 20 lead bullets, a silvered dagger, a flare, and a silver flask), a healer’s kit, and a belt pouch containing 10 gp.</p>
+			<div element="ID_LT_SGEH_BACKGROUND_FEATURE_BORN_OF_THE_HUNT" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>As a Beast Hunter, you have dedicated your life to combating the Scourge and the monsters it creates. Your constant exposure to the horrors of the plague has hardened you, yet beneath the cold exterior, you harbor a deep compassion for those who suffer from it.</p>
+		</description>
+		<setters>
+			<set name="short">Choose one from Acrobatics or Athletics, and one from Medicine or Survival. Herbalism kit. Born of the Hunt feature.</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Beast Hunter, First)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS" />
+
+			<select type="Proficiency" name="Skill Proficiency (Beast Hunter, Second)" supports="ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_SURVIVAL" />
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_HERBALISM_KIT" />
+			
+			<grant type="Background Feature" id="ID_LT_SGEH_BACKGROUND_FEATURE_BORN_OF_THE_HUNT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+			<select type="List" name="Personality Trait (Beast Hunter)">
+				<item id="1">I keep my emotions under control, for I fear the day I lose control over them and my humanity.</item>
+				<item id="2">I am stoic, rarely showing any signs of distress. The beasts smell fear.</item>
+				<item id="3">I have a crude sense of humor. Laughter keeps the fear at bay.</item>
+				<item id="4">I am haunted by the beasts I have slain.</item>
+				<item id="5">I am deeply spiritual. I believe the Church is our only hope for salvation.</item>
+				<item id="6">I value strength above all else. The weak will not survive.</item>
+				<item id="7">I am always alert. Danger can appear at any moment.</item>
+				<item id="8">I am fiercely protective of my fellow citizens.</item>
+			</select>
+			<select type="List" name="Ideal (Beast Hunter)">
+				<item id="1"><b>Protection.</b> It is my duty to protect the innocent from the Scourge. (Good)</item>
+				<item id="2"><b>Anger.</b> The beasts must pay for the lives they've taken. (Chaotic)</item>
+				<item id="3"><b>Faith.</b> I trust in the Church. Their wisdom guides my blade. (Lawful)</item>
+				<item id="4"><b>Survival.</b> The most important thing is to survive another night. (Neutral)</item>
+				<item id="5"><b>Cunning.</b> Understanding my prey is key to trapping, torturing and otherwise defeating them. (Evil)</item>
+				<item id="6"><b>Courage.</b> I must stand tall in the face of fear. Only then can I inspire others to do the same. (Good)</item>
+			</select>
+			<select type="List" name="Bond (Beast Hunter)">
+				<item id="1">The Church trained me and I owe them my life.</item>
+				<item id="2">I hunt to avenge my loved ones taken by the Scourge.</item>
+				<item id="3">I fight to protect the people of my neighborhood.</item>
+				<item id="4">I am hunting a specific beast that took a part of me.</item>
+				<item id="5">My weapon is a symbol of my duty and a keepsake from a mentor.</item>
+				<item id="6">The war veterans taught me everything I know about fighting. I owe them a great debt.</item>
+			</select>
+			<select type="List" name="Flaw (Beast Hunter)">
+				<item id="1">I have a reckless streak that often gets me into trouble.</item>
+				<item id="2">I struggle with the brutal nature of the hunt, and fear it's changing me.</item>
+				<item id="3">I am overly suspicious of everyone and everything.</item>
+				<item id="4">I carry a deep guilt for those I couldn't save.</item>
+				<item id="5">I am obsessively hunting a particular beast, disregarding all else.</item>
+				<item id="6">I harbor a deep-seated fear of losing my humanity in my bestial fury.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Born of the Hunt" type="Background Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BACKGROUND_FEATURE_BORN_OF_THE_HUNT">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Your continuous battles against the beasts have fortified your body and mind against the horrors of the Scourge. When an aberration or beast forces you to make a saving throw against the frightened condition, you gain a bonus on saving throws equal to your proficiency bonus. Additionally, you share a strong bond with fellow hunters, allowing you to request favors from them.</p>
+		</description>
+		<sheet alt="Born of the Hunt" />
+	</element>
+</elements>

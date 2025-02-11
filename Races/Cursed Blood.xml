@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Cursed-Blood</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="Cursed Blood.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Cursed Blood.xml" />
+		</update>
+	</info>
+
+	<!-- Cursed-Blood Race -->
+	<element name="Cursed-Blood" type="Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACE_CURSED_BLOOD">
+		<description>
+			<p>The cursed-blood are so named for their accursed lineage, forever bound by the twisted tethers of their very own blood. From the moment of their birth, they are each adorned with a quiescent mask, sealing their features in a permanent expression of cold, unfeeling marble. Nevertheless, these fated beings find strength in the familial bonds that tie them together, for they must rely on each other to survive the foul scourge that has befallen Luyarnha.</p>
+			<p>Alas, the cursed-blood are shunned and abhorred throughout the city-state, only finding refuge far from the prying eyes of society, amidst the squalor of the city's slums. In these desolate corners, where madness and scourge ravage the populace, the cursed-blood stand vigilant, ever protective of their own kin, finding solace in their shared bane.</p>
+			<p>The cursed-bloods’ origins are viewed as a taboo subject not to be spoken of by the populace, to avoid incurring the wrath of those above. According to whispered rumors, the curse was a punishment meted out by vengeful Great Ones, a retribution for sins committed by their forebears. Once, their kin— demons, dragons, and other creatures of flame and brimstone—roamed freely across the world, but they have long since disappeared, banished from existence by the enigmatic beings that lurk in the glacial void beyond. Now, all who share even a drop of their blood are condemned to a wretched existence, their individual origins erased and replaced by the familial bond they forged from the crucible of their affliction. This curse, wrought from birth, is both tragic and horrific. Each born as conjoined twins, one of them must inevitably perish for the other to live. Although the death of their twin happens in the womb, the cursed-blood can still hear and feel the echoes of their lost sibling's voice within their own soul. This unspeakable atrocity against life twists their flesh and soul, and forces them to carry the remnants of their other half within their chest in the form of a gaping maw, an eye, or some other feature over which they have no control.</p>
+			<h4>CURSED-BLOOD TRAITS</h4>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1 and one ability score of your choice increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Cursed-bloods develop much faster than humans, reaching maturity after 5 years, and have shorter lifespans, passing after roughly 60 years, though some rare individuals have lived up to 100.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Though reviled since birth, most cursed-bloods strive toward lawful and good behavior, willing to sacrifice everything for their family. Yet, some cursed-bloods develop a nihilistic hatred for all life, reinforced by the utterances of their conjoined corpse.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Cursed-bloods average about 4 feet tall and weigh about 100 pounds, with elongated limbs and necks. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet and you have a climbing speed of 25 feet. You can't use your climbing speed while you wear medium or heavy armor.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and your choice of either Draconic or Infernal (choose when you select this race).</p>
+			<p class="indent"><strong><em>Vigilant Nature.</em></strong> Your survival instincts are sharper than most. You can’t be surprised. On a turn when you would be surprised, you can’t attack or cast spells that affect enemies.</p>
+			<p class="indent"><strong><em>Conjoined Twin.</em></strong> Your dead twin manifests on your body in one of the following ways of your choice:</p>
+			<ul>
+				<li><strong>Chest Maw.</strong> The mouth on your abdomen can devour many things, temporarily storing them in a pocket dimension within you. It can hold up to 250 pounds of material, not exceeding a volume of 32 cubic feet. If you fall unconscious or die, you harmlessly regurgitate all materials in your maw. Breathing creatures inside your maw can survive up to 1 minute, after which time they begin to suffocate. After 24 hours inside your body, a nonmagical item is destroyed, consumed by your body. If it is a magic item, a creature, or a corpse, you regurgitate it instead. Starting at 5th level, you can store materials indefinitely (but still not while unconscious or dead), and the dimension’s volume and weight it can hold doubles.</li>
+				<li><strong>Heedful Eye.</strong> As long as the eye in your chest is open, you have darkvision out to 120 feet. You can cast detect magic once while the eye is open, regaining the ability to do so when you finish a short or long rest. Starting at 5th level, you can cast see invisibility once while the eye is open, regaining the ability to do so when you finish a long rest. You can open the eye as a bonus action, and close it at will (no action required).</li>
+				<li><strong>Gaping Remain.</strong> Ripped out of your chest, due to your will or perhaps your twin’s, it now only exists within you in spirit, capable of influencing the world through you.</li>
+			</ul>
+			<p class="indent">- You can speak telepathically to any creature you can see, provided the creature is within a number of feet of you equal to five times your level. The voice the creature hears isn’t yours, but that of your twin. The telepathic speech is made in a language you know, and the creature understands you only if it knows that language. Starting at 5th level, the creature is able to telepathically respond to you in a language it knows.</p>
+			<p class="indent">- You learn the mage hand cantrip. You can cast it without any somatic or verbal components, and the hand has the appearance of your twin’s. Your spellcasting ability for the spell is Charisma.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Although all cursed-bloods view each other as family, depending on their origin—draconic, infernal, or otherwise—their flesh has evolved in various ways, which represent their subrace. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">4'</set>
+			<set name="weight">100 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Dexterity +1, Choice +1) -->
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Cursed-Blood)" supports="Custom Ability Score Increase 1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Cursed-Blood)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Cursed-Blood)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Size (Small) -->
+			<grant type="Size" id="ID_SIZE_SMALL" />
+
+			<!-- Speed (25 ft. walking, 25 ft. climbing) -->
+			<stat name="innate speed" value="25" bonus="base" />
+			<stat name="innate speed:climb" value="25" bonus="base" />
+
+			<!-- Languages (Common, +Choose Draconic or Infernal) -->
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Cursed-Blood)" supports="ID_LANGUAGE_DRACONIC|ID_LANGUAGE_INFERNAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<!-- Vigilant Nature -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_VIGILANT_NATURE" />
+
+			<!-- Conjoined Twin -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_CONJOINED_TWIN" />
+
+			<!-- Subrace Selection -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_SUBRACE" />
+		</rules>
+	</element>
+
+	<!-- Vigilant Nature Trait -->
+	<element name="Vigilant Nature" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_VIGILANT_NATURE">
+		<description>
+			<p>Your survival instincts are sharper than most. You can’t be surprised. On a turn when you would be surprised, you can’t attack or cast spells that affect enemies.</p>
+		</description>
+		<sheet>
+			<description>You can’t be surprised. On a turn when you would be surprised, you can’t attack or cast spells that affect enemies.</description>
+		</sheet>
+	</element>
+
+	<!-- Conjoined Twin Trait -->
+	<element name="Conjoined Twin" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_CONJOINED_TWIN">
+		<description>
+			<p>Your dead twin manifests on your body in one of the following ways of your choice:</p>
+			<ul>
+				<li><strong>Chest Maw.</strong> The mouth on your abdomen can devour many things, temporarily storing them in a pocket dimension within you. It can hold up to 250 pounds of material, not exceeding a volume of 32 cubic feet. If you fall unconscious or die, you harmlessly regurgitate all materials in your maw. Breathing creatures inside your maw can survive up to 1 minute, after which time they begin to suffocate. After 24 hours inside your body, a nonmagical item is destroyed, consumed by your body. If it is a magic item, a creature, or a corpse, you regurgitate it instead. Starting at 5th level, you can store materials indefinitely (but still not while unconscious or dead), and the dimension’s volume and weight it can hold doubles.</li>
+				<li><strong>Heedful Eye.</strong> As long as the eye in your chest is open, you have darkvision out to 120 feet. You can cast detect magic once while the eye is open, regaining the ability to do so when you finish a short or long rest. Starting at 5th level, you can cast see invisibility once while the eye is open, regaining the ability to do so when you finish a long rest. You can open the eye as a bonus action, and close it at will (no action required).</li>
+				<li><strong>Gaping Remain.</strong> Ripped out of your chest, due to your will or perhaps your twin’s, it now only exists within you in spirit, capable of influencing the world through you.</li>
+			</ul>
+			<p class="indent">- You can speak telepathically to any creature you can see, provided the creature is within a number of feet of you equal to five times your level. The voice the creature hears isn’t yours, but that of your twin. The telepathic speech is made in a language you know, and the creature understands you only if it knows that language. Starting at 5th level, the creature is able to telepathically respond to you in a language it knows.</p>
+			<p class="indent">- You learn the mage hand cantrip. You can cast it without any somatic or verbal components, and the hand has the appearance of your twin’s. Your spellcasting ability for the spell is Charisma.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Conjoined Twin (Cursed-Blood)" supports="Cursed-Blood Conjoined Twin" />
+		</rules>
+	</element>
+
+	<!-- Chest Maw Trait -->
+	<element name="Chest Maw" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_CONJOINED_TWIN_CHEST_MAW">
+		<supports>Cursed-Blood Conjoined Twin</supports>
+		<description>
+			<p>The mouth on your abdomen can devour many things, temporarily storing them in a pocket dimension within you. It can hold up to 250 pounds of material, not exceeding a volume of 32 cubic feet. If you fall unconscious or die, you harmlessly regurgitate all materials in your maw. Breathing creatures inside your maw can survive up to 1 minute, after which time they begin to suffocate. After 24 hours inside your body, a nonmagical item is destroyed, consumed by your body. If it is a magic item, a creature, or a corpse, you regurgitate it instead. Starting at 5th level, you can store materials indefinitely (but still not while unconscious or dead), and the dimension’s volume and weight it can hold doubles.</p>
+		</description>
+		<sheet>
+			<description>The mouth on your abdomen can devour many things, temporarily storing them in a pocket dimension within you. It can hold up to 250 pounds of material, not exceeding a volume of 32 cubic feet. If you fall unconscious or die, you harmlessly regurgitate all materials in your maw. Breathing creatures inside your maw can survive up to 1 minute, after which time they begin to suffocate. After 24 hours inside your body, a nonmagical item is destroyed, consumed by your body. If it is a magic item, a creature, or a corpse, you regurgitate it instead.</description>
+			<description level="5">The mouth on your abdomen can devour many things, temporarily storing them in a pocket dimension within you. It can hold up to 500 pounds of material, not exceeding a volume of 64 cubic feet. If you fall unconscious or die, you harmlessly regurgitate all materials in your maw. Breathing creatures inside your maw can survive up to 1 minute, after which time they begin to suffocate. After 24 hours inside your body, a nonmagical item is destroyed, consumed by your body. If it is a magic item, a creature, or a corpse, you regurgitate it instead. Starting at 5th level, you can store materials indefinitely (but still not while unconscious or dead).</description>
+		</sheet>
+	</element>
+
+	<!-- Heedful Eye Trait -->
+	<element name="Heedful Eye" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_CONJOINED_TWIN_HEEDFUL_EYE">
+		<supports>Cursed-Blood Conjoined Twin</supports>
+		<description>
+			<p>As long as the eye in your chest is open, you have darkvision out to 120 feet. You can cast detect magic once while the eye is open, regaining the ability to do so when you finish a short or long rest. Starting at 5th level, you can cast see invisibility once while the eye is open, regaining the ability to do so when you finish a long rest. You can open the eye as a bonus action, and close it at will (no action required).</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Bonus Action">
+			<description>As long as the eye in your chest is open, you have darkvision out to 120 feet. You can cast detect magic once while the eye is open, regaining the ability to do so when you finish a short or long rest. You can open the eye as a bonus action, and close it at will (no action required).</description>
+			<description level="5">As long as the eye in your chest is open, you have darkvision out to 120 feet. You can cast detect magic and see invisibility once while the eye is open, regaining the ability to do so when you finish a short or long rest. You can open the eye as a bonus action, and close it at will (no action required).</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base"  />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" level="5" />
+		</rules>
+	</element>
+
+	<!-- Gaping Remain Trait -->
+	<element name="Gaping Remain" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_CONJOINED_TWIN_GAPING_REMAIN">
+		<supports>Cursed-Blood Conjoined Twin</supports>
+		<description>
+			<p>Ripped out of your chest, due to your will or perhaps your twin’s, it now only exists within you in spirit, capable of influencing the world through you.</p>
+			<p class="indent">- You can speak telepathically to any creature you can see, provided the creature is within a number of feet of you equal to five times your level. The voice the creature hears isn’t yours, but that of your twin. The telepathic speech is made in a language you know, and the creature understands you only if it knows that language. Starting at 5th level, the creature is able to telepathically respond to you in a language it knows.</p>
+			<p class="indent">- You learn the mage hand cantrip. You can cast it without any somatic or verbal components, and the hand has the appearance of your twin’s. Your spellcasting ability for the spell is Charisma.</p>
+		</description>
+		<sheet>
+			<description>You can speak telepathically to any creature you can see, provided the creature is within a number of feet of you equal to {{gaping remain}}. The voice the creature hears isn’t yours, but that of your twin. The telepathic speech is made in a language you know, and the creature understands you only if it knows that language. You learn the mage hand cantrip. You can cast it without any somatic or verbal components, and the hand has the appearance of your twin’s. Your spellcasting ability for the spell is Charisma.</description>
+			<description level="5">You can speak telepathically to any creature you can see, provided the creature is within a number of feet of you equal to {{gaping remain}}. The voice the creature hears isn’t yours, but that of your twin. The telepathic speech is made in a language you know, and the creature understands you only if it knows that language. The creature is able to telepathically respond to you in a language it knows. You learn the mage hand cantrip. You can cast it without any somatic or verbal components, and the hand has the appearance of your twin’s. Your spellcasting ability for the spell is Charisma.</description>
+		</sheet>
+		<rules>
+            <stat name="gaping remain" value="level" />
+            <stat name="gaping remain" value="level" />
+            <stat name="gaping remain" value="level" />
+            <stat name="gaping remain" value="level" />
+            <stat name="gaping remain" value="level" />
+
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" />
+		</rules>
+	</element>
+
+	<!-- Subrace Trait (Placeholder) -->
+	<element name="Cursed-Blood Subrace" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_SUBRACE">
+		<description>
+			<p>Although all cursed-bloods view each other as family, depending on their origin—draconic, infernal, or otherwise—their flesh has evolved in various ways, which represent their subrace. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Cursed-Blood Subrace" supports="Cursed-Blood" />
+		</rules>
+	</element>
+
+	<!-- Doused Cursed-Blood Subrace -->
+	<element name="Doused Cursed-Blood" type="Sub Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_SUBRACE_CURSED_BLOOD_DOUSED">
+		<supports>Cursed-Blood</supports>
+		<description>
+			<p>As a doused cursed-blood, the blood of dragons flows within your veins. Your body is more reptilian, with scales of the same color as your draconic ancestors, elongated claws, and a fierce gaze behind your mask.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength or Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Insulated Skin.</em></strong> Choose two damage types that reflect your draconic or demonic ancestors, among acid, cold, fire, lightning, and poison. Whenever you take damage of one of those types, you can reduce it by an amount equal to your proficiency bonus.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Choice of Strength or Wisdom +1) -->
+			<select type="Racial Trait" name="Ability Score Increase (Doused Cursed-Blood)" supports="Doused Cursed-Blood" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Doused Cursed-Blood)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Insulated Skin -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN" />
+		</rules>
+	</element>
+
+	<!-- Doused Cursed-Blood Ability Score Increase (Strength) -->
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_DOUSED_STRENGTH">
+		<compendium display="false" />
+		<supports>Doused Cursed-Blood</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" alt="Doused Cursed-Blood" />
+		</rules>
+	</element>
+
+	<!-- Doused Cursed-Blood Ability Score Increase (Wisdom) -->
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_DOUSED_WISDOM">
+		<compendium display="false" />
+		<supports>Doused Cursed-Blood</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" alt="Doused Cursed-Blood" />
+		</rules>
+	</element>
+
+	<!-- Insulated Skin Trait -->
+	<element name="Insulated Skin" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN">
+		<description>
+			<p>Choose two damage types that reflect your draconic or demonic ancestors, among acid, cold, fire, lightning, and poison. Whenever you take damage of one of those types, you can reduce it by an amount equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You can reduce damage by {{proficiency}} whenever you take damage from the following types of damage:</description>
+		</sheet>
+        <rules>
+            <select type="Racial Trait" name="Insulated Skin" supports="Doused Insulated Skin" />
+        </rules>
+	</element>
+
+    <element name="Acid" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_ACID">
+        <supports>Doused Insulated Skin</supports>
+        <description>
+            <p>You reflect the acidic nature of your draconic or demonic ancestors. You reduce acid damage by an amount equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>Acid</description>
+        </sheet>
+    </element>
+     <element name="Cold" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_COLD">
+        <supports>Doused Insulated Skin</supports>
+        <description>
+            <p>You reflect the cold nature of your draconic or demonic ancestors. You reduce cold damage by an amount equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>Cold</description>
+        </sheet>
+    </element>
+    <element name="Fire" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_ACID">
+        <supports>Doused Insulated Skin</supports>
+        <description>
+            <p>You reflect the fiery nature of your draconic or demonic ancestors. You reduce acid damage by an amount equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>Fire</description>
+        </sheet>
+    </element>
+    <element name="Lightning" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_COLD">
+        <supports>Doused Insulated Skin</supports>
+        <description>
+            <p>You reflect the electrical nature of your draconic or demonic ancestors. You reduce cold damage by an amount equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>Lightning</description>
+        </sheet>
+    </element>
+    <element name="Poison" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_COLD">
+        <supports>Doused Insulated Skin</supports>
+        <description>
+            <p>You reflect the poisonous nature of your draconic or demonic ancestors. You reduce cold damage by an amount equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>Poison</description>
+        </sheet>
+    </element>
+
+
+	<!-- Hulking Cursed-Blood Subrace -->
+	<element name="Hulking Cursed-Blood" type="Sub Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_SUBRACE_CURSED_BLOOD_HULKING">
+		<supports>Cursed-Blood</supports>
+		<description>
+			<p>As a hulking cursed-blood, you have remarkable resilience, akin to the great demons of old. You’re probably on the tall side for a cursed-blood, and the scales on your skin look as if made of stone—obsidian and marble are the two most common colors, but flesh akin to rubies, sapphires, or other precious stones also exist.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Stone Skin.</em></strong> When you suffer a critical hit from an attack that deals piercing damage, the attack doesn’t deal extra piercing damage to you from being a critical hit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Constitution +1) -->
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Hulking Cursed-Blood)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Stone Skin -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_HULKING_STONE_SKIN" />
+		</rules>
+	</element>
+
+	<!-- Stone Skin Trait -->
+	<element name="Stone Skin" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_HULKING_STONE_SKIN">
+		<description>
+			<p>When you suffer a critical hit from an attack that deals piercing damage, the attack doesn’t deal extra piercing damage to you from being a critical hit.</p>
+		</description>
+		<sheet>
+			<description>When you suffer a critical hit from an attack that deals piercing damage, the attack doesn’t deal extra piercing damage to you from being a critical hit.</description>
+		</sheet>
+	</element>
+
+	<!-- Mirage Cursed-Blood Subrace -->
+	<element name="Mirage Cursed-Blood" type="Sub Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_SUBRACE_CURSED_BLOOD_MIRAGE">
+		<supports>Cursed-Blood</supports>
+		<description>
+			<p>As a mirage cursed-blood, your infernal legacy is apparent. Your body can possess horns, and sometimes even a forked tail, this devilish origin of yours also elevates your mind above that of your peers. Some say that in another life mirage cursed-blood were tieflings—beings seldom seen in Luyarnha today.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence or Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Shadowveil Skin.</em></strong> You can attempt to hide even when you are only lightly obscured by shadows, smog, acid rain, or other urban and industrial phenomena. In addition, you can move through the space of any creature that is of one size larger than yours.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Choice of Intelligence or Charisma +1) -->
+			<select type="Racial Trait" name="Ability Score Increase (Mirage Cursed-Blood)" supports="Mirage Cursed-Blood" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mirage Cursed-Blood)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Shadowveil Skin -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_MIRAGE_SHADOWVEIL_SKIN" />
+		</rules>
+	</element>
+
+	<!-- Mirage Cursed-Blood Ability Score Increase (Intelligence) -->
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_MIRAGE_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Mirage Cursed-Blood</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" alt="Mirage Cursed-Blood" />
+		</rules>
+	</element>
+
+	<!-- Mirage Cursed-Blood Ability Score Increase (Charisma) -->
+	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_MIRAGE_CHARISMA">
+		<compendium display="false" />
+		<supports>Mirage Cursed-Blood</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" alt="Mirage Cursed-Blood" />
+		</rules>
+	</element>
+
+	<!-- Shadowveil Skin Trait -->
+	<element name="Shadowveil Skin" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_MIRAGE_SHADOWVEIL_SKIN">
+		<description>
+			<p>You can attempt to hide even when you are only lightly obscured by shadows, smog, acid rain, or other urban and industrial phenomena. In addition, you can move through the space of any creature that is of one size larger than yours.</p>
+		</description>
+		<sheet>
+			<description>You can attempt to hide even when you are only lightly obscured by shadows, smog, acid rain, or other urban and industrial phenomena. In addition, you can move through the space of any creature that is of one size larger than yours.</description>
+		</sheet>
+	</element>
+</elements>

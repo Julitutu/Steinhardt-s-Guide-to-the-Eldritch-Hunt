@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Earthbreaker</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="Path of the Earthbreaker.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Path of the Earthbreaker.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Earthbreaker" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_BARBARIAN_PATHOFTHEEARTHBREAKER">
+		<supports>Primal Path</supports>
+		<description>
+			<p>In a time long past, the power to command gravity was stolen and disseminated throughout the destitute underbelly of Luyarnha, much like the mythical theft of fire from the heavens. Within the ranks of the Forsaken, many have embraced the spatial magic as a tool of mass destruction, unleashing it upon beasts and mortals with a ruthlessness particular to those who have nothing to lose. Among them, the Earthbreakers stand imperious; barbarians with a natural affinity for the void, capable of leveling buildings in their rage, these living titans are coveted prizes. Many factions seek to bend their wills for their own ends, and if such control proves impossible, death is an all too frequent outcome.</p>
+			<p class="indent">Whether from innate talent, intense training, or cursed rituals, all Earthbreakers share the same path of destruction, crushing their foes and grinding them to dust. Earthbreakers thrive in the middle of the battlefield, where they break their enemies, drag their face on the pavement, and leave behind naught but a mess of blood and brain. It is pointless to hide from them, for they are capable of shattering the very foundations of the world to unearth their quarry. The power to reshape the world—to bend and break it at a whim—is one many desire, yet few master it like Earthbreakers do.</p>
+			<div class="sidebar"><p class="flavor">“Nobles have their honor, Hunters have their courage, Priests have their faith, But all we have is rage.”</p></div>
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_OVERWHELMING_POWER" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_GRAVITATIONAL_RAGE" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_RUINATION" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_IMPERIOUS_GRAVITY" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_UNYIELDING" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_WORLD_BREAKER" />
+		</description>
+		<sheet display="false">
+			<description>Whether from innate talent, intense training, or cursed rituals, all Earthbreakers share the same path of destruction, crushing their foes and grinding them to dust.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_OVERWHELMING_POWER" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_GRAVITATIONAL_RAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_RUINATION" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_IMPERIOUS_GRAVITY" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_UNYIELDING" level="10" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_WORLD_BREAKER" level="14" />
+		</rules>
+	</element>
+
+	<element name="Overwhelming Power" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_OVERWHELMING_POWER">
+		<description>
+			<p>Starting at 3rd level, you have learned to channel destructive energy through your fists and other body parts. When you hit with an unarmed strike, you can deal bludgeoning damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. This die increases to 1d8 at 6th level, 1d10 at 10th level, and 1d12 at 14th level. When you make an unarmed strike against a creature on your turn, you can use a bonus action to make another unarmed strike against the same creature.</p>
+			<p class="indent">Your sheer power puts a massive strain on most weapons, shattering them. When you hit with a melee attack with a nonmagical weapon, the weapon breaks in your hand and can’t be used to make attacks until it is repaired. In addition, the range of thrown weapons is doubled for you. If you hit with a ranged attack with a thrown weapon, you can use the damage die above in place of the weapon’s usual damage dice.</p>
+		</description>
+		<sheet>
+			<description>When you hit with an unarmed strike, you can deal bludgeoning damage equal to 1d{{overwhelming power:die}} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. When you make an unarmed strike against a creature on your turn, you can use a bonus action to make another unarmed strike against the same creature.&#13;
+			When you hit with a melee attack with a nonmagical weapon, the weapon breaks in your hand and can’t be used to make attacks until it is repaired. In addition, the range of thrown weapons is doubled for you. If you hit with a ranged attack with a thrown weapon, you can use the damage die above in place of the weapon’s usual damage dice.</description>
+		</sheet>
+        <rules>
+            <stat name="overwhelming power:die" value="6" />
+            <stat name="overwhelming power:die" value="8" level="6"/>
+            <stat name="overwhelming power:die" value="10" level="10"/>
+            <stat name="overwhelming power:die" value="12" level="14"/>
+        </rules>
+	</element>
+
+	<element name="Gravitational Rage" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_GRAVITATIONAL_RAGE">
+		<description>
+			<p>At 3rd level, once per turn, when you deal damage to a creature with an unarmed strike, you can choose one of the following effects. These effects use your Earthbreaker save DC.</p>
+			<center><p><b>Earthbreaker save DC</b> = 8 + your proficiency bonus + your Strength modifier</p></center>
+			<ul>
+				<li><b>Burying Hands.</b> The target must succeed on a Strength saving throw or have its speed reduced to 0 until the start of your next turn, as you partially bury it in the ground. If the target fails the saving throw by 5 or more, it is also knocked prone. If the target isn’t on the ground when it fails this save, it immediately falls instead, even if it can hover.</li>
+				<li><b>Bulldozing Punch.</b> You push the target 10 feet away from you or upward. If pushed into an obstacle or another creature, the target takes bludgeoning damage equal to your Strength modifier (minimum of 1). Creatures with a Strength score equal to or greater than yours can make a Strength saving throw to resist this effect, avoiding it on a success. If you push the target upward, it can make a DC 10 Dexterity saving throw, avoiding any fall damage on a success.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Once per turn, when you deal damage to a creature with an unarmed strike, you can choose one of the following effects.&#13;
+            • Burying Hands. The target must succeed on a DC {{earthbreaker save:dc}} Strength saving throw or have its speed reduced to 0 until the start of your next turn, as you partially bury it in the ground. If the target fails the saving throw by 5 or more, it is also knocked prone. If the target isn’t on the ground when it fails this save, it immediately falls instead, even if it can hover.&#13;
+            • Bulldozing Punch. You push the target 10 feet away from you or upward. If pushed into an obstacle or another creature, the target takes {{gratitational rage}} bludgeoning damage. Creatures with a Strength score equal to or greater than yours can make a DC {{earthbreaker save:dc}} Strength saving throw to resist this effect, avoiding it on a success. If you push the target upward, it can make a DC 10 Dexterity saving throw, avoiding any fall damage on a success.</description>
+		</sheet>
+        <rules>
+            <stat name="earthbreaker save:dc" value="8" />
+            <stat name="earthbreaker save:dc" value="proficiency" />
+            <stat name="earthbreaker save:dc" value="strength:modifier" />
+
+            <stat name="gratitational rage" value="1" bonus="modifier"/>
+            <stat name="gratitational rage" value="strength:modifier" bonus="modifier"/>
+        </rules>
+	</element>
+
+	<element name="Ruination" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_RUINATION">
+		<description>
+			<p>Starting at 6th level, the strength you wield is capable of toppling the arcane rules of the world. Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<p class="indent">In addition, when you hit a physical barrier created by a spell with an unarmed strike, such as the effect of a wall of force or forcecage spell, or any other wall spell (such as wall of fire, gravity wall, or prismatic wall), you can make a Strength check (DC = 10 + the spell’s level), rupturing the arcane and dispelling the spell on a success.</p>
+		</description>
+		<sheet>
+			<description>Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.&#13;
+			In addition, when you hit a physical barrier created by a spell with an unarmed strike, such as the effect of a wall of force or forcecage spell, or any other wall spell (such as wall of fire, gravity wall, or prismatic wall), you can make a Strength check (DC = 10 + the spell’s level), rupturing the arcane and dispelling the spell on a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Imperious Gravity" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_IMPERIOUS_GRAVITY">
+		<description>
+			<p>Also at 6th level, you increase your mastery over gravity. On each of your turns while raging, you can use a bonus action to create one of the following effects, using your Earthbreaker save DC. The range of these abilities, and the distance they move creatures, doubles at 14th level.</p>
+			<ul>
+				<li><b>Attractive Field.</b> You unleash a gravitational wave. Each creature in a 15-foot cone originating from you must succeed on a Strength saving throw or be pulled up to 10 feet towards you.</li>
+				<li><b>Repulsive Field.</b> You condense a bubble of gravity around yourself. The next time a creature would hit you with a melee attack, the bubble bursts in a roaring explosion. Each creature within 10 feet of you must succeed on a Strength saving throw or be pushed up to 10 feet away from you. If this pushes the attacker beyond its reach of you, the attack misses you. If the bubble doesn’t burst by the start of your next turn, it harmlessly dissipates.</li>
+				<li><b>Stomp.</b> You stomp the ground, causing a destructive quake in a 10-foot-long, 5-foot-wide line on the ground originating from you. Each creature in the area must succeed on a Dexterity saving throw or take 1d4 bludgeoning damage and have disadvantage on its next Strength saving throw before the start of your next turn as it is thrown off balance. Additionally, the ground in that area becomes difficult terrain until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action">
+			<description>On each of your turns while raging, you can use a bonus action to create one of the following effects, using your Earthbreaker save DC. The range of these abilities, and the distance they move creatures, doubles at 14th level.&#13;
+            • Attractive Field. You unleash a gravitational wave. Each creature in a 15-foot cone originating from you must succeed on a DC {{earthbreaker save:dc}} Strength saving throw or be pulled up to 10 feet towards you.&#13;
+            • Repulsive Field. You condense a bubble of gravity around yourself. The next time a creature would hit you with a melee attack, the bubble bursts in a roaring explosion. Each creature within 10 feet of you must succeed on a DC {{earthbreaker save:dc}} Strength saving throw or be pushed up to 10 feet away from you. If this pushes the attacker beyond its reach of you, the attack misses you. If the bubble doesn’t burst by the start of your next turn, it harmlessly dissipates.&#13;
+            • Stomp. You stomp the ground, causing a destructive quake in a 10-foot-long, 5-foot-wide line on the ground originating from you. Each creature in the area must succeed on a DC {{earthbreaker save:dc}} Dexterity saving throw or take 1d4 bludgeoning damage and have disadvantage on its next Strength saving throw before the start of your next turn as it is thrown off balance. Additionally, the ground in that area becomes difficult terrain until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.</description>
+		</sheet>
+	</element>
+
+	<element name="Unyielding" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_EARTHBREAKER_UNYIELDING">
+		<description>
+			<p>Beginning at 10th level, your unarmed strikes deal double damage to structures and you can ignore difficult terrain.</p>
+			<p class="indent">In addition, your crushing power seeps into all the aspects of your life. You can add your Constitution modifier to any Strength checks and Intimidation checks you make.</p>
+		</description>
+		<sheet>
+			<description>Your unarmed strikes deal double damage to structures and you can ignore difficult terrain.&#13;
+			In addition, your crushing power seeps into all the aspects of your life. You can add your Constitution modifier to any Strength checks and Intimidation checks you make.</description>
+		</sheet>
+        <rules>
+            <stat name="athletics:misc" value="constitution:modifier" />
+            <stat name="intimidation:misc" value="constitution:modifier" />
+        </rules>
+	</element>
+
+	<element name="World Breaker" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_EARTHBREAKER_WORLD_BREAKER">
+		<description>
+			<p>Once you reach 14th level, your blows can level the world. Once on each of your turns while you are raging, when you make a melee attack, you can fracture the world. On a hit, the target takes an extra 3d12 bludgeoning damage and is pushed up to 30 feet away from you. In addition, hit or miss, the area in a 90-foot cone in front of you breaks, as per the earthquake spell (save DC equals your Earthbreaker save DC), although the spell only lasts until the start of your next turn, doesn’t require concentration, and can create only 1d4 fissures in the area.</p>
+			<p class="indent">You can use this feature a number of times equal to your Strength modifier, and you regain all expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet usage="{{strength:modifier}}/Short Rest" bonus="base">
+			<description>Once on each of your turns while you are raging, when you make a melee attack, you can fracture the world. On a hit, the target takes an extra 3d12 bludgeoning damage and is pushed up to 30 feet away from you. In addition, hit or miss, the area in a 90-foot cone in front of you breaks, as per the earthquake spell (save DC {{earthbreaker save:dc}}), although the spell only lasts until the start of your next turn, doesn’t require concentration, and can create only 1d4 fissures in the area.</description>
+		</sheet>
+	</element>
+</elements>

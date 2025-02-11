@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Agonizing Shots" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_SHOTS">
+		<prerequisite>Path of the Trigger feature</prerequisite>
+		<requirements>ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER</requirements>
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p><em>Prerequisite: Pact of the Trigger feature</em></p>
+			<p>When you cast a cantrip with your hex gun, add your Charisma modifier to the damage it deals on a hit (if you don't already add your Charisma modifier to it).</p>
+		</description>
+		<sheet>
+			<description>When you cast a cantrip with your hex gun, add your Charisma modifier to the damage it deals on a hit (if you don't already add your Charisma modifier to it).</description>
+		</sheet>
+	</element>
+	<element name="Bullet Hell" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_BULLET_HELL">
+		<prerequisite>5th level, Path of the Trigger feature (revolver form)</prerequisite>
+		<requirements>[level:warlock:5],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER,ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_REVOLVER_FORM</requirements>
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p><em>Prerequisite: 5th level, Pact of the Trigger feature (revolver form)</em></p>
+			<p>As a bonus action, you temporarily duplicate your hex gun to unleash a flurry of bullets. All creatures within a 15-foot cone in front of you must succeed a Dexterity saving throw against your spell save DC or take 2d10 force damage. This damage increases to 3d10 at 11th level and 4d10 at 17th level. To use this bonus action, you need to be holding your hex gun in one hand and have the other hand free.</p>
+			<p class="indent">You can use this invocation a number of times equal to twice your Charisma modifier (minimum of twice), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{bullet hell:count}}/Long Rest">
+			<description>As a bonus action, you temporarily duplicate your hex gun to unleash a flurry of bullets. All creatures within a 15-foot cone in front of you must succeed a Dexterity saving throw against your spell save DC or take 2d10 force damage.To use this bonus action, you need to be holding your hex gun in one hand and have the other hand free.</description>
+			<description level="11">As a bonus action, you temporarily duplicate your hex gun to unleash a flurry of bullets. All creatures within a 15-foot cone in front of you must succeed a Dexterity saving throw against your spell save DC or take 3d10 force damage. To use this bonus action, you need to be holding your hex gun in one hand and have the other hand free.</description>
+			<description level="17">As a bonus action, you temporarily duplicate your hex gun to unleash a flurry of bullets. All creatures within a 15-foot cone in front of you must succeed a Dexterity saving throw against your spell save DC or take 4d10 force damage. To use this bonus action, you need to be holding your hex gun in one hand and have the other hand free.</description>
+		</sheet>
+		<rules>
+			<stat name="bullet hell:double" value="charisma:modifier" />
+			<stat name="bullet hell:double" value="charisma:modifier" />
+
+			<stat name="bullet hell:count" value="2" bonus="base" />
+			<stat name="bullet hell:count" value="bullet hell:double" bonus="base" />
+		</rules>
+	</element>
+	<element name="Crippling Shot" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_CRIPPLING_SHOT">
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p><em>Prerequisite: Pact of the Trigger feature (revolver form)</em></p>
+			<p>Once on each of your turns when you damage a creature with an attack made using your hex gun, you can force it to make a Strength saving throw against your spell save DC or fall prone and have its speed reduced to 0 until the start of your next turn.</p>
+			<p class="indent">You can use this invocation a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{charisma:modifier}}/Long Rest">
+			<description>Once on each of your turns when you damage a creature with an attack made using your hex gun, you can force it to make a Strength saving throw against your spell save DC or fall prone and have its speed reduced to 0 until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Dead Eye" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_DEAD_EYE">
+		<prerequisite>15th level, Path of the Trigger feature (sniper form)</prerequisite>
+		<requirements>[level:warlock:15],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER,ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_SNIPER_FORM</requirements>
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p><em>Prerequisite: 15th level, Pact of the Trigger feature (sniper form)</em></p>
+			<p>If you haven't moved this turn, you can take aim as a bonus action, reducing your speed to 0 and granting you advantage on all attacks you make using your hex gun until the end of your turn.</p>
+		</description>	
+		<sheet>
+			<description>Once on each of your turns when you damage a creature with an attack made using your hex gun, you can force it to make a Strength saving throw against your spell save DC or fall prone and have its speed reduced to 0 until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Headshots" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_HEADSHOTS">
+		<prerequisite>9th level, Path of the Trigger feature (sniper form)</prerequisite>
+		<requirements>[level:warlock:9],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER,ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_SNIPER_FORM</requirements>
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p><em>Prerequisite: 9th level, Pact of the Trigger feature (sniper form)</em></p>
+			<p>As a bonus action, you can enhance your focus to see the weak spots of your foes. For the next minute, attacks you make using your hex gun score a critical hit on a roll of 19 or 20. Once you've used this invocation, you can't use it again until you finish a short or long rest.</p>
+		</description>	
+		<sheet action="Bonus Action" usage="1/Rest">
+			<description>As a bonus action, you can enhance your focus to see the weak spots of your foes. For the next minute, attacks you make using your hex gun score a critical hit on a roll of 19 or 20. Once you've used this invocation, you can't use it again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Quickstep" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_QUICKSTEP">
+		<prerequisite>7th level, Path of the Trigger feature</prerequisite>
+		<requirements>[level:warlock:7],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER</requirements>
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p><em>Prerequisite: 7th level, Pact of the Trigger feature</em></p>
+			<p>Your reflexes are honed. As a reaction, when an enemy makes a melee attack against you, before being hit, if your speed isn't 0, you can move 5 feet away from the foe without triggering opportunity attacks, potentially avoiding the attack if you leave its range.</p>
+			<p class="indent">You can use this invocation a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>	
+		<sheet action="Reaction" usage="{{charisma:modifier}}/Long Rest">
+			<description>As a reaction, when an enemy makes a melee attack against you, before being hit, if your speed isn't 0, you can move 5 feet away from the foe without triggering opportunity attacks, potentially avoiding the attack if you leave its range.</description>
+		</sheet>
+	</element>
+	<element name="Reckless Fire" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_RECKLESS_FIRE">
+		<prerequisite>Path of the Trigger feature</prerequisite>
+		<requirements>ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER</requirements>
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p><em>Prerequisite: Pact of the Trigger feature</em></p>
+			<p>Your shots are like a rain of lead. When you roll a 1 or 2 on a damage die for a cantrip you cast with your hex gun, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</p>
+		</description>	
+		<sheet>
+			<description>When you roll a 1 or 2 on a damage die for a cantrip you cast with your hex gun, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</description>
+		</sheet>
+	</element>
+	<element name="Repeating Cantrips" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_REPEATING_CANTRIPS">
+		<prerequisite>5th level, Path of the Trigger feature</prerequisite>
+		<requirements>[level:warlock:5],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER</requirements>
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p><em>Prerequisite: 5th level, Pact of the Trigger feature</em></p>
+			<p>When you fire a cantrip through your hex gun, its non-damaging effects (such as the speed reduction from ray of frost) can apply multiple times but not more than once per creature.</p>
+		</description>	
+		<sheet>
+			<description>When you fire a cantrip through your hex gun, its non-damaging effects (such as the speed reduction from ray of frost) can apply multiple times but not more than once per creature.</description>
+		</sheet>
+	</element>
+	<element name="Ricochet" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_RICOCHET">
+		<prerequisite>7th level, Path of the Trigger feature</prerequisite>
+		<requirements>[level:warlock:7],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER</requirements>
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p><em>Prerequisite: 7th level, Pact of the Trigger feature</em></p>
+			<p>Until the end of your turn, you enhance your hex gun. When you hit a creature with a cantrip cast with your hex gun, you can immediately cause the hit to wound a second creature within 15 feet of the original target. The second target takes damage (of the type of the cantrip) equal to your Charisma modifier (minimum 1).</p>
+			<p class="indent">You can use this invocation to enhance your hex gun a number of times equal to your Charisma modifier, and you regain all expended uses when you finish a short or long rest.</p>
+		</description>	
+		<sheet usage="{{charisma:modifier}}/Rest">
+			<description>Until the end of your turn, you enhance your hex gun. When you hit a creature with a cantrip cast with your hex gun, you can immediately cause the hit to wound a second creature within 15 feet of the original target. The second target takes {{eldritch invocation:ricochet:damage}} damage (of the type of the cantrip).</description>
+		</sheet>
+		<rules>
+			<stat name="eldritch invocation:ricochet:damage" value="1" bonus="base" />
+			<stat name="eldritch invocation:ricochet:damage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Riposte" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_RIPOSTE">
+		<prerequisite>7th level, Path of the Trigger feature</prerequisite>
+		<requirements>[level:warlock:7],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER,ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_REVOLVER_FORM</requirements>
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p><em>Prerequisite: 7th level, Pact of the Trigger feature (revolver form)</em></p>
+			<p>When an enemy attacks you with a melee attack, you can fire a special bullet to counter it as a reaction before being hit. Make a melee or ranged spell attack. On a hit, the enemy takes 1d10 force damage, its attack fails, and it is stunned until the end of its current turn.</p>
+			<p class="indent">Once you’ve used this invocation to damage an enemy, you can’t use it again until you finish a short or long rest.</p>
+		</description>	
+		<sheet>
+			<description>When an enemy attacks you with a melee attack, you can fire a special bullet to counter it as a reaction before being hit. Make a melee or ranged spell attack. On a hit, the enemy takes 1d10 force damage, its attack fails, and it is stunned until the end of its current turn.&#13;
+				Once you’ve used this invocation to damage an enemy, you can’t use it again until you finish a short or long rest.
+			</description>
+		</sheet>
+	</element>
+
+	
+</elements>

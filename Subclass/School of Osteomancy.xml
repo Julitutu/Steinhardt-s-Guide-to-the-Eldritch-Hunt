@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>School of Osteomancy</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="School of Osteomancy.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/School of Osteomancy.xml" />
+		</update>
+	</info>
+
+	<element name="School of Osteomancy" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_WIZARD_SCHOOL_OF_OSTEOMANCY">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Osteomancers are powerful wizards who understand the power that can be harvested from bones. Often said to be cursed and talked about under cover of night, this sort of magic makes the uneducated shiver and the scholar morbidly curious. Those who have the cunning, bravery, or simple foolishness to pursue research in this field find themselves rewarded with afflicted knowledge. These accursed souls are known as Osteomancers.</p>
+			<p class="indent">The abilities of an Osteomancer are unsettling, if not terrifying to most. Due to their focus on manipulating bones, a topic that is cloaked in mystery and taboo, regular folks regard them as cursed and malevolent beings. Those who see their magic at work have compared it to witnessing a puppet master—bending and twisting enemies to their whim. Many people fail to realize that an Osteomancer's favorite puppet is themselves, and that they will readily desecrate their own body in order to crush their opponent.</p>
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_BRITTLE_BONE_ARMOR" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_ANATOMICAL_EXPERT" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_BONE_PUPPETRY" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_SKELETAL_MASTERY" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_IMPROVED_BONE_PUPPETRY" />
+		</description>
+		<sheet display="false">
+			<description>Osteomancers are powerful wizards who understand the power that can be harvested from bones.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_BRITTLE_BONE_ARMOR" level="2" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_ANATOMICAL_EXPERT" level="2" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_BONE_PUPPETRY" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_SKELETAL_MASTERY" level="10" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_IMPROVED_BONE_PUPPETRY" level="14" />
+
+            <stat name="osteomancy:dc" value="8" />
+            <stat name="osteomancy:dc" value="proficiency" />
+            <stat name="osteomancy:dc" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+	<element name="Brittle Bone Armor" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_BRITTLE_BONE_ARMOR">
+		<description>
+			<p>Starting at 2nd level, you learn the basics of osteomancy, using it for protection. As a bonus action, if you're not wearing armor or wielding a shield, you can force a frame of bones out of your body to protect you. This grants you temporary hit points equal to 2 times your level in this class.</p>
+			<p class="indent">This armor lasts for one minute, or until you lose the temporary hit points. While you have these temporary hit points, you gain resistance to slashing and piercing damage, and you gain a bonus to AC equal to one-third your level in this class (rounded down, minimum of 1).</p>
+			<p class="indent">Once you've used this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Bonus Action">
+			<description>As a bonus action, if you're not wearing armor or wielding a shield, you can force a frame of bones out of your body to protect you. This grants you {{osteomancy level}} temporary hit points.&#13;
+			This armor lasts for one minute, or until you lose the temporary hit points. While you have these temporary hit points, you gain resistance to slashing and piercing damage, and you gain a bonus to AC equal to {{brittle bone armor:ac}}.</description>
+		</sheet>
+        <rules>
+            <stat name="osteomancy level" value="level:wizard" />
+            <stat name="osteomancy level" value="level:wizard" />
+
+            <stat name="brittle bone armor:ac" value="1" bonus="armor" />
+            <stat name="brittle bone armor:ac" value="2" bonus="armor" level="4"/>
+            <stat name="brittle bone armor:ac" value="3" bonus="armor" level="7"/>
+            <stat name="brittle bone armor:ac" value="4" bonus="armor" level="10"/>
+            <stat name="brittle bone armor:ac" value="5" bonus="armor" level="13"/>
+            <stat name="brittle bone armor:ac" value="6" bonus="armor" level="16"/>
+            <stat name="brittle bone armor:ac" value="7" bonus="armor" level="19"/>
+        </rules>
+	</element>
+
+	<element name="Anatomical Expert" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_ANATOMICAL_EXPERT">
+		<description>
+			<p>Also at 2nd level, your pursuit of osteomancy has required many hours studying the anatomy of a myriad of creatures. You gain proficiency in Medicine checks, and when you make a Medicine check, you gain a bonus to the check equal to your Intelligence modifier. In addition, when this check concerns a creature that possesses a skeleton, you add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in Medicine checks, and when you make a Medicine check, you gain a bonus to the check equal to your Intelligence modifier. In addition, when this check concerns a creature that possesses a skeleton, you add double your proficiency bonus to the check, instead of your normal proficiency bonus.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+            <stat name="medicine:misc" value="inteligence:modifer" />
+		</rules>
+	</element>
+
+	<element name="Bone Puppetry" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_BONE_PUPPETRY">
+		<description>
+			<p>Beginning at 6th level, as an action, you focus your grim magic towards a creature with bones within 60 feet of you. It must make a Strength saving throw against your spell save DC. On a failure, you take total and precise control of its skeleton. Until the end of the creature's next turn, it takes only the actions you choose and doesn't do anything that you don't allow it to do. In the creature’s efforts to resist your command, attack rolls it makes against its allies have disadvantage, and its allies have advantage on saving throws from effects caused by the creature.</p>
+			<p class="indent">You can only have one such creature under your control at a time. You can use this feature a number of times equal to your Intelligence modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{bone puppetry:uses}}/Long Rest" action="Action">
+			<description>As an action, you focus your grim magic towards a creature with bones within 60 feet of you. It must make a DC {{osteomancy:dc}} Strength saving throw. On a failure, you take total and precise control of its skeleton. Until the end of the creature's next turn, it takes only the actions you choose and doesn't do anything that you don't allow it to do. In the creature’s efforts to resist your command, attack rolls it makes against its allies have disadvantage, and its allies have advantage on saving throws from effects caused by the creature.&#13;
+			You can only have one such creature under your control at a time.</description>
+		</sheet>
+        <rules>
+            <stat name="bone puppetry:uses" value="1" bonus="base" />
+            <stat name="bone puppetry:uses" value="intelligence:modifier" bonus="base" />
+        </rules>
+	</element>
+
+	<element name="Skeletal Mastery" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_SKELETAL_MASTERY">
+		<description>
+			<p>Starting at 10th level, you are a master of your own body; you can reshape your bones, including those of your face, to appear as a completely different person. You can cast the alter self spell at will, without expending a spell slot or needing to concentrate on the spell. When you cast this spell using this feature, you can only use the Change Appearance or Natural Weapons options.</p>
+			<p class="indent">In addition, you also gain the ability to dissolve or restore your own skeleton as an action. While boneless, you can move yourself through sheer muscular and magical control. In this form, your speed becomes 10 feet, and you can move through a space as narrow as 5 inches without squeezing. Further, you are considered prone, cannot use your hands, and you can’t attack or cast spells. As a bonus action, you can regenerate the bones in your hands to exert finer control over them until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>You can cast the alter self spell at will, without expending a spell slot or needing to concentrate on the spell. When you cast this spell using this feature, you can only use the Change Appearance or Natural Weapons options.&#13;
+			In addition, you also gain the ability to dissolve or restore your own skeleton as an action. While boneless, you can move yourself through sheer muscular and magical control. In this form, your speed becomes 10 feet, and you can move through a space as narrow as 5 inches without squeezing. Further, you are considered prone, cannot use your hands, and you can’t attack or cast spells. As a bonus action, you can regenerate the bones in your hands to exert finer control over them until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Wizard" />
+		</rules>
+	</element>
+
+	<element name="Improved Bone Puppetry" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_OSTEOMANCY_IMPROVED_BONE_PUPPETRY">
+		<description>
+			<p>At 14th level, you’ve enhanced your mastery over skeletal manipulation. When a creature fails its saving throw against your Bone Puppetry feature, your control of the creature lasts for 1 minute instead. The creature can’t resist your command; it doesn’t suffer disadvantage on attacks against its allies, nor do they have advantage on saves against effects caused by the creature. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. You must concentrate on this feature as you would concentrate on a spell, and damage can't break your concentration.</p>
+			<p class="indent">Once under your control, when the creature repeats the saving throw against your Bone Puppetry, you can choose to expend one additional use of the feature to give the creature disadvantage on the save. You must decide to do so before seeing the result of the roll.</p>
+		</description>
+		<sheet>
+			<description>When a creature fails its saving throw against your Bone Puppetry feature, your control of the creature lasts for 1 minute instead. The creature can’t resist your command; it doesn’t suffer disadvantage on attacks against its allies, nor do they have advantage on saves against effects caused by the creature. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. You must concentrate on this feature as you would concentrate on a spell, and damage can't break your concentration.&#13;
+            Once under your control, when the creature repeats the saving throw against your Bone Puppetry, you can choose to expend one additional use of the feature to give the creature disadvantage on the save. You must decide to do so before seeing the result of the roll.</description>
+		</sheet>
+	</element>
+</elements>

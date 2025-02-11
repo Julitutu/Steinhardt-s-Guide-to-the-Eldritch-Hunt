@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Pact of the Trigger" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>You can use your action to draw upon the powers of your Patron and create a hex gun in your empty hand. You can choose the form that this spellcasting focus takes each time you create it. It can either be a Revolver or a Sniper (detailed below).</p>
+			<p class="indent">Your hex gun disappears if it is more than 5 feet away from you for 1 minute. It also disappears if you use this feature again, if you dismiss it (no action required), or if you die.</p>
+			<p class="indent">Your hex gun acts as a spellcasting focus, and when you cast cantrips with it, it channels them as bullets (these still count as spells). Instead of increasing the damage of the cantrip when you reach certain levels, you can cast the cantrip additional times as part of the same action (except for Eldritch Blast, which is cast as normal). To be cast in this way, the cantrip must deal damage, must make a spell attack or require a saving throw, and must have a range other than self.</p>
+			<p class="indent">When you cast a cantrip in this manner, you cast it 2 times at 5th level, 3 times at 11th level, and 4 times at 17th level. The cantrip can deal its damage more than once, but its other effects can't be applied again.</p>
+			<p class="indent"><em>Revolver Form:</em> Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged spell attack rolls cast through the hex gun. While wielding this weapon, you know the shocking grasp cantrip.</p>
+			<p class="indent"><em>Sniper Form:</em> Your ranged spell attack rolls cast through the hex gun have their range doubled and ignore half-cover. While wielding this weapon, you know the ray of frost cantrip.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can use your action to draw upon the powers of your Patron and create a hex gun in your empty hand. You can choose the form that this spellcasting focus takes each time you create it. It can either be a Revolver or a Sniper. &#13;
+				Your hex gun acts as a spellcasting focus, and when you cast cantrips with it, it channels them as bullets (these still count as spells). Instead of increasing the damage of the cantrip when you reach certain levels, you can cast the cantrip additional times as part of the same action (except for Eldritch Blast, which is cast as normal). To be cast in this way, the cantrip must deal damage, must make a spell attack or require a saving throw, and must have a range other than self.&#13;
+			</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Hex Gun (Pact of the Trigger)" supports="Pact Trigger Gun" />
+			<stat name="trigger:hex gun:count" value="2" />
+			<stat name="trigger:hex gun:count" value="1" level="5" />
+			<stat name="trigger:hex gun:count" value="1" level="11" />
+			<stat name="trigger:hex gun:count" value="1" level="17" />
+		</rules>
+	</element> 
+	<element name="Revolver Form" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_REVOLVER_FORM">
+		<supports>Pact Trigger Gun</supports>
+		<description>
+			<h5>Pact of the Trigger</h5>
+			<p>Your hex gun acts as a spellcasting focus, and when you cast cantrips with it, it channels them as bullets (these still count as spells). Instead of increasing the damage of the cantrip when you reach certain levels, you can cast the cantrip additional times as part of the same action (except for Eldritch Blast, which is cast as normal). To be cast in this way, the cantrip must deal damage, must make a spell attack or require a saving throw, and must have a range other than self.</p>
+			<p>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged spell attack rolls cast through the hex gun. While wielding this weapon, you know the shocking grasp cantrip.</p>
+		</description>
+		<sheet usage="{{trigger:hex gun:count}} Casts">
+			<description>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged spell attack rolls cast through the hex gun. While wielding this weapon, you know the shocking grasp cantrip. </description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+		</rules>
+	</element>
+	<element name="Sniper Form" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_SNIPER_FORM">
+		<supports>Pact Trigger Gun</supports>
+		<description>
+			<h5>Pact of the Trigger</h5>
+			<p>Your hex gun acts as a spellcasting focus, and when you cast cantrips with it, it channels them as bullets (these still count as spells). Instead of increasing the damage of the cantrip when you reach certain levels, you can cast the cantrip additional times as part of the same action (except for Eldritch Blast, which is cast as normal). To be cast in this way, the cantrip must deal damage, must make a spell attack or require a saving throw, and must have a range other than self.</p>
+			<p>Your ranged spell attack rolls cast through the hex gun have their range doubled and ignore half-cover. While wielding this weapon, you know the ray of frost cantrip.</p>
+		</description>
+		<sheet usage="{{trigger:hex gun:count}} Casts">
+			<description>Your ranged spell attack rolls cast through the hex gun have their range doubled and ignore half-cover. While wielding this weapon, you know the ray of frost cantrip. </description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" />
+		</rules>
+	</element>
+	
+</elements>

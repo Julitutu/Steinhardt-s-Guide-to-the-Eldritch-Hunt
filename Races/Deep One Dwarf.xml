@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Deep One Dwarf</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="Deep One Dwarf.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Deep One Dwarf.xml" />
+		</update>
+	</info>
+
+	<!-- Deep One Dwarf Race -->
+	<element name="Deep One Dwarf" type="Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACE_DEEP_ONE_DWARF">
+		<description>
+			<p>Far removed from the splendorous halls of their ancestral kingdoms, the dwarves of Luyarnha have undergone a profound transformation, the likes of which none of their kin foresaw. These once grand merchants perpetrated a sin – coveting that which was not rightfully theirs – and for this dereliction of morality, they begot a curse of unspeakable malevolence, condemning their blood to the compelled service of He Who Lies Dreaming.</p>
+			<p><Strong>His Blessing.</Strong> Their very nature was irrevocably altered, much like those who dwell beneath the fathomless depths of the ocean; relinquished was their mortality, traded for the cold embrace of eternal slavery. They would never perish, but instead live out their days alongside He who had walked the earth long before the advent of humankind and would endure their demise for wretched ages, forever bound as pawns in the insidious machinations of their infinite master. Their tragic fate – wrought by their own rapacious avarice – is the exorbitant price they paid for their crime, and one they cannot escape.</p>
+			<p><Strong>Deceptive Appearance.</Strong> This curse has warped their flesh, normally so averse to magic, and created within them gates of eldritch arcane, imparting them with the peculiar ability to cloak their twisted forms, using illusions that can deceive even the keenest adventurers into seeing them as bona fide dwarves.</p>
+			<p><Strong>Accursed Immortality.</Strong> Despite possessing full control of their mental faculty from a young age, their physical form twists and contorts as the impossible weight of the gift of the Slumbering One scrapes them minute after minute. Their once sturdy limbs warp and bend in grotesque fashion, their eyes become sunken and hollow, and their skin takes on a sickly gray pallor. The sanity of their younger days begins to slip away, leaving them at the mercy of His malevolent dreams and to dwell within their once dwarven flesh. This destiny – a fate more dreadful than death – is something that their aging mind anticipates with glee.</p>
+			<h4>DEEP ONE DWARF TRAITS</h4>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2 and your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Aberration.</em></strong> Your creature type is aberration, rather than humanoid.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Deep One Dwarves mature much faster than humans, reaching maturity at the age of 10. They cannot die of old age; instead their aging mind progressively loses grip over their body, turning them into brainless servants of He Who Lies Dreaming when they reach 50 years of age.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet and you have a swimming speed of 25 feet.</p>
+			<p class="indent"><strong><em>Otherworldly Resilience.</em></strong> You have advantage on saving throws against poison, and you have resistance against cold damage.</p>
+			<p class="indent"><strong><em>Illusory Body.</em></strong> Although your body is covered in tentacles, clams, seashells, and other eldritch appendages, you are covered by an illusion which makes you appear like a normal hill dwarf to others. You can use an action to turn this illusion on or off. Other Deep Ones can see through this illusion.</p>
+			<p class="indent"><strong><em>Sailor Training.</em></strong> You have proficiency with cleavers, tridents, and firearms.</p>
+			<p class="indent"><strong><em>Amphibious.</em></strong> You can breathe air and water.</p>
+			<p class="indent"><strong><em>Cosmic Knowledge.</em></strong> Whenever you make an History check related to the origin of an eldritch item or construction, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+			<p class="indent"><strong><em>Guiding Light.</em></strong> You know the dancing lights cantrip. Charisma is your spellcasting modifier for the spell.</p>
+			<p class="indent"><strong><em>The Dreamer's Curse.</em></strong> Your mind is clouded by the dreams of the Slumbering One, and you find it hard to discern between reality and dream. You have disadvantage on saving throws against illusions.</p>
+			<p class="indent"><strong><em>Fathomless Limb.</em></strong> Your body has been altered beyond recognition by the Slumbering One, giving you one of the following body alterations:</p>
+			<ul>
+				<li><strong>Coiling Arm.</strong> Your arm is nothing but a writhing mass of tentacles that flail the air. On your turn, after hitting an enemy with a melee attack, you can attempt to grapple them as a bonus action (normal grappling restrictions apply).</li>
+				<li><strong>Brutal Pincers.</strong> Your forearm –a massive pincer– is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. If you are targeting a creature you are grappling, the damage die becomes a d10 instead. You cannot use this arm to make any precise hand manipulation.</li>
+				<li><strong>Mucoid Extremities.</strong> Your hands and feet are palmed and covered in cups. Your swimming speed increases to 30 feet, and you gain a climbing speed of 20 feet.</li>
+			</ul>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Deep Speech, and Dwarvish.</p>
+			<p class="indent"><strong><em>The Dreamer's Gifts (Optional Trait at the GM’s Discretion).</em></strong> Your devotion to the cosmic being that warped your species is rewarded. Starting at level 5, you gain the following benefits:</p>
+			<ul class="unstyled">
+				<li>Whenever you fail an ability check or saving throw, you can draw upon your master’s powers to succeed instead. Once you've used this ability, you can't do so again until the Dreamer has replaced one of your d20 rolls with a 1. The GM decides when this unfortunate moment happens.</li>
+				<li>You are immune to the curse of the Slumbering Moon.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">4'</set>
+			<set name="weight">150 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Constitution +2, Charisma +1) -->
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Deep One Dwarf)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Deep One Dwarf)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Creature Type (Aberration) -->
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_ABERRATION" />
+
+			<!-- Size (Medium) -->
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+
+			<!-- Speed (25 ft. walking, 25 ft. swimming) -->
+			<stat name="innate speed" value="25" bonus="base" />
+			<stat name="innate speed:swim" value="25" bonus="base" />
+
+			<!-- Otherworldly Resilience -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_OTHERWORLDLY_RESILIENCE" />
+
+			<!-- Illusory Body -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_ILLUSORY_BODY" />
+
+			<!-- Sailor Training -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_SAILOR_TRAINING" />
+
+			<!-- Amphibious -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_AMPHIBIOUS" />
+
+			<!-- Cosmic Knowledge -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_COSMIC_KNOWLEDGE" />
+
+			<!-- Guiding Light -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_GUIDING_LIGHT" />
+
+			<!-- The Dreamer's Curse -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_THE_DREAMERS_CURSE" />
+
+			<!-- Fathomless Limb -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_FATHOMLESS_LIMB" />
+
+			<!-- Languages (Common, Deep Speech, Dwarvish) -->
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_DWARVISH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<!-- The Dreamer's Gifts (Optional) -->
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_THE_DREAMERS_GIFTS" level="5"/>
+		</rules>
+	</element>
+
+	<!-- Otherworldly Resilience Trait -->
+	<element name="Otherworldly Resilience" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_OTHERWORLDLY_RESILIENCE">
+		<description>
+			<p>You have advantage on saving throws against poison, and you have resistance against cold damage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against poison, and you have resistance against cold damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<!-- Illusory Body Trait -->
+	<element name="Illusory Body" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_ILLUSORY_BODY">
+		<description>
+			<p>Although your body is covered in tentacles, clams, seashells, and other eldritch appendages, you are covered by an illusion which makes you appear like a normal hill dwarf to others. You can use an action to turn this illusion on or off. Other Deep Ones can see through this illusion.</p>
+		</description>
+		<sheet action="Action">
+			<description>Although your body is covered in tentacles, clams, seashells, and other eldritch appendages, you are covered by an illusion which makes you appear like a normal hill dwarf to others. You can use an action to turn this illusion on or off. Other Deep Ones can see through this illusion.</description>
+		</sheet>
+	</element>
+
+	<!-- Sailor Training Trait -->
+	<element name="Sailor Training" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_SAILOR_TRAINING">
+		<description>
+			<p>You have proficiency with cleavers, tridents, and firearms.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency with cleavers, tridents, and firearms.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLEAVER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" />
+		</rules>
+	</element>
+
+	<!-- Amphibious Trait -->
+	<element name="Amphibious" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_AMPHIBIOUS">
+		<description>
+			<p>You can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe air and water.</description>
+		</sheet>
+	</element>
+
+	<!-- Cosmic Knowledge Trait -->
+	<element name="Cosmic Knowledge" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_COSMIC_KNOWLEDGE">
+		<description>
+			<p>Whenever you make an History check related to the origin of an eldritch item or construction, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>A +{{cosmic knowledge:check}} on History checks related to origin of an eldritch item or construction.</description>
+		</sheet>
+		<rules>
+			<stat name="cosmic knowledge:check" value="intelligence:modifier" />
+			<stat name="cosmic knowledge:check" value="history:misc" />
+			<stat name="cosmic knowledge:check" value="proficiency" />
+			<stat name="cosmic knowledge:check" value="proficiency" />
+		</rules>
+	</element>
+
+	<!-- Guiding Light Trait -->
+	<element name="Guiding Light" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_GUIDING_LIGHT">
+		<description>
+			<p>You know the dancing lights cantrip. Charisma is your spellcasting modifier for the spell.</p>
+		</description>
+		<sheet>
+			<description>You know the dancing lights cantrip. Charisma is your spellcasting modifier for the spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" />
+		</rules>
+	</element>
+
+	<!-- The Dreamer's Curse Trait -->
+	<element name="The Dreamer's Curse" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_THE_DREAMERS_CURSE">
+		<description>
+			<p>Your mind is clouded by the dreams of the Slumbering One, and you find it hard to discern between reality and dream. You have disadvantage on saving throws against illusions.</p>
+		</description>
+		<sheet>
+			<description>Your mind is clouded by the dreams of the Slumbering One, and you find it hard to discern between reality and dream. You have disadvantage on saving throws against illusions.</description>
+		</sheet>
+	</element>
+
+	<!-- Fathomless Limb Trait -->
+	<element name="Fathomless Limb" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_FATHOMLESS_LIMB">
+		<description>
+			<p>Your body has been altered beyond recognition by the Slumbering One, giving you one of the following body alterations:</p>
+			<ul>
+				<li><strong>Coiling Arm.</strong> Your arm is nothing but a writhing mass of tentacles that flail the air. On your turn, after hitting an enemy with a melee attack, you can attempt to grapple them as a bonus action (normal grappling restrictions apply).</li>
+				<li><strong>Brutal Pincers.</strong> Your forearm –a massive pincer– is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. If you are targeting a creature you are grappling, the damage die becomes a d10 instead. You cannot use this arm to make any precise hand manipulation.</li>
+				<li><strong>Mucoid Extremities.</strong> Your hands and feet are palmed and covered in cups. Your swimming speed increases to 30 feet, and you gain a climbing speed of 20 feet.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Fathomless Limb (Deep One Dwarf)" supports="Fathomless Limb" />
+		</rules>
+	</element>
+
+	<!-- Coiling Arm Option -->
+	<element name="Coiling Arm" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_FATHOMLESS_LIMB_COILING_ARM">
+		<supports>Fathomless Limb</supports>
+		<description>
+			<p>Your arm is nothing but a writhing mass of tentacles that flail the air. On your turn, after hitting an enemy with a melee attack, you can attempt to grapple them as a bonus action (normal grappling restrictions apply).</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Your arm is nothing but a writhing mass of tentacles that flail the air. On your turn, after hitting an enemy with a melee attack, you can attempt to grapple them as a bonus action (normal grappling restrictions apply).</description>
+		</sheet>
+	</element>
+
+	<!-- Brutal Pincers Option -->
+	<element name="Brutal Pincers" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_FATHOMLESS_LIMB_BRUTAL_PINCERS">
+		<supports>Fathomless Limb</supports>
+		<description>
+			<p>Your forearm –a massive pincer– is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. If you are targeting a creature you are grappling, the damage die becomes a d10 instead. You cannot use this arm to make any precise hand manipulation.</p>
+		</description>
+		<sheet>
+			<description>Your forearm –a massive pincer– is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal 1d6 + {{strength:modifier}} piercing damage, instead of the bludgeoning damage normal for an unarmed strike. If you are targeting a creature you are grappling, the damage die becomes a d10 instead. You cannot use this arm to make any precise hand manipulation.</description>
+		</sheet>
+	</element>
+
+	<!-- Mucoid Extremities Option -->
+	<element name="Mucoid Extremities" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_FATHOMLESS_LIMB_MUCOID_EXTREMITIES">
+		<supports>Fathomless Limb</supports>
+		<description>
+			<p>Your hands and feet are palmed and covered in cups. Your swimming speed increases to 30 feet, and you gain a climbing speed of 20 feet.</p>
+		</description>
+		<sheet>
+			<description>Your hands and feet are palmed and covered in cups. Your swimming speed increases to 30 feet, and you gain a climbing speed of 20 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="20" bonus="base" />
+			<stat name="innate speed:swim" value="30" bonus="base" />
+		</rules>
+	</element>
+
+	<!-- The Dreamer's Gifts Trait (Optional) -->
+	<element name="The Dreamer's Gifts" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_DEEP_ONE_DWARF_THE_DREAMERS_GIFTS">
+		<description>
+			<p>Your devotion to the cosmic being that warped your species is rewarded. Starting at level 5, you gain the following benefits:</p>
+			<ul>
+				<li>Whenever you fail an ability check or saving throw, you can draw upon your master’s powers to succeed instead. Once you've used this ability, you can't do so again until the Dreamer has replaced one of your d20 rolls with a 1. The GM decides when this unfortunate moment happens.</li>
+				<li>You are immune to the curse of the Slumbering Moon.</li>
+			</ul>
+		</description>
+		<sheet usage="1/Dreamer's Curse">
+			<description level="5">Whenever you fail an ability check or saving throw, you can draw upon your master’s powers to succeed instead. Once you've used this ability, you can't do so again until the Dreamer has replaced one of your d20 rolls with a 1. The GM decides when this unfortunate moment happens.
+			You are immune to the curse of the Slumbering Moon.</description>
+		</sheet>
+	</element>
+</elements>

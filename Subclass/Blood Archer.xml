@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Blood Archer</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="Blood Archer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Blood Archer.xml" />
+		</update>
+	</info>
+
+	<element name="Blood Archer" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FIGHTER_BLOOD_ARCHER">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Blood archers are cursed beings that should not exist. Birthed from nightmarish experiments by the Obitus Scholare, these hunters use a cursed method of archery, weaving their own blood into attacks to produce supernatural effects. Their powers come from tarblood, an amalgamation of hundreds of species’ blood that was forcefully injected in the veins of hunters. Those who didn’t die or go insane during the procedure became the first blood archers; only they and their descendants can wield this vicious power.</p>
+			<div class="sidebar">
+			<p class="flavor"><b>GM Note:</b> This subclass can be played using crossbows instead of bows. It can also be played using firearms, although not all of them. The firearms that can be used for this subclass are: flintlocks, pistols, rifles.</p>
+			</div>
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_SHOT" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_ARCHER_ANATOMY" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_ARROWS" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_RECALL" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_OF_CREATION" />
+		</description>
+		<sheet display="false">
+			<description>Blood archers are cursed beings that should not exist. Birthed from nightmarish experiments by the Obitus Scholare, these hunters use a cursed method of archery, weaving their own blood into attacks to produce supernatural effects.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_SHOT" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_ARCHER_ANATOMY" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_ARROWS" level="7" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_RECALL" level="10" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_OF_CREATION" level="15" />
+		</rules>
+	</element>
+
+	<element name="Blood Shot" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_SHOT">
+		<description>
+			<p>At 3rd level, you learn to unleash special magical effects with some of your shots. When you gain this feature, you learn three Blood Shot options of your choice (see Blood Shot Options below).</p>
+			<p class="indent">Once per turn when you fire an arrow from a shortbow or longbow as part of the Attack action, you can apply one of your Blood Shot options to that arrow. You decide to use the option when the arrow hits, unless the option doesn’t involve an attack roll. You can use this feature a number of times equal to 1 + your Constitution modifier (minimum of 1), and you regain all expended uses when you finish a short or long rest.</p>
+			<p class="indent">You gain an additional Blood Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.</p>
+			<div class="reference">
+				<div element="ID_LT_SGEH_BLOOD_SHOT_OPTIONS" />
+			</div>
+		</description>
+		<sheet usage="{{blood shot:usages}}/Short Rest" bonus="base">
+			<description>Once per turn when you fire an arrow from a shortbow or longbow as part of the Attack action, you can apply one of your Blood Shot options to that arrow. You decide to use the option when the arrow hits, unless the option doesn’t involve an attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="blood shot:usages" value="1" />
+			<stat name="blood shot:usages" value="constitution:modifier" />
+
+            <select type="Blood Shot" name="Blood Shot Option" supports="Blood Shot" number="3" />
+            <select type="Blood Shot" name="Blood Shot Option (7th level)" supports="Blood Shot" number="1" level="7" />
+            <select type="Blood Shot" name="Blood Shot Option (10th level)" supports="Blood Shot" number="1" level="10" />
+            <select type="Blood Shot" name="Blood Shot Option (15th level)" supports="Blood Shot" number="1" level="15" />
+            <select type="Blood Shot" name="Blood Shot Option (18th level)" supports="Blood Shot" number="1" level="18" />
+        </rules>
+	</element>
+
+	<element name="Blood Archer Anatomy" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_ARCHER_ANATOMY">
+		<description>
+			<p>At 3rd level, your body adapts to the tarblood within. You are immune to disease, have resistance to poison damage, and have advantage on saving throws against poison.</p>
+			<p class="indent">In addition, once you've fought a creature, you can relentlessly track it, sensing the blood of your prey. You have advantage on any Perception or Survival check you make to find a creature you've dealt damage to and has blood.</p>
+		</description>
+		<sheet>
+			<description>You are immune to disease, have resistance to poison damage, and have advantage on saving throws against poison.&#13;
+			In addition, once you've fought a creature, you can relentlessly track it, sensing the blood of your prey. You have advantage on any Perception or Survival check you make to find a creature you've dealt damage to and has blood.</description>
+		</sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+	</element>
+
+	<element name="Blood Arrows" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_ARROWS">
+		<description>
+			<p>At 7th level, you gain the ability to create arrows with your blood. When you make a ranged attack using a shortbow or longbow, you can create a blood arrow in place of standard ammunition. Blood arrows are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<p class="indent">In addition, when you use your Blood Shot feature, you can add your Constitution modifier to the damage roll of the effect.</p>
+		</description>
+		<sheet>
+			<description>When you make a ranged attack using a shortbow or longbow, you can create a blood arrow in place of standard ammunition. Blood arrows are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.&#13;
+			In addition, when you use your Blood Shot feature, you can add a +{{constitution:modifier}} to the damage roll of the effect.</description>
+		</sheet>
+	</element>
+
+	<element name="Blood Recall" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_RECALL">
+		<description>
+			<p>At 10th level, you learn how to recall your arrows. When you make an attack roll with a blood arrow and miss, you can use a bonus action to reroll the attack roll against the original target, as the arrow flies back towards you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you make an attack roll with a blood arrow and miss, you can use a bonus action to reroll the attack roll against the original target, as the arrow flies back towards you.</description>
+		</sheet>
+	</element>
+
+	<element name="Blood of Creation" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_BLOOD_ARCHER_BLOOD_OF_CREATION">
+		<description>
+			<p>Starting at 15th level, as an action, you can choose to sacrifice your lifeforce to reinvigorate control over your blood magic. You take necrotic damage equal to 1d10 + your Constitution modifier, which you cannot reduce in any way, and regain 1d4 uses of your Blood Shot.</p>
+		</description>
+		<sheet action="Action">
+			<description>As an action, you can choose to sacrifice your lifeforce to reinvigorate control over your blood magic. You take necrotic damage equal to 1d10 + {{constitution:modifier}}, which you cannot reduce in any way, and regain 1d4 uses of your Blood Shot.</description>
+		</sheet>
+	</element>
+
+    <!-- Blood Shot Options -->
+    <element name="Blood Shot Options" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTIONS">
+        <description>
+			<p>The Blood Shot feature lets you choose options at certain levels, which are presented here in alphabetical order. They are all magical effects. Some of the Blood Shot options require your target to make a saving throw; the DC is calculated as follows:</p>
+            <center><p>Blood Shot save DC = 8 + your proficiency bonus + your Constitution modifier</p></center>
+        </description>
+        <sheet display="false">
+            <description>Blood Shot save DC = 8 + your proficiency bonus + your Constitution modifier</description>
+        </sheet>
+        <rules>
+            <stat name="blood shot:dc" value="8" />
+            <stat name="blood shot:dc" value="proficiency" />
+            <stat name="blood shot:dc" value="constitution:modifier" />
+        </rules>
+    </element>
+
+    <element name="Bewitching Arrow" type="Blood Shot" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_BEWITCHING_ARROW">
+        <supports>Blood Shot</supports>
+        <description>
+            <p>You infuse fey blood to cause this arrow to temporarily charm its target. The creature hit by the arrow takes an extra 2d6 psychic damage and must make a Wisdom saving throw. If it fails the save, you can choose one of the target's allies within 30 feet of it; the target now considers this ally as an enemy until the start of your next turn.</p>
+            <p>The psychic damage increases to 4d6 when you reach 18th level in this class.</p>
+        </description>
+        <sheet>
+            <description>The creature hit by the arrow takes an extra 2d6 psychic damage and must make a DC {{blood shot:dc}} Wisdom saving throw. If it fails the save, you can choose one of the target's allies within 30 feet of it; the target now considers this ally as an enemy until the start of your next turn.</description>
+            <description level="18">The creature hit by the arrow takes an extra 4d6 psychic damage and must make a DC {{blood shot:dc}} Wisdom saving throw. If it fails the save, you can choose one of the target's allies within 30 feet of it; the target now considers this ally as an enemy until the start of your next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Bloodboil Arrow" type="Blood Shot" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_BLOODBOIL_ARROW">
+        <supports>Blood Shot</supports>
+        <description>
+            <p>Fiendish blood is infused in this devilish arrow that you fire. The arrow detonates in a cloud of ignited blood after your attack. Immediately after the arrow hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage as their bodies start burning. This fire damage ignores resistance.</p>
+            <p>The fire damage increases to 4d6 when you reach 18th level in this class.</p>
+        </description>
+        <sheet>
+            <description>The arrow detonates in a cloud of ignited blood after your attack. Immediately after the arrow hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage as their bodies start burning. This fire damage ignores resistance.</description>
+            <description level="18">The arrow detonates in a cloud of ignited blood after your attack. Immediately after the arrow hits the creature, the target and all other creatures within 10 feet of it take 4d6 fire damage as their bodies start burning. This fire damage ignores resistance.</description>
+        </sheet>
+    </element>
+
+    <element name="Bloodshard Arrow" type="Blood Shot" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_BLOODSHARD_ARROW">
+        <supports>Blood Shot</supports>
+        <description>
+            <p>You transform your arrow into a thread of sharp blood, which, instead of an attack roll, fires forward in a 1-foot-wide, 30-foot-long line, before disappearing. The arrow passes harmlessly through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw, taking damage as if it were hit by the arrow plus an extra 1d6 piercing damage on a failed save, or half as much damage on a successful one.</p>
+            <p>This extra piercing damage increases to 2d6 when you reach 18th level in this class.</p>
+        </description>
+        <sheet>
+            <description>You transform your arrow into a thread of sharp blood, which, instead of an attack roll, fires forward in a 1-foot-wide, 30-foot-long line, before disappearing. The arrow passes harmlessly through objects, ignoring cover. Each creature in that line must make a DC {{blood shot:dc}} Dexterity saving throw, taking damage as if it were hit by the arrow plus an extra 1d6 piercing damage on a failed save, or half as much damage on a successful one.</description>
+            <description level="18">You transform your arrow into a thread of sharp blood, which, instead of an attack roll, fires forward in a 1-foot-wide, 30-foot-long line, before disappearing. The arrow passes harmlessly through objects, ignoring cover. Each creature in that line must make a DC {{blood shot:dc}} Dexterity saving throw, taking damage as if it were hit by the arrow plus an extra 2d6 piercing damage on a failed save, or half as much damage on a successful one.</description>
+        </sheet>
+    </element>
+
+    <element name="Constraining Arrow" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_CONSTRAINING_ARROW">
+        <supports>Blood Shot</supports>
+        <description>
+            <p>When this arrow strikes its target, blood tainted by oozes creates grasping and sharp tendrils of blood, which wrap around the target. The creature hit by the arrow takes an extra 2d6 acid damage, its speed is reduced by 10 feet, and it takes 2d6 acid damage the first time on each turn it moves 1 foot or more without teleporting. A creature can use its action to make an Athletics check against your Blood Shot save DC, removing the tendrils from itself or another creature within its reach on a success. Otherwise, the tendrils last for 1 minute or until you use this option again.</p>
+            <p>Both acid damages increase to 4d6 when you reach 18th level in this class.</p>
+        </description>
+        <sheet>
+            <description>When this arrow strikes its target, blood tainted by oozes creates grasping and sharp tendrils of blood, which wrap around the target. The creature hit by the arrow takes an extra 2d6 acid damage, its speed is reduced by 10 feet, and it takes 2d6 acid damage the first time on each turn it moves 1 foot or more without teleporting. A creature can use its action to make a DC {{ blood shot:dc}} Athletics check, removing the tendrils from itself or another creature within its reach on a success. Otherwise, the tendrils last for 1 minute or until you use this option again.</description>
+            <description level="18">When this arrow strikes its target, blood tainted by oozes creates grasping and sharp tendrils of blood, which wrap around the target. The creature hit by the arrow takes an extra 4d6 acid damage, its speed is reduced by 10 feet, and it takes 4d6 acid damage the first time on each turn it moves 1 foot or more without teleporting. A creature can use its action to make a DC {{blood shot:dc}} Athletics check , removing the tendrils from itself or another creature within its reach on a success. Otherwise, the tendrils last for 1 minute or until you use this option again.</description>
+        </sheet>
+    </element>
+
+    <element name="Exiling Arrow" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_EXILING_ARROW">
+        <supports>Blood Shot</supports>
+        <description>
+            <p>You use celestial blood to try to temporarily banish your target to a harmless location in the Celestial Plane. The creature hit by the arrow must also succeed on a Charisma saving throw or be banished. While banished in this way, its speed is 0 and it is incapacitated. At the end of its next turn, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</p>
+            <p>After you reach 18th level in this class, the target also takes 2d6 radiant damage when the arrow hits it.</p>
+        </description>
+        <sheet>
+            <description>The creature hit by the arrow must also succeed on a DC {{blood shot:dc}} Charisma saving throw or be banished. While banished in this way, its speed is 0 and it is incapacitated. At the end of its next turn, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</description>
+            <description level="18">The creature hit by the arrow takes an extra 2d6 radiant damage and must also succeed on a DC {{blood shot:dc}} Charisma saving throw or be banished. While banished in this way, its speed is 0 and it is incapacitated. At the end of its next turn, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</description>
+        </sheet>
+    </element>
+
+    <element name="Hunting Arrow" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_HUNTING_ARROW">
+        <supports>Blood Shot</supports>
+        <description>
+            <p>Using ancient bestial blood, you grant your arrow the ability to seek and hunt any foe, allowing the arrow to curve and twist its path in search of its prey. Instead of an attack roll, choose one creature you have seen in the past minute. The arrow flies toward that creature, moving around corners if necessary, and ignoring three-quarters cover and half cover. If the target is within the weapon’s range and there is a path large enough for the arrow to travel to the target, the target must make a Dexterity saving throw. On a failed save, it takes damage as if it were hit by the arrow plus an extra 1d6 piercing damage, and you learn the target’s current location.</p>
+            <p>The extra piercing damage increases to 2d6 when you reach 18th level in this class.</p>
+        </description>
+        <sheet>
+            <description>Instead of an attack roll, choose one creature you have seen in the past minute. The arrow flies toward that creature, moving around corners if necessary, and ignoring three-quarters cover and half cover. If the target is within the weapon’s range and there is a path large enough for the arrow to travel to the target, the target must make a DC {{blood shot:dc}} Dexterity saving throw. On a failed save, it takes damage as if it were hit by the arrow plus an extra 1d6 piercing damage, and you learn the target’s current location.</description>
+            <description level="18">Instead of an attack roll, choose one creature you have seen in the past minute. The arrow flies toward that creature, moving around corners if necessary, and ignoring three-quarters cover and half cover. If the target is within the weapon’s range and there is a path large enough for the arrow to travel to the target, the target must make a DC {{blood shot:dc}} Dexterity saving throw. On a failed save, it takes damage as if it were hit by the arrow plus an extra 2d6 piercing damage, and you learn the target’s current location.</description>
+        </sheet>
+    </element>
+
+    <element name="Shadowblood Arrow" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_SHADOWBLOOD_ARROW">
+        <supports>Blood Shot</supports>
+        <description>
+            <p>You weave threads of shadows from the blood of your foe, causing it to obscure the battlefield. The creature hit by the arrow takes an extra 2d6 necrotic damage and its blood forms a dark red mist that rises in a 10-foot radius around the target. This mist is magical darkness and spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. It lasts until the start of your next turn.</p>
+            <p>The necrotic damage increases to 4d6 when you reach 18th level in this class.</p>
+        </description>
+        <sheet>
+            <description>The creature hit by the arrow takes an extra 2d6 necrotic damage and its blood forms a dark red mist that rises in a 10-foot radius around the target. This mist is magical darkness and spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. It lasts until the start of your next turn.</description>
+            <description level="18">The creature hit by the arrow takes an extra 4d6 necrotic damage and its blood forms a dark red mist that rises in a 10-foot radius around the target. This mist is magical darkness and spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. It lasts until the start of your next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Thunderblood Arrow" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_THUNDERBLOOD_ARROW">
+        <supports>Blood Shot</supports>
+        <description>
+            <p>You imbue your arrow with forceful energy drawn from the blood of giants. The arrow detonates immediately after it hits your target; the creature takes an extra 2d6 thunder damage and is pushed back 15 feet. In addition, it must succeed on a Strength saving throw against your Blood Shot save DC or be knocked prone.</p>
+            <p>The thunder damage increases to 4d6 when you reach 18th level in this class.</p>
+        </description>
+        <sheet>
+            <description>The arrow detonates immediately after it hits your target; the creature takes an extra 2d6 thunder damage and is pushed back 15 feet. In addition, it must succeed on a DC {{blood shot:dc}} Strength saving throw or be knocked prone.</description>
+            <description level="18">The arrow detonates immediately after it hits your target; the creature takes an extra 4d6 thunder damage and is pushed back 15 feet. In addition, it must succeed on a DC {{blood shot:dc}} Strength saving throw or be knocked prone.</description>
+        </sheet>
+    </element>
+
+    <element name="Withering Arrow" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_WITHERING_ARROW">
+        <supports>Blood Shot</supports>
+        <description>
+            <p>You weave cursed undead blood into your arrow. The creature hit by the arrow takes an extra 2d6 necrotic damage. The target must also succeed on a Constitution saving throw against your Blood Shot save DC, or the damage dealt by its weapon attacks is halved until the start of your next turn.</p>
+            <p>The necrotic damage increases to 4d6 when you reach 18th level in this class.</p>
+        </description>
+        <sheet>
+            <description>The creature hit by the arrow takes an extra 2d6 necrotic damage. The target must also succeed on a DC {{blood shot:dc}} Constitution saving throw or the damage dealt by its weapon attacks is halved until the start of your next turn.</description>
+            <description level="18">The creature hit by the arrow takes an extra 4d6 necrotic damage. The target must also succeed on a DC {{blood shot:dc}} Constitution saving throw or the damage dealt by its weapon attacks is halved until the start of your next turn.</description>
+        </sheet>
+    </element>
+</elements>

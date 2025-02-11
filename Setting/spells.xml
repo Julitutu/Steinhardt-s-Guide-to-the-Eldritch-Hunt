@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="Bestial Roar" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_BESTIAL_ROAR">
+		<supports>Bard, Druid, Sorcerer, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You release a loud, monstrous roar mimicking those of ravenous beasts, causing shockwaves around you. Each creature within 10 feet of you must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone.</p>
+			<p>This spell’s radius increases by 5 feet when you reach 5th level (15 feet), 11th level (20 feet), and 17th level (25 feet).</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantanious</set>
+			<set name="range">Self (10 foot-radius sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Brittle Bone Throw" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_BRITTLE_BONE_THROW">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You hurl a splintered bone fragment at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 piercing damage. On a miss, you can shatter the bone mid-air and redirect the remnant towards another creature within 15 feet of the original target. Make another ranged spell attack. On a hit, the new target takes 1d4 piercing damage.</p>
+			<p>This spell's damage increases by 1d8 and 1d4, respectively, when you reach 5th level (2d8, 2d4), 11th level (3d8, 3d4), and 17th level (4d8, 4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantanious</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">bone dust</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Cosmic Eye" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_COSMIC_EYE">
+		<supports>Sorcerer,</supports>
+		<description>
+			<p>Your eye darkens under the influence of the eldritch madness, appearing as an endless starry sky. Make a ranged spell attack against a creature within range as you fire a projectile of eldritch energy from your eye. On a hit, the target takes 1d8 necrotic damage. If you score a critical hit, you can reroll any roll of 4 or lower on the damage die until you get a higher result.</p>
+			<p>This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantanious</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an eldritch parasite</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Gravity Spike" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_GRAVITY_SPIKE">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create a localized gravitational field that temporarily shifts the landscape to impale a creature. Choose a creature on the ground you can see within range. The creature must make a Dexterity saving throw. On a failed save, the target takes 1d4 piercing damage and is knocked prone. On a successful save, the target takes half as much damage and isn’t knocked prone.</p>
+			<p>This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantanious</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Gravity Whip" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_GRAVITY_WHIP">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You weave gravity in your palm before striking. Make a melee spell attack against a creature within range. On a hit, it takes 1d4 bludgeoning damage and is pushed 10 feet in a straight line in a direction of your choice. In addition, its speed is reduced by 5 feet until the start of your next turn.</p>
+			<p>This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantanious</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bone Claws" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_BONE_CLAWS">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Choose a creature you can see within range. You infuse them with osteomantic energy, growing sharp claws from their carpal bones. For the duration, the target’s unarmed attacks deal an extra 1d4 slashing damage on a hit.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases to 1d6 at 2nd level, 2d4 at 3rd level, 2d6 at 4th level, and 3d4 at 5th level.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiger's claw</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bone Shield" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_BONE_SHIELD">
+		<supports>Druid, Ranger, Warlock</supports>
+		<description>
+			<p>You generate a barrier of elongated femurs that protects you. You reduce the incoming damage by 1d12, and if the attacking enemy is within 10 feet of you, the osseous barrier explodes, dealing slashing damage to them equal to the amount reduced.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage reduction increases by 1d12 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction</set>
+			<set name="duration">Instantanious</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Electrify " type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_ELECTRIFY">
+		<supports>Ranger, Sorcerer. Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You channel lightning into your hands. The next time you hit a creature with a melee attack (including a melee spell attack) before the start of your next turn, the target takes 1d12 lightning damage and must make a Constitution saving throw. On a failed save, the target becomes stunned until the start of its next turn.</p>
+			<p>The spell ends after dealing damage, or at the start of your next turn, whichever occurs first.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d12 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 round</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fall" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_FALL">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<p>As an action, you can temporarily change which way gravity pulls you and immediately fall 200 feet in that direction. If you hit a solid surface, you take falling damage based on the distance you have traveled.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantaneous</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an elastic band</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fractured Shell" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_FRACTURED_SHELL">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<p>You touch a willing creature, forcing spiked bone plates to grow and pierce through its skin. It takes 1 point of piercing damage. For the duration of the spell, the first time each turn that the target is hit with a melee attack, the attacking creature takes 2d4 piercing damage.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage dealt to attacking creatures increases by 1d4 for each slot level above 1st. If you use a spell slot of 5th level or higher, the spell doesn’t require concentration.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a porcupine's carapace</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Gravity Leap" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_GRAVITY_LEAP">
+		<supports>Druid, Ranger, Sorcerer</supports>
+		<description>
+			<p>You enhance the gravitational field around your body, allowing you to jump higher and farther. For the duration, your jump distance is tripled. Additionally, once per turn immediately after you jump, a wave of gravity is unleashed, and each creature within 5 feet of the space you left must make a Strength saving throw. On a failed save, a creature is knocked prone.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Gravity Well" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_GRAVITY_WELL">
+		<supports>Cleric, Druid, Ranger, Sorcere, Warlock, Wizard</supports>
+		<description>
+			<p>You fire a projectile of condensed gravitational force toward a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 force damage and is pulled 20 feet in a straight line toward you.</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Phalangeal Shot" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_PHALANGEAL_SHOT">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You point your fingers forward and your phalangeal bones fire outwards, akin to the bullets of a gun. They regrow immediately, leaving your hand unscathed. All creatures in a 1-foot-wide, 30-foot-long line in front of you must succeed on a Dexterity saving throw or take 2d8 piercing damage.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">Self (30-foot line)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Silvered Shell" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_SILVERED_SHELL">
+		<supports>Paladin, Ranger</supports>
+		<description>
+			<p>You touch a weapon and imbue it with otherworldly bile. For the duration, it becomes silvered and, while you are holding it, it deals an additional 1d4 force damage on a hit.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, you can increase the duration to 10 minutes (2nd level), 1 hour (3rd level), 8 hours (4th level), or 24 hours (5th level).</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">1</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an empty phantasm shell</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Spectral Shell" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_SPECTRAL_SHELL">
+		<supports>Paladin, Ranger</supports>
+		<description>
+			<p>You send forth a spectral copy of yourself to strike down your foe. Make a melee spell attack against a creature within 20 feet of you. On a hit, the target takes 1d8 damage of your weapon’s damage type.</p>
+			<p>You can then use an action to move up to 20 feet in a straight line towards the target, streaking through a spectral trail, and take the Attack action against it. To use this action, you must attack with a melee weapon.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 and the range and distance you can move increase by 10 feet for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">20 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon worth at least 1 sp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Arm Cannon" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_ARM_CANNON">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You fire out the bones of your forearm through your hand, leaving a severe wound that immediately regrows and heals. Make a ranged spell attack against a creature within range. On a hit, the target takes 4d8 piercing damage and must succeed on a Strength saving throw or be pushed back 15 feet. If pushed into an obstacle, the target is impaled on it and is restrained by the bone until the end of its next turn. Creatures that are Large or larger have advantage on this saving throw.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Blind Ambush" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_BLIND_AMBUSH">
+		<supports>Bard, Druid, Ranger, Warlock</supports>
+		<description>
+			<p>You blow on a whistle, releasing an inaudible sound. Choose a point on the ground within range. The first time a creature moves while within a 10-foot square centered on that point before the spell ends, an eldritch maw immediately erupts from beneath the ground, dealing 2d10 piercing damage to each creature within the square and knocking them prone. The spell then ends.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd. If you use a spell slot of 5th level or higher, the spell can trigger a second time before it ends.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">60 feet (10 feet square)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a whistle</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bone Cocoon" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_BONE_COCOON">
+		<supports>Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You conjure a cocoon made of cartilage and bones, which protects the creature that dropped to 0 hit points. While in the cocoon, the creature can’t be damaged by attacks or effects originating from outside, has total cover, is considered restrained, and makes death saving throws at advantage.</p>
+			<p>The cocoon has 25 hit points and an AC of 11 + your spellcasting ability modifier. It has resistance to cold, fire, and necrotic damage, and immunity to poison and psychic damage. If you lose concentration or the cocoon is reduced to 0 hit points, it is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">abjuration</set>
+			<set name="time">1 reaction, which you take when you see a creature drop to 0 hit points</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shrunk and gilded rib cage worth at least 50 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bludgeoning Horror" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_BLUDGEONING_HORROR">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You summon a large number of tentacles and slugs from your palm to strike a creature within range. Make a melee spell attack against the target. On a hit, it takes 3d6 bludgeoning damage. If you score a critical hit, the target is also stunned until the start of your next turn.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 and range increases by 5 feet for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">15</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the body part of a Great One</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Calcified Memories" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_CALCIFIED_MEMORIES">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<p>You touch the bones of a deceased creature. When you do so, a ghostly grey illusion of the fallen creature appears above its corpse to reenact the last 6 seconds of its life. The illusion only shows the creature’s actions, such as reacting to an unseen monster or choking from poisonous gas, but does not show the monster or effect causing the behavior. This spell has no effect on undead creatures. Once a corpse's death has been revealed in this way, it can’t be shown again for 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Graviturgic Smite" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_GRAVITURGIC_SMITE">
+		<supports>Paladin, Spell Saving Throw</supports>
+		<description>
+			<p>The next time you hit a creature with a weapon attack before this spell ends, you can add energy stolen from black holes. Your attack deals an extra 2d6 bludgeoning damage to the target, which must make a Strength saving throw. On a failure, its speed is reduced to 10 feet until the spell ends. On a success, its speed is reduced by 10 feet until the spell ends,to a minimum of 10 feet.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration"> Concentration, up to 1 minute</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Gravity Storm" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_GRAVITY_STORM">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create a localized gravitational field that unleashes a storm of gravity waves. Choose a point within range that you can see. When you cast this spell and at the start of each of your subsequent turns for the duration, each creature within 20 feet of that point must make a Dexterity saving throw. On a failure, a target takes 2d6 bludgeoning damage and is knocked prone. On a success, a target takes half as much damage and isn’t knocked prone.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6, the radius increases by 5 feet, and the duration increases by 1 round, for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">2 round</set>
+			<set name="range">120 feet (20-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Lightning Charged" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_LIGHTNING_CHARGED">
+		<supports>Druid, Ranger, Sorcerer, Wizard</supports>
+		<description>
+			<p>You channel lightning energy into a creature. The energy is harmless to the creature, but escapes in dangerous bursts to other nearby creatures. Every time that creature strikes another creature with a melee attack or a spell with a range of touch, is struck by another creature with a melee attack, or ends their turn while grappling or being grappled by another creature, they deal 1d6 lightning damage to that creature.</p>
+			<p>Once this spell has discharged 6 times (dealing up to 6d6 total damage), the spell ends.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the spell can discharge damage 2 additional times (dealing up to 2d6 more total damage) before the spell ends for each slot level above 2nd</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">2</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">120 feet (20-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of metal once used in a lightning rod</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Otherworldly Gaze" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_OTHERWORLDLY_GAZE">
+		<supports>Bard, Druid, Ranger</supports>
+		<description>
+			<p>You tap into the eldritch forces of the universe, gaining heightened senses and the ability to see beyond the veil of reality. For the duration, your eyes turn black and you gain the following benefits:</p>
+			<ul>
+			<li>You have advantage on Perception checks.</li>
+			<li>You can automatically sense the presence of eldritch creatures within 120 feet of you, including aberrations, celestials, and fiends.</li>
+			<li>You can see the true form of any shapechanger or creature that is transformed by magic within 30 feet of you.</li>
+			<li>If you are blind, you regain sight for the duration of this spell.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Pressure Cage" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_PRESSURE_CAGE">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Gravity increases within a 10-foot-radius sphere centered on a point you choose within range, causing immense pressure to be applied to all within, and the area is difficult terrain. When a creature enters the sphere for the first time on a turn or starts its turn there, it must succeed on a Strength saving throw or its speed is reduced to 0 until the start of its next turn.</p>
+			<p>On subsequent turns, as a bonus action, you can move the sphere up to 20 feet in any direction.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the radius increases by 5 feet for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet (10-foot-radius sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shard of ball and chain</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Rolling Bones" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_ROLLING_BONES">
+		<supports>Cleric, Druid, Warlock, Wizard</supports>
+		<description>
+			<p>You roll bones, allowing fate to give you an omen of the future. Roll 1d6.</p>
+			<ul>
+			<li>On a roll of 5 or 6, you know if you are: not likely, likely, or very likely to encounter hostile creatures within the next hour. You also learn the type of creature you’re most likely to encounter.</li>
+			<li>On a roll of 2, 3, or 4, you learn if you are: not likely, likely, or very likely to encounter hostile creatures within the next hour.</li>
+			<li>On a roll of 1, the material components of the spell are consumed, and you take 1 psychic damage as fate rebels. You don’t learn any information and you can’t cast this spell again until you finish a short rest.</li>
+			</ul>
+			<p>If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a false reading. The GM makes this roll in secret.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">divination</set>
+			<set name="time">1 minute</set>
+			<set name="duration">instantanious</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the bones of a small mammal worth at least 1 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Rupturing Curse" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_RUPTURING_CURSE">
+		<supports>Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You focus your magic to shatter the body of your foe. Choose one creature you can see within range; it must succeed on a Constitution saving throw or take 3d6 piercing damage and be knocked prone by the pain.</p>
+			<p>In addition, if the target takes bludgeoning damage equal to 5 times its Constitution modifier (minimum of 5) or more in a single turn, its skeleton shatters, reducing its speed to 0 for the duration of the spell. If it does not take such damage before the start of its next turn, the spell ends. A creature without bones is immune to this effect.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the piercing damage increases by 2d6 for each slot level above 2nd</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Skeletal Tail" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_SKELETAL_TAIL">
+		<supports>Druid, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You grow a long, scorpion-like tail made of sharpened bones. Whenever a creature moves while within 20 feet of you centered on you, you can use your reaction to try and pierce them with your tail. The target must succeed on a Dexterity saving throw or take 2d4 piercing damage and be pulled to an empty space adjacent to you as your tail drags them in.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level of or higher, the damage increases by 2d4 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">self (20-foot-radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a scorpion's tail</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Astral Barrage" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_ASTRAL_BARRAGE">
+		<supports>Druid, Ranger, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create a portal to the cosmos and send asteroids hurtling through it. A creature of your choice that you can see within range must succeed on a Dexterity saving throw or take 7d6 bludgeoning damage. You can use an action on subsequent turns to keep the portal open and target another creature, which must make the same saving throw. The spell ends if you use your action to do anything else. While concentrating on this spell, your speed is halved.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, larger asteroids fly through the portal and the damage increases by 2d6 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dampen Gravity" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_DAMPEN_GRAVITY">
+		<supports>Druid, Ranger, Sorcerer, Wizard</supports>
+		<description>
+			<p>You focus your powers to lessen the call of gravity in a 60-foot-radius sphere that moves with you, centered on you. All creatures of your choice in the sphere have their jump distance doubled and their speed increased by 10 feet. They also have advantage on Acrobatics checks and ignore falling damage if they end their fall within the sphere.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">self (60-foot-radius sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a feather</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Displacing Maw" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_DISPLACING_MAW">
+		<supports>Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Your rib cage opens up violently, forming a maw that attempts to devour a creature within range. The creature must make a Strength saving throw. On a failure, it takes 4d8 piercing damage and is transported through magic to a point of your choice on the ground within 60 feet of you, where the maw reappears and regurgitates them. On a success, it takes half as much damage and is not transported.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8, and the teleportation range increases by 10 feet, for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Malicious Rancor" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_MALICIOUS_RANCOR">
+		<supports>Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You hurl a deformed skull covered in scratches and holes and strewn in curses at a creature within range, where the skull explodes with violent hatred. Make a ranged spell attack against the creature. On a hit, the target takes 1d10 necrotic damage. Hit or miss, the skull then detonates, emitting a psychic wailing from that point. Each creature within 10 feet of that point must make a Wisdom saving throw, taking 5d4 psychic damage on a failed save, or half as much damage on a successful one. Until the start of your next turn, if a creature enters the area or ends its turn there, it must make the saving throw against the skull’s damage.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the psychic damage increases by 2d4 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">60 feet (10-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a skull that belonged to a creature that succumbed to a curse, worth at least 1 sp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Osseous Cage" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_OSSEOUS_CAGE">
+		<supports>Druid, Warlock, Wizard</supports>
+		<description>
+			<p>You cause a cage of cartilage and bones to erupt from the ground that surrounds a 10-foot-radius sphere centered on you. The bones are thick and provide three-quarters cover to creatures inside and outside. When you or any other creature attempts to pass through the cage, you can use your reaction to let them through. Large or Larger creatures cannot enter the cage, and are pushed to the nearest unoccupied space if they are within the cage’s area when it first appears. The osseous cage has AC 12, 100 hit points, and vulnerability to bludgeoning damage. If you cast this spell again while you already have a cage summoned, the previous cage turns to dust.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the cage has an additional 20 hit points for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">self (10-foot-radius sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Osseous Impalement" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_OSSEOUS_IMPALEMENT">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Massive bone spikes sprout under up to four creatures on the ground of your choice you can see within range. hey must succeed on a Dexterity saving throw or take 3d10 piercing damage and be impaled by the spike, becoming restrained and held aloft 5 feet in the air for the duration. A creature restrained in this way takes 1d10 piercing damage at the start of each of its turns. A creature can use its action to make an Athletics check contested by your spell save DC, breaking the bone spike and freeing itself on a success.</p>
+			<p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage (both initial and ongoing) increases by 1d10 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a calcified bamboo stick</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Radiant Bell" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_RADIANT_BELL">
+		<supports>Bard, Cleric</supports>
+		<description>
+			<p>You ring an arcane, silver bell, imbuing it with healing magics that cure the afflicted. Choose any number of creatures within 30 feet. For each target, you can end one of the following conditions: charmed, frightened, poisoned, petrified, or stunned. This cure does not work if a target is deafened.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silvered choir bell worth at least 5 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Radiant Slaughter" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_RADIANT_SLAUGHTER">
+		<supports>Cleric, Paladin, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You summon a small nova of eldritch power in this secret technique from the Obitus Scholare. Each creature within 30 feet of you must make a Dexterity saving throw. On a failure, a creature takes 2d6 force damage, 3d6 radiant damage, and is knocked prone. On a success, it takes half as much damage and isn’t knocked prone. Creatures within 5 feet of you make this saving throw with disadvantage.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the force and radiant damage both increase by 1d6 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">force, radiant</set>
+			<set name="level">3</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the petrified fetus of a Great One</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Rubber Bones" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_RUBBER_BONES">
+		<supports>Cleric, Paladin, Warlock</supports>
+		<description>
+			<p>You touch a willing creature. Its bones become soft and rubbery, and it gains the following benefits:</p>
+			<ul>
+			<li>It can spend 5 feet of movement to escape a grapple without requiring an ability check and can squeeze through a space that is large enough for a creature two sizes smaller than it.</li>
+			<li>It has advantage on Dexterity saving throws.</li>
+			<li>It has resistance to bludgeoning damage.</li>
+			<li>Its reach with melee attacks increases by 5 feet.</li>
+			</ul>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Spectral Fury" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_SPECTRAL_FURY">
+		<supports>Paladin, Ranger</supports>
+		<description>
+			<p>You send forth three spectral duplicates of yourself to strike down enemies within 30 feet of you. You can order them to strike one target or several. Make a melee spell attack for each spectral duplicate. On a hit, a target takes 4d8 damage of your weapon’s damage type.</p>
+			<p>You can then use a bonus action to move up to 30 feet in a straight line towards one of the targets without provoking opportunity attacks, streaking through a spectral trail, and make a single melee weapon attack.</p>
+			<p><strong>At Higher Levels:</strong> When you cast this spell using a spell slot of 4th level or higher, the damage your spectral duplicates inflict increases by 2d8 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon worth at least 1 sp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dread Scarecrow" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_DREAD_SCARECROW">
+		<supports>Bard, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You magically create the horrifying illusion of all your bones breaking and your body bending in impossible ways, accompanied by the sound of a shattered skull. Each creature of your choice in a 30-foot-radius sphere centered on you must succeed on a Wisdom saving throw or become frightened for the duration. While frightened by this spell, a creature's speed becomes 0 and it falls prone, its legs giving out under the fear. If an affected creature takes damage, it can repeat the saving throw at the end of its next turn, ending the effect on itself on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">self (30-foot-radius sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a flute made of a femur worth 50 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fling" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_FLING">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You flick your finger against a creature. The target is impacted by a devastating gravitational force and must make a Strength saving throw. On a failed save, it takes 6d10 bludgeoning damage and is pushed 120 feet away from you. The push stops early if the creature hits a solid surface or is pushed into a creature of its size or larger. On a successful save, a creature takes half as much damage and isn't pushed.</p>
+			<p>If the target is pushed into or through the space of a creature, that creature must make a Dexterity saving throw, taking 1d10 bludgeoning damage on a failed save, or half as much damage on a successful one. This damage is increased by 1d10 per size smaller the creature is than the target.</p>
+			<p>At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the target takes an extra 1d10 bludgeoning damage and is pushed 30 additional feet for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Graveyard Shuffle" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_GRAVEYARD_SHUFFLE">
+		<supports>Cleric, Druid</supports>
+		<description>
+			<p>You drain the bone marrow of a creature, attempting to steal its life force and transfer it to another creature of your choice. Make a ranged spell attack against a creature within range. On a hit, the target takes 4d6 necrotic damage. Choose another creature within range; it regains a number of hit points equal to half the damage dealt, or if it was dead for less than 1 minute, the creature returns to life with hit points equal to the number regained. If any of the targets do not have bones, the spell fails. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">30</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of spinal bone and an opal worth at least 300 gold, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Gravitational Distortion" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_GRAVITATIONAL_DISTORTION">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Reality swirls in a 30-foot-radius sphere centered on a point you can see within range. Each creature in the area must make a Strength saving throw, taking 6d6 bludgeoning damage on a failed save, or half as much damage on a successful one. Additionally, any creature that fails this saving throw is pushed 30 feet in a straight line in a direction of your choice.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">60 feet (30-foot-radius sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Gravity Barrier" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_GRAVITY_BARRIER">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create a wall of increased gravity on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall lasts for the duration and its space is difficult terrain.</p>
+			<p>Ranged weapon attacks that pass through the wall’s space automatically fail, and other ranged attacks have disadvantage. Any creature that tries to pass through the wall’s space must succeed on a Strength saving throw or take 4d8 bludgeoning damage, be knocked prone, and have its speed reduced to 0 until the end of its turn</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Jumping Jolt" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_JUMPING_JOLT">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<p>You release an arc of lighting at a creature within range. Make a ranged spell attack against the creature. On a hit, the target takes 4d12 lightning damage, and you can cause the spell to repeatedly jump to another target within 20 feet of the previous target, making a separate attack roll for each target. The spell cannot hit the same target twice, or jump to a target out of the spell's range. The spell can jump a maximum of five times. On a miss, the target takes half as much damage and the spell does not jump to a new target.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d12 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">4</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Maiden of Bones" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_MAIDEN_OF_BONES">
+		<supports>Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>A creature within range must succeed on a Strength saving throw or be trapped inside an iron maiden formed of bone that appears in its space. The creature is considered restrained, incapacitated, behind total cover, can’t be damaged by attacks or effects originating from outside, and takes 3d6 piercing damage at the start of each of its turns as spikes of bone pierce its body. At the end of each of its turns, a trapped creature can repeat the saving throw, escaping and ending the spell on a success. The bone maiden has AC 14, 80 hit points, immunity to psychic and poison damage, and vulnerability to bludgeoning damage. If the maiden is destroyed, the creature trapped inside is freed and the spell ends</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a virgin's carpal bone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Vanishing Step" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_VANISHING_STEP">
+		<supports>Paladin, Ranger</supports>
+		<description>
+			<p>For the duration, once on each of your turns, you can use 15 feet of your movement to teleport to an unoccupied space you can see within 15 feet of youfails if you are prone or incapacitated.</p>
+			<p>In addition, when you are hit by an attack or targeted by a spell, you can use your reaction to teleport to an unoccupied space you can see within 15 feet of you, causing the attack to miss you or the spell to not affect you if you leave its range or radius. When you do so, until the end of your next turn, your speed is reduced by 15 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the bone of an old hunter</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="World Breaker" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_WORLD_BREAKER">
+		<supports>Druid, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You destroy your surroundings to break your foes. You rip a 5-foot by 5-foot cube of nonmagical terrain from the ground and hurl it at a point you can see within range, where it shatters in a 30-foot cone extending away from you. Each creature in the area must succeed on a Dexterity saving throw or take 4d8 bludgeoning damage and be pushed 15 feet in a straight line away from you</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">90 feet (30-foot-cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Ancestral Bond" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_ANCESTRAL_BOND">
+		<supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You touch the corpse of a humanoid, and visions of its descendants come to you, as ephemeral spirits scour the world. You learn how many living relatives the humanoid left behind and if they have any living descendants.</p>
+			<p class="indent">In addition, you can select one of the descendants whose existence you can feel through the spell. By destroying the corpse to amplify the power of the magic, you can attempt to determine their location. The target must make a Wisdom saving throw. On a failed save, you learn their exact location, no matter where they are.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">divination</set>
+			<set name="time">1 minute</set>
+			<set name="duration">instantanious</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the bone of a humanoid, which the spell may consume</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Chisel Skull" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_CHISEL_SKULL">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Choose a creature you can see within range. You cause its skull to snap, piercing its insides. The creature must make a Constitution saving throw. On a failed save, the target takes 8d10 piercing damage and is paralyzed until the end of its next turn. On a successful save, the target takes half as much damage and isn’t paralyzed. A creature without a skull is immune to this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of skull bone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Divine Order: Reveal" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_DIVINE_ORDER_REVEAL">
+		<supports>Bard, Cleric, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You attempt to gaze upon the soul of a creature within range. It must make a Charisma saving throw. On a failure, its origins are revealed to you, and you learn all of the creature’s ability scores, skill proficiencies, damage vulnerabilities, damage resistances, damage immunities, condition immunities, saving throw proficiencies, weapon and armor proficiencies, alignment, and traits.</p>
+			<p>If a creature succeeds on this saving throw, it is immune to this spell for the next 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Forest of Dread" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_FOREST_OF_DREAD">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You touch the ground under you and 20-foot-tall treelike bones sprout from the ground in a 30-foot radius centered on you. Each creature of your choice in the radius must make a Dexterity saving throw, taking 4d8 piercing damage on a failure, or half as much damage a success.</p>
+			<p>For the duration, the area becomes difficult terrain, and when a creature moves into or within the area, it takes 2d8 piercing damage for every 5 feet it travels; you are immune to this effect. The forest of dread provides half cover to any creatures inside the area. The bones disintegrate when the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">self (30-foot-radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Starfall" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_STARFALL">
+		<supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create a violent star shower. When you cast this spell and as a bonus action on your subsequent turns, you can bring down stars on creatures of your choice within 30 feet of you. Each creature struck by a star takes 1d10+1 radiant damage.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">5</set>
+			<set name="school">enchantment</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">self (30-foot-radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Erupting Lightning" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_ERUPTING_LIGHTNING">
+		<supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You slam the ground with the palm of your hand, causing pillars of lightning to erupt from the ground beneath your foes. The area of lightning consists of up to seven 5-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes 7d10 lightning damage and falls prone on a failed save, or half as much damage and doesn’t fall prone on a successful one.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 7th level or higher, you can generate two additional 5-foot cubes of lightning for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">6</set>
+			<set name="school">enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the vertibrae of a Lightning Vessel barbarian</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Unbound Chamber" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_UNBOUND_CHAMBER">
+		<supports>Druid, Sorcerer, Wizard</supports>
+		<description>
+			<p>Using a ritual of ancient magic, you distort the gravitational balance of an enclosed space of your choice for the duration. The chamber can be of any shape up to 200 feet wide, 200 feet tall, and 200 feet long. While in the chamber, a creature doesn’t take falling damage, has its jump distance tripled, has a flying speed equal to its walking speed, and can hover.</p>
+			<p class="indent">Casting this spell on the same spot every day for a year makes this effect permanent.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">transmutation</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">8 hours</set>
+			<set name="range">500 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Wall of Bones" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_WALL_OF_BONES">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>A grim wall of fractured bones appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It must rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, and creatures can’t pass through it. The wall is an object, and has AC 15, 150 hit points, immunity to poison and psychic damage, and vulnerability to bludgeoning damage. Reducing it to 0 hit points destroys it.</p>
+			<p>When the wall appears, each creature in its space is pushed out of it by the shortest route and must make a Dexterity saving throw. On a failed save, a creature takes 4d8 bludgeoning damage, or half as much damage on a successful save.</p>
+			<p>Until the spell ends, and as long as the wall has sufficient hit points, you can use an action to sacrifice 20 hit points from the wall to summon a minotaur skeleton that has murderous killing intent. The creature appears in an unoccupied space of your choice adjacent to the wall. When you summon a minotaur skeleton in this way, designate a creature you can see within 60 feet of it; that creature becomes the sole enemy of the summoned creature. The minotaur skeleton ignores any orders you give, tries to kill its target by any means, and is immune to being charmed. Once its target is dead, it vanishes in a pile of dust.</p>
+			<p>You can have a maximum of three creatures summoned by this spell at a time.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a calcified egg shell</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Amputate" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_AMPUTATE">
+		<supports>Druid, Warlock, Wizard</supports>
+		<description>
+			<p>You coat your hand with vicious osteomancy. Make a melee spell attack against a creature within your reach. On a hit, you deal 10d8 slashing damage. In addition, you rip off one of the creature's limbs (leg, arm, or other similar appendage). A creature is immune to this effect if it is immune to slashing damage, has legendary actions, or the GM decides that the creature is too big for its limbs to be cut off with this spell. Such a creature takes an extra 5d8 slashing damage instead.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 8th level or higher, the initial damage increases by 4d8, and the alternative damage by 2d8, for each slot level above 7th.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Boneyard" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_BONEYARD">
+		<supports>Cleric, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You touch a point and infuse an area around it with osteomancy. The area can have a radius of up to 120 feet, and the spell fails if the radius includes an area already under the effect of a boneyard or hallow spell. The affected area is subject to the following effects.</p>
+			<p>First, you know the exact location and hear the thoughts (if any) of any undead creature within the area, and you know if they are under someone’s control.</p>
+			<p>Second, all creatures within the area lose resistance and immunity to necrotic and piercing damage.</p>
+			<p>Finally, as a reaction whenever a non-undead creature dies within the area, you can choose to rip its skeleton from its flesh and force it to rise again under your control. If you do, the creature is resurrected with 1 hit point, its creature type becomes undead, it becomes immune to all damage, it loses access to any legendary actions it had (if any), and you can mentally command its actions. At the end of its next turn, it dies and cannot be resurrected by any means short of a wish spell.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">necromancy</set>
+			<set name="time">24 hours</set>
+			<set name="duration">until dispelled</set>
+			<set name="range">touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">enchanted bones, incense, and herbs worth at least 1000 gold, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Crush" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_CRUSH">
+		<supports>Cleric, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You attempt to trap one creature you can see within range in a field of gravity that compresses and folds in on itself. The target must succeed on a Strength saving throw or take 12d10 bludgeoning damage and be stunned until the start of your next turn as it reels from the pain.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 8th level or higher, you can target one additional creature for each slot level above 7th.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">bone powder</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Divine Order: Transcend" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_DIVINE_ORDER_TRANSCEND">
+		<supports>Bard, Cleric, Warlock</supports>
+		<description>
+			<p>You call upon the power of the Great Ones, seeking their guidance and power. Until the spell ends, you gain the ability to cast any spell from the warlock spell list of 5th level or lower without expending a spell slot or needing to prepare the spell. As part of casting this spell, you can cast a spell with a casting time of an action from your newfound spell list. However, the cost of using this power is steep. At the end of each of your turns, you must succeed on a DC 18 Intelligence saving throw or take 2d10 psychic damage. If you fail this saving throw two times, the spell ends early and you gain a short-term madness.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bury" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_BURY">
+		<supports>Bard, Sorcerer, Wizerd, Spell Saving Throw</supports>
+		<description>
+			<p>You dramatically increase the pull of gravity in a 30-footradius, 300-foot-high cylinder centered on a point on the ground within range. Creatures in this area are knocked prone and cannot lose this condition while there. A creature that enters the area for the first time on a turn or starts its turn there is knocked prone and takes 4d6 bludgeoning damage. A flying creature in the area immediately falls to the ground and is knocked prone. A creature must succeed on a Strength saving throw to move or perform any action. Each foot of movement while in the area costs a creature 3 extra feet.</p>
+			<p>A prone creature that ends its turn in the cylinder must succeed on a Strength saving throw or be forced into the ground as gravity pulls it down. It is restrained and incapacitated by the crushing pressure and the ground around it, but it gains the benefits of three-quarters cover, as only the upper part of their body is visible. A creature can repeat the saving throw at the end of each of its turns, freeing itself from the ground on a success.</p>
+			<p>If the spell lasts for its full duration, the ground cracks under the tremendous weight generated and becomes difficult terrain. Each 5-foot-square area requires at least 1 minute to clear by hand to remove the difficult terrain.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">8</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration. up to 10 minutes</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Aspect of Death" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_ASPECT_OF_DEATH">
+		<supports>Warlock</supports>
+		<description>
+			<p>You focus threads of magical energy around you which coalesce into the aspect of death, an avatar made of bones, which surrounds you and fights on your behalf. The avatar is Large, is centered on you, and moves with you. While it is summoned, it protects you from foes; you are considered behind three-quarters cover at all times, have resistance to all damage, are immune to being grappled, and no other creature can enter the space of the avatar.</p>
+			<p>In addition, while active, you gain a +1 bonus to spell attack rolls and saving throws, and when you cast a spell that deals bludgeoning, piercing or slashing damage, it is cast with a spell slot 2 levels higher than the one expended (to a maximum of 9th level).</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the skull of a fallen hero, embedded with jewels worth at least 4,000 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Divine Order: Sacrifice" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_DIVINE_ORDER_SACRIFICE">
+		<supports>Bard, Cleric, Warlock</supports>
+		<description>
+			<p>When you cast this spell, you create a crack in the world, letting the will of a Great One smother a creature of your choice within range. The direct contact with the eldritch being causes the target to take 8d6 psychic damage, and it must make a Charisma saving throw. On a failure, the creature is pulled in through the tear to the cosmos. On a success, it isn't pulled but gains a long-term madness, and the spell ends.</p>
+			<p>While in the cosmos, the target is incapacitated. At the beginning of each of its turns while there, it takes 3d6 cold damage, 3d6 psychic damage, and must succeed on a DC 20 Intelligence saving throw or gain a shortterm madness.</p>
+			<p>When the spell ends, if the target is still alive, it reappears in the space it left or in the nearest unoccupied space if that space is occupied. If the creature is killed while in the void, its corpse never returns. A body that disappears in this way can never be recovered, not even with a wish spell.</p>
+			<p>If your concentration on the spell ends early, you must succeed on a DC 20 Intelligence saving throw or gain a long-term madness as the eldritch whispers revolt and assault your mind.</p>
+			<p>When the spell ends, roll a d100. On a 1, the breach doesn’t close and instead only expands, threatening to absorb the entire world.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Osteophagia" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_OSTEOPHAGIA">
+		<supports>Warlok, Wizard</supports>
+		<description>
+			<p>The most lethal osteomantic power. You can cause the skeleton of a creature to liquefy in a matter of seconds, causing the body to collapse in on itself. Choose a creature within your reach; it must succeed on a Constitution saving throw or die.</p>
+			<p>A successful save prevents the death by skeletal collapse, but the creature still takes 10d6 necrotic damage. Creatures without bones and creatures whose CR or character level is equal to or higher than the caster’s CR or character level are immune to this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantanious</set>
+			<set name="range">touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Shillelagh 24" type="Spell" source="Player’s Handbook" id="ID_WOTC_PHB_SPELL_SHILLELAGH_24">
+		<supports>Druid</supports>
+		<description>
+			<p>A Club or Quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon's normal damage type (your choice).</p>
+			<p>The spell ends early if you cast it again or if you let go of the weapon.</p>
+			<p class="indent">The weapon's damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6).</p>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">mistletoe, a shamrock leaf, and a club or quarterstaff</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

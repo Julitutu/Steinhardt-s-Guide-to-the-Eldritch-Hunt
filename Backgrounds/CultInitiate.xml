@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Cult Initiate</name>
+		<description>Background from Steinhardt's Guide to the Eldritch Hunt</description>
+		<update version="0.1.0">
+			<file name="CultInitiate.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Backgrounds/CultInitiate.xml" />
+		</update>
+	</info>
+
+	<!-- Cult Initiate -->
+	<element name="Cult Initiate" type="Background" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BACKGROUND_CULT_INITIATE">
+		<description>
+			<p>Whether through your own choice or a twist of fate, you found yourself part of a clandestine and often misunderstood group of individuals—a cult. This may have been a circle focused on the symbiotic relationship of flesh and nature, a scholastic order obsessed with the cosmos, or followers of a prophecy predicting the apocalypse. However, your faith or circumstances have since changed, leading you to leave the confines of the cult. You might still be an active member, or you've escaped its influence. Either way, your experiences within the cult and the knowledge you've gained have left a deep impact on your life.</p>
+			<p class="indent"><b>Skill Proficiencies:</b> Choose one between Arcana or Religion; and one between Persuasion or Survival</p>
+			<p class="indent"><b>Languages:</b> Choose one between Deep Speech, Infernal and Sylvan, reflecting the cult to which you belonged</p>
+			<p class="indent"><b>Tool Proficiencies:</b> One type of artisan's tools or musical instrument</p>
+			<p class="indent"><b>Equipment:</b> A set of common clothes, a brimmed cloak, a trinket or symbol representing your cult, a piece of jewelry worth 10 gp, a hooded lantern, five flasks of oil, and a pouch containing 5 gp.</p>
+			<div element="ID_LT_SGEH_BACKGROUND_FEATURE_CULT_SECRETS" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Whether you are a current or former member of a cult, your experiences have shaped you. As a follower, you are guided by deep-seated beliefs and rituals, while as a former member, your past continues to haunt you, and you may be driven by a desire for redemption or revenge.</p>
+		</description>
+		<setters>
+			<set name="short">Choose one from Arcana or Religion, and one from Persuasion or Survival.  One from Deep Speech, Infernal, or Sylvan. One type of artisan's tools or musical instrument. Cult Secrets feature.</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Cult Initiate, First)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_RELIGION" />
+			<select type="Proficiency" name="Skill Proficiency (Cult Initiate, Second)" supports="ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<select type="Language" name="Language (Cult Initiate)" supports="ID_LANGUAGE_DEEP_SPEECH||ID_LANGUAGE_INFERNAL||ID_LANGUAGE_SYLVAN" />
+			<select type="Proficiency" name="Tool Proficiency (Cult Initiate)" supports="Artisan tools||Musical Instrument" />
+
+			<grant type="Background Feature" id="ID_LT_SGEH_BACKGROUND_FEATURE_CULT_SECRETS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+			<select type="List" name="Personality Trait (Cult Initiate)">
+				<item id="1">I always keep my thoughts and emotions hidden, a habit from my cult days.</item>
+				<item id="2">I am curious about other belief systems and constantly compare them to my own.</item>
+				<item id="3">I feel most comfortable following rituals and routines.</item>
+				<item id="4">I am always questioning everything and seeking deeper meanings.</item>
+				<item id="5">I feel lost and disconnected after leaving my cult.</item>
+				<item id="6">I can be charismatic and persuasive when I need to be.</item>
+				<item id="7">I distrust authority figures and institutions.</item>
+				<item id="8">I have a habit of slipping into old cult phrases or mannerisms.</item>
+			</select>
+
+			<select type="List" name="Ideal (Cult Initiate)">
+				<item id="1"><b>Freedom:</b> I have left the cult and cherish my newfound liberty. I'll never let anyone control my life again. (Any)</item>
+				<item id="2"><b>Unity:</b> As a current cult member, I believe that our unified purpose is more significant than individual desires. (Lawful)</item>
+				<item id="3"><b>Knowledge:</b> The cult's teachings are hidden truths that the world deserves to know. (Any)</item>
+				<item id="4"><b>Purity:</b> As a former cultist, I realize the cult's teachings were wrong. I seek to cleanse myself and the world of its influence. (Good)</item>
+				<item id="5"><b>Domination:</b> I believe the cult's teachings should be enforced, creating a new world order. (Evil)</item>
+				<item id="6"><b>Redemption:</b> I have done terrible things in the name of the cult. I must atone for my sins. (Good)</item>
+			</select>
+
+			<select type="List" name="Bond (Cult Initiate)">
+				<item id="1">I left someone I care about behind in the cult and am determined to rescue them.</item>
+				<item id="2">I am still part of the cult, and I will protect my brothers and sisters at all costs.</item>
+				<item id="3">Someone I loved was sacrificed for the cult's cause. Their memory haunts me.</item>
+				<item id="4">I harbor a dangerous secret about the cult that others would kill to uncover</item>
+				<item id="5">The leader of the cult still holds a dark sway over me, and I struggle against their influence.</item>
+				<item id="6">I am seeking revenge against those who forced me out of the cult.</item>
+			</select>
+
+			<select type="List" name="Flaw (Cult Initiate)">
+				<item id="1">I am paranoid and distrustful, always expecting a cultist to appear and enact revenge.</item>
+				<item id="2">I secretly miss the structure and unity of the cult and sometimes consider returning.</item>
+				<item id="3">I am easily swayed by charismatic leaders.</item>
+				<item id="4">The cult's influence has left me with warped moral views that others find shocking or abhorrent.</item>
+				<item id="5">I will go to any length to destroy the cult, even if it harms innocent bystanders.</item>
+				<item id="6">I struggle with guilt over the actions I took as part of the cult.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Cult Secrets" type="Background Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BACKGROUND_FEATURE_CULT_SECRETS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You know the secret signs, phrases, rituals, and traditions of your cult, and can recognize them anywhere. In addition you can recognize similar signals from other cults. Furthermore, you have advantage on checks made to pass yourself off as a member of similar cults, potentially gaining trust or access to resources.</p>
+		</description>
+		<sheet alt="Cult Secrets" />
+	</element>
+</elements>

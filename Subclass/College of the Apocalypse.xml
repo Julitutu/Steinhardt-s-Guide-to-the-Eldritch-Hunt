@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of the Apocalypse</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="College of the Apocalypse.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Classes/College of the Apocalypse.xml" />
+		</update>
+	</info>
+
+	<element name="College of the Apocalypse" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_BARD_COLLEGEOFTHEAPOCALYPSE">
+		<supports>Bard College</supports>
+		<description>
+			<p>Apocalypse bards are masters at conjuring forth the ancient powers of eldritch gods, summoning forth their otherworldly might to wreak havoc on the mortal realm. All who hear their aberrant harmonies fear and revere them—they understand that with a single whisper, these bards can cause the end of all things. Apocalypse bards are often found on the front lines of battle, their music serving as a rallying cry for their allies and a death knell for their enemies. With each stanza they produce, a member of the College of the Apocalypse draws closer to the ultimate revelation of the horrors that lie beyond the veil. Many fear the day when they will finally succumb to the madness that gnaws within their mind.</p>
+			<p class="indent">As they progress in their studies, members of this bard college gain the ability to summon forth devastating powers with their music. They can call down swarms of pain, tear open rifts in reality, and unleash waves of madness upon their foes. They know the apocalypse is coming, for they are the ones bringing it.</p>
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_ENDLESS_SYMPHONY" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_ELDRITCH_CHOIR" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_KNOWLEDGE_FROM_BEYOND" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_DEVOURING_MAW" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_SONG_OF_THE_APOCALYPSE" />
+		</description>
+		<sheet display="false">
+			<description>Apocalypse bards are masters at conjuring forth the ancient powers of eldritch gods, summoning forth their otherworldly might to wreak havoc on the mortal realm.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_ENDLESS_SYMPHONY" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_ELDRITCH_CHOIR" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_KNOWLEDGE_FROM_BEYOND" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_DEVOURING_MAW" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_SONG_OF_THE_APOCALYPSE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Endless Symphony" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_ENDLESS_SYMPHONY">
+		<description>
+			<p>When you join the College of the Apocalypse at 3rd level, and again at 6th and 14th level, you gain another use of your Bardic Inspiration feature.</p>
+			<p class="indent">In exchange, your Bardic Inspiration die doesn’t change at 5th level, remaining a d6; it becomes a d8 at 10th level, and a d10 at 15th level.</p>
+		</description>
+		<sheet display="false">
+			<description>When you join the College of the Apocalypse at 3rd level, and again at 6th and 14th level, you gain another use of your Bardic Inspiration feature.&#13;
+			In exchange, your Bardic Inspiration die doesn’t change at 5th level, remaining a d6; it becomes a d8 at 10th level, and a d10 at 15th level.</description>
+		</sheet>
+		<rules>
+            <stat name="bardic-inspiration:dice" value="-2" level="5" />
+            <stat name="bardic-inspiration:dice" value="-2" level="10" />
+            <stat name="bardic-inspiration:dice" value="-2" level="15" />
+
+            <stat name="college of the apocalypse:dc" value="8" />
+            <stat name="college of the apocalypse:dc" value="proficiency" />
+            <stat name="college of the apocalypse:dc" value="charisma:modifier" />
+        </rules>
+	</element>
+
+	<element name="Eldritch Choir" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_ELDRITCH_CHOIR">
+		<description>
+			<p>At 3rd level, you understand how to use your bardic magic to conjure forth the power of the Great Ones. You learn two Eldritch Melodies of your choice, which are detailed under “Eldritch Melodies” below. A level prerequisite refers to your level in this class. You can use a melody as an action, expending one use of your Bardic Inspiration. After you use a melody, you can’t use that melody again until you finish a short or long rest. If a melody requires a saving throw, it uses your spell save DC. For a creature to become affected by one of your melodies, it must be able to hear you when you take the action.</p>
+			<p class="indent">You learn one additional Eldritch Melody of your choice at 6th and 14th level.</p>
+			<p class="indent">When you finish a long rest, you can delve into what lies beyond the veil, replacing one or more melodies you know with another one. Each time you attempt to replace a melody, make a DC 17 Charisma saving throw. On a failed save, you lose control over your mental journey into the void; you gain one short-term madness, don’t replace that melody, and you can’t replace any other melodies until you finish a long rest.</p>
+		</description>
+		<sheet usage="{{bardic-inspiration:count}}/Long Rest" action="Action">
+			<description> You can use a melody as an action, expending one use of your Bardic Inspiration. After you use a melody, you can’t use that melody again until you finish a short or long rest. For a creature to become affected by one of your melodies, it must be able to hear you when you take the action.&#13;
+			When you finish a long rest, you can delve into what lies beyond the veil, replacing one or more melodies you know with another one. Each time you attempt to replace a melody, make a DC 17 Charisma saving throw. On a failed save, you lose control over your mental journey into the void; you gain one short-term madness, don’t replace that melody, and you can’t replace any other melodies until you finish a long rest.</description>
+		</sheet>
+        <rules>
+            <select type="Eldritch Melody" name="Eldritch Melody" supports="Eldritch Melody" number="2" />
+            <select type="Eldritch Melody" name="Eldritch Melody (6th level)" supports="Eldritch Melody" number="1" level="6" />
+            <select type="Eldritch Melody" name="Eldritch Melody (14th level)" supports="Eldritch Melody" number="1" level="14" />
+        </rules>
+	</element>
+
+	<element name="Knowledge from Beyond the Stars" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_KNOWLEDGE_FROM_BEYOND">
+		<description>
+			<p>At 6th level, the maddening revelations that haunt your mind guide you through the treacherous void. You learn to speak, read, and write Deep Speech. Additionally, whenever you make an Intelligence check that relates to the cosmos or the eldritch, you gain a bonus on that check equal to one roll of your Bardic Inspiration die (this doesn’t expend the die).</p>
+		</description>
+		<sheet>
+			<description>You learn to speak, read, and write Deep Speech. Additionally, whenever you make an Intelligence check that relates to the cosmos or the eldritch, you gain a bonus on that check equal to one roll of your Bardic Inspiration die (this doesn’t expend the die).</description>
+		</sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+        </rules>
+	</element>
+
+	<element name="Devouring Maw" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_DEVOURING_MAW">
+		<description>
+			<p>Starting at 6th level, your words can call beings from beyond the veil. When a creature that possesses a Bardic Inspiration die from you is targeted by an attack, it can use its reaction to expend the die, summoning an eldritch maw that engulfs and protects it. Until the start of its next turn, it gains a bonus to its AC equal to the number rolled. If this causes the triggering attack to miss, the targeted creature can choose to be ripped through space by the maw, teleporting it to a point within 30 feet of it that it can see; if it does so, it loses the bonus to its AC.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature that possesses a Bardic Inspiration die from you is targeted by an attack, it can use its reaction to expend the die, summoning an eldritch maw that engulfs and protects it. Until the start of its next turn, it gains a bonus to its AC equal to the number rolled. If this causes the triggering attack to miss, the targeted creature can choose to be ripped through space by the maw, teleporting it to a point within 30 feet of it that it can see; if it does so, it loses the bonus to its AC.</description>
+		</sheet>
+	</element>
+
+	<element name="Song of the Apocalypse" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_APOCALYPSE_SONG_OF_THE_APOCALYPSE">
+		<description>
+			<p>Starting at 14th level, you learn the spell divine order: transcend. It doesn't count against the number of spells you know. You can also cast it once without expending a spell slot, and you regain the ability to do so when you finish a long rest. When you cast the spell in this way, the apocalypse flows through you; damage can't break your concentration on this spell, and you automatically succeed on the saving throws to keep control over the spell.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You learn the spell divine order: transcend. It doesn't count against the number of spells you know. You can also cast it once without expending a spell slot, and you regain the ability to do so when you finish a long rest. When you cast the spell in this way, the apocalypse flows through you; damage can't break your concentration on this spell, and you automatically succeed on the saving throws to keep control over the spell.</description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_SGEH_SPELL_DIVINE_ORDER_TRANSCEND" spellcasting="Bard" prepared="true" />
+        </rules>
+	</element>
+
+    <!-- Eldritch Melodies -->
+    <element name="Ballad of the Nameless City" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_BALLAD_OF_THE_NAMELESS_CITY">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 3rd level</prerequisite>
+        <requirements>[level:bard:3]</requirements>
+        <description>
+            <p>You channel the name of the lost city of the Great Ones, warping reality. Each creature within 30 feet of you must succeed on a Strength saving throw or be pushed up to 10 feet in a direction of your choice and knocked prone.</p>
+            <p>The number of feet up to which a creature is pushed increases to 20 feet at 6th level and 30 feet at 14th level.</p>
+        </description>
+        <sheet action="Action">
+            <description>You channel the name of the lost city of the Great Ones, warping reality. Each creature within 30 feet of you must succeed on a DC {{college of the apocalypse:dc}} Strength saving throw or be pushed up to {{ballad of the nameless city:push}} feet in a direction of your choice and knocked prone.</description>
+        </sheet>
+        <rules>
+            <stat name="ballad of the nameless city:push" value="10" />
+            <stat name="ballad of the nameless city:push" value="20" level="6" />
+            <stat name="ballad of the nameless city:push" value="30" level="14" />
+        </rules>
+    </element>
+
+    <element name="Concord of the Depths" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_CONCORD_OF_THE_DEPTHS">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 3rd level</prerequisite>
+        <requirements>[level:3]</requirements>
+        <description>
+            <p>You sing a hypnotic melody that evokes the presence of the sleeping horrors beneath the waves. Choose one creature within 60 feet of you. It must succeed on a Wisdom saving throw or become incapacitated and have its speed reduced to 0 for 1 minute, until it takes damage, or until someone uses an action to shake or slap it out of its stupor.</p>
+            <p>Starting at 6th level, you can target two creatures, and at 14th level, you can target a number of creatures equal to your Charisma modifier (minimum of three).</p>
+        </description>
+        <sheet action="Action">
+            <description>You sing a hypnotic melody that evokes the presence of the sleeping horrors beneath the waves. Choose one creature within 60 feet of you. It must succeed on a DC {{college of the apocalypse:dc}} Wisdom saving throw or become incapacitated and have its speed reduced to 0 for 1 minute, until it takes damage, or until someone uses an action to shake or slap it out of its stupor.</description>
+            <description level="6">You sing a hypnotic melody that evokes the presence of the sleeping horrors beneath the waves. Choose up to two creatures within 60 feet of you. It must succeed on a DC {{college of the apocalypse:dc}} Wisdom saving throw or become incapacitated and have its speed reduced to 0 for 1 minute, until it takes damage, or until someone uses an action to shake or slap it out of its stupor.</description>
+            <description level="14">You sing a hypnotic melody that evokes the presence of the sleeping horrors beneath the waves. Choose up to {{concord of the depths}} creatures within 60 feet of you. It must succeed on a DC {{college of the apocalypse:dc}} Wisdom saving throw or become incapacitated and have its speed reduced to 0 for 1 minute, until it takes damage, or until someone uses an action to shake or slap it out of its stupor.</description>
+        </sheet>
+        <rules>
+            <stat name="concord of the depths" value="3" bonus="base" />
+            <stat name="concord of the depths" value="charisma:modifier" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Epode For Whom the Bell Tolls" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_EPODE_FOR_WHOM_THE_BELL_TOLLS">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 3rd level</prerequisite>
+        <requirements>[level:3]</requirements>
+        <description>
+            <p>You toll the bells of death, bolstering your allies. Choose up to five creatures within 30 feet of you. Each creature gains a bonus to their attack and damage rolls equal to half your Charisma modifier (rounded up) for 2 rounds, ending at the end of your subsequent turn.</p>
+            <p>Starting at 6th level, the bonus to damage rolls equals your Charisma modifier, and at 14th level, the bonus to both attack and damage rolls becomes equal to your Charisma modifier.</p>
+        </description>
+        <sheet action="Action">
+            <description>You toll the bells of death, bolstering your allies. Choose up to five creatures within 30 feet of you. Each creature gains a bonus to their attack and damage rolls equal to {{epode for whom the bell tolls}} for 2 rounds, ending at the end of your subsequent turn.</description>
+            <description level="6">You toll the bells of death, bolstering your allies. Choose up to five creatures within 30 feet of you. Each creature gains a bonus to their attack equal to {{epode for whom the bell tolls:attack bonus}} and damage rolls equal to {{epode for whom the bell tolls:damage bonus}} for 2 rounds, ending at the end of your subsequent turn.</description>
+            <description level="14">You toll the bells of death, bolstering your allies. Choose up to five creatures within 30 feet of you. Each creature gains a bonus to their attack and damage rolls equal to {{epode for whom the bell tolls}} for 2 rounds, ending at the end of your subsequent turn.</description>
+        </sheet>
+        <rules>
+            <stat name="epode for whom the bell tolls" value="charisma:modifier:half:up" />
+            <stat name="epode for whom the bell tolls:attack bonus" value="charisma:modifier:half:up" level="6" />
+            <stat name="epode for whom the bell tolls:damage bonus" value="charisma:modifier" level="6" />
+            <stat name="epode for whom the bell tolls" value="charisma:modifier" level="14" />
+        </rules>
+    </element>
+
+    <element name="Transcendence of Flesh" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_TRANSCENDENCE_OF_FLESH">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 3rd level</prerequisite>
+        <requirements>[level:3]</requirements>
+        <description>
+            <p>You sing a gloria in the name of corruption, calling forth writhing tentacles that surround and protect your allies. Each willing creature of your choice within 30 feet of you gains temporary hit points equal to half your bard level + your Charisma modifier, as tentacles sprout from its mouth, eyes, and ears, defending them without impeding their abilities. In addition, they have advantage on Strength checks and Strength saving throws until the end of your next turn.</p>
+        </description>
+        <sheet action="Action">
+            <description>You sing a gloria in the name of corruption, calling forth writhing tentacles that surround and protect your allies. Each willing creature of your choice within 30 feet of you gains {{transcendence of flesh:thp}} temporary hit points, as tentacles sprout from its mouth, eyes, and ears, defending them without impeding their abilities. In addition, they have advantage on Strength checks and Strength saving throws until the end of your next turn.</description>
+        </sheet>
+        <rules>
+            <stat name="transcendence of flesh:thp" value="level:bard:half" />
+            <stat name="transcendence of flesh:thp" value="charisma:modifier" />
+        </rules>
+    </element>
+
+    <element name="Aria of the Reviled Stalker" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_ARIA_OF_THE_REVILED_STALKER">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 6th level</prerequisite>
+        <requirements>[level:bard:6]</requirements>
+        <description>
+            <p>You sing a haunting melody that evokes the presence of the lurking horrors beyond the veil. Choose one creature within 30 feet of you. It is partially absorbed by the cosmos for 1 hour, gaining a +10 bonus to Stealth checks and becoming unable to be tracked except by magical means. In addition, as an action, the creature can become incorporeal and move through other creatures and objects as if they were difficult terrain until the end of its turn. If it ends its turn inside an object, it takes 5 (1d10) force damage and is immediately shunted to the nearest unoccupied space. Once the creature uses this action, it can’t do so again for the duration of the transformation.</p>
+            <p>Starting at 14th level, when the creature uses an action to become incorporeal, the effect lasts for 10 minutes instead.</p>
+        </description>
+        <sheet action="Action">
+            <description>You sing a haunting melody that evokes the presence of the lurking horrors beyond the veil. Choose one creature within 30 feet of you. It is partially absorbed by the cosmos for 1 hour, gaining a +10 bonus to Stealth checks and becoming unable to be tracked except by magical means. In addition, as an action, the creature can become incorporeal and move through other creatures and objects as if they were difficult terrain until the end of its turn. If it ends its turn inside an object, it takes 5 (1d10) force damage and is immediately shunted to the nearest unoccupied space. Once the creature uses this action, it can’t do so again for the duration of the transformation.</description>
+            <description level="14">You sing a haunting melody that evokes the presence of the lurking horrors beyond the veil. Choose one creature within 30 feet of you. It is partially absorbed by the cosmos for 1 hour, gaining a +10 bonus to Stealth checks and becoming unable to be tracked except by magical means. In addition, as an action, the creature can become incorporeal and move through other creatures and objects as if they were difficult terrain until the end of its turn. If it ends its turn inside an object, it takes 5 (1d10) force damage and is immediately shunted to the nearest unoccupied space. Once the creature uses this action, it can’t do so again for the duration of the transformation.&#13;
+            When the creature uses an action to become incorporeal, the effect lasts for 10 minutes instead.</description>
+        </sheet>
+    </element>
+
+    <element name="Ode to Subjugation" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_ODE_TO_SUBJUGATION">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 6th level</prerequisite>
+        <requirements>[level:bard:6]</requirements>
+        <description>
+            <p>You invoke the power of a devouring Great One, summoning forth a horde of writhing tentacles to ensnare your enemies. Each creature of your choice that you can see within 30 feet of you must make a Dexterity saving throw, becoming restrained for 1 minute on a failed save. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+            <p>Starting at 14th level, a restrained creature takes 3d6 necrotic damage at the start of each of its turns.</p>
+        </description>
+        <sheet action="Action">
+            <description>You invoke the power of a devouring Great One, summoning forth a horde of writhing tentacles to ensnare your enemies. Each creature of your choice that you can see within 30 feet of you must make a DC {{college of the apocalypse:dc}} Dexterity saving throw, becoming restrained for 1 minute on a failed save. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+            <description level="14">You invoke the power of a devouring Great One, summoning forth a horde of writhing tentacles to ensnare your enemies. Each creature of your choice that you can see within 30 feet of you must make a DC {{college of the apocalypse:dc}} Dexterity saving throw, becoming restrained for 1 minute on a failed save. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.&#13;
+            A restrained creature takes 3d6 necrotic damage at the start of each of its turns.</description>
+        </sheet>
+    </element>
+
+    <element name="Requiem of Chaos" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_REQUIEM_OF_CHAOS">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 6th level</prerequisite>
+        <requirements>[level:bard:6]</requirements>
+        <description>
+            <p>You don the visage of the Crawling Chaos, whispering your enemies’ demise. Choose up to two creatures within 60 feet of you. They have disadvantage on Wisdom checks and Wisdom saving throws until the end of your next turn.</p>
+            <p>Starting at 14th level, you can target a number of creatures equal to your Charisma modifier (minimum of 3).</p>
+        </description>
+        <sheet action="Action">
+            <description>You don the visage of the Crawling Chaos, whispering your enemies’ demise. Choose up to two creatures within 60 feet of you. They have disadvantage on Wisdom checks and Wisdom saving throws until the end of your next turn.</description>
+            <description level="14">You don the visage of the Crawling Chaos, whispering your enemies’ demise. Choose up to {{charisma:modifier}} creatures within 60 feet of you. They have disadvantage on Wisdom checks and Wisdom saving throws until the end of your next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Song of Abject Birth" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_SONG_OF_ABJECT_BIRTH">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 6th level</prerequisite>
+        <requirements>[level:bard:6]</requirements>
+        <description>
+            <p>You invoke the power of the primordial chaos, hurling forth a horde of writhing fetuses. Each creature in a 30-foot cone originating from you must make a Dexterity saving throw, taking a number of d4s of necrotic damage equal to your level in this class on a failed save, or half as much damage on a successful one.</p>
+            <p>Starting at 14th level, the cone’s size increases to 60 feet.</p>
+        </description>
+        <sheet action="Action">
+            <description>You invoke the power of the primordial chaos, hurling forth a horde of writhing fetuses. Each creature in a {{song of abject birth:range}}-foot cone originating from you must make a DC {{college of the apocalypse:dc}} Dexterity saving throw, taking {{level:bard}}d4 necrotic damage on a failed save, or half as much damage on a successful one.</description>
+        </sheet>
+        <rules>
+            <stat name="song of abject birth:range" value="30" bonus="base"/>
+            <stat name="song of abject birth:range" value="60" level="14" bonus="base"/>
+        </rules>
+    </element>
+
+    <element name="Assonance of Dreams" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_ASSONANCE_OF_DREAMS">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 14th level</prerequisite>
+        <requirements>[level:bard:14]</requirements>
+        <description>
+            <p>You sing a melody that allows travel through the dream realm. You conjure a circular portal up to 20 feet in diameter linking an unoccupied space you can see within 10 feet of you to a precise location you are very familiar with within 1 mile of you on the same plane of existence as you. You can orient the portal in any direction you choose. The portal lasts for 1 minute. Anything that travels through the portal is instantly transported to the location you chose, appearing in an unoccupied space nearest to the location.</p>
+        </description>
+        <sheet action="Action">
+            <description>You sing a melody that allows travel through the dream realm. You conjure a circular portal up to 20 feet in diameter linking an unoccupied space you can see within 10 feet of you to a precise location you are very familiar with within 1 mile of you on the same plane of existence as you. You can orient the portal in any direction you choose. The portal lasts for 1 minute. Anything that travels through the portal is instantly transported to the location you chose, appearing in an unoccupied space nearest to the location.</description>
+        </sheet>
+    </element>
+
+    <element name="Euphony of Self-Destruction" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_EUPHONY_OF_SELF_DESTRUCTION">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 14th level</prerequisite>
+        <requirements>[level:bard:14]</requirements>
+        <description>
+            <p>You carve the ancient symbol of the convergence of light, unleashing a portal to realms untold. Choose one creature you can see within 60 feet of you. It must succeed on a Charisma saving throw or be drawn through it to an unknown destination. At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target isn’t an aberration, it takes 5d12 psychic damage and must succeed on a Wisdom saving throw or gain a long-term madness.</p>
+        </description>
+        <sheet action="Action">
+            <description>You carve the ancient symbol of the convergence of light, unleashing a portal to realms untold. Choose one creature you can see within 60 feet of you. It must succeed on a DC {{college of the apocalypse:dc}} Charisma saving throw or be drawn through it to an unknown destination. At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target isn’t an aberration, it takes 5d12 psychic damage and must succeed on a DC {{college of the apocalypse:dc}} Wisdom saving throw or gain a long-term madness.</description>
+        </sheet>
+    </element>
+
+    <element name="Nightmare of the Abyss" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_NIGHTMARE_OF_THE_ABYSS">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 14th level</prerequisite>
+        <requirements>[level:bard:14]</requirements>
+        <description>
+            <p>You recite the forbidden incantations of He Who Lies Dreaming, summoning forth a vision of the being’s power. Each creature of your choice within 60 feet of you must succeed on a Wisdom saving throw or be stunned until the end of your next turn.</p>
+        </description>
+        <sheet action="Action">
+            <description>You recite the forbidden incantations of He Who Lies Dreaming, summoning forth a vision of the being’s power. Each creature of your choice within 60 feet of you must succeed on a DC {{college of the apocalypse:dc}} Wisdom saving throw or be stunned until the end of your next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Whispers of the Flesh-Defiler" type="Eldritch Melody" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELDRITCH_MELODY_WHISPERS_OF_THE_FLESH_DEFILER">
+        <supports>Eldritch Melody</supports>
+        <prerequisite>Prerequisite: 14th level</prerequisite>
+        <requirements>[level:bard:14]</requirements>
+        <description>
+            <p>You recite forbidden lore learned from a tome of flesh, summoning forth a swarm of buzzing, entrail-eating creatures. For 1 minute, a 30-foot-radius sphere of writhing worms appears at a point that you can see within 60 feet of you. When a creature enters the area for the first time on a turn or starts its turn there, it is devoured by it and must make a Constitution saving throw. It takes 5d6 necrotic damage and is poisoned for 1 minute on a failed save, or half as much damage and isn’t poisoned on a successful one. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. On each of your turns after you summon the swarm, you can use a bonus action to move it up to 30 feet in any direction. This effect ends early if you take fire or radiant damage.</p>
+        </description>
+        <sheet action="Action">
+            <description>You recite forbidden lore learned from a tome of flesh, summoning forth a swarm of buzzing, entrail-eating creatures. For 1 minute, a 30-foot-radius sphere of writhing worms appears at a point that you can see within 60 feet of you. When a creature enters the area for the first time on a turn or starts its turn there, it is devoured by it and must make a DC {{college of the apocalypse:dc}} Constitution saving throw. It takes 5d6 necrotic damage and is poisoned for 1 minute on a failed save, or half as much damage and isn’t poisoned on a successful one. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. On each of your turns after you summon the swarm, you can use a bonus action to move it up to 30 feet in any direction. This effect ends early if you take fire or radiant damage.</description>
+        </sheet>
+    </element>
+</elements>

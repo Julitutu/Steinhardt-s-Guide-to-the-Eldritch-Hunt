@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Scion of Madness</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="Scion of Madness.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Scion of Madness.xml" />
+		</update>
+	</info>
+
+	<element name="Scion of Madness" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_SORCERER_SCION_OF_MADNESS">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>The eldritch powers that lurk beyond the veil of the moon have plunged the world into chaos. This chaos is what gives you might; there isn't any form of power more pure nor more potent than this eldritch insanity. You might have endured nightmarish experiments, possibly a higher being has taken an interest in you, or maybe you’re a mere pawn in an outer god's scheme. Perhaps you were blessed by powers that shouldn't be, or one of your parents was under an eldritch curse.</p>
+			<p class="indent">Whatever the case may be, this insanity consumes you, and will be unleashed on the world, for better or atrociously worse.</p>
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_MIND_OF_MADNESS" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_SPREAD_OF_CHAOS" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_DEPTHS_OF_DEPRAVITY" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_POWERS_OF_INSANITY" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_MADDENING_HUNGER" />
+		</description>
+		<sheet display="false">
+			<description>The eldritch powers that lurk beyond the veil of the moon have plunged the world into chaos. This chaos is what gives you might; there isn't any form of power more pure nor more potent than this eldritch insanity.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_MIND_OF_MADNESS" level="1" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_SPREAD_OF_CHAOS" level="1" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_DEPTHS_OF_DEPRAVITY" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_POWERS_OF_INSANITY" level="14" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_MADDENING_HUNGER" level="18" />
+
+            <stat name="scion of madness:dc" value="8" />
+            <stat name="scion of madness:dc" value="proficiency" />
+            <stat name="scion of madness:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Mind of Madness" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_MIND_OF_MADNESS">
+		<description>
+			<p>At 1st level, the depraved insanity that lurks within you is always torturing your mind, yet in this chaos you find power. Whenever you gain a madness, you can choose to reroll on the appropriate table, gaining the new effect instead.</p>
+			<p class="indent">In addition, when a creature attempts to read your thoughts or scry on you, they can only witness the insanity that ravages you. They take psychic damage equal to your level in this class, their magic or ability fails, and they must succeed on a Wisdom saving throw against your spell save DC or gain a short-term madness.</p>
+		</description>
+		<sheet>
+			<description>Whenever you gain a madness, you can choose to reroll on the appropriate table, gaining the new effect instead.&#13;
+			In addition, when a creature attempts to read your thoughts or scry on you, they can only witness the insanity that ravages you. They take {{level:sorcerer}} psychic damage, their magic or ability fails, and they must succeed on a DC {{scion of madness:dc}} Wisdom saving throw or gain a short-term madness.</description>
+		</sheet>
+	</element>
+
+	<element name="Spread of Chaos" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_SPREAD_OF_CHAOS">
+		<description>
+			<p>Also at 1st level, you can infuse your magic with your eldritch insanity. When you cast a spell of 1st level or higher that doesn’t have a range of self, you can cause each creature affected by the spell to make a Wisdom saving throw against your spell save DC or gain a short-term madness.</p>
+			<p class="indent">If your spell targets more than one creature, you must make a Charisma saving throw against a DC equal to 10 + the spell level + the number of creatures targeted by the spell. On a failure, the spell fails and you gain one short-term madness, but you do not expend the spell slot nor the use of this feature. On a success, each creature is affected as normal. Once you use this feature, you must finish a long rest before you can use it again.</p>
+			<p class="indent">Any time before you regain the use of this feature, the GM can have you roll on the Short-Term Madness table (see page 271) immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you cast a spell of 1st level or higher that doesn’t have a range of self, you can cause each creature affected by the spell to make a DC {{scion of madness:dc}} Wisdom saving throw or gain a short-term madness.&#13;
+			If your spell targets more than one creature, you must make a Charisma saving throw against a DC equal to 10 + the spell level + the number of creatures targeted by the spell. On a failure, the spell fails and you gain one short-term madness, but you do not expend the spell slot nor the use of this feature. On a success, each creature is affected as normal.&#13;
+			Any time before you regain the use of this feature, the GM can have you roll on the Short-Term Madness table (see page 271) immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Depths of Depravity" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_DEPTHS_OF_DEPRAVITY">
+		<description>
+			<p>Starting at 6th level, you can let the insanity within you warp the magic of the world. When a creature that you can see within 120 feet of you must make a saving throw, if you are affected by at least one madness, you can use your reaction to give the creature disadvantage on the saving throw. If the creature fails the saving throw, you feed on the ensuing chaos; you regain a sorcery point for each madness affecting you.</p>
+			<p class="indent">Once you use this feature to regain sorcery points, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Reaction">
+			<description>When a creature that you can see within 120 feet of you must make a saving throw, if you are affected by at least one madness, you can use your reaction to give the creature disadvantage on the saving throw. If the creature fails the saving throw, you feed on the ensuing chaos; you regain a sorcery point for each madness affecting you.</description>
+		</sheet>
+	</element>
+
+	<element name="Powers of Insanity" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_POWERS_OF_INSANITY">
+		<description>
+			<p>Where madness rots the mind and body of most, it only serves to strengthen you. At 14th level, whenever you roll on a madness table and roll a d10 to determine which specific aspect of the madness overtakes you, you can roll a second d10 and choose the lower result of the two. In addition, gaining a madness doesn’t cause you to be stunned.</p>
+		</description>
+		<sheet>
+			<description>Whenever you roll on a madness table and roll a d10 to determine which specific aspect of the madness overtakes you, you can roll a second d10 and choose the lower result of the two. In addition, gaining a madness doesn’t cause you to be stunned.</description>
+		</sheet>
+	</element>
+
+	<element name="Maddening Hunger" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_SCION_OF_MADNESS_MADDENING_HUNGER">
+		<description>
+			<p>Your magic feeds on the insanity of this world. At 18th level, whenever you gain a madness, you regain sorcery points: short term madness, 1d4 sorcery points; long-term madness, 2d4 sorcery points; and indefinite madness, 4d4 sorcery points.</p>
+		</description>
+		<sheet>
+			<description>Whenever you gain a madness, you regain sorcery points:&#13;
+            • Short-Term madness, 1d4 sorcery points&#13;
+            • Long-term madness, 2d4 sorcery points&#13;
+            • Indefinite madness, 4d4 sorcery points</description>
+		</sheet>
+	</element>
+</elements>

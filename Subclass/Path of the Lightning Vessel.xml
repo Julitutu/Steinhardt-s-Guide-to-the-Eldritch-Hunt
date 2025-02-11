@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Lightning Vessel</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="Path of the Lightning Vessel.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Path of the Lightning Vessel.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Lightning Vessel" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_BARBARIAN_PATHOFTHELIGHTNINGVESSEL">
+		<supports>Primal Path</supports>
+		<description>
+			<p>A Lightning Vessel is a brute, a monster of battle. Their bodies overflowing with lightning, they arrive unexpectedly, often dropping from buildings or leaping impossible distances, before crashing down amidst the fight. The presence of a single Lightning Vessel is often enough to turn the tides of battle. Their ferocious electricity rampaging through their enemies, leaving a trail of charred corpses in their wake. If one ends up face to face against such a monster, there is no running away—they will catch you, electrocute you, and rend your corpse. Although vital in the fight against the Scourge, their recklessness causes fear in the heart of friends and foes alike.</p>
+			<p class="indent">The Scions created the Lightning Vessels, using galvanized rods implanted within the spine of newborns, before subjecting them to violent shock therapy. Of those children, a few grew capable of harnessing lightning, while many more were crippled for life—a small price to pay for salvation. This very technology was later used to create the Galvanized Prowlers, mortal enemies of the Lightning Vessels, as the Scions started fearing their own creation.</p>
+            <div class="sidebar"><p class="flavor">“Even while her body was falling apart, she was still fighting. Even when her arm was being torn to shreds, she was still fighting. When all her allies fell, she stood and kept fighting. Only when the battle was won did she draw her last breath, but she was still standing. Not even death could break her.”</p><p>—Unknown survivor of the 26th Eldritch hunt.</p></div>
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_GALVANIC_HEART" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_ROARING_CRASH" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_LIGHTNING_REFLEXES" />
+			<div element="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_ELECTRIC_BEAST" />
+		</description>
+		<sheet display="false">
+			<description>A Lightning Vessel is a brute, a monster of battle. Their bodies overflowing with lightning, they arrive unexpectedly, often dropping from buildings or leaping impossible distances, before crashing down amidst the fight.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_GALVANIC_HEART" level="3" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_ROARING_CRASH" level="6" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_LIGHTNING_REFLEXES" level="10" />
+			<grant type="Archetype Feature" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_ELECTRIC_BEAST" level="14" />
+		</rules>
+	</element>
+
+	<element name="Galvanic Heart" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_GALVANIC_HEART">
+		<description>
+			<p>Lightning is part of you. It flows through your veins and awaits release. At 3rd level, you gain resistance to lightning damage. If you already have this resistance, instead, if you take lightning damage, you can reduce that damage by 1d6 (after the resistance applies).</p>
+			<p class="indent">In addition, while raging, you can unleash the lightning within. For the duration of your rage, you can use your bonus action to unleash various powers.</p>
+			<p class="indent"><b><i>Saving Throws.</i></b> Some of your abilities require your target to make a saving throw to resist the effects. The saving throw DC is calculated as follows:</p>
+			<center><p><b>Vessel save DC</b> = 8 + your proficiency bonus + your Constitution modifier</p></center>
+			<ul>
+				<li><b>Electrified Chains.</b> You can use your bonus action to create chains of lightning that wrap around your weapon. The next time you hit a creature this turn, it takes additional lightning damage equal to twice your Constitution modifier and becomes ensnared by the chains, which anchor to the floor, until the start of your next turn. Each time it attempts to move more than 10 feet while ensnared, it must make an Athletics check contested by your Athletics check, freeing itself on a success. On a failure, it takes the lightning damage again and its speed is reduced to 0 until the start of your next turn.</li>
+				<li><b>Fulgurant Strike.</b> When you hit a creature with a melee weapon attack, you can leave the weapon embedded in their chest for a brief moment and immediately use a bonus action to call down lightning from the heavens to strike them, using the weapon as a conduit, before retrieving it. The target takes lightning damage equal to twice your Constitution modifier, and all creatures within a 5-foot radius must succeed on a Dexterity saving throw against your Vessel save DC or also take that damage. You have advantage on this saving throw.</li>
+				<li><b>Lightning Step.</b> As a bonus action, you can move up to half your speed. During this rush, your body becomes supercharged; if you end this movement within 5 feet of a creature, it takes lightning damage equal to twice your Constitution modifier as the lightning leaps to them. If there are multiple creatures, choose one that takes the damage.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action">
+			<description>While raging, you can unleash the lightning within. For the duration of your rage, you can use your bonus action to unleash various powers.&#13;
+            • Electrified Chains. You can use your bonus action to create chains of lightning that wrap around your weapon. The next time you hit a creature this turn, it takes additional lightning damage equal to {{electrified chains}} and becomes ensnared by the chains, which anchor to the floor, until the start of your next turn. Each time it attempts to move more than 10 feet while ensnared, it must make an Athletics check contested by your Athletics check, freeing itself on a success. On a failure, it takes the lightning damage again and its speed is reduced to 0 until the start of your next turn.&#13;
+            • Fulgurant Strike. When you hit a creature with a melee weapon attack, you can leave the weapon embedded in their chest for a brief moment and immediately use a bonus action to call down lightning from the heavens to strike them, using the weapon as a conduit, before retrieving it. The target takes lightning damage equal to {{electrified chains}}, and all creatures within a {{fulgurant radius}}-foot radius must succeed on a DC {{vessel save:dc}} Dexterity saving throw or also take that damage. You have advantage on this saving throw.&#13;
+            • Lightning Step. As a bonus action, you can move up to half your speed. During this rush, your body becomes supercharged; if you end this movement within 5 feet of a creature, it takes lightning damage equal to {{electrified chains}} as the lightning leaps to them. If there are multiple creatures, choose one that takes the damage.</description>
+		</sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+
+            <stat name="vessel save:dc" value="8" />
+            <stat name="vessel save:dc" value="proficiency" />
+            <stat name="vessel save:dc" value="constitution:modifier" />
+
+            <stat name="electrified chains" value="constitution:modifier" />
+            <stat name="electrified chains" value="constitution:modifier" />
+
+            <stat name="fulgurant radius" value="5" />
+        </rules>
+	</element>
+
+	<element name="Roaring Crash" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_ROARING_CRASH">
+		<description>
+			<p>At 6th level, you are ready to leap into battle at a moment’s notice, crashing down on your foes like thunder from the heavens. As part of entering your rage, you can leap into the air, before crashing down on a point on the ground that you can see within 30 feet of you that isn't occupied by a Huge or larger creature. All creatures in a 10-foot radius centered on that point must succeed on a Dexterity saving throw against your Vessel save DC or take a number of d8s of lightning damage equal to your Constitution modifier (minimum of 1d8), or half as much damage on a success.</p>
+			<p class="indent">If a creature is in the space on which you land, they have disadvantage on the saving throw and are pushed 5 feet out of your space into an unoccupied space of their choice. If no unoccupied space is within range, the creature instead falls prone in your space.</p>
+			<p class="indent">At 10th level, the distance you can leap increases to 60 feet, and you can land in spaces occupied by Huge creatures. At 14th level, the distance increases to 90 feet, and you can land in spaces occupied by Gargantuan creatures.</p>
+		</description>
+		<sheet action="Action">
+			<description>As part of entering your rage, you can leap into the air, before crashing down on a point on the ground that you can see within {{roaring crash:distance}} feet of you that isn't occupied by a Huge or larger creature. All creatures in a 10-foot radius centered on that point must succeed on a DC {{vessel save:dc}} Dexterity saving throw or take a number of {{roaring crash:die}}d8 of lightning damage, or half as much damage on a success.&#13;
+			If a creature is in the space on which you land, they have disadvantage on the saving throw and are pushed 5 feet out of your space into an unoccupied space of their choice. If no unoccupied space is within range, the creature instead falls prone in your space.</description>
+		</sheet>
+        <rules>
+            <stat name="roaring crash:distance" value="30" />
+            <stat name="roaring crash:distance" value="60" level="10"/>
+            <stat name="roaring crash:distance" value="90" level="14"/>
+
+            <stat name="roaring crash:die" value="1" bonus="modifier"/>
+            <stat name="roaring crash:die" value="constitution:modifier" bonus="modifier"/>
+        </rules>
+	</element>
+
+	<element name="Lightning Reflexes" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_LIGHTNING_REFLEXES">
+		<description>
+			<p>At 10th level, the lightning you wield enhances your reflexes past what your body could normally handle. As a result, whenever you make a Dexterity check, you gain a bonus to the check equal to your Constitution modifier (minimum of +1).</p>
+			<p class="indent">In addition, while raging, you can use Lightning Step once on each of your turn without using a bonus action.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a Dexterity check, you gain a bonus to the check equal to your Constitution modifier (minimum of +1).&#13;
+			In addition, while raging, you can use Lightning Step once on each of your turn without using a bonus action.</description>
+		</sheet>
+        <rules>
+            <stat name="acrobatics:misc" value="roaring crash:die" />
+            <stat name="sleight of hand:misc" value="roaring crash:die" />
+            <stat name="stealth:misc" value="roaring crash:die" />
+        </rules>
+	</element>
+
+	<element name="Electric Beast" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_ELECTRIC_BEAST">
+		<description>
+			<p>Starting at 14th level, you are one with the lightning that flows through you. The damage from your Galvanic Heart’s abilities increases to three times your Constitution modifier, and they improve in the following way:</p>
+			<ul>
+				<li><b>Electrified Chains.</b> The creature cannot move more than 5 feet without attempting the check, and on a failure, they can’t take reactions until the start of your next turn.</li>
+				<li><b>Fulgurant Strike.</b> The lightning strike’s radius increases to 10 feet, and you can choose a number of creatures equal to your Constitution modifier that automatically succeed on the saving throw.</li>
+				<li><b>Lightning Step.</b> You can now move up to your full speed, and you can choose to merge with the lightning, teleporting the distance moved instead.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>The damage from your Galvanic Heart’s abilities increases to three times your Constitution modifier, and they improve in the following way:&#13;
+            • Electrified Chains. The creature cannot move more than 5 feet without attempting the check, and on a failure, they can’t take reactions until the start of your next turn.&#13;
+            • Fulgurant Strike. The lightning strike’s radius increases to 10 feet, and you can choose a number of creatures equal to {{constitution:modifier}}that automatically succeed on the saving throw.&#13;
+            • Lightning Step. You can now move up to your full speed, and you can choose to merge with the lightning, teleporting the distance moved instead.</description>
+		</sheet>
+        <rules>
+            <stat name="fulgurant radius" value="10" />
+        </rules>
+	</element>
+</elements>

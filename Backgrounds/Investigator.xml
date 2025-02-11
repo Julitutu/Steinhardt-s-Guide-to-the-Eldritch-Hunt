@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Investigator</name>
+		<description>Background from Steinhardt's Guide to the Eldritch Hunt</description>
+		<update version="0.1.0">
+			<file name="Investigator.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Backgrounds/Investigator.xml" />
+		</update>
+	</info>
+
+	<!-- Investigator -->
+	<element name="Investigator" type="Background" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BACKGROUND_INVESTIGATOR">
+		<description>
+			<p>As an Investigator, your life is a ceaseless pursuit of the elusive truth. You are driven by a profound desire to understand the perplexing enigma that is the Scourge, the inscrutable disappearances happening across the city, the veiled cult activities, the covert dealings within the Church, or the aristocrats' clandestine affairs. Regardless of the specifics, you are a seeker of knowledge and truth, using your keen insight and intellect to unravel the mysteries that plague your world. You might be a former scholar, a detective, or just an average citizen who was personally affected by these events, and you won't stop until you reveal the truth.</p>
+			<p class="indent"><b>Skill Proficiencies:</b> Investigation, Insight</p>
+			<p class="indent"><b>Tool Proficiencies:</b> One type of artisan's tools related to your investigative methods (e.g., alchemist's supplies for analyzing samples, or a forgery kit for examining documents)</p>
+			<p class="indent"><b>Languages:</b> You learn to read one language of your choice, which represents the case that you obsess the most over.</p>
+			<p class="indent"><b>Equipment:</b> A notebook and charcoal pencil, a set of common clothes, a set of artisan's tools you are proficient with, a mysterious artifact or document related to your investigation, and a pouch containing 10 gp.</p>
+			<div element="ID_LT_SGEH_BACKGROUND_FEATURE_INQUISITIVE_MIND" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>You have a keen mind and a drive to uncover the truth. This passion, fueled by your curiosity and perhaps personal experiences, makes you relentless. Each new mystery is an opportunity to learn more about the city and its secrets, but it can also lead you to perilous situations.</p>
+		</description>
+		<setters>
+			<set name="short">Investigation, Insight, one type of artisan's tools, one language. Inquisitive Mind feature.</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<select type="Proficiency" name="Artisan's Tools Proficiency (Investigator)" supports="Artisan tools" />
+      <select type="Language" name="Language (Investigator)" supports="Standard||Exotic" />
+
+			<grant type="Background Feature" id="ID_LT_SGEH_BACKGROUND_FEATURE_INQUISITIVE_MIND" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+			<select type="List" name="Personality Trait (Investigator)">
+				<item id="1">I am relentlessly curious and always eager to learn something new.</item>
+				<item id="2">My determination to uncover the truth sometimes leads me to take unnecessary risks.</item>
+				<item id="3">I believe that every mystery can be solved with enough time and thought.</item>
+				<item id="4">I tend to keep my theories to myself until I have solid evidence.</item>
+				<item id="5">I often get lost in my own thoughts and become oblivious to my surroundings.</item>
+				<item id="6">I am haunted by a terror afflicting Luyarnha (e.g., Scourge, cults, etc..) and its effects on people, and I won't rest until I've uncovered its origins.</item>
+				<item id="7">I often come off as distant or cold, but I'm deeply compassionate towards those affected by the mysteries I investigate.</item>
+				<item id="8">I have a cynical sense of humor, often making light of grim situations to keep my spirits up.</item>
+			</select>
+
+			<select type="List" name="Ideal (Investigator)">
+				<item id="1"><b>Truth:</b> I will uncover the truth, no matter how grim or inconvenient it may be. (Neutral)</item>
+				<item id="2"><b>Justice:</b> Those responsible for the city's plight must be brought to justice. (Lawful)</item>
+				<item id="3"><b>Hope:</b> The truth could lead to salvation. We can't give up hope. (Good)</item>
+				<item id="4"><b>Knowledge:</b> Knowledge is power, and I must know it all. (Any)</item>
+				<item id="5"><b>Whistleblower:</b> Everyone has the right to know the truth about what's happening in the city. (Chaotic)</item>
+				<item id="6"><b>Survival:</b> The mysteries I investigate are a threat to all life. Stopping them is all that matters. (Any)</item>
+			</select>
+
+      <select type="List" name="Bond (Investigator)">
+				<item id="1">I lost someone important to me to the Scourge. I'll do anything to prevent others from experiencing the same pain.</item>
+				<item id="2">I was once saved by a hunter, and I owe them a debt I can never repay.</item>
+				<item id="3">I have an old friend or mentor who has lost their way. I want to save them.</item>
+				<item id="4">I've been bribed to look the other way before, my greed cost many their lives, never again.</item>
+				<item id="5">I have a rival investigator who is always one step ahead of me. One day, I will outshine them.</item>
+				<item id="6">I believe some people know more about the Scourge than they're letting on. I must uncover their secrets.</item>
+			</select>
+
+			<select type="List" name="Flaw (Investigator)">
+				<item id="1">I am so obsessed with my investigations that I often neglect my own well-being.</item>
+				<item id="2">I trust my theories more than the testimony of others, which can lead to conflict.</item>
+				<item id="3">I have a hard time letting go of unsolved mysteries, even when it's necessary for my safety.</item>
+				<item id="4">I enjoy riches, and am not above investigating wealthy individuals to blackmail them later.</item>
+				<item id="5">I tend to see mysteries everywhere, even where they don't exist.</item>
+				<item id="6">I have a dark secret related to my investigation that I fear others may discover.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Inquisitive Mind" type="Background Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BACKGROUND_FEATURE_INQUISITIVE_MIND">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Your constant searching for answers has trained your mind to find connections and insights where others see none. You have an uncanny knack for seeing through lies and half-truths, and people tend to reveal more information to you, either intentionally or not. You have a knack for getting people to open up to you, whether it's through kindness, intimidation, or trickery.</p>
+		</description>
+		<sheet alt="Inquisitive Mind" />
+	</element>
+</elements>

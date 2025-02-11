@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <element name="Accursed Tiefling" type="Sub Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SUBRACE_Accursed_Tiefling">
+        <supports>Tiefling</supports>
+        <description>
+            <p>
+                The city of Luyarnha has never experienced the threat
+                of devils, as if fiends fear coming near the city walls.
+                This absence extends to those of infernal descent;
+                tieflings born in the gothic city are severed from their
+                devilish origins, their blood becoming tied to something
+                far more sinister.
+            </p>
+            <p>
+                Called “accursed” due to their monstrous appearance,
+                they are feared by most, and their powers envied by
+                nearly as many, letting their jealousy morph into hatred;
+                an accursed existence indeed. These tieflings possess a
+                fraction of the power of their dark mother’s boundless
+                reproduction and are incapable of creating life, though
+                they can create figments of it, with the most powerful
+                capable of creating ephemeral copies of themselves to
+                fight in battle. These tieflings never stay in the city for
+                long, vanishing shortly after reaching adulthood.
+            </p>
+            <h4>Accursed Tiefling Features</h4><br />
+            <p class="indent"><b><i>Appearance.</i></b>
+                Accursed tieflings vastly differ from their
+                brethren. Instead of a pair of horns, they have dozens
+                protruding from their skull, akin to a never-ending
+                cancerous growth. Their monstrous shape is furthered
+                by the eye-like protrusions that cover the horns,
+                although they are nothing more than bony sprouts
+                waiting to burgeon. Their skin is thick, covered in
+                bestial fur, and their muscular limbs are grossly
+                misshaped; the human half of their heritage has nearly
+                all but vanished.
+            </p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b>
+                Your Constitution score increases by 1.
+            </p>
+            <p class="indent"><b><i>Languages.</i></b>
+                You can speak, read, and write Common
+                and Deep Speech.
+            </p>
+            <p class="indent"><b><i>Child of the Black Goat.</i></b>
+                You have a climbing speed
+                equal to your walking speed.
+            </p>
+            <p class="indent"><b><i>Eldritch Resistance.</i></b>
+                You have resistance to necrotic
+                damage.
+            </p>
+            <p class="indent"><b><i>Legacy of a Thousand Young.</i></b>
+                You know the spare the
+                dying cantrip. When you reach 3rd level, you can cast
+                the false life spell as a 2nd-level spell once with this
+                trait. When you reach 5th level, you can cast the mirror
+                image spell once with this trait. You regain the ability to
+                cast these spells with this trait when you finish a long
+                rest. Constitution is your spellcasting ability for these
+                spells
+            </p>
+            <p class="indent"><b><i>Call of the Brood.</i></b>
+                If a Blood Moon is out while you are
+                asleep, you have a dream (as per the spell, save DC 16).
+                In this dream, the Black Goat places a
+                compulsion within your mind, ordering
+                you to carry out some activity as a
+                torrent of images and sensations.
+                When you awaken, you are
+                automatically affected
+                by a suggestion spell
+                (save DC 16, cast as a
+                7th-level spell) in
+                addition to the
+                effects of
+                dream, and
+                must carry
+                out the
+                order.
+            </p>
+        </description>
+        <sheet display="true"/>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_TIEFLING_SUBRACE" />
+            <grant type="Racial Trait"  id="ID_MON_RACIAL_TRAIT_Accursed_Tiefling_LegacyofaThousandYoung"/>
+            <grant type="Grants" id="ID_INTERNAL_LANGUAGE_REPLACEMENT_TIEFLING_INFERNAL" />
+            <grant type="Language" id="ID_LANGUAGE_ABYSSAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+            <grant type="Grants" id="ID_INTERNAL_RACIAL_TRAIT_REPLACEMENT_TIEFLING_HELLISH_RESISTANCE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+            <stat name="charisma" value="2" />
+            <stat name="constitution" value="1" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Accursed Tiefling)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Accursed Tiefling)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed:climb" value="30" bonus="Child of the Black Goat." />
+            <grant type="Racial Trait" id="ID_MON_RACIAL_TRAIT_Accursed_Tiefling_CalloftheBrood" />
+        </rules>
+    </element>
+    <element name="Legacy of a Thousand Young" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_RACIAL_TRAIT_Accursed_Tiefling_LegacyofaThousandYoung">
+        <description>
+            <p>
+                You know the <b>spare the dying</b> cantrip. When you reach 3rd level, you can cast the <b>false life</b> spell as a 2nd-level spell once with this trait. When you reach 5th level, you can cast the <b>mirror image</b> spell once with this trait. You regain the ability to cast these spells with this trait when you finish a long rest. <b>Constitution</b> is your spellcasting ability for these spells.
+            </p>
+        </description>
+        <sheet>
+            <description>
+                You know the <b>spare the dying</b> cantrip. When you reach 3rd level, you can cast the <b>false life</b> spell as a 2nd-level spell once with this trait. When you reach 5th level, you can cast the <b>mirror image</b> spell once with this trait. You regain the ability to cast these spells with this trait when you finish a long rest. <b>Constitution</b> is your spellcasting ability for these spells.
+            </description>
+        </sheet>
+        <spellcasting name="Legacy of a Thousand Young" ability="Wisdom">
+			<list known="false">Legacy of a Thousand Young</list>
+		</spellcasting>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" level="1" spellcasting="Legacy of a Thousand Young" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="3" spellcasting="Legacy of a Thousand Young" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" level="5" spellcasting="Legacy of a Thousand Young" prepared="true"/>
+        </rules>
+    </element>
+
+    <element name="Call of the Brood" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_RACIAL_TRAIT_Accursed_Tiefling_CalloftheBrood">
+        <description>
+            <p>
+                If a Blood Moon is out while you are asleep, you have a dream (as per the spell, <b>save DC 16</b>). In this dream, the Black Goat places a compulsion within your mind, ordering you to carry out some activity as a torrent of images and sensations. When you awaken, you are automatically affected by a <b>suggestion</b> spell (<b>save DC 16</b>, cast as a <b>7th-level</b> spell) in addition to the effects of dream, and must carry out the order.
+            </p>
+        </description>
+        <sheet>
+            <description>
+                If a Blood Moon is out while you are asleep, you have a dream (as per the spell, <b>save DC 16</b>). In this dream, the Black Goat places a compulsion within your mind, ordering you to carry out some activity as a torrent of images and sensations. When you awaken, you are automatically affected by a <b>suggestion</b> spell (<b>save DC 16</b>, cast as a <b>7th-level</b> spell) in addition to the effects of dream, and must carry out the order.
+            </description>
+        </sheet>
+    </element>
+</elements>
