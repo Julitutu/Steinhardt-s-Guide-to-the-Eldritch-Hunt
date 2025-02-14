@@ -132,7 +132,7 @@
 			<description>You have proficiency with cleavers, tridents, and firearms.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLEAVER" />
+			<grant type="Proficiency" id="ID_LT_SGEH_PROFICIENCY_WEAPON_CLEAVER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
 			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" />
 		</rules>

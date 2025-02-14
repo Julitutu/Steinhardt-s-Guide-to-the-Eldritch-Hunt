@@ -2,8 +2,11 @@
 <elements>
 	<info>
 		<name>Demidritch</name>
-		<file name="race-demidritch.xml" url="https://www.monkeydm.com/1-steinhardt" />
+		<update version="0.1.0">
+			<file name="race-demidritch.xml" url="https://www.monkeydm.com/1-steinhardt" />
+		</update>
 	</info>
+
 	<element name="Demidritch" type="Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_RACE_DEMIDRITCH">
 		<description>
 			<html>&lt;p&gt;Easily distinguished by their eyes—brightly colored irises that swirl like galaxies in a jet-black sclera— demidritch occupy a precarious precipice in the minds of Luyarnhians, equal parts revered and abhorred. Born of a union between humanoids and eldritch beings, demidritch are often referred to as ‘half-angels’, a misnomer arising from Luyarnhians’ mistaken belief that these creatures are descended from celestials. Stories abound of radiant silhouettes—eldritch creatures wreathed in powerful illusions—appearing unto pregnant Luyarnhians and blessing their progeny with otherworldly powers.&lt;/p&gt;&lt;br&gt;

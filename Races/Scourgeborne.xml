@@ -60,7 +60,7 @@
 			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_SCOURGEBORNE_ELDRITCH_CURSE" />
 
             <!-- Born of Madness -->
-			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_SCOURGEBORNE_BORN_OF_MADNESS" />
+			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_SCOURGEBORNE_BORN_OF_MADNESS"/>
 
 			<!-- Subrace Selection -->
 			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_SCOURGEBORNE_SUBRACE" />
@@ -96,9 +96,30 @@
                 <li>If your alignment is Evil you let the depraved monster within you influence you. You have disadvantage on saving throws against madness but gain a bonus to Dexterity saving throws equal to your Proficiency bonus.</li>
             </ul>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>If your alignment is Good, you have advantage on saving throws against madness.
             If your alignment is Evil you have disadvantage on saving throws against madness but gain a bonus to Dexterity saving throws equal to {{proficiency}}.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Born of Madness" supports="ID_LT_SGEH_RACIAL_TRAIT_SCOURGEBORNE_BORN_OF_MADNESS_GOOD|ID_LT_SGEH_RACIAL_TRAIT_SCOURGEBORNE_BORN_OF_MADNESS_EVIL" />
+		</rules>
+	</element>
+
+	<element name="Evil" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_SCOURGEBORNE_BORN_OF_MADNESS_EVIL">
+		<description>
+			<p>Your body is not the one you were born with, but rather the consequence to your exposure to eldritch madness: you let the depraved monster within you influence you. You have disadvantage on saving throws against madness but gain a bonus to Dexterity saving throws equal to your Proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You have disadvantage on saving throws against madness but gain a bonus to Dexterity saving throws equal to {{proficiency}}</description>
+		</sheet>
+	</element>
+
+	<element name="Good" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_SCOURGEBORNE_BORN_OF_MADNESS_GOOD">
+		<description>
+			<p>Your body is not the one you were born with, but rather the consequence to your exposure to eldritch madness: You gain control over your darkest impulses. You have advantage on saving throws against madness.</p>
+		</description>
+		<sheet>
+			<description>You gain control over your darkest impulses. You have advantage on saving throws against madness.</description>
 		</sheet>
 	</element>
 
@@ -223,7 +244,7 @@
 		<sheet display="false" />
 		<rules>
 			<!-- Ability Score Increase (Choice of Wisdom or Strength +1, Choice +1) -->
-			<select type="Racial Trait" name="Ability Score Increase (Cervus)" supports="Cervus" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Cervus)" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_STRENGTH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
             <select type="Ability Score Improvement" name="Ability Score Improvement (Cervus)" supports="Custom Ability Score Increase 1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Cervus)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
@@ -233,32 +254,6 @@
 
 			<!-- Nimble Build -->
 			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_SCOURGEBORNE_CERVUS_NIMBLE_BUILD" />
-		</rules>
-	</element>
-
-    <!-- Cervus Ability Score Increase (Wisdom) -->
-	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_CERVUS_WISDOM">
-		<compendium display="false" />
-		<supports>Cervus</supports>
-		<description>
-			<p>Your Wisdom score increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="wisdom" value="1" alt="Cervus" />
-		</rules>
-	</element>
-
-    <!-- Cervus Ability Score Increase (Strength) -->
-	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_CERVUS_STRENGTH">
-		<compendium display="false" />
-		<supports>Cervus</supports>
-		<description>
-			<p>Your Strength score increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="strength" value="1" alt="Cervus" />
 		</rules>
 	</element>
 
@@ -286,7 +281,7 @@
 			<description>Your movement speed increases by 10 feet.</description>
 		</sheet>
         <rules>
-            <stat name="innate speed" value="10" bonus="base" />
+            <stat name="innate speed" value="10" />
         </rules>
 	</element>
 

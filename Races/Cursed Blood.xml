@@ -172,98 +172,60 @@
 		<sheet display="false" />
 		<rules>
 			<!-- Ability Score Increase (Choice of Strength or Wisdom +1) -->
-			<select type="Racial Trait" name="Ability Score Increase (Doused Cursed-Blood)" supports="Doused Cursed-Blood" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Doused Cursed-Blood)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Doused Cursed-Blood)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 
-			<!-- Insulated Skin -->
-			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN" />
+			<!-- Insulated Skin: -->
+			<select type="Racial Trait" name="Insulated Skin" supports="Doused Insulated Skin" />
 		</rules>
 	</element>
 
-	<!-- Doused Cursed-Blood Ability Score Increase (Strength) -->
-	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_DOUSED_STRENGTH">
-		<compendium display="false" />
-		<supports>Doused Cursed-Blood</supports>
-		<description>
-			<p>Your Strength score increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="strength" value="1" alt="Doused Cursed-Blood" />
-		</rules>
-	</element>
-
-	<!-- Doused Cursed-Blood Ability Score Increase (Wisdom) -->
-	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_DOUSED_WISDOM">
-		<compendium display="false" />
-		<supports>Doused Cursed-Blood</supports>
-		<description>
-			<p>Your Wisdom score increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="wisdom" value="1" alt="Doused Cursed-Blood" />
-		</rules>
-	</element>
-
-	<!-- Insulated Skin Trait -->
-	<element name="Insulated Skin" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN">
-		<description>
-			<p>Choose two damage types that reflect your draconic or demonic ancestors, among acid, cold, fire, lightning, and poison. Whenever you take damage of one of those types, you can reduce it by an amount equal to your proficiency bonus.</p>
-		</description>
-		<sheet>
-			<description>You can reduce damage by {{proficiency}} whenever you take damage from the following types of damage:</description>
-		</sheet>
-        <rules>
-            <select type="Racial Trait" name="Insulated Skin" supports="Doused Insulated Skin" />
-        </rules>
-	</element>
-
-    <element name="Acid" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_ACID">
+	<!-- Insulated Skin: Trait -->
+    <element name="Insulated Skin: Acid" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_ACID">
         <supports>Doused Insulated Skin</supports>
         <description>
             <p>You reflect the acidic nature of your draconic or demonic ancestors. You reduce acid damage by an amount equal to your proficiency bonus.</p>
         </description>
-        <sheet>
-            <description>Acid</description>
-        </sheet>
+		<sheet>
+			<description>You can reduce damage by {{proficiency}} whenever you take Acid damage.</description>
+		</sheet>
     </element>
-     <element name="Cold" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_COLD">
+     <element name="Insulated Skin: Cold" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_COLD">
         <supports>Doused Insulated Skin</supports>
         <description>
             <p>You reflect the cold nature of your draconic or demonic ancestors. You reduce cold damage by an amount equal to your proficiency bonus.</p>
         </description>
-        <sheet>
-            <description>Cold</description>
-        </sheet>
+ 		<sheet>
+			<description>You can reduce damage by {{proficiency}} whenever you take Cold damage.</description>
+		</sheet>
     </element>
-    <element name="Fire" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_ACID">
+    <element name="Insulated Skin: Fire" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_FIRE">
         <supports>Doused Insulated Skin</supports>
         <description>
             <p>You reflect the fiery nature of your draconic or demonic ancestors. You reduce acid damage by an amount equal to your proficiency bonus.</p>
         </description>
-        <sheet>
-            <description>Fire</description>
-        </sheet>
+		<sheet>
+			<description>You can reduce damage by {{proficiency}} whenever you take Fire damage.</description>
+		</sheet>
     </element>
-    <element name="Lightning" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_COLD">
+    <element name="Insulated Skin: Lightning" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_LIGHTNING">
         <supports>Doused Insulated Skin</supports>
         <description>
             <p>You reflect the electrical nature of your draconic or demonic ancestors. You reduce cold damage by an amount equal to your proficiency bonus.</p>
         </description>
-        <sheet>
-            <description>Lightning</description>
-        </sheet>
+		<sheet>
+			<description>You can reduce damage by {{proficiency}} whenever you take Lightning damage.</description>
+		</sheet>
     </element>
-    <element name="Poison" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_COLD">
+    <element name="Insulated Skin: Poison" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_DOUSED_INSULATED_SKIN_POISON">
         <supports>Doused Insulated Skin</supports>
         <description>
             <p>You reflect the poisonous nature of your draconic or demonic ancestors. You reduce cold damage by an amount equal to your proficiency bonus.</p>
         </description>
-        <sheet>
-            <description>Poison</description>
-        </sheet>
+   		<sheet>
+			<description>You can reduce damage by {{proficiency}} whenever you take Poison damage.</description>
+		</sheet>
     </element>
 
 
@@ -308,38 +270,12 @@
 		<sheet display="false" />
 		<rules>
 			<!-- Ability Score Increase (Choice of Intelligence or Charisma +1) -->
-			<select type="Racial Trait" name="Ability Score Increase (Mirage Cursed-Blood)" supports="Mirage Cursed-Blood" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Mirage Cursed-Blood)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mirage Cursed-Blood)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 
 			<!-- Shadowveil Skin -->
 			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_CURSED_BLOOD_MIRAGE_SHADOWVEIL_SKIN" />
-		</rules>
-	</element>
-
-	<!-- Mirage Cursed-Blood Ability Score Increase (Intelligence) -->
-	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_MIRAGE_INTELLIGENCE">
-		<compendium display="false" />
-		<supports>Mirage Cursed-Blood</supports>
-		<description>
-			<p>Your Intelligence score increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="intelligence" value="1" alt="Mirage Cursed-Blood" />
-		</rules>
-	</element>
-
-	<!-- Mirage Cursed-Blood Ability Score Increase (Charisma) -->
-	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Heliana's Guide to Monster Hunting" id="ID_RACE_VARIANT_MIRAGE_CHARISMA">
-		<compendium display="false" />
-		<supports>Mirage Cursed-Blood</supports>
-		<description>
-			<p>Your Charisma score increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="charisma" value="1" alt="Mirage Cursed-Blood" />
 		</rules>
 	</element>
 

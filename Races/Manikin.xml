@@ -134,7 +134,7 @@
 		<description>
 			<p>Prerequisite: Unarmored; AC = 11 + your Dexterity modifier</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>AC = 11 + your Dexterity modifier</description>
 		</sheet>
 		<rules>
@@ -166,7 +166,7 @@
 		<description>
 			<p>AC = 13 + your Dexterity modifier (maximum of 2).</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>AC = 13 + your Dexterity modifier (maximum of 2).</description>
 		</sheet>
 		<rules>
@@ -182,7 +182,7 @@
 		<description>
 			<p>AC = 13 + your Strength modifier (maximum of 3).</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>AC = 13 + your Strength modifier (maximum of 3).</description>
 		</sheet>
 		<rules>
@@ -200,7 +200,7 @@
 			<p>Prerequisite: Heavy Armor proficiency; AC = 16 + your Strength modifier (maximum of 2).</p>
 			<p>If you use your Strength modifier for AC, you have disadvantage on Stealth checks.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>AC = 16 + your Strength modifier (maximum of 2).</description>
 		</sheet>
 		<rules>
@@ -245,7 +245,7 @@
 			<grant type="Racial Trait" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_CUSTODIAN_POWERFUL_BUILD" />
 		</rules>
 	</element>
-
+power
 	<!-- Careful Defender Trait -->
 	<element name="Careful Defender" type="Racial Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RACIAL_TRAIT_MANIKIN_CUSTODIAN_CAREFUL_DEFENDER">
 		<description>
@@ -264,6 +264,9 @@
 		<sheet>
 			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
 		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
 	</element>
 
 	<!-- Handler Subrace -->
