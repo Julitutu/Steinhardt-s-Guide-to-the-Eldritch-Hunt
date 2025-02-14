@@ -1340,24 +1340,25 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Shillelagh 24" type="Spell" source="Player’s Handbook" id="ID_WOTC_PHB_SPELL_SHILLELAGH_24">
+
+	<element name="Spectral Slash" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_SPELL_SPECTRAL_SLASH">
 		<supports>Druid</supports>
 		<description>
-			<p>A Club or Quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon's normal damage type (your choice).</p>
-			<p>The spell ends early if you cast it again or if you let go of the weapon.</p>
-			<p class="indent">The weapon's damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6).</p>
+			<p>You send forth a spectral copy of yourself to strike down your foe. Make a melee spell attack against a creature within 20 feet of you. On a hit, the target takes 1d8 damage of your weapon’s damage type.</p>
+			<p>You can then use an action to move up to 20 feet in a straight line towards the target, streaking through a spectral trail, and take the Attack action against it. To use this action, you must attack with a melee weapon.</p>
+			<p><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 and the range and distance you can move increase by 10 feet for each slot level above 1st.</p>
 		</description>
 		<setters>
 			<set name="keywords" />
-			<set name="level">0</set>
-			<set name="school">Transmutation</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
 			<set name="time">1 bonus action</set>
-			<set name="duration">1 minute</set>
-			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">20 feet</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent">mistletoe, a shamrock leaf, and a club or quarterstaff</set>
+			<set name="materialComponent">A melee weapon worth at least 1 sp</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>

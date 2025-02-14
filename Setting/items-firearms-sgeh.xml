@@ -302,4 +302,49 @@
 		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_LT_SGEH_WEAPON_PROPERTY_FIREARM_BARREL_6, ID_LT_SGEH_WEAPON_PROPERTY_FIREARM_BLARING, ID_LT_SGEH_WEAPON_PROPERTY_FIREARM_FAN_FIRE</supports>
 		<sheet alt="Pistol" />
 	</element>
+
+
+	
+	<!-- Martial Melee Weapons -->
+
+	<element name="Scythe" type="Weapon" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_WEAPON_SCYTHE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+		<description></description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="proficiency">ID_LT_SGEH_PROFICIENCY_WEAPON_SCYTHE</set>
+		</setters>
+	</element>
+
+	<element name="Cleaver" type="Weapon" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_WEAPON_CLEAVER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<description></description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d12</set>
+			<set name="proficiency">ID_LT_SGEH_PROFICIENCY_WEAPON_CLEAVER</set>
+		</setters>
+	</element>
+
+
+	<!-- Proficiencies -->
+	<element name="Weapon Proficiency (Scythe)" type="Proficiency" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_PROFICIENCY_WEAPON_SCYTHE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+		<sheet alt="Scythe" />
+	</element>
+
+	<element name="Weapon Proficiency (Cleaver)" type="Proficiency" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_PROFICIENCY_WEAPON_CLEAVER">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<sheet alt="Cleaver" />
+	</element>
+
+
 </elements>
