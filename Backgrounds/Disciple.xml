@@ -30,8 +30,8 @@
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_CALLIGRAPHERS_SUPPLIES" />
-			<select type="Language" name="Language (Disciple)" supports="ID_LANGUAGE_ELVEN||ID_LANGUAGE_ORCISH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+			<select type="Language" name="Language (Disciple)" supports="ID_LANGUAGE_ELVISH|ID_LANGUAGE_ORC" />
 
             <!-- Feature Selection (One of Three) -->
             <select type="Background Feature" name="Disciple Feature" supports="ID_LT_SGEH_BACKGROUND_FEATURE_DIVINE_GUIDANCE|ID_LT_SGEH_BACKGROUND_FEATURE_FORCEFUL_MIRACLE|ID_LT_SGEH_BACKGROUND_FEATURE_SCRIBE_OF_RADIANCE" />

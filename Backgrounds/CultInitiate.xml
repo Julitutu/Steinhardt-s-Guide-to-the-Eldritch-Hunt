@@ -26,7 +26,7 @@
 		<rules>
 			<select type="Proficiency" name="Skill Proficiency (Cult Initiate, First)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_RELIGION" />
 			<select type="Proficiency" name="Skill Proficiency (Cult Initiate, Second)" supports="ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL" />
-			<select type="Language" name="Language (Cult Initiate)" supports="ID_LANGUAGE_DEEP_SPEECH||ID_LANGUAGE_INFERNAL||ID_LANGUAGE_SYLVAN" />
+			<select type="Language" name="Language (Cult Initiate)" supports="ID_LANGUAGE_DEEP_SPEECH|ID_LANGUAGE_INFERNAL|ID_LANGUAGE_SYLVAN" />
 			<select type="Proficiency" name="Tool Proficiency (Cult Initiate)" supports="Artisan tools||Musical Instrument" />
 
 			<grant type="Background Feature" id="ID_LT_SGEH_BACKGROUND_FEATURE_CULT_SECRETS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>

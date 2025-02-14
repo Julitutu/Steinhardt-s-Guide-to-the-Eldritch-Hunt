@@ -27,7 +27,7 @@
 
 			<select type="Proficiency" name="Skill Proficiency (Beast Hunter, Second)" supports="ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_SURVIVAL" />
 
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_HERBALISM_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
 			
 			<grant type="Background Feature" id="ID_LT_SGEH_BACKGROUND_FEATURE_BORN_OF_THE_HUNT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
 			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />

@@ -28,7 +28,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TORTURE_TOOLS" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
-			<select type="Language" name="Language (Inquisitor)" supports="ID_LANGUAGE_DEEP_SPEECH||ID_LANGUAGE_PRIMORDIAL" />
+			<select type="Language" name="Language (Inquisitor)" supports="ID_LANGUAGE_DEEP_SPEECH|ID_LANGUAGE_PRIMORDIAL" />
 
 			<grant type="Background Feature" id="ID_LT_SGEH_BACKGROUND_FEATURE_ZEALOUS_AUTHORITY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
 			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
