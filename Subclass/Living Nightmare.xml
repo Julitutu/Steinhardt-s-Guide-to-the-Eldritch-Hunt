@@ -40,7 +40,7 @@
 			<p class="indent">Your flesh hardens and your reflexes grow, empowered by other-wordly ichor. While you are not wearing any armor, your Armor Class equals 11 + your Dexterity modifier + your Constitution modifier.</p>
 		</description>
 		<sheet>
-			<description>ou forever lose proficiency with shields and heavy armor, as your ever-changing body cannot hold on to them. While you are not wearing any armor, your Armor Class equals 11 + your Dexterity modifier + your Constitution modifier.</description>
+			<description>You forever lose proficiency with shields and heavy armor, as your ever-changing body cannot hold on to them. While you are not wearing any armor, your Armor Class equals 11 + your Dexterity modifier + your Constitution modifier.</description>
 		</sheet>
         <rules>
             <stat name="ac:awakened mutation" value="11" bonus="base" />
@@ -70,14 +70,14 @@
 			<p class="indent">If you absorb another magical item of the same type, the previous magic item of that type is destroyed.</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description>As a bonus action, you can mutate your body, transforming it into various weapons of destruction. They count as simple melee weapons for you (+{{eldritch weaponry:attack}} to hit) and +{{strength:modifier}} on damage rolls. When you use these weapons, you drop any items you are holding with those limbs.&#13;
+			<description>As a bonus action, you can mutate your body, transforming it into various weapons of destruction. They count as simple melee weapons for you (+{{eldritch weaponry:attack}} to hit and +{{strength:modifier}} on damage rolls).&#13;
 			You choose the weapon’s form each time you make an attack roll:&#13;
             • Stinger. One of your limbs grows into a razor-sharp blade. It deals 1d8 piercing damage on a hit. When you take the Attack action to attack with it on your turn, you can use a bonus action to turn another limb into a Stinger and strike with it, making a single additional attack.&#13;
             • Hammer Arm. Your arms turn into a black-tinted bone club. On a hit, it deals 2d6 bludgeoning damage and you can choose to push the target 5 feet away.&#13;
             • Tendinous Lash. One of your limbs replaces its bones with tough coiled ligaments, allowing it to stretch a disturbing distance without breaking. It deals 1d4 slashing damage on a hit and has a reach of 15 feet. In addition, the first time on a turn you deal damage with your lash, the target must succeed on a DC {{living nightmare:dc}} Strength saving throw or be knocked prone as the limb sweeps their feet.&#13;
             Alternatively, you can transform your limb into a shield:&#13;
             • Sinister Aegis. Whenever you are targeted by an attack that you can see, you can use your reaction to temporarily turn one of your arms into a fleshy shield, gaining a +2 bonus to AC until the start of your next turn.&#13;
-			In addition, your eldritch flesh is capable of devouring some magical items to gain their properties. As part of a short or long rest, you can devour the following types of magic items, absorbing their properties:&#13;
+			As part of a short or long rest, you can devour the following types of magic items, absorbing their properties:&#13;
             - A rapier; its properties are added to your Stinger.&#13;
             - A maul; its properties are added to your Hammer Arm.&#13;
             - A whip; its properties are added to your Tendinous Lash.&#13;
@@ -115,7 +115,7 @@
 		</description>
 		<sheet usage="{{ascended being:uses}}/Long Rest" action="Bonus Action">
 			<description>Whenever you consume a creature with your Macabre Appetite, you also inherit all their memories from the last week before their death.&#13;
-			In addition, as a bonus action, you can grow a pair of eldritch wings, giving yourself a flying speed of 30 feet for 1 minute. You can use this bonus action a number of times equal to your Constitution modifier (minimum of 1), and you regain all expended uses when you finish a long rest.</description>
+			In addition, as a bonus action, you can grow a pair of eldritch wings, giving yourself a flying speed of 30 feet for 1 minute. </description>
 		</sheet>
         <rules>
             <stat name="ascended being:uses" value="1" bonus="base"/>
@@ -154,10 +154,14 @@
 			<p>Starting at 18th level, you can temporarily infect creatures with the nightmare that lives within you, turning them into puppets. You can cast the dominate monster spell, requiring no components, and your spellcasting ability for the spell is Constitution. Once you use this feature twice, you can’t do so again until you finish a long rest.</p>
 		</description>
 		<sheet usage="2/Long Rest">
-			<description>You can cast the dominate monster spell, requiring no components, and your spellcasting ability for the spell is Constitution.</description>
+			<description>You can cast the dominate monster spell, requiring no components. DC {{ eldritch contamination:dc}} Wisdom saving throw</description>
 		</sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_MONSTER" />
+
+			<stat name="eldritch contamination:dc" value="8" />
+			<stat name="eldritch contamination:dc" value="proficiency" />
+			<stat name="eldritch contamination:dc" value="constitution:modifier" />
         </rules>
 	</element>
 </elements>

@@ -62,7 +62,7 @@
         </rules>
 	</element>
 
-	<element name="Roaring Crash" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_ROARING_CRASH">
+	<element name="Roaring Crash" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_ROARING_CRASH">
 		<description>
 			<p>At 6th level, you are ready to leap into battle at a moment’s notice, crashing down on your foes like thunder from the heavens. As part of entering your rage, you can leap into the air, before crashing down on a point on the ground that you can see within 30 feet of you that isn't occupied by a Huge or larger creature. All creatures in a 10-foot radius centered on that point must succeed on a Dexterity saving throw against your Vessel save DC or take a number of d8s of lightning damage equal to your Constitution modifier (minimum of 1d8), or half as much damage on a success.</p>
 			<p class="indent">If a creature is in the space on which you land, they have disadvantage on the saving throw and are pushed 5 feet out of your space into an unoccupied space of their choice. If no unoccupied space is within range, the creature instead falls prone in your space.</p>
@@ -82,13 +82,13 @@
         </rules>
 	</element>
 
-	<element name="Lightning Reflexes" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_LIGHTNING_REFLEXES">
+	<element name="Lightning Reflexes" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_LIGHTNING_REFLEXES">
 		<description>
 			<p>At 10th level, the lightning you wield enhances your reflexes past what your body could normally handle. As a result, whenever you make a Dexterity check, you gain a bonus to the check equal to your Constitution modifier (minimum of +1).</p>
 			<p class="indent">In addition, while raging, you can use Lightning Step once on each of your turn without using a bonus action.</p>
 		</description>
 		<sheet>
-			<description>Whenever you make a Dexterity check, you gain a bonus to the check equal to your Constitution modifier (minimum of +1).&#13;
+			<description>Whenever you make a Dexterity check, you gain a bonus to the check equal to {{roaring crash:die}}.&#13;
 			In addition, while raging, you can use Lightning Step once on each of your turn without using a bonus action.</description>
 		</sheet>
         <rules>
@@ -98,7 +98,7 @@
         </rules>
 	</element>
 
-	<element name="Electric Beast" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_ELECTRIC_BEAST">
+	<element name="Electric Beast" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LIGHTNINGVESSEL_ELECTRIC_BEAST">
 		<description>
 			<p>Starting at 14th level, you are one with the lightning that flows through you. The damage from your Galvanic Heart’s abilities increases to three times your Constitution modifier, and they improve in the following way:</p>
 			<ul>

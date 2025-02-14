@@ -40,18 +40,18 @@
 			<p class="indent">Your sheer power puts a massive strain on most weapons, shattering them. When you hit with a melee attack with a nonmagical weapon, the weapon breaks in your hand and can’t be used to make attacks until it is repaired. In addition, the range of thrown weapons is doubled for you. If you hit with a ranged attack with a thrown weapon, you can use the damage die above in place of the weapon’s usual damage dice.</p>
 		</description>
 		<sheet>
-			<description>When you hit with an unarmed strike, you can deal bludgeoning damage equal to 1d{{overwhelming power:die}} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. When you make an unarmed strike against a creature on your turn, you can use a bonus action to make another unarmed strike against the same creature.&#13;
+			<description>When you hit with an unarmed strike, you can deal bludgeoning damage equal to 1d{{overwhelming power:die}} + {{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike. When you make an unarmed strike against a creature on your turn, you can use a bonus action to make another unarmed strike against the same creature.&#13;
 			When you hit with a melee attack with a nonmagical weapon, the weapon breaks in your hand and can’t be used to make attacks until it is repaired. In addition, the range of thrown weapons is doubled for you. If you hit with a ranged attack with a thrown weapon, you can use the damage die above in place of the weapon’s usual damage dice.</description>
 		</sheet>
         <rules>
             <stat name="overwhelming power:die" value="6" />
-            <stat name="overwhelming power:die" value="8" level="6"/>
-            <stat name="overwhelming power:die" value="10" level="10"/>
-            <stat name="overwhelming power:die" value="12" level="14"/>
+            <stat name="overwhelming power:die" value="2" level="6"/>
+            <stat name="overwhelming power:die" value="2" level="10"/>
+            <stat name="overwhelming power:die" value="2" level="14"/>
         </rules>
 	</element>
 
-	<element name="Gravitational Rage" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_GRAVITATIONAL_RAGE">
+	<element name="Gravitational Rage" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_GRAVITATIONAL_RAGE">
 		<description>
 			<p>At 3rd level, once per turn, when you deal damage to a creature with an unarmed strike, you can choose one of the following effects. These effects use your Earthbreaker save DC.</p>
 			<center><p><b>Earthbreaker save DC</b> = 8 + your proficiency bonus + your Strength modifier</p></center>
@@ -75,7 +75,7 @@
         </rules>
 	</element>
 
-	<element name="Ruination" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_RUINATION">
+	<element name="Ruination" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_RUINATION">
 		<description>
 			<p>Starting at 6th level, the strength you wield is capable of toppling the arcane rules of the world. Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
 			<p class="indent">In addition, when you hit a physical barrier created by a spell with an unarmed strike, such as the effect of a wall of force or forcecage spell, or any other wall spell (such as wall of fire, gravity wall, or prismatic wall), you can make a Strength check (DC = 10 + the spell’s level), rupturing the arcane and dispelling the spell on a success.</p>
@@ -86,7 +86,7 @@
 		</sheet>
 	</element>
 
-	<element name="Imperious Gravity" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_IMPERIOUS_GRAVITY">
+	<element name="Imperious Gravity" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_IMPERIOUS_GRAVITY">
 		<description>
 			<p>Also at 6th level, you increase your mastery over gravity. On each of your turns while raging, you can use a bonus action to create one of the following effects, using your Earthbreaker save DC. The range of these abilities, and the distance they move creatures, doubles at 14th level.</p>
 			<ul>
@@ -103,7 +103,7 @@
 		</sheet>
 	</element>
 
-	<element name="Unyielding" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_EARTHBREAKER_UNYIELDING">
+	<element name="Unyielding" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_UNYIELDING">
 		<description>
 			<p>Beginning at 10th level, your unarmed strikes deal double damage to structures and you can ignore difficult terrain.</p>
 			<p class="indent">In addition, your crushing power seeps into all the aspects of your life. You can add your Constitution modifier to any Strength checks and Intimidation checks you make.</p>
@@ -118,7 +118,7 @@
         </rules>
 	</element>
 
-	<element name="World Breaker" type="Archetype Feature" source="Heliana's Guide to Monster Hunting" id="ID_LT_HGTMH_ARCHETYPE_FEATURE_EARTHBREAKER_WORLD_BREAKER">
+	<element name="World Breaker" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_EARTHBREAKER_WORLD_BREAKER">
 		<description>
 			<p>Once you reach 14th level, your blows can level the world. Once on each of your turns while you are raging, when you make a melee attack, you can fracture the world. On a hit, the target takes an extra 3d12 bludgeoning damage and is pushed up to 30 feet away from you. In addition, hit or miss, the area in a 90-foot cone in front of you breaks, as per the earthquake spell (save DC equals your Earthbreaker save DC), although the spell only lasts until the start of your next turn, doesn’t require concentration, and can create only 1d4 fissures in the area.</p>
 			<p class="indent">You can use this feature a number of times equal to your Strength modifier, and you regain all expended uses when you finish a short or long rest.</p>

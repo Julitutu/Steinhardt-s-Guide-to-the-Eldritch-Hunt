@@ -56,12 +56,12 @@
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_SHILLELAGH" level="2" spellcasting="Druid" known="true"/>
 			<grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" level="3" spellcasting="Druid" prepared="true" />
-			<grant type="Spell" id="ID_SGEH_SPELL_SKELETAL_TAIL" level="3" spellcasting="Druid" prepared="true" />
-			<grant type="Spell" id="ID_SGEH_SPELL_OSSEOUS_CAGE" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_SKELETAL_TAIL" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_OSSEOUS_CAGE" level="5" spellcasting="Druid" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" spellcasting="Druid" prepared="true" />
-			<grant type="Spell" id="ID_SGEH_SPELL_MAIDEN_OF_BONES" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_MAIDEN_OF_BONES" level="7" spellcasting="Druid" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Druid" prepared="true" />
-			<grant type="Spell" id="ID_SGEH_SPELL_FOREST_OF_DREAD" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_FOREST_OF_DREAD" level="9" spellcasting="Druid" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Druid" prepared="true" />
 		</rules>
 	</element>
@@ -108,7 +108,7 @@
 			</ul>
 			<p class="indent">These elements can be visible or not, or be represented by other natural aspects. Choose at your discretion when selecting this class.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>You gain the following benefits:</description>
 		</sheet>
         <rules>
@@ -126,6 +126,7 @@
 		</sheet>
         <rules>
             <stat name="athletics:misc" value="wisdom:modifier" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
         </rules>
 	</element>
 

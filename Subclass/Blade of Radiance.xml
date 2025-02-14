@@ -39,7 +39,7 @@
 			<description>At the end of a long rest, you can perform a ritual on a melee weapon you are proficient with that deals piercing or slashing damage, sanctifying it. It becomes your sanctified blade, and you can only have one such blade at a time. When in your hands, your sanctified blade has the finesse property and is considered silvered.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 		</rules>
 	</element>
@@ -82,8 +82,15 @@
 			<description>You learn the following features that each use your Divine points:&#13;
             • Chains of Judgement. When you hit a creature with your sanctified blade, you can expend one Divine point to create radiant chains that restrain the creature. The target must succeed on a DC {{radiance:dc}} Strength saving throw or take {{wisdom:modifier}} radiant damage and become restrained until the end of your next turn.&#13;
 			• Divine Retaliation. When a creature damages you with a melee attack, you can use your reaction and expend one Divine point to make a melee weapon attack with your sanctified blade against the creature. If you hit, you gain a bonus to your attack roll equal to {{wisdom:modifier}}&#13;
-			• Erupting Blades. When you hit a creature with an attack that could apply your Sneak Attack damage, you can expend one Divine point to cause a rain of radiant blades to fall on the battlefield. Instead of damaging the creature with your Sneak Attack, all creatures in a 20-foot-cone originating from the target (including the target) must make a DC {{radiance:dc}} Dexterity saving , taking radiant damage equal to {{sneak-attack:count:half}}d{{sneak-attack:die}} + {{wisdom:modifier}} damage on a failed saving throw, or half as much damage on a successful one.</description>
+			• Erupting Blades. When you hit a creature with an attack that could apply your Sneak Attack damage, you can expend one Divine point to cause a rain of radiant blades to fall on the battlefield. Instead of damaging the creature with your Sneak Attack, all creatures in a 20-foot-cone originating from the target (including the target) must make a DC {{radiance:dc}} Dexterity saving , taking radiant damage equal to {{righteous armament:sneak attack}}d{{sneak-attack:die}} + {{wisdom:modifier}} damage on a failed saving throw, or half as much damage on a successful one.</description>
 		</sheet>
+		<rules>
+			<stat name="righteous armament:sneak attack" value="1" level="1"/>
+			<stat name="righteous armament:sneak attack" value="1" level="5" />
+			<stat name="righteous armament:sneak attack" value="1" level="9" />
+			<stat name="righteous armament:sneak attack" value="1" level="13" />
+			<stat name="righteous armament:sneak attack" value="1" level="17" />
+		</rules>
 	</element>
 
 	<element name="Saintly Revelations" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_BLADE_OF_RADIANCE_SAINTLY_REVELATIONS">

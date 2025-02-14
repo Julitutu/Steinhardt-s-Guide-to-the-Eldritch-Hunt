@@ -42,18 +42,18 @@
 				<div element="ID_LT_SGEH_BLOOD_SHOT_OPTIONS" />
 			</div>
 		</description>
-		<sheet usage="{{blood shot:usages}}/Short Rest" bonus="base">
+		<sheet usage="{{blood shot:usages}}/Short Rest">
 			<description>Once per turn when you fire an arrow from a shortbow or longbow as part of the Attack action, you can apply one of your Blood Shot options to that arrow. You decide to use the option when the arrow hits, unless the option doesn’t involve an attack roll.</description>
 		</sheet>
 		<rules>
-			<stat name="blood shot:usages" value="1" />
-			<stat name="blood shot:usages" value="constitution:modifier" />
+			<stat name="blood shot:usages" value="1" bonus="base" />
+			<stat name="blood shot:usages" value="constitution:modifier" bonus="base"/>
 
-            <select type="Blood Shot" name="Blood Shot Option" supports="Blood Shot" number="3" />
-            <select type="Blood Shot" name="Blood Shot Option (7th level)" supports="Blood Shot" number="1" level="7" />
-            <select type="Blood Shot" name="Blood Shot Option (10th level)" supports="Blood Shot" number="1" level="10" />
-            <select type="Blood Shot" name="Blood Shot Option (15th level)" supports="Blood Shot" number="1" level="15" />
-            <select type="Blood Shot" name="Blood Shot Option (18th level)" supports="Blood Shot" number="1" level="18" />
+            <select type="Archetype Feature" name="Blood Shot Option" supports="Blood Shot" number="3" />
+            <select type="Archetype Feature" name="Blood Shot Option (7th level)" supports="Blood Shot" number="1" level="7" />
+            <select type="Archetype Feature" name="Blood Shot Option (10th level)" supports="Blood Shot" number="1" level="10" />
+            <select type="Archetype Feature" name="Blood Shot Option (15th level)" supports="Blood Shot" number="1" level="15" />
+            <select type="Archetype Feature" name="Blood Shot Option (18th level)" supports="Blood Shot" number="1" level="18" />
         </rules>
 	</element>
 
@@ -116,7 +116,7 @@
         </rules>
     </element>
 
-    <element name="Bewitching Arrow" type="Blood Shot" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_BEWITCHING_ARROW">
+    <element name="Bewitching Arrow" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_BEWITCHING_ARROW">
         <supports>Blood Shot</supports>
         <description>
             <p>You infuse fey blood to cause this arrow to temporarily charm its target. The creature hit by the arrow takes an extra 2d6 psychic damage and must make a Wisdom saving throw. If it fails the save, you can choose one of the target's allies within 30 feet of it; the target now considers this ally as an enemy until the start of your next turn.</p>
@@ -128,7 +128,7 @@
         </sheet>
     </element>
 
-    <element name="Bloodboil Arrow" type="Blood Shot" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_BLOODBOIL_ARROW">
+    <element name="Bloodboil Arrow" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_BLOODBOIL_ARROW">
         <supports>Blood Shot</supports>
         <description>
             <p>Fiendish blood is infused in this devilish arrow that you fire. The arrow detonates in a cloud of ignited blood after your attack. Immediately after the arrow hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage as their bodies start burning. This fire damage ignores resistance.</p>
@@ -140,7 +140,7 @@
         </sheet>
     </element>
 
-    <element name="Bloodshard Arrow" type="Blood Shot" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_BLOODSHARD_ARROW">
+    <element name="Bloodshard Arrow" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BLOOD_SHOT_OPTION_BLOODSHARD_ARROW">
         <supports>Blood Shot</supports>
         <description>
             <p>You transform your arrow into a thread of sharp blood, which, instead of an attack roll, fires forward in a 1-foot-wide, 30-foot-long line, before disappearing. The arrow passes harmlessly through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw, taking damage as if it were hit by the arrow plus an extra 1d6 piercing damage on a failed save, or half as much damage on a successful one.</p>

@@ -59,7 +59,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_RESILIENT_SPHERE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="7" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" level="9" spellcasting="Cleric" prepared="true" />
 		</rules>
@@ -100,7 +100,24 @@
 			The guardian appears for 1 hour, until it is reduced to 0 hit points, until you use this feature to summon the angel again, or until you die.</description>
 		</sheet>
 		<rules>
-			<grant type="Companion" id="ID_LT_SGEH_COMPANION_GUARDIAN_ANGEL" />
+			<select type="Archetype Feature" name="Angel Nature" supports="ID_LT_SGEH_ARCHETYPE_FEATURE_ANGEL_NATURE_RADIANT|ID_LT_SGEH_ARCHETYPE_FEATURE_ANGEL_NATURE_NECROTIC" />
+		</rules>
+	</element>
+
+	<element name="Radiant" type="Archetype Feature" source="source" id="ID_LT_SGEH_ARCHETYPE_FEATURE_ANGEL_NATURE_RADIANT">
+		<description>
+			<p>The nature of your angel is radiant.</p>
+		</description>
+		<rules>
+			<select type="Companion" name="Guardian Angel" supports="Guardian Angel" default="ID_LT_SGEH_COMPANION_GUARDIAN_ANGEL_RADIANT"/>
+		</rules>
+	</element>
+	<element name="Necrotic" type="Archetype Feature" source="source" id="ID_LT_SGEH_ARCHETYPE_FEATURE_ANGEL_NATURE_NECROTIC">
+		<description>
+			<p>The nature of your angel is necrotic.</p>
+		</description>
+		<rules>
+			<select type="Companion" name="Guardian Angel" supports="Guardian Angel" default="ID_LT_SGEH_COMPANION_GUARDIAN_ANGEL_NECROTIC"/>
 		</rules>
 	</element>
 
@@ -149,8 +166,8 @@
 		</rules>
 	</element>
 
-    <element name="Guardian Angel" type="Companion" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_COMPANION_GUARDIAN_ANGEL">
-        <supports>ID_LT_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_CHANNEL_DIVINITY_GUARDIAN_ANGEL</supports>
+    <element name="Guardian Angel" type="Companion" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_COMPANION_GUARDIAN_ANGEL_RADIANT">
+        <supports>Guardian Angel</supports>
         <setters>
             <set name="size">Medium</set>
             <set name="type">Celestial</set>
@@ -164,7 +181,7 @@
             <set name="intelligence">13</set>
             <set name="wisdom">15</set>
             <set name="charisma">11</set>
-            <set name="immunities">Radiant or Necrotic</set>
+            <set name="immunities">Radiant</set>
             <set name="conditionImmunities">Blinded, Charmed, Frightened, Grappled, Prone, Restrained</set>
             <set name="senses">Blindsight 60 ft. (blind beyond this radius), passive Perception 12</set>
             <set name="languages">Understands the languages you speak</set>
@@ -190,6 +207,9 @@
 
             <stat name="companion:constitution:savingthrows" value="3" />
             <stat name="companion:constitution:savingthrows" value="proficiency" />
+
+			<stat name="divine:spell:modifier" value="wisdom:modifier" />
+            <stat name="divine:spell:modifier" value="proficiency" />
         </rules>
     </element>
 
@@ -207,12 +227,91 @@
             <p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, range 10 ft., one target you can see. <i>Hit:</i> 1d6 + PB radiant or necrotic damage and the angel regains half as many hit points.</p>
         </description>
         <sheet>
-            <description>Melee Weapon Attack: +{{spell:modifier}} to hit, range 10 ft., one target you can see. Hit: 1d6 + {{proficiency}} radiant or necrotic damage and the angel regains half as many hit points.</description>
+            <description>Melee Weapon Attack: your spell attack modifier to hit, range 10 ft., one target you can see. Hit: 1d6 + PB radiant damage and the angel regains half as many hit points.</description>
         </sheet>
+    </element>
+
+    <element name="Reality Warp" type="Companion Bonus Action" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_COMPANION_BONUSACTION_GUARDIAN_ANGEL_REALITY_WARP">
+        <description>
+            <p>The angel teleports to an empty space adjacent to an allied creature within 60 feet of it.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>The angel teleports to an empty space adjacent to an allied creature within 60 feet of it.</description>
+        </sheet>
+    </element>
+
+    <element name="Self Sacrifice" type="Companion Reaction" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_COMPANION_REACTION_GUARDIAN_ANGEL_SELF_SACRIFICE">
+        <description>
+            <p>When a creature other than the angel is hit by an attack while within 30 feet of the angel, the angel can teleport into the creature’s space, taking the damage instead of the creature. To do so, the angel must be able to see both the creature and the attacker.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When a creature other than the angel is hit by an attack while within 30 feet of the angel, the angel can teleport into the creature’s space, taking the damage instead of the creature. To do so, the angel must be able to see both the creature and the attacker.</description>
+        </sheet>
+    </element>
+
+	<element name="Guardian Angel" type="Companion" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_COMPANION_GUARDIAN_ANGEL_NECROTIC">
+        <supports>Guardian Angel</supports>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Celestial</set>
+            <set name="alignment">Unaligned</set>
+            <set name="ac">10 + PB (natural armor)</set>
+            <set name="hp">5 + 5 times your cleric level</set>
+            <set name="speed">0ft., fly 10 ft. (hover)</set>
+            <set name="strength">10</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">13</set>
+            <set name="wisdom">15</set>
+            <set name="charisma">11</set>
+            <set name="immunities">Necrotic</set>
+            <set name="conditionImmunities">Blinded, Charmed, Frightened, Grappled, Prone, Restrained</set>
+            <set name="senses">Blindsight 60 ft. (blind beyond this radius), passive Perception 12</set>
+            <set name="languages">Understands the languages you speak</set>
+            <set name="challenge">-</set>
+            <set name="traits">ID_LT_SGEH_COMPANION_TRAIT_GUARDIAN_ANGEL_INCORPOREAL_BEING</set>
+            <set name="actions">ID_LT_SGEH_COMPANION_ACTION_GUARDIAN_ANGEL_DIVINE_BLADE</set>
+            <set name="bonus actions">ID_LT_SGEH_COMPANION_BONUSACTION_GUARDIAN_ANGEL_REALITY_WARP</set>
+            <set name="reactions">ID_LT_SGEH_COMPANION_REACTION_GUARDIAN_ANGEL_SELF_SACRIFICE</set>
+        </setters>
         <rules>
-            <stat name="spell:modifier" value="wisdom:modifier" />
-            <stat name="spell:modifier" value="proficiency" />
+            <stat name="companion:ac" value="10" bonus="base"/>
+            <stat name="companion:ac" value="proficiency" bonus="proficiency" />
+
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="level:cleric" />
+            <stat name="companion:hp:max" value="level:cleric" />
+            <stat name="companion:hp:max" value="level:cleric" />
+            <stat name="companion:hp:max" value="level:cleric" />
+            <stat name="companion:hp:max" value="level:cleric" />
+
+            <stat name="companion:dexterity:savingthrows" value="-2" />
+            <stat name="companion:dexterity:savingthrows" value="proficiency" />
+
+            <stat name="companion:constitution:savingthrows" value="3" />
+            <stat name="companion:constitution:savingthrows" value="proficiency" />
+
+			<stat name="divine:spell:modifier" value="wisdom:modifier" />
+            <stat name="divine:spell:modifier" value="proficiency" />
         </rules>
+    </element>
+
+    <element name="Incorporeal Being" type="Companion Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_COMPANION_TRAIT_GUARDIAN_ANGEL_INCORPOREAL_BEING">
+        <description>
+            <p>The angel can move through other creatures as if they were difficult terrain.</p>
+        </description>
+        <sheet>
+            <description>The angel can move through other creatures as if they were difficult terrain.</description>
+        </sheet>
+    </element>
+
+    <element name="Divine Blade" type="Companion Action" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_COMPANION_ACTION_GUARDIAN_ANGEL_DIVINE_BLADE">
+        <description>
+            <p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, range 10 ft., one target you can see. <i>Hit:</i> 1d6 + PB radiant or necrotic damage and the angel regains half as many hit points.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: your spell attack modifier to hit, range 10 ft., one target you can see. Hit: 1d6 + PB necrotic damage and the angel regains half as many hit points.</description>
+        </sheet>
     </element>
 
     <element name="Reality Warp" type="Companion Bonus Action" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_COMPANION_BONUSACTION_GUARDIAN_ANGEL_REALITY_WARP">

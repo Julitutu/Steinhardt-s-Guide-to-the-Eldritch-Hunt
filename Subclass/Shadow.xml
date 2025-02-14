@@ -43,7 +43,7 @@
 			You can only have one bonded weapon. If you attempt to bond with a second weapon, your bond with the first one ends.</description>
 		</sheet>
         <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FIREARMS" />
+            <grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" />
         </rules>
 	</element>
 

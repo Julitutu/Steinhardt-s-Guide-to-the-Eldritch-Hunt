@@ -78,7 +78,7 @@
 			• Blood Moon of Rebirth. As an action, you beckon the powers of a black goat. You and a number of creatures of your choice up to {{wisdom:modifier}} within 30 feet of you that you can see regain a number of hit points equal to {{level:ranger}}.&#13;
 			Lunar Alignment. When you use this Conduit, you can affect yourself and any number of creatures of your choice within 60 feet of you that you can see, which regain a number of hit points equal 1d4 x {{level:ranger}}. This healing also regrows any missing limbs, as per the regenerate spell.&#13;
             • Howling Moon. You harness the beast within you as a bonus action. For the next minute, you grow fur, fangs, and devastating claws. You are proficient with your unarmed strikes, which deal 1d6 plus {{wisdom:modifier}} magical slashing damage on a hit, and you can use your Strength or Dexterity modifier for your attack and damage rolls with these claws. If your unarmed strikes already deal 1d4 or 1d6 damage before the transformation, the damage die becomes a d8.&#13;
-            Lunar Alignment. You unleash your lunar bloodlust. You have advantage on an attack roll with your claws against a creature if at least one of your allies is within 5 feet of the creature and the ally isn’t incapacitated, and the damage die becomes a d12.&#13;
+            • Lunar Alignment. You unleash your lunar bloodlust. You have advantage on an attack roll with your claws against a creature if at least one of your allies is within 5 feet of the creature and the ally isn’t incapacitated, and the damage die becomes a d12.&#13;
             • Shattered Moon. You beckon the shattered powers of the moon, attempting to break the magic in front of you. When you or a creature that you can see within 30 feet of you makes a saving throw against a spell or magical effect, you can use your reaction to dampen the magic, granting advantage on the saving throw.&#13;
 			Lunar Alignment. When this Conduit gives a creature advantage on a saving throw, they can reroll one of the dice once. Alternatively, you can use this reaction to instead cast counterspell at 5th level, though it automatically fails against spells of 6th level or higher. Wisdom is your spellcasting modifier for this spell.&#13;
             • Scorching Moon. You wreathe yourself in flames to scorch your foes. If you move at least 20 feet in a straight line toward a creature and then hit it with a melee attack on the same turn, you can force the target to make a DC {{lunar warden:dc}} Strength saving throw. On a failure, they are knocked prone and take a number of {{wisdom:modifier}}d4s of fire damage.&#13;
@@ -92,7 +92,7 @@
 			• Blood Moon of Rebirth. As an action, you beckon the powers of a black goat. You and a number of creatures of your choice up to {{wisdom:modifier}} within 30 feet of you that you can see regain a number of hit points equal to {{level:ranger}}.&#13;
 			Lunar Alignment. When you use this Conduit, you can affect yourself and any number of creatures of your choice within 60 feet of you that you can see, which regain a number of hit points equal 1d4 x {{level:ranger}}. This healing also regrows any missing limbs, as per the regenerate spell.&#13;
             • Howling Moon. You harness the beast within you as a bonus action. For the next minute, you grow fur, fangs, and devastating claws. You are proficient with your unarmed strikes, which deal 1d6 plus {{wisdom:modifier}} magical slashing damage on a hit, and you can use your Strength or Dexterity modifier for your attack and damage rolls with these claws. If your unarmed strikes already deal 1d4 or 1d6 damage before the transformation, the damage die becomes a d8.&#13;
-            Lunar Alignment. You unleash your lunar bloodlust. You have advantage on an attack roll with your claws against a creature if at least one of your allies is within 5 feet of the creature and the ally isn’t incapacitated, and the damage die becomes a d12.&#13;
+            • Lunar Alignment. You unleash your lunar bloodlust. You have advantage on an attack roll with your claws against a creature if at least one of your allies is within 5 feet of the creature and the ally isn’t incapacitated, and the damage die becomes a d12.&#13;
             • Shattered Moon. You beckon the shattered powers of the moon, attempting to break the magic in front of you. When you or a creature that you can see within 30 feet of you makes a saving throw against a spell or magical effect, you can use your reaction to dampen the magic, granting advantage on the saving throw.&#13;
 			Lunar Alignment. When this Conduit gives a creature advantage on a saving throw, they can reroll one of the dice once. Alternatively, you can use this reaction to instead cast counterspell at 5th level, though it automatically fails against spells of 6th level or higher. Wisdom is your spellcasting modifier for this spell.&#13;
             • Scorching Moon. You wreathe yourself in flames to scorch your foes. If you move at least 20 feet in a straight line toward a creature and then hit it with a melee attack on the same turn, you can force the target to make a DC {{lunar warden:dc}} Strength saving throw. On a failure, they are knocked prone and take a number of {{wisdom:modifier}}d4s of fire damage.&#13;
@@ -115,12 +115,27 @@
 			<p class="indent">In addition, each time you use a Moon Conduit, a shard of the lunar energy remains within your body for 1 minute or until you expend it or use another Moon Conduit. You can expend this energy to gain advantage on one ability check, attack roll, or saving throw (no action required).</p>
 		</description>
 		<sheet>
-			<description>You gain resistance to radiant damage. If you already have resistance to that damage type, you gain resistance to your choice of cold or necrotic damage instead.&#13;
-			In addition, each time you use a Moon Conduit, a shard of the lunar energy remains within your body for 1 minute or until you expend it or use another Moon Conduit. You can expend this energy to gain advantage on one ability check, attack roll, or saving throw (no action required).</description>
+			<description>Each time you use a Moon Conduit, a shard of the lunar energy remains within your body for 1 minute or until you expend it or use another Moon Conduit. You can expend this energy to gain advantage on one ability check, attack roll, or saving throw (no action required).</description>
 		</sheet>
         <rules>
-            <select type="Condition" name="Lunar Guidance" supports="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD|ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" default="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT"/>
+            <select type="Archetype Feature" name="Lunar Guidance" supports="ID_LT_SGEH_ARCHETYPE_FEATURE_LUNAR_WARDEN_LUNAR_GUIDANCE_RADIANT|ID_LT_SGEH_ARCHETYPE_FEATURE_LUNAR_WARDEN_LUNAR_GUIDANCE_COLD|ID_LT_SGEH_ARCHETYPE_FEATURE_LUNAR_WARDEN_LUNAR_GUIDANCE_NECROTIC" default="ID_LT_SGEH_ARCHETYPE_FEATURE_LUNAR_WARDEN_LUNAR_GUIDANCE_RADIANT"/>
         </rules>
+	</element>
+
+	<element name="Radiant" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LUNAR_WARDEN_LUNAR_GUIDANCE_RADIANT">
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+	<element name="Cold" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LUNAR_WARDEN_LUNAR_GUIDANCE_COLD">
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Necrotic" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LUNAR_WARDEN_LUNAR_GUIDANCE_NECROTIC">
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
 	</element>
 
 	<element name="Additional Moon Conduits" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ARCHETYPE_FEATURE_LUNAR_WARDEN_ADDITIONAL_MOON_CONDUITS">
@@ -148,7 +163,7 @@
             • Slumbering Moon. You can warp your body through eldritch means. You can cast misty step without expending a spell slot or using material components.&#13;
 			Lunar Alignment. You can cast dimension door without expending a spell slot or using material components.&#13;
             • Krakenlight. You create a bioluminescent lure before you. As an action, you can create a light above your head that emits dim light in a 10-foot radius centered on you. Hostile creatures within 30 feet of you that see the lure must make a DC {{lunar warden:dc}} Wisdom saving throw or be charmed. While charmed, they are incapacitated and are compelled to move towards the lure with their movement each turn, only ending their movement when in the light. The charm effect lasts for 1 minute or until the creature takes damage.&#13;
-			Lunar Alignment. When you create this lure, the range is doubled, creatures have disadvantage on the saving throw, and the first time they take damage the effect doesn’t end.&#13;
+			• Lunar Alignment. When you create this lure, the range is doubled, creatures have disadvantage on the saving throw, and the first time they take damage the effect doesn’t end.&#13;
             • Creeping Tarlight. You can weave the tar lurking in the shadows to slow your foes. As an action choose up to three creatures within 30 feet of you can see, they must succeed on a DC {{lunar warden:dc}} Dexterity saving throw or be covered by tar for 1 minute. While covered in tar, their speed is halved, and they take a -2 penalty to AC and Dexterity saving throws. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Creatures standing in darkness have disadvantage on this saving throw. You must concentrate on this effect as you would concentrate on a spell.&#13;
 			Lunar Alignment. You can harness more of the tar and can choose up to six creatures. While covered in tar, creatures are instead affected by the slow spell. You do not need to concentrate on this effect.&#13;
             • Sanguine Eclipse. You cause your foes to turn against each other. As an action, you can choose a creature within 30 feet of you that you can see that must make a DC {{lunar warden:dc}} Intelligence saving throw. On a failed save, it regards another creature of your choice that you can see within 90 feet of you as its mortal enemy until the start of your next turn. It must use its actions to attempt to kill its mortal enemy, disregarding all other creatures. Creatures that are immune to the charmed condition are immune to this ability.&#13;

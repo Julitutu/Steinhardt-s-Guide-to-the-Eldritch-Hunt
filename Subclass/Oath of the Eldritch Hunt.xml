@@ -55,10 +55,10 @@
 			<grant type="Spell" id="ID_SGEH_SPELL_SPECTRAL_SLASH" level="3" spellcasting="Paladin" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="5" spellcasting="Paladin" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" spellcasting="Paladin" prepared="true" />
-			<grant type="Spell" id="ID_SGEH_SPELL_DISPLACING_MAW" level="9" spellcasting="Paladin" prepared="true" />
-			<grant type="Spell" id="ID_SGEH_SPELL_SPECTRAL_FURY" level="9" spellcasting="Paladin" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_BLACK_TENTACLES" level="13" spellcasting="Paladin" prepared="true" />
-			<grant type="Spell" id="ID_SGEH_SPELL_MAIDEN_OF_BONES" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_DISPLACING_MAW" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_SPECTRAL_FURY" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_MAIDEN_OF_BONES" level="13" spellcasting="Paladin" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_CONTACT_OTHER_PLANE" level="17" spellcasting="Paladin" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Paladin" prepared="true" />
 		</rules>

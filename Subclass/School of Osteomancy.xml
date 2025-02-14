@@ -64,11 +64,11 @@
 			<p>Also at 2nd level, your pursuit of osteomancy has required many hours studying the anatomy of a myriad of creatures. You gain proficiency in Medicine checks, and when you make a Medicine check, you gain a bonus to the check equal to your Intelligence modifier. In addition, when this check concerns a creature that possesses a skeleton, you add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
 		</description>
 		<sheet>
-			<description>You gain proficiency in Medicine checks, and when you make a Medicine check, you gain a bonus to the check equal to your Intelligence modifier. In addition, when this check concerns a creature that possesses a skeleton, you add double your proficiency bonus to the check, instead of your normal proficiency bonus.</description>
+			<description>When you make a Medicine check, you gain a bonus to the check equal to your Intelligence modifier. In addition, when this check concerns a creature that possesses a skeleton, you add double your proficiency bonus to the check, instead of your normal proficiency bonus.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
-            <stat name="medicine:misc" value="inteligence:modifer" />
+            <stat name="medicine:misc" value="intelligence:modifier" />
 		</rules>
 	</element>
 
