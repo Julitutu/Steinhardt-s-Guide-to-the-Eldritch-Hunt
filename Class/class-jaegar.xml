@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<name>Jaeger</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="class-jaegar.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Class/class-jaegar.xml" />
+		</update>
+	</info>
 	<element name="Jaeger" type="Class" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_JAEGER">
 		<description>
 			<p>An unassuming human pounces in the night, his blade and revolver at the ready. A gunshot, followed by the sound of metal against flesh and the splattering of blood over cobblestone. He snickers before plunging his blade anew into his battered prey.</p>
