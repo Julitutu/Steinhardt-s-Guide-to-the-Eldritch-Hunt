@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	 <info>
+		<name>Accursed Tiefling</name>
+		<update version="0.1.0">
+			<file name="Subrace-Accursed-Tiefling.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Subrace-Accursed-Tiefling.xml" />
+		</update>
+	</info>
     <element name="Accursed Tiefling" type="Sub Race" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SUBRACE_Accursed_Tiefling">
         <supports>Tiefling</supports>
         <description>
