@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<name>Way of the Fire Dancer</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="monk-fire-dancer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/monk-fire-dancer.xml" />
+		</update>
+	</info>
+
 	<element name="Way of the Fire Dancer" type="Archetype" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_MONK_FIREDANCER">
 		<supports>Monastic Tradition</supports>
 		<description>

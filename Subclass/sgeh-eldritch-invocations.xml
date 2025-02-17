@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<name>Eltritch Invocations</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="sgeh-eldritch-invocations.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/sgeh-eldritch-invocations.xml" />
+		</update>
+	</info>
+
 	<element name="Agonizing Shots" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_SHOTS">
 		<prerequisite>Path of the Trigger feature</prerequisite>
 		<requirements>ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER</requirements>

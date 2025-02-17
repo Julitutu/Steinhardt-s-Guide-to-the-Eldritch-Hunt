@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="Steinhardt's Guide to the Eldritch Hunt" type="Source" source="Core" id="ID_SGTTEH_SOURCE_STEINHARDTS_GUIDE_TO_THE_ELDRITCH_HUNT">
+		<setters>
+			<set name="abbreviation">SGEH</set>
+			<set name="image">https://static.wixstatic.com/media/0b7a5a_b84277c9222e4237ab2ccc482ef257cb~mv2.png/v1/crop/x_0,y_0,w_1000,h_1524/fill/w_636,h_969,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/hunt.png</set>
+			<set name="url">https://monkeydm.shop/collections/steinhardts-guide-to-the-eldritch-hunt-all</set>
+			<set name="author" abbreviation="MON" url="https://www.monkeydm.com">MonkeyDM</set>
+			<set name="release">20231119</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+	<info>
+		<name>Spells</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/spells.xml" />
+		</update>
+	</info>
+
 	<element name="Bestial Roar" type="Spell" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_SPELL_BESTIAL_ROAR">
 		<supports>Bard, Druid, Sorcerer, Warlock, Spell Saving Throw</supports>
 		<description>

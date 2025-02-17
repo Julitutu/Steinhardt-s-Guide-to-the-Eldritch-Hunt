@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+		<update version="0.1.0">
+			<file name="Magicitems.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/Magicitems.xml" />
+		</update>
+	</info>
+
+    <element name="Bag of Cannonballs" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BAG_OF_CANNONBALLS">
+        <description>
+            <p>You can store up to 100 cannonballs in this bag. The bag weighs 3 pounds, no matter how many cannonballs are stored. You can store or take out up to 3 cannonballs at a time once on each of your turns with no actions required.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="stash" lb="0" count="100" weightless="true">true</set>
+        </setters>
+    </element>
+
+    <element name="Damascena" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_DAMASCENA">
+        <description>
+            <p>This basic technology invented by the Scions sacrifices lead bullets to generate powerful azure flames that scorch the abhorrent. This device is an effort to replicate the magical ability possessed by a select few.</p>
+            <p>As an action, you can cause the damascena to project blue flames in a 15-foot cone in front of you. Each creature in the cone must make a Dexterity saving throw (DC 11 + your proficiency bonus), taking 4d4 fire damage + a number of d4s equal to your proficiency bonus on a failed save, or half as much damage on a successful one. Each use of the damascena consumes 5 lead bullets.</p>
+            <p><i>“Immolation is a sign of purity, and in death they shall be cleansed.”</i></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+
+    <element name="White Fungic Tea" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FUNGIC_TEA">
+        <description>
+        <p>The aroma and appearance of this tea are undeniably repulsive, with seemingly still-living organisms squirming within it. However, for those who can stomach it, the tea offers impressive soothing properties.</p>
+        <p>Known for temporarily alleviating the effects of madness, the darker the tea, the more potent and challenging to brew. Once ingested, the afflicted individual is relieved of One short-term madness for 1 hour or until the madness ends, whichever is shorter. However, upon swallowing the tea, you must make a DC 12 Constitution saving throw. On a failure, you can’t stomach the appalling taste, regurgitate the tea, and don’t gain the benefits.</p>
+        <p>The tea is made in kettles that can pour up to 2d4 cups.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Yellow Fungic Tea" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FUNGIC_TEA">
+        <description>
+        <p>The aroma and appearance of this tea are undeniably repulsive, with seemingly still-living organisms squirming within it. However, for those who can stomach it, the tea offers impressive soothing properties.</p>
+        <p>Known for temporarily alleviating the effects of madness, the darker the tea, the more potent and challenging to brew. Once ingested, the afflicted individual is relieved of All short-term and one long-term madness for 1 hour or until the madness ends, whichever is shorter. However, upon swallowing the tea, you must make a DC 14 Constitution saving throw. On a failure, you can’t stomach the appalling taste, regurgitate the tea, and don’t gain the benefits.</p>
+        <p>The tea is made in kettles that can pour up to 2d4 cups.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Blue Fungic Tea" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FUNGIC_TEA">
+        <description>
+        <p>The aroma and appearance of this tea are undeniably repulsive, with seemingly still-living organisms squirming within it. However, for those who can stomach it, the tea offers impressive soothing properties.</p>
+        <p>Known for temporarily alleviating the effects of madness, the darker the tea, the more potent and challenging to brew. Once ingested, the afflicted individual is relieved of All short-term and long-term madness for 1 hour or until the madness ends, whichever is shorter. However, upon swallowing the tea, you must make a DC 16 Constitution saving throw. On a failure, you can’t stomach the appalling taste, regurgitate the tea, and don’t gain the benefits.</p>
+        <p>The tea is made in kettles that can pour up to 2d4 cups.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+    </element>
+    <element name="Black Fungic Tea" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_FUNGIC_TEA">
+        <description>
+        <p>The aroma and appearance of this tea are undeniably repulsive, with seemingly still-living organisms squirming within it. However, for those who can stomach it, the tea offers impressive soothing properties.</p>
+        <p>Known for temporarily alleviating the effects of madness, the darker the tea, the more potent and challenging to brew. Once ingested, the afflicted individual is relieved of All short-term and long-term; one indefinite madness for 1 hour or until the madness ends, whichever is shorter. However, upon swallowing the tea, you must make a DC 18 Constitution saving throw. On a failure, you can’t stomach the appalling taste, regurgitate the tea, and don’t gain the benefits.</p>
+        <p>The tea is made in kettles that can pour up to 2d4 cups.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Legendary</set>
+        </setters>
+    </element>
+
+
+    <element name="Hand of Glory" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_HAND_OF_GLORY">
+        <description>
+            <p>A hand of glory is crafted from the hand of a hanged scourgeborne after it was covered in corpse wax and left to ferment in a casket.</p>
+            <p>While holding the hand of glory, you can attune to one additional magical item. This magical item can only be a ring, and must be worn on the hand of glory.</p>
+            <p>While holding the hand, you can use an action to set a digit of the hand ablaze and cast the invisibility spell on yourself. While a finger is ablaze, it casts bright light in a 10-foot radius that is only visible to the wearer of the hand. The spell ends early if the flame is extinguished by the wearer (no action required). In addition, while a finger is ablaze, you can cast the knock spell at will on objects within the radius of the light. The hand has 5 digits and regenerates 1 burnt digit daily at dusk.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+    <element name="Holy Tonic" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_HOLY_TONIC">
+        <description>
+            <p>The mostly-clear tonic in this vial is slightly milky and sparkles when light shines through. It was originally created by a secretive branch of the Radiant Church. When you drink this tonic, you regain 4d4 + 4 hit points and are cured of all diseases you currently suffer from.</p>
+            <p><b><i>Side Effects</i></b></p>
+            <p>Depending on the lore your game implements, the holy tonic can have one or more of the following side effects. These effects are hidden from player characters and no magic can reveal them.</p>
+            <ul>
+                <li>If you fall unconscious within 1d12 minutes after drinking the holy tonic, you must succeed a DC 12 Wisdom saving throw or gain a long-term madness when you regain consciousness.</li>
+                <li>1 hour after you drink the holy tonic, you hear whispering voices urging you toward violence and chaos. You must succeed on a DC 10 Wisdom saving throw or have disadvantage on any Persuasion checks for the next 1d4 hours. Additionally, for the duration, you are compelled to act on aggressive impulses as determined by the GM.</li>
+                <li>24 hours after you drink the holy tonic, you must succeed on a DC 10 Wisdom saving throw or gain a short-term madness.</li>
+                <li>24 hours after you drink the holy tonic, you must succeed on a DC 11 Wisdom saving throw or crave more holy tonic. For the next 1d4 hours, you desperately search for a holy tonic and drink the first one you find. If you do not drink one within this time, you gain 1 level of exhaustion and the craving goes away.</li>
+                <li>Each subsequent holy tonic you drink in a 7-day period increases the DCs for the saving throws you must make by 1. Each three holy tonics you drink in a 7-day period increases any exhaustion levels the tonic causes by 1.</li>
+                <li>If you fail five Wisdom saving throws caused by a holy tonic within a 7-day period, a curse fully takes hold. You undergo a horrifying transformation into a monstrous beast, losing control of your actions and permanently becoming a beast or monstrosity of the GM’s choice under their control.</li>
+            </ul>
+            <div class="sidebar">
+            <p class="flavor">GM Note: Alternatively the holy tonic can restore 6d4+6 or 8d4+8 hit points.</p></div>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Sanctified Cannon" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_SANCTIFIED_CANNON">
+		<description>
+			<p><i>“Heed my blessing brothers! Fire the cannons and let the sanctified lead rip apart the flesh of beasts. In death they shall know peace!” —Brother Ardeal</i></p>
+			<p><b><i>Charged Shot.</i></b> Once on each of your turns you can replace one of your cannon attacks with a charged shot. Instead of a regular attack, you let loose a ball of destruction and death. Each creature in a 120-foot-long, 5-foot-wide line in front of you must succeed on a Dexterity saving throw against your Firearm save DC or take 3d12 bludgeoning damage and be knocked prone. You can use this property only if you haven’t moved during this turn, and after you use the property, your speed is 0 until the end of the current turn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="cannon">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_LT_SGEH_WEAPON_CANNON</set>
+			<set name="name-format">Sanctified {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Big Bertha" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_BIG_BERTHA">
+		<description>
+			<p>Why bother cutting beasts when you can just blow them to smithereens.</p>
+			<p>This moongold inlaid cannon deals an extra 1d4 damage to any non-humanoid creatures it hits. Moongold acts as a guiding light in the darknes; creatures holding or wearing moongold have advantage on saving throws against being frightened and madness.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this weapon.</p>
+      <p>As a bonus action, you can rotate the dials on the cannon to infuse your loaded ammo with violent powers. Your next attack deals magical damage and you can choose one of the following effects.</p>
+			<ul>
+        <li><strong><em>Forceful Infusion.</em></strong> On a hit, the target takes an extra 1d6 bludgeoning damage and must succeed on a Strength saving throw or be pushed 15 feet away and knocked prone. Alternatively, if you are standing on a solid surface and instead fire the cannon directly at your feet, the explosion pushes you into the air and you land in a square of your choice within 30 feet of the explosion’s origin.</li>
+        <li><strong><em>Incendiary Infusion.</em></strong> On a hit, the target takes an extra 3d4 fire damage.</li>
+        <li><strong><em>Unstable Infusion.</em></strong> On a hit, the target takes an extra 1d8 cold damage and the terrain in a 10-foot radius centered on the target is covered in arcane mist, becoming difficult terrain for the next minute.</li>
+      </ul>
+    </description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="cannon">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_LT_SGEH_WEAPON_CANNON</set>
+			<set name="enhancement">1</set>
+            <set name="name-format">Big Bertha</set>
+		</setters>
+	</element>
+    
+    <!-- Moongold weapons -->
+    <element name="Moongold Coating" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_MAGIC_ITEM_MOONGOLD_COATING">
+		<description>
+			<p>Some monsters that have immunity or resistance to nonmagical or magical weapons are susceptible to moongilded weapons, so cautious adventurers invest extra coin to plate their weapons, magical or not, with moongold.</p>
+			<p class="indent">Moongold gives a 1d4 bonus to damage rolls against nonhumanoid creatures. Moongold acts as a guiding light in the darkness; creatures holding or wearing moongold have advantage on saving throws against being frightened and madness.</p>
+			<p class="indent">You can moongild a single weapon or ten pieces of ammunition for 1000 gp. This cost represents not only the price of the moongold, but the time and expertise needed to add moongold to the weapon without making it less effective. Moongold loses its effectiveness over time; if a moongilded weapon has not been recoated in moongold after 3 months, the coating falls off, ending its effects. Recoating a weapon before it loses its moongilding costs 500 gp and refreshes the duration of the moongold.</p>
+		</description>
+		<setters>
+			<set name="category">Moongold Weapons</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Moongold {{parent}}</set>
+		</setters>
+	</element>
+
+    <!-- Properties -->
+    <element name="Trick Weapon" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON">
+        <description>
+            <p>This weapon has multiple forms. Proficiency requires proficiency with all forms. See the Trick Weapon Rules for details.</p>
+        </description>
+    </element>
+  
+	<element name="Guillotine Shears" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_GUILLOTINE_SHEARS">
+		<description>
+			<p>The guillotine shears are a wonder of mechanical engineering, created to tend to Carmella’s garden. Once used to cut excess foliage, it has now been repurposed to sever limbs instead of greenery. This trick weapon was given to hunters as a means of containing the scourge—if they couldn’t kill the beasts, they could at least cripple them.</p>
+			<p><strong><em>Trick Weapon.</em></strong> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the guillotine is two one-handed weapons—a longsword and a shortsword. In its transformed state, the weapon is a single one-handed weapon—shears. As part of this bonus action, you can do the following:</p>
+			<ul>
+				<li>When transforming the swords into shears: you can make a single melee weapon attack with the shears. You don’t add your ability modifier to the damage of the bonus attack, unless that modifier is negative, and you can’t use the Guillotine property on this attack.</li>
+				<li>When transforming the shears into swords: you can slide the longsword forward as part of dismounting it, making a single melee weapon attack with it. You don’t add your ability modifier to the damage of the bonus attack, unless that modifier is negative. If you have the Two-Weapon Fighting Style, you can ignore this limitation.</li>
+			</ul>
+			<p><strong><em>Untransformed.</em></strong> While wielding both swords, the longsword is considered light. The shortsword deals your choice of slashing or piercing damage.</p>
+			<p><strong><em>Transformed.</em></strong> The shears are a one-handed martial weapon that deals 1d10 slashing damage on a hit. In addition, it has the Guillotine property.</p>
+			<p><strong><em>Guillotine.</em></strong> Immediately after hitting a target with the shears, if you have a free hand, you can use your reaction to pull the lever, snapping the blades together and dealing an extra 1d12 slashing damage to the target. If the triggering attack was a critical hit, you deal an extra 2d12 slashing damage instead. If this attack deals more than one-quarter of a creature’s hit point maximum, you also chop off one the creature's limbs (anything but the head) at the GM’s discretion. If this attack reduces a creature to 0 hit points, it is decapitated.</p>
+			<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+		</description>
+		<setters>
+			<set name="category">Trick Weapons</set>
+			<set name="type">Weapon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Guillotine Shears</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+    <element name="Meat Hookshot" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_HGTMH_MEAT_HOOKSHOT">
+		<description>
+			<p>When the manikin of the Sloered abattoir gained sentience, the Scions sent enforcers to quell this threat to Luyarnha’s delicate existence. From the abbatoir’s meat hooks and the blunderbusses of the slain enforcers, The Slaughtered—as the manikins named themselves—crafted these versatile weapons.</p>
+			<p>Nicknamed “the meat hook”, the hookshot is a trick weapon used by hunters to help close the gap to their prey in a devastating whirl of blades and gunpowder.</p>
+            <p><strong><em>Trick Weapon.</em></strong> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the hookshot is two one-handed weapons connected by a short length of chain; a sickle and a blunderbuss. In its transformed state, the weapon is a single two-handed weapon; a blunderbuss with a bladed attachment that can act as a battleaxe.</p>
+            <p><strong><em>Untransformed.</em></strong> While untransformed, the sickle has the finesse property, and the blunderbuss doesn't have the two-handed property. Using this pair of weapons together requires the sickle to be held in one hand and the blunderbuss in the other. When you take the Attack action with the sickle, you can make an attack with the blunderbuss as a bonus action, ignoring the barrel property.</p>
+            <p><strong><em>Transformed.</em></strong> When you take the Attack action, you can attack with either the blunderbuss or the bladed attachment (which uses the stats of a battleaxe wielded with two hands). In addition, this item gains the Hookshot property.</p>
+            <p><strong><em>Hookshot.</em></strong> As an action, you can launch the sickle from the blunderbuss, to which it remains attached by a length of sturdy chain. Make a ranged weapon attack against a creature you can see within 30 feet of you. On a hit, the target takes slashing damage equal to 1d4 plus your Dexterity modifier. If the creature is of your size or smaller, it must succeed on a DC 13 Strength saving throw or be pulled in a straight line to the nearest unoccupied space adjacent to you. If the creature is of a size larger than yours, you are pulled in a straight line to the nearest unoccupied space adjacent to it. At the end of your turn, the hook detaches from the creature and reattaches itself to the blunderbuss.</p>
+			<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+		</description>
+		<setters>
+			<set name="category">Trick Weapons</set>
+			<set name="type">Weapon</set>
+			<set name="rarity">Uncommon</set>
+            <set name="weapon">Sickle,Blunderbuss</set>
+            <set name="name-format">Meat Hookshot</set>
+		</setters>
+    </element>
+
+    <element name="Sanctified Partisan" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_SANCTIFIED_PARTISAN">
+        <description>
+            <p>One of the most versatile weapons of the church.</p>
+            <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the sanctified partisan is a spear and a shield. In its transformed state, the spear is sheathed by the shield, which retracts into a massive blade; the weapon becomes a glaive.</p>
+            <p><b><i>Untransformed.</i></b> Using this pair of weapons together requires the spear to be held in one hand and the shield in the other. When you are targeted by a melee weapon attack, you can use your reaction to deflect with the shield, gaining a +2 bonus to AC against that attack. If the attack misses, you can immediately make a single melee weapon attack with the spear as part of the same reaction.</p>
+            <p><b><i>Transformed.</i></b> This glaive doesn’t have the heavy property. When you hit with an attack using this weapon, as part of the attack, you can pierce the target, transform the weapon, and only pull out the spear. The shield remains in the target's body, impaling it. An impaled creature takes 1d4 slashing damage at the start of each of its turns, and its speed is reduced by 15 feet. To remove the shield, the impaled target can use its action to make a DC 12 Strength check. On a success, the shield is removed and falls at the target’s feet. If you are within 5 feet of the shield, you can use a bonus action to retrieve and don it.</p>
+            <div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+        </description>
+        <setters>
+            <set name="category">Trick Weapons</set>
+            <set name="type">Weapon</set>
+            <set name="weapon">(ID_WOTC_PHB_WEAPON_SPEAR||ID_WOTC_PHB_WEAPON_GLAIVE),ID_INTERNAL_ARMOR_GROUP_SHIELD</set> <!-- <set name="weapon">(Spear||Glaive),Shield</set> -->
+            <set name="rarity">Uncommon</set>
+            <set name="name-format">Sanctified Partisan</set>
+        </setters>
+    </element>
+
+    <element name="Stick" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_STICK">
+        <description>
+            <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, it's a stick. In its transformed state, you break it over your knee and it’s two sticks. The stick may only return to its untransformed state over the course of an hour as you use glue and bandages to bind the two pieces back together and wait for it to cure.</p>
+            <p><b><i>Untransformed.</i></b> It's a stick, has the light property, and if you hit with it, it deals 1d4 bludgeoning damage.</p>
+            <p><b><i>Transformed.</i></b> It's two sticks, each held in a hand. A hit with either stick deals 1 + your Strength modifier bludgeoning damage (minimum of 0).</p>
+            <p><b><i>Ill Advised Weapon.</i></b> When you attack with the stick, if you roll a 1 on the d20, it is destroyed and unusable. If this occurs during the transformed state of the stick, the stick not used in the attack remains, but cannot be untransformed. If the remaining stick also is destroyed by this property, you no longer have a stick.</p>
+            <div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+        </description>
+        <setters>
+            <set name="category">Trick Weapons</set>
+            <set name="type">Weapon</set>
+            <set name="weapon">Club</set>
+            <set name="rarity">Uncommon</set>
+            <set name="name-format">Stick</set>
+        </setters>
+    </element>
+
+    <element name="Rifling Cleaver" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RIFLING_CLEAVER">
+        <description>
+            <p>Rather than carrying separate firearms, which often become ineffective when beasts get close, many hunters conceal them within enormous cleavers designed to rend flesh. Such creations of gunpowder and metal are aptly named rifling cleavers.</p>
+            <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, it is is a large cleaver. In its transformed state, the weapon is a rifle. You can reload the rifle even in its untransformed state.</p>
+            <p><b><i>Untransformed.</i></b> After making a melee weapon attack with this weapon, you can immediately use your bonus action to make a ranged weapon attack with the rifle against a creature within range that is behind you and in a straight line with you and your first target. This shot extends the weapon, transforming it.</p>
+            <p><b><i>Transformed.</i></b> Though unwieldy in melee, you can use a bonus action to make a melee attack with the opposite end of the rifle. This attack uses your choice of your Strength or Dexterity modifier. The damage die for this attack is a d4, and it deals bludgeoning damage. Your weapon then reverts to its untransformed state.</p>
+            <div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+        </description>
+        <setters>
+            <set name="category">Trick Weapons</set>
+            <set name="type">Weapon</set>
+            <set name="weapon">ID_LT_SGEH_WEAPON_CLEAVER, ID_LT_SGEH_WEAPON_RIFLE</set>
+            <set name="rarity">Uncommon</set>
+            <set name="name-format">Rifling Cleaver</set>
+        </setters>
+    </element>
+
+    <element name="Abyss Warden’s Axeblade" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ABYSS_WARDEN_AXEBLADE">
+        <description>
+            <p>Infused with otherworldly ichor, this dark blade is given to warriors of the Abyss Warden, forged from the remains of the monsters they’ve slain. The elegant and virtuous design of the weapon hides its macabre origins, mirroring the order it came from.</p>
+            <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon by sliding the pommel up and down on the blade. In its untransformed state, the abyss warden's axeblade is a longsword. In its transformed state, the weapon becomes a battleaxe. As part of this bonus action, you can slam the weapon down, emitting a wave of radiance centered on you. Each creature within 5 feet of you must succeed on a DC 13 Constitution saving throw or take 1d6 radiant damage.</p>
+            <p>Both forms of the weapon deal an extra 1d6 radiant damage on a hit. This damage increases to 2d6 for the longsword against Medium or smaller aberrations and to 2d6 for the battleaxe against Large or larger aberrations.</p>
+            <div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+        </description>
+        <setters>
+            <set name="category">Trick Weapons</set>
+            <set name="type">Weapon</set>
+            <set name="weapon">ID_WOTC_PHB_WEAPON_LONGSWORD,ID_WOTC_PHB_WEAPON_BATTLEAXE</set>
+            <set name="rarity">Rare</set>
+            <set name="name-format">Abyss Warden’s Axeblade</set>
+        </setters>
+    </element>
+
+    <element name="Cordyceps Sinensis" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_CORDYCEPS_SINENSIS">
+        <description>
+            <p>To gain the benefits of the cordyceps sinensis, you must ingest it, or graft it underneath your skin. For 24 hours, the fungus will incubate within you; during that time, if you swallow liquid flames or light the grafted area ablaze, you will kill the parasite. After 24 hours have passed, the only way to remove the parasite is with a <i>remove curse</i> spell cast at 6th level or higher. If you receive Nawre’s Blessing, nothing short of a <i>wish</i> spell will remove the fungus.</p>
+            <p>While infected with the cordyceps sinensis, when you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once this property has been used, it can't be used again until the next dawn.</p>
+            <p>If you have Nawre’s Blessing tattooed or carved onto your body, the parasite becomes a trick weapon for you. You can use your choice of Intelligence, Wisdom, or Charisma, instead of Strength or Dexterity, for the attack and damage rolls made with this magic weapon</p>
+            <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this magic weapon. In its untransformed state, it is a squashy tendril that emerges from your chest. In its transformed state, the parasite turns both your arms into grotesque elastic appendages of flesh.</p>
+            <p><b><i>Untransformed.</i></b> The tendril is a simple melee weapon for you that deals 1d8 bludgeoning damage on a hit and has the reach property. You can use a bonus action to make a melee weapon attack with the weapon. In addition, your walking speed increases by 10 feet.</p>
+            <p><b><i>Transformed.</i></b> The tendrils infiltrate your arms, turning them into massive clobbering weapons. In this form, you cannot wield any weapon or shield in your hands. These tendrils count as simple melee weapons for you, deal 1d10 bludgeoning damage on a hit, and have the reach property. When you make an attack on your turn, you can choose to do so with both arms at once, treating them as a two-handed weapon that deals 2d8 damage on a hit.</p>
+            <p><b><i>Curse: Evolved Parasite.</i></b> If you die while infected with the cordyceps sinensis, the parasite gains more control over your body; if you die three times, you become an NPC under the GM’s control, and your goals become aligned with that of Nawre. A GM can devise a way for the host to regain control over their body.</p>
+            <div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="type">Weapon</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="rarity">Rare</set>
+            <set name="name-format">Cordyceps Sinensis</set>
+            <set name="curse">true</set>
+        </setters>
+    </element>
+
+<element name="Dream Executioner" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_DREAM_EXECUTIONER">
+    <description>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the executioner is a scythe and a lantern. In its transformed state, the weapon is a single massive maul.</p>
+        <p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+        <p><b><i>Untransformed.</i></b> When you hit a creature with the scythe, as part of the same attack, you can choose another creature within 5 feet of the original target and within your reach to attack. If the original attack roll would hit the second creature, it takes damage equal to half your initial hit. If you do so, your speed is halved until the end of your turn. In addition, the executioner has the Harvest Property.</p>
+        <p><b><i>Harvest.</i></b> Whenever a creature of CR 1 or higher (or 1st level or higher) dies within 15 feet of you, the lantern harvests the creature’s soul. The soul becomes trapped in the lantern and the creature cannot be resurrected until the soul is freed. As an action, you can free a soul trapped in the lantern. The lantern can hold a maximum of one soul.</p>
+        <p><b><i>Transformed.</i></b> The maul gains the Soul Explosion property.</p>
+        <p><b><i>Soul Explosion.</i></b> When you hit a creature with this weapon, you can sacrifice one of the souls held in the lantern to create a massive explosion of ghostflame, permanently destroying the soul. Each creature of your choice within 15 feet of you must make a DC 14 Dexterity saving throw, taking 2d8 radiant damage and 2d8 necrotic damage on a failed save, or half as much damage on a successful one. Undead automatically fail the saving throw.</p>
+		<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+        <set name="weapon">ID_LT_SGEH_WEAPON_SCYTHE, ID_WOTC_PHB_WEAPON_MAUL</set> 
+        <set name="rarity">Rare</set>
+        <set name="attunement">true</set>
+		<set name="enhancement">1</set>
+		<set name="name-format">Dream Executioner</set>
+    </setters>
+</element>
+
+<element name="Electric Sawblade" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_ELECTRIC_SAWBLADE">
+    <description>
+        <p>The electric sawblade is a viciously effective tool of war that combines the lethality of silver and electricity. The hilt and guard resemble those of a hunter's longsword, often ornately adorned with the markings of the hunter's faction, symbols of the Radiant Church, or grim skulls that embody the dominion over death of the Scions. From this hilt extends the true terror of the weapon: a broad, straight blade constructed from dozens of razor-sharp, silvered teeth arranged in a looped chain. When wielded, these teeth whirr into a blur of destructive motion, capable of rending flesh, bone, and even the thick hide of beasts with horrifying ease. A powerful generator housed within the hilt infuses the gnashing teeth with crackling energy, adding a galvanizing quality to each cut and rip.</p>
+        <p><b><i>Trick Weapon.</i></b> This longsword has 3 charges. You can expend 1 charge as a bonus action to pull the trigger under the blade to transform and infuse it with electricity for 1 minute, until you fall unconscious, or until you use a bonus action to stop the current. This weapon regains 1 charge for each 10 minutes that it spends inside a miniature Galespire Coil (often found in hunter's workshops).</p>
+        <p>This silvered longsword deals an extra 1d6 slashing damage on a hit, and you gain a +1 bonus to attack and damage rolls against creatures not wearing metal armor, as long as the sword has at least 1 charge.</p>
+        <p><b><i>Untransformed.</i></b> When a melee attack that you can see would hit you, you can use your reaction to parry the attack, adding a bonus to your AC equal to your proficiency bonus against that attack. If this causes the attack to miss you and it was made with a nonmagical weapon, the weapon is destroyed by the teeth of the sawblade.</p>
+        <p><b><i>Transformed.</i></b> The surge of electricity causes the blade to rev faster, requiring both hands to control it. If you use one hand to attack with this sword while it is transformed, you have disadvantage on attack rolls made with it. While transformed, the longsword deals an extra 1d6 slashing and 1d6 lightning damage. In addition, the momentum generated from it propels you. Your walking speed increases by 10 feet.</p>
+		<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+		<set name="weapon">Longsword</set>
+        <set name="rarity">Rare</set>
+		<set name="attunement">true</set>
+        <set name="name-format">Electric Sawblade</set>
+		<set name="charges">3</set>
+    </setters>
+</element>
+
+<element name="Gravitational Partisan" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_GRAVITATIONAL_PARTISAN">
+    <description>
+        <p>A sanctified partisan that was reinforced using gravity magic, typically given to high ranking hunters.</p>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the gravitational partisan is a spear and a shield. In its transformed state, the spear is sheathed by the shield, which retracts into a massive blade; the weapon becomes a glaive.</p>
+        <p><b><i>Untransformed.</i></b> Using this pair of weapons together requires the spear to be held in one hand and the shield in the other. When you are targeted by a melee weapon attack, you can use your reaction to deflect with the shield, gaining a +4 bonus to AC against that attack. If the attack misses, you can immediately make a single melee weapon attack with the spear as part of the same reaction.</p>
+        <p><b><i>Transformed.</i></b> This glaive doesn't have the heavy property. When you hit with an attack using this weapon, as part of the attack, you can pierce the target, transform the weapon, and only pull out the spear. The shield remains in the target's body, impaling it. An impaled creature takes 2d4 slashing damage at the start of each of its turns, and its speed is reduced to 0. To remove the shield, the impaled target can use its action to make a DC 14 Strength check. Medium or smaller creatures have disadvantage on the check. On a success, the shield is removed and falls at the target's feet. If you are within 5 feet of the shield, you can use a bonus action to retrieve and don it.</p>
+		<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+        <set name="weapon">ID_INTERNAL_ARMOR_GROUP_SHIELD, (ID_WOTC_PHB_WEAPON_SPEAR||ID_WOTC_PHB_WEAPON_GLAIVE)</set>
+        <set name="rarity">Rare</set>
+        <set name="name-format">Gravitational Partisan</set>
+    </setters>
+</element>
+
+<element name="Improved Meat Hookshot" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_IMPROVED_MEAT_HOOKSHOT">
+    <description>
+        <p>You have a +1 bonus to attack and damage rolls made with both forms of this magic weapon.</p>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the hookshot is two one-handed weapons connected by a short length of chain; a sickle and a blunderbuss. In its transformed state, the weapon is a single two-handed weapon; a blunderbuss with a bladed attachment that can act as a battleaxe.</p>
+        <p><b><i>Untransformed.</i></b> While untransformed, the sickle has the finesse property, and the blunderbuss doesn't have the two-handed property. Using this pair of weapons together requires the sickle to be held in one hand and the blunderbuss in the other. When you take the Attack action with the sickle, you can make an attack with the blunderbuss as a bonus action, ignoring the barrel property. If you hit a creature with the sickle and the blunderbuss on the same turn, it has disadvantage on Strength checks and Strength saving throws until the end of your next turn.</p>
+        <p><b><i>Transformed.</i></b> When you take the Attack action, you can attack with either the blunderbuss or the bladed attachment (which uses the stats of a battleaxe wielded with two hands). In addition, this item gains the Hookshot property.</p>
+        <p><b><i>Hookshot.</i></b> As an action, you can launch the sickle from the blunderbuss, to which it remains attached by a length of sturdy chain. Make a ranged weapon attack against a creature you can see within 60 feet of you. On a hit, the target takes slashing damage equal to 1d4 plus your Dexterity modifier. If the creature is of your size or smaller, it must succeed on a DC 15 Strength saving throw or be pulled in a straight line to the nearest unoccupied space adjacent to you. If the creature is of a size larger than yours, you are pulled in a straight line to the nearest unoccupied space adjacent to it. At the end of your turn, you can detach the hook from the creature and reattach it to the blunderbuss; if you don't, the creature is grappled by you.</p>
+		<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+		<set name="enhancement">1</set>
+        <set name="type">Weapon</set>
+        <set name="weapon">ID_WOTC_PHB_WEAPON_SICKLE, ID_LT_SGEH_WEAPON_BLUNDERBUSS, ID_WOTC_PHB_WEAPON_BATTLEAXE</set>
+        <set name="rarity">Rare</set>
+        <set name="name-format">Improved Meat Hookshot</set>
+    </setters>
+</element>
+
+<element name="Improved Rifling Cleaver" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_IMPROVED_RIFLING_CLEAVER">
+    <description>
+        <p>You have a +1 bonus to attack and damage rolls made with both forms of this magic weapon.</p>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, it is is a large cleaver. In its transformed state, the weapon is a rifle. You can reload the rifle even in its untransformed state.</p>
+        <p><b><i>Untransformed.</i></b> After making a melee weapon attack with this weapon, you can immediately use your bonus action to make a ranged weapon attack with the rifle against a creature within range that is behind you and in a straight line with you and your first target. This shot extends the weapon, transforming it.</p>
+        <p><b><i>Transformed.</i></b> This rifle has the Barrel (F) property instead of the Barrel (S) property. Though unwieldy in melee, you can use a bonus action to make a melee attack with the opposite end of the rifle. This attack uses your choice of your Strength or Dexterity modifier. The damage die for this attack is a d8, and it deals bludgeoning damage. Your weapon then reverts to its untransformed state.</p>
+		<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+        <set name="weapon">ID_LT_SGEH_WEAPON_CLEAVER, ID_LT_SGEH_WEAPON_RIFLE</set>
+        <set name="rarity">Rare</set>
+		    <set name="enhancement">1</set>
+        <set name="name-format">Improved Rifling Cleaver</set>
+    </setters>
+</element>
+
+<element name="Moongilded Tarblood" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_MOONGILDED_TARBLOOD">
+    <description>
+        <p>Tarblood is a creation of the Obitus Scholare, an amalgamation of hundreds of species’ blood that was forcefully injected to create enhanced hunters. The tarblood could not only be used to push past the apex of mortal power, but could also be used to create weapons—echoing the power of its wielder—when fused with moongold.</p>
+        <p>This weapon, crafted with moongold, gives you a 1d4 bonus to damage rolls against nonhumanoid creatures. Moongold acts as a guiding light in the darkness; creatures holding or wearing moongold have advantage on saving throws against being frightened and madness. In addition, you gain a +1 bonus to attack and damage rolls made with this weapon.</p>
+        <p><b><i>Special Attunement.</i></b> While you are attuned to this weapon, you know one Blood Shot option of your choice from the Blood Archer Fighter (choose between Bloodboil, Constraining, Shadowblood, or Thunderblood Arrow). You can use this option when you make an attack with this bow. You can use this option twice, and you regain all expended uses daily at dawn. If you are a Blood Archer Fighter, you instead gain 2 additional uses of your Blood Shot feature.</p>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the moongilded tarblood is a longbow. In its transformed state, it’s a longsword. By breaking the string, the tarblood melts and flows around the ivory handle, congealing into a longsword; if the sword handle is forcefully shoved into the blade, the weapon reverts into a longbow. Whenever you transform the weapon, the tarblood becomes unstable; your next hit with this weapon reduces the target’s speed by 10 feet until the start of your next turn as the tar wraps around them, before retreating to the weapon.</p>
+        <p><b><i>Untransformed.</i></b> The bow can fire regular ammunition, or it can fire lead bullets, the tarblood melting them into arrows.</p>
+        <p><b><i>Transformed.</i></b> While this weapon is transformed, if you inflict 25 points of damage with it in a single turn against a creature that has blood, and you have no more than one use of your Blood Shot remaining, you regain one use of your Blood Shot.</p>
+        <div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+        <div element="ID_LT_SGEH_WEAPON_PROPERTY_MOONGOLD_WEAPONS" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+        <set name="weapon">ID_WOTC_PHB_WEAPON_LONGBOW,ID_WOTC_PHB_WEAPON_LONGSWORD</set>
+        <set name="rarity">Rare</set>
+        <set name="attunement">true</set>
+		    <set name="enhancement">1</set>
+        <set name="name-format">Moongilded Tarblood</set>
+    </setters>
+</element>
+<element name="Moongold Equalizer" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_MOONGOLD_EQUALIZER">
+    <description>
+        <p>This weapon, crafted with moongold, gives you a 1d4 bonus to damage rolls against nonhumanoid creatures. Moongold acts as a guiding light in the darkness; creatures holding or wearing moongold have advantage on saving throws against being frightened and madness.</p>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, you can magically melt the moongold before solidifying it, switching between the transformed and untransformed states of this weapon. In its untransformed state, the equalizer is a flintlock. In its transformed state, the weapon is an ornate, two-handed weapon; a rifle.</p>
+        <p><b><i>Untransformed.</i></b> This flintlock has the Barrel 2 (F) property. In addition, being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls with this flintlock.</p>
+        <p><b><i>Transformed.</i></b> When you attack with this weapon, you can choose to replace your attack with a particularly violent shot. Make a ranged weapon attack. On a hit, the target takes the weapon’s damage plus an extra 2d8 piercing damage. Hit or miss, this causes the weapon to partially liquefy and turn back into its untransformed state; it can’t be transformed again until the end of your next turn.</p>
+        <p>You can use this attack only if you haven’t moved during this turn, and after you use this attack, your speed is 0 until the end of your turn.</p>
+        <div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+        <div element="ID_LT_SGEH_WEAPON_PROPERTY_MOONGOLD_WEAPONS" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+		<set name="weapon">ID_LT_SGEH_WEAPON_FLINTLOCK, ID_LT_SGEH_WEAPON_RIFLE</set>
+        <set name="rarity">Rare</set>
+        <set name="attunement">true</set>
+        <set name="name-format">Moongold Equalizer</set>
+    </setters>
+</element>
+
+<element name="Phantom Limb" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_PHANTOM_LIMB">
+    <description>
+        <p>Infusing the bones of a beast with a mixture of quicksilver, mithral, and osteomantic magic, the Scions created a means of returning disabled hunters to the battlefield in full fighting form. Dark and metallic, the crevices of a phantom limb glow with a wan, cold light when fused with the warm body of its wielder.</p>
+        <p><b><i>Attunement.</i></b> When you attune to this item, the cold, lifeless hand merges with your flesh and either replaces a missing arm or consumes one of your existing arms (your choice when you attune to this weapon). An arm consumed in this way does not reappear when you unattune from the item.</p>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this magic weapon. In its untransformed state, the phantom limb is a metallic, articulating hand. In its transformed state, the weapon is a shortsword.</p>
+        <p><b><i>Untransformed.</i></b> Unarmed strikes you make with the phantom limb deal magical bludgeoning damage. In addition, the limb reacts to deflect incoming blows, granting you a +1 bonus to AC.</p>
+        <p><b><i>Transformed.</i></b> You gain a +1 bonus to attack and damage rolls made with this shortsword, which gains the Haunting Mark property.</p>
+        <p><b><i>Haunting Mark.</i></b> Whenever you hit an undead creature with an attack using this blade then, for the next minute, you can see its form as a glowing outline, even if it is invisible, and you always know the direction and distance to the creature while it is on the same plane as you. This effect ends early if you hit a different undead creature with an attack using this blade, or if the phantom limb is no longer in its transformed state.</p>
+        <div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+        <set name="weapon">Unarmed Strike, ID_WOTC_PHB_WEAPON_SHORTSWORD</set>
+        <set name="rarity">Rare</set>
+        <set name="attunement">true</set>
+		<set name="enhancement">1</set>
+        <set name="name-format">Phantom Limb</set>
+    </setters>
+	<rules>
+		<stat name="ac:misc" value="1" />
+	</rules>
+</element>
+<element name="Ravenous Gazer" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_RAVENOUS_GAZER">
+    <description>
+        <p>Acquiring forbidden knowledge always comes at a cost.</p>
+        <p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the gazer is a glaive. In its transformed state, the gazer is a glaive which can be used as a spellcasting focus.</p>
+        <p>To transform this weapon, you must feed it your blood: each time you shift this weapon into its transformed state, or start your turn with the glaive in its transformed state, you take 1d4 necrotic damage, which cannot be reduced in any way. This damage cannot break your concentration.</p>
+        <p><b><i>Transformed.</i></b> While the glaive is in its transformed state, it grants you a +2 bonus to spell attack rolls, increases your spell save DC by 1, and gives you truesight out to 30 feet.</p>
+		<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+        <set name="weapon">ID_WOTC_PHB_WEAPON_GLAIVE</set>
+        <set name="rarity">Rare</set>
+        <set name="attunement">true</set>
+		<set name="enhancement">1</set>
+        <set name="name-format">Ravenous Gazer</set>
+    </setters>
+	<rules>
+		<grant type="Vision" id="ID_VISION_TRUESIGHT" />
+        <stat name="truesight:range" value="30" bonus="base" />
+		<stat name="spellcasting:attack" value="2" />
+		<stat name="spellcasting:dc" value="1" />
+	</rules>
+</element>
+<element name="Serpent Bladewhip" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_SERPENT_BLADEWHIP">
+    <description>
+        <p><i>Slithering silver strikes, swiftly severing sinister shadows.</i></p>
+		<p>You have a +1 to attack and damage rolls made with both forms of this weapon.</p>
+        <p><b><i>Attunement.</i></b> When you attune to this weapon, the cold, lifeless snake wraps around your forearm and bites your flesh, burying its head beneath it and inflicting 1d4 piercing damage. While attuned, you cannot be disarmed of this magical weapon. Ending the attunement causes the head to retract and the item to fall to the ground.</p>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the bladewhip is a metallic whip. In its transformed state, the weapon solidifies by coagulating your blood to form a rapier.</p>
+        <p><b><i>Untransformed.</i></b> Attacks you make with the serpent bladewhip add an additional 5 feet to your reach, as well as when determining your reach for opportunity attacks with it. In addition, if you hit a creature twice in a turn with this weapon, the whip’s devouring hunger awakens and tears out more of its flesh, dealing an extra 2d4 slashing damage.</p>
+        <p><b><i>Transformed.</i></b> While transformed, you take 1 piercing damage at the start of each of your turns as the blade drains your blood to empower itself. This rapier gains the Fireblood Poison property and is considered silvered.</p>
+        <p><b><i>Fireblood Poison.</i></b> Once on each of your turns when you hit a creature with an attack using this blade, you can coat the wound with poison and the target must make a DC 14 Constitution saving throw. On a failure, it is poisoned for the next minute as its innards start to boil. This can affect creatures immune to the poisoned condition. While poisoned in this way, the creature takes 1d6 fire damage at the start of each of its turns. This damage ignores resistance to fire damage. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the blade's Fireblood Poison for the next 24 hours.</p>
+		<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+        <set name="weapon">ID_WOTC_PHB_WEAPON_WHIP, ID_WOTC_PHB_WEAPON_RAPIER</set>
+        <set name="rarity">Rare</set>
+        <set name="attunement">true</set>
+        <set name="enhancement">1</set>
+        <set name="name-format">Serpent Bladewhip</set>
+    </setters>
+</element>
+
+<element name="Uncharged Claw" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_UNCHARGED_CLAW">
+    <description>
+        <p>While attuned to this weapon, you have resistance to lightning damage.</p>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, if you've taken lightning damage or spent a hit die since the start of your last turn, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the claw is a sinewy leather gauntlet, made from the muscle and hide of a galvanized prowler. In its transformed state, the claw surges with electrical energy, merging with its wearer's forearm and turning into a monstrous claw.</p>
+        <p><b><i>Untransformed.</i></b> The bestial hide feeds off of you in exchange for power; you have advantage on initiative rolls. In addition, this gauntlet devours your life force. When you hit with a melee attack, you can spend a hit die to deal an extra 1d6 lightning damage. The gauntlet has 2 charges and regains all expended charges daily at dawn. When you take lighting or thunder damage, you can use your reaction to expend 1 charge to instead take no damage and regain 1 hit die.</p>
+        <p><b><i>Transformed.</i></b> The gauntlet merges with your form, turning your hand into an aberrant claw that you cannot be disarmed of. This claw changes the damage of your unarmed strikes to 1d8, the damage type to slashing, and you can use your Dexterity or Strength modifier for the attack and damage rolls made with it. In addition, when you hit with a melee attack using this claw, you can spend a hit die to deal an extra 1d8 lightning damage.</p>
+		<p>The claw is too unwieldy to use for delicate handling, such as activating intricate mechanisms (like the trigger of a firearm) or picking locks with thieves' tools.</p>
+		<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+        <set name="weapon">Unarmed Strike</set>
+        <set name="rarity">Rare</set>
+		<set name="attunement">true</set>
+        <set name="name-format">Uncharged Claw</set>
+		<set name="charges">2</set>
+    </setters>
+	<rules>
+		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+	</rules>
+</element>
+<element name="Unstable Crumbler" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_UNSTABLE_CRUMBLER">
+    <description>
+        <p>While holding this weapon, your attacks and spells deal double damage to structures, and fire damage you take is reduced by an amount equal to your Constitution modifier (minimum of 1).</p>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the crumbler is a roaring cannon with smoke coming out of its mouth. In its transformed state, the handle extends, turning the cannon into a highly unstable and destructive maul. As part of this bonus action, you can do the following:</p>
+        <ul>
+            <li>When transforming the cannon into a maul, you can shoot at your feet, even if the cannon isn't loaded, using the deflagration to propel yourself and jump up to 30 feet in any direction. This jump doesn't cost you any movement.</li>
+            <li>When transforming the maul into a cannon, you can reload the cannon and retain its unstable force. If you load it in this way, the next time you hit with an attack with the cannon attack on your turn, it will push you back 30 feet in a straight line.</li>
+        </ul>
+        <p><b><i>Untransformed.</i></b> The unstable crumbler heats up cannonballs, transforming them into infernal ammunition. Whenever you roll a 15 or higher on the d20 when making an attack roll with this weapon, the cannonball becomes overheated and explodes on impact. When the cannonball explodes in this way, it is considered an explosive cannonball.</p>
+        <p><b><i>Transformed.</i></b> Whenever you roll a 18 or higher on the d20 while making an attack roll with this weapon, the maul's head detonates, causing an effect that acts as the <i>fireball</i> spell (DC 15) centered on the target. If you succeed on this saving throw, you take no damage.</p>
+		<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+        <set name="weapon">ID_LT_SGEH_WEAPON_CANNON, ID_WOTC_PHB_WEAPON_MAUL</set>
+        <set name="rarity">Rare</set>
+        <set name="attunement">true</set>
+        <set name="name-format">Unstable Crumbler</set>
+    </setters>
+</element>
+<element name="Awakened Abyss Warden's Axeblade" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_AWAKENED_ABYSS_WARDEN_AXEBLADE">
+    <description>
+        <p><b><i>Trick Weapon.</i></b> As a bonus action, you can switch between the transformed and untransformed states of this weapon by sliding the pommel up and down on the blade. In its untransformed state, the abyss warden's axeblade is a longsword. In its transformed state, the weapon becomes a battleaxe. As part of this bonus action, you can slam the weapon down, emitting a wave of radiance centered on you. Each creature within 5 feet of you must succeed on a DC 17 Constitution saving throw or take 1d6 radiant damage.</p>
+        <p>Both forms of the weapon deal an extra 1d6 radiant damage on a hit. This damage increases to 2d6 for the longsword against Medium or smaller aberrations and to 2d6 for the battleaxe against Large or larger aberrations.</p>
+        <p><b><i>Untransformed.</i></b> When you hit a creature with an attack using this longsword, you can cause another creature of your choice within 5 feet of it to take radiant damage equal to 1d6 + your Strength modifier (minimum of 1).</p>
+        <p><b><i>Transformed.</i></b> When you hit a creature with an attack using this battleaxe, it must succeed on a DC 17 Constitution saving throw or have disadvantage on attack rolls made against creatures other than you until the end of its next turn.</p>
+		<div element="ID_LT_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+    </description>
+    <setters>
+        <set name="category">Trick Weapons</set>
+        <set name="type">Weapon</set>
+        <set name="weapon">ID_WOTC_PHB_WEAPON_LONGSWORD,ID_WOTC_PHB_WEAPON_BATTLEAXE</set>
+        <set name="rarity">Very Rare</set>
+        <set name="name-format">Awakened Abyss Warden's Axeblade</set>
+    </setters>
+</element>
+
+
+
+</elements>
