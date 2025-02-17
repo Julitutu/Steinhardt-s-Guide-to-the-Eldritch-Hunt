@@ -3,8 +3,8 @@
 	<info>
 		<name>Pact of the Trigger</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
-			<file name="pact-boon-trigger.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/pact-boon-trigger.xml" />
+		<update version="0.1.1">
+			<file name="pact-boon-trigger.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/pact-boon-trigger.xml" />
 		</update>
 	</info>
 
