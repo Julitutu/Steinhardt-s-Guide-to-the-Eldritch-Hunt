@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+	<info>
+		<name>Mortis Engineer</name>
+		<source>Steinhardt's Guide to the Eldritch Hunt</source>
+		<update version="0.1.0">
+			<file name="artificer-mortis-engineer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/artificer-mortis-engineer.xml" />
+		</update>
+	</info>
 	<element name="Mortis Engineer" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_ARCHETYPE_ARTIFICER_MORTIS_ENGINEER">
 		<supports>Artificer Specialist, ERLW Version</supports>
 		<description>
