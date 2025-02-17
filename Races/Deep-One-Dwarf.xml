@@ -3,8 +3,8 @@
 	<info>
 		<name>Deep One Dwarf</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
-			<file name="Deep One Dwarf.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Deep One Dwarf.xml" />
+		<update version="0.1.1">
+			<file name="Deep-One-Dwarf.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Deep-One-Dwarf.xml" />
 		</update>
 	</info>
 
