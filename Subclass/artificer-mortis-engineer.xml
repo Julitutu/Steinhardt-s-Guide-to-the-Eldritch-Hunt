@@ -3,8 +3,8 @@
 	<info>
 		<name>Mortis Engineer</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
-			<file name="artificer-mortis-engineer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/artificer-mortis-engineer.xml" />
+		<update version="0.1.1">
+			<file name="artificer-mortis-engineer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/artificer-mortis-engineer.xml" />
 		</update>
 	</info>
 
