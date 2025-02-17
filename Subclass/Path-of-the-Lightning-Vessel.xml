@@ -3,8 +3,8 @@
 	<info>
 		<name>Path of the Lightning Vessel</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
-			<file name="Path of the Lightning Vessel.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Path of the Lightning Vessel.xml" />
+		<update version="0.1.1">
+			<file name="Path-of-the-Lightning-Vessel.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Path-of-the-Lightning-Vessel.xml" />
 		</update>
 	</info>
 
