@@ -3,8 +3,8 @@
 	<info>
 		<name>Blood Archer</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.1">
-			<file name="Blood-Archer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Blood-Archer.xml" />
+		<update version="0.1.2">
+			<file name="Blood-Archer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Blood-Archer.xml" />
 		</update>
 	</info>
 
