@@ -3,8 +3,8 @@
 	<info>
 		<name>Oath of the Eldritch Hunt</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
-			<file name="Oath of the Eldritch Hunt.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Oath of the Eldritch Hunt.xml" />
+		<update version="0.1.1">
+			<file name="Oath-of-the-Eldritch-Hunt.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Oath-of-the-Eldritch-Hunt.xml" />
 		</update>
 	</info>
 
