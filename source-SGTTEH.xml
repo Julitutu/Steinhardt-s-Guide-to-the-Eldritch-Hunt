@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+	<info>
+		<update version="0.1.0">
+			<file name="source-SGTTEH.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/source-SGTTEH.xml" />
+		</update>
+	</info>	
 	<element name="Steinhardt's Guide to the Eldritch Hunt" type="Source" source="Core" id="ID_SGTTEH_SOURCE_STEINHARDTS_GUIDE_TO_THE_ELDRITCH_HUNT">
 		<setters>
 			<set name="abbreviation">SGEH</set>
