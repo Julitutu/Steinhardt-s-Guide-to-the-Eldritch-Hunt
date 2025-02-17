@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="0.1.2">
+    <update version="0.1.4">
       <file name="Steinhardts.index" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Steinhardts.index" />
     </update>
   </info>
@@ -10,8 +10,8 @@
 			<file name="source-SGTTEH.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/source-SGTTEH.xml" /> <!-- Chtulu -->
 
     <!-- Races -->
-      <file name="Cursed Blood.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Cursed Blood.xml" />
-      <file name="Deep One Dwarf.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Deep One Dwarf.xml" />
+      <file name="Cursed-Blood.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Cursed-Blood.xml" />
+      <file name="Deep-One-Dwarf.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Deep-One-Dwarf.xml" />
       <file name="Manikin.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Manikin.xml" />
       <file name="race-demidritch.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/race-demidritch.xml" /> <!-- Chtulu -->
       <file name="Scourgeborne.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Scourgeborne.xml" />      
@@ -36,24 +36,24 @@
     <!-- Subclasses -->
 
       <file name="Blood-Archer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Blood-Archer.xml" />
-      <file name="Living Nightmare.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Living Nightmare.xml" />
-      <file name="Oath of the Eldritch Hunt.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Oath of the Eldritch Hunt.xml" />
-      <file name="Torturer Conclave.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Torturer Conclave.xml" />
-      <file name="Lunar Warden.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Lunar Warden.xml" />
-      <file name="Blade of Radiance.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Blade of Radiance.xml" />
+      <file name="Living-Nightmare.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Living-Nightmare.xml" />
+      <file name="Oath-of-the-Eldritch-Hunt.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Oath-of-the-Eldritch-Hunt.xml" />
+      <file name="Torturer-Conclave.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Torturer-Conclave.xml" />
+      <file name="Lunar-Warden.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Lunar-Warden.xml" />
+      <file name="Blade-of-Radiance.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Blade-of-Radiance.xml" />
       <file name="Shadow.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Shadow.xml" />
-      <file name="The Void.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/The Void.xml" />
+      <file name="The-Void.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/The-Void.xml" />
       <file name="sgeh-eldritch-invocations.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/sgeh-eldritch-invocations.xml" /> <!-- Meriadar -->
       <file name="artificer-mortis-engineer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/artificer-mortis-engineer.xml" /> <!-- Chtulu -->
-      <file name="School of Osteomancy.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/School of Osteomancy.xml" />
+      <file name="School-of-Osteomancy.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/School-of-Osteomancy.xml" />
       <file name="monk-fire-dancer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/monk-fire-dancer.xml" /> <!-- Meriadar -->
       <file name="pact-boon-trigger.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/pact-boon-trigger.xml" /> <!-- Meriadar -->
-      <file name="Scion of Madness.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Scion of Madness.xml" />
-      <file name="Path of the Lightning Vessel.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Path of the Lightning Vessel.xml" />
-      <file name="Path of the Earthbreaker.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Path of the Earthbreaker.xml" />
-      <file name="College of the Apocalypse.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/College of the Apocalypse.xml" />
-      <file name="Guardian Domain.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Guardian Domain.xml" />
-      <file name="Circle of Symbiosis.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Circle of Symbiosis.xml" />
+      <file name="Scion-of-Madness.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Scion-of-Madness.xml" />
+      <file name="Path-of-the-Lightning-Vessel.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Path-of-the-Lightning-Vessel.xml" />
+      <file name="Path-of-the-Earthbreaker.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Path-of-the-Earthbreaker.xml" />
+      <file name="College-of-the-Apocalypse.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/College-of-the-Apocalypse.xml" />
+      <file name="Guardian-Domain.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Guardian-Domain.xml" />
+      <file name="Circle-of-Symbiosis.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Circle-of-Symbiosis.xml" />
       
     <!-- Settings -->
 			<file name="Magicitems.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/Magicitems.xml" />
