@@ -3,8 +3,8 @@
 	<info>
 		<name>Lunar Warden</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.1">
-			<file name="Lunar-Warden.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Lunar-Warden.xml" />
+		<update version="0.1.2">
+			<file name="Lunar-Warden.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Lunar-Warden.xml" />
 		</update>
 	</info>
 
