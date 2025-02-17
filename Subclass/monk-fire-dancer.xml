@@ -3,8 +3,8 @@
 	<info>
 		<name>Way of the Fire Dancer</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
-			<file name="monk-fire-dancer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/monk-fire-dancer.xml" />
+		<update version="0.1.1">
+			<file name="monk-fire-dancer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/monk-fire-dancer.xml" />
 		</update>
 	</info>
 
