@@ -3,8 +3,8 @@
 	<info>
 		<name>Blade of Radiance</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
-			<file name="Blade of Radiance.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Blade of Radiance.xml" />
+		<update version="0.1.1">
+			<file name="Blade-of-Radiance.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Blade-of-Radiance.xml" />
 		</update>
 	</info>
 
