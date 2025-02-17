@@ -3,8 +3,8 @@
 	<info>
 		<name>Guardian Domain</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
-			<file name="Guardian Domain.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Guardian Domain.xml" />
+		<update version="0.1.1">
+			<file name="Guardian-Domain.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Guardian-Domain.xml" />
 		</update>
 	</info>
 
