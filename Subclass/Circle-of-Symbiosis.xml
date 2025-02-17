@@ -3,8 +3,8 @@
 	<info>
 		<name>Circle of Symbiosis</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.1">
-			<file name="Circle-of-Symbiosis.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Circle-of-Symbiosis.xml" />
+		<update version="0.1.2">
+			<file name="Circle-of-Symbiosis.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Circle-of-Symbiosis.xml" />
 		</update>
 	</info>
 
