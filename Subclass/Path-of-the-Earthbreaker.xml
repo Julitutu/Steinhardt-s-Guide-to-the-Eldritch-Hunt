@@ -3,7 +3,7 @@
 	<info>
 		<name>Path of the Earthbreaker</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Path-of-the-Earthbreaker.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Path-of-the-Earthbreaker.xml" />
 		</update>
 	</info>
