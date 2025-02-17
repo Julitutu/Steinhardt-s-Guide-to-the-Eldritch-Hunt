@@ -3,8 +3,8 @@
 	<info>
 		<name>Living Nightmare</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
-			<file name="Living Nightmare.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Living Nightmare.xml" />
+		<update version="0.1.1">
+			<file name="Living-Nightmare.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Living-Nightmare.xml" />
 		</update>
 	</info>
 
