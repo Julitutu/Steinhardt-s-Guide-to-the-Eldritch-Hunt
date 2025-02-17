@@ -3,8 +3,8 @@
 	<info>
 		<name>School of Osteomancy</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
-			<file name="School of Osteomancy.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/School of Osteomancy.xml" />
+		<update version="0.1.1">
+			<file name="School-of-Osteomancy.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/School-of-Osteomancy.xml" />
 		</update>
 	</info>
 
