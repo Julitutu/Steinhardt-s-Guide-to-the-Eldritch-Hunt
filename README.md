@@ -4,6 +4,8 @@ Hello everyone! I'm pre-releasing Steinhardt's Guide to the Eldritch Hunt for Au
 
 Extending Content Go to the Additional Content tab in Aurora, enter the URL of the index file, and have Aurora download the content to the custom folder for you.
 
+https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Steinhardts.index
+
 ----
 
 ## I would like to give a special thanks to everyone who has been contributing to this setup.
