@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.0">
+    <update version="0.1.1">
       <file name="Steinhardts.index" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Steinhardts.index" />
     </update>
   </info>
@@ -34,7 +34,7 @@
       <file name="class-jaegar.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Class/class-jaegar.xml" /> <!-- Meriadar -->
       
     <!-- Subclasses -->
-      <file name="Blood Archer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Blood Archer.xml" />
+      <file name="Blood-Archer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Blood-Archer.xml" />
       <file name="Living Nightmare.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Living Nightmare.xml" />
       <file name="Oath of the Eldritch Hunt.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Oath of the Eldritch Hunt.xml" />
       <file name="Torturer Conclave.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Torturer Conclave.xml" />
