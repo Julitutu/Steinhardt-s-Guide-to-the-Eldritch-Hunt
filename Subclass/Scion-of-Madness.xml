@@ -3,8 +3,8 @@
 	<info>
 		<name>Scion of Madness</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.0">
-			<file name="Scion of Madness.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Scion of Madness.xml" />
+		<update version="0.1.1">
+			<file name="Scion-of-Madness.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclasses/Scion-of-Madness.xml" />
 		</update>
 	</info>
 
