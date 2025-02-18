@@ -3,12 +3,12 @@
 	<info>
 		<name>Way of the Fire Dancer</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="monk-fire-dancer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/monk-fire-dancer.xml" />
 		</update>
 	</info>
 
-	<element name="Way of the Fire Dancer" type="Archetype" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_MONK_FIREDANCER">
+	<element name="Way of the Fire Dancer" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_MONK_FIREDANCER">
 		<supports>Monastic Tradition</supports>
 		<description>
 			<p><i>The fire dancers carry an almost extinct tradition. Once a trading group, they considered themselves a family of a single creed: “Those who harm us will bathe in flames." This nomadic group of seasoned warriors welcomed all walks of life, regardless of origin, status, or influence; as long as one conducted oneself with respect towards their fellows, the caravans would open their door. Their iron-clad creed and welcoming nature was their downfall. </i></p>
@@ -31,7 +31,7 @@
 			<grant type="Archetype Feature" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_ONE_WITH_THE_FIRE" level="17" />
 		</rules>
 	</element>
-	<element name="Blazing Performer" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_BLAZING_PERFORMER">
+	<element name="Blazing Performer" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_BLAZING_PERFORMER">
 		<description>
 			<p>At 3rd level, you’ve trained your body to dance through flames. You gain proficiency in the Performance or Acrobatics skill (your choice), and your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.</p>
 			<p class="indent">In addition, you gain resistance to fire damage. If you already have this resistance, instead, if you take fire damage, you can reduce that damage by 1d6 (after the resistance applies).</p>
@@ -43,7 +43,7 @@
 			<select type="Archetype Feature" name="Blazing Performer (Proficiency)" supports="Blazing Performer Prof" />
 		</rules>
 	</element>
-	<element name="Dance of Fire" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_DANCE_OF_FIRE">
+	<element name="Dance of Fire" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_DANCE_OF_FIRE">
 		<description>
 			<p>At 3rd level, you are a master at weaving flames through your use of ki, creating a deadly dance. When you spend a ki point during your turn, your monk weapons and unarmed strikes catch fire until the start of your next turn. While on fire, they deal extra fire damage equal to your Wisdom modifier, and you gain a bonus to your AC equal to half your Wisdom modifier for the duration.</p>
 			<p class="indent">In addition, while your flames are active, if a creature misses you with a melee attack, you can use your reaction to make an unarmed strike or spend a ki point to use your Flurry of Blows feature against it.</p>
@@ -58,7 +58,7 @@
 			</description>
 		</sheet>
 	</element>
-	<element name="Scorching Flames" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_SCORCHING_VORTEX">
+	<element name="Scorching Flames" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_SCORCHING_VORTEX">
 		<description>
 			<p>Starting at 6th level, you learn to entrap your foes in the flames of your dance.</p>
 			<p class="indent">When you use Step of the Wind, if you move through each space adjacent to a creature on your turn, you create a vortex of fire around them. The target must make a Dexterity saving throw against your ki save DC, taking 2d6 fire damage and becoming trapped in a vortex of flames that appears in its space on a failed save. On a successful save, the target takes half as much damage and the vortex fails to appear. The vortex is opaque and obstructs line of sight. If the target attempts to move out of the flames, it must first succeed on a Wisdom saving throw against your ki save DC. On a failure, it takes 1d6 fire damage and is charmed by the flames, reducing its speed to 0 until the start of its next turn, at which point the vortex and its effects end. On a success, it moves through the vortex, ending the effect. These flames do not damage other creatures.</p>
@@ -72,7 +72,7 @@
 			<stat name="firedancer:scorching flames:usage" value="1" />
 		</rules>
 	</element>
-	<element name="Flames of Redemption" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_FLAMES_OF_REDEMPTION">
+	<element name="Flames of Redemption" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_FLAMES_OF_REDEMPTION">
 		<description>
 			<p>At 11th level, any fire damage that you deal ignores fire resistance. In addition, the clarity of your mind allows you to generate flames that many would call divine; you can replace any fire damage that you deal with radiant damage.</p>
 		</description>
@@ -80,7 +80,7 @@
 			<description>Any fire damage that you deal ignores fire resistance. In addition, the clarity of your mind allows you to generate flames that many would call divine; you can replace any fire damage that you deal with radiant damage.</description>
 		</sheet>
 	</element>
-	<element name="Purifying Flames" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_PURIFYING_FLAMES">
+	<element name="Purifying Flames" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_PURIFYING_FLAMES">
 		<description>
 			<p>At 11th level, your flames burn away all impurities. As an action, you can spend 2 ki points to touch a creature and infuse them with your flames. The target can end one poison, charm, or short-term madness afflicting it.</p>
 		</description>
@@ -88,7 +88,7 @@
 			<description>As an action, you can spend 2 ki points to touch a creature and infuse them with your flames. The target can end one poison, charm, or short-term madness afflicting it.</description>
 		</sheet>
 	</element>
-	<element name="One with the Fire" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_ONE_WITH_THE_FIRE">
+	<element name="One with the Fire" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_MONK_FIREDANCER_ONE_WITH_THE_FIRE">
 		<description>
 			<p>At 17th level, you are a master of the flames. When you deal fire damage with a monk weapon, if the target is a creature or a flammable object, it ignites. Until the target or a creature within 5 feet of it takes an action to douse the flames, the target takes fire damage equal to your Wisdom modifier at the start of each of its turns.</p>
 			<p class="indent">In addition, while under the effects of Dance of Fire, your body merges with the flames. For the duration, you become immune to fire damage and have resistance to bludgeoning, piercing, and slashing damage.</p>
@@ -98,7 +98,7 @@
 		</sheet>
 	</element>
 
-	<element name="Acrobatics" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_BLAZING_PERFORMER_ACROBATICS">
+	<element name="Acrobatics" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_BLAZING_PERFORMER_ACROBATICS">
 		<supports>Blazing Performer Prof</supports>
 		<description>
 			<p>You gain proficiency in the Performance or Acrobatics skill (your choice), and your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.</p>
@@ -109,7 +109,7 @@
 			<stat name="acrobatics:proficiency" value="proficiency" />
 		</rules>
 	</element>
-	<element name="Performance" type="Archetype Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_BLAZING_PERFORMER_PERFORMANCE">
+	<element name="Performance" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_ARCHETYPE_FEATURE_BLAZING_PERFORMER_PERFORMANCE">
 		<supports>Blazing Performer Prof</supports>
 		<description>
 			<p>You gain proficiency in the Performance or Acrobatics skill (your choice), and your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.</p>
