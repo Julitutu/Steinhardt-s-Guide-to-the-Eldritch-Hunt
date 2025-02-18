@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="source-SGTTEH.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/source-SGTTEH.xml" />
 		</update>
 	</info>	
@@ -12,7 +12,7 @@
 		</description>
 		<setters>
 			<set name="abbreviation">SGEH</set>
-			<set name="image">https://github.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/blob/4d8c42831309af1b6268c7074932ad98ad94bdaa/cover_prowler_flata.jpg</set>
+			<set name="image">https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/sf1v8vfhowc91.png</set>
 			<set name="url">https://monkeydm.shop/collections/steinhardts-guide-to-the-eldritch-hunt-all</set>
 			<set name="author" abbreviation="MON" url="https://www.monkeydm.com">MonkeyDM</set>
 			<set name="release">20231119</set>
