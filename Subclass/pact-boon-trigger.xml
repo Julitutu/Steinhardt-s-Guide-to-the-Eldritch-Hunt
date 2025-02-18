@@ -3,12 +3,12 @@
 	<info>
 		<name>Pact of the Trigger</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="pact-boon-trigger.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/pact-boon-trigger.xml" />
 		</update>
 	</info>
 
-	<element name="Pact of the Trigger" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER">
+	<element name="Pact of the Trigger" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER">
 		<supports>Pact Boon</supports>
 		<description>
 			<p>You can use your action to draw upon the powers of your Patron and create a hex gun in your empty hand. You can choose the form that this spellcasting focus takes each time you create it. It can either be a Revolver or a Sniper (detailed below).</p>
@@ -31,7 +31,7 @@
 			<stat name="trigger:hex gun:count" value="1" level="17" />
 		</rules>
 	</element> 
-	<element name="Revolver Form" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_REVOLVER_FORM">
+	<element name="Revolver Form" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_REVOLVER_FORM">
 		<supports>Pact Trigger Gun</supports>
 		<description>
 			<h5>Pact of the Trigger</h5>
@@ -45,7 +45,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" />
 		</rules>
 	</element>
-	<element name="Sniper Form" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_SNIPER_FORM">
+	<element name="Sniper Form" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_SNIPER_FORM">
 		<supports>Pact Trigger Gun</supports>
 		<description>
 			<h5>Pact of the Trigger</h5>
