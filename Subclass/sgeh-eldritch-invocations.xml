@@ -3,12 +3,12 @@
 	<info>
 		<name>Eltritch Invocations</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="sgeh-eldritch-invocations.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/sgeh-eldritch-invocations.xml" />
 		</update>
 	</info>
 
-	<element name="Agonizing Shots" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_SHOTS">
+	<element name="Agonizing Shots" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_SHOTS">
 		<prerequisite>Path of the Trigger feature</prerequisite>
 		<requirements>ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER</requirements>
 		<supports>Eldritch Invocation</supports>
@@ -20,7 +20,7 @@
 			<description>When you cast a cantrip with your hex gun, add your Charisma modifier to the damage it deals on a hit (if you don't already add your Charisma modifier to it).</description>
 		</sheet>
 	</element>
-	<element name="Bullet Hell" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_BULLET_HELL">
+	<element name="Bullet Hell" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_BULLET_HELL">
 		<prerequisite>5th level, Path of the Trigger feature (revolver form)</prerequisite>
 		<requirements>[level:warlock:5],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER,ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_REVOLVER_FORM</requirements>
 		<supports>Eldritch Invocation</supports>
@@ -42,7 +42,7 @@
 			<stat name="bullet hell:count" value="bullet hell:double" bonus="base" />
 		</rules>
 	</element>
-	<element name="Crippling Shot" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_CRIPPLING_SHOT">
+	<element name="Crippling Shot" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_CRIPPLING_SHOT">
 		<supports>Eldritch Invocation</supports>
 		<description>
 			<p><em>Prerequisite: Pact of the Trigger feature (revolver form)</em></p>
@@ -53,7 +53,7 @@
 			<description>Once on each of your turns when you damage a creature with an attack made using your hex gun, you can force it to make a Strength saving throw against your spell save DC or fall prone and have its speed reduced to 0 until the start of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Dead Eye" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_DEAD_EYE">
+	<element name="Dead Eye" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_DEAD_EYE">
 		<prerequisite>15th level, Path of the Trigger feature (sniper form)</prerequisite>
 		<requirements>[level:warlock:15],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER,ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_SNIPER_FORM</requirements>
 		<supports>Eldritch Invocation</supports>
@@ -65,7 +65,7 @@
 			<description>Once on each of your turns when you damage a creature with an attack made using your hex gun, you can force it to make a Strength saving throw against your spell save DC or fall prone and have its speed reduced to 0 until the start of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Headshots" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_HEADSHOTS">
+	<element name="Headshots" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_HEADSHOTS">
 		<prerequisite>9th level, Path of the Trigger feature (sniper form)</prerequisite>
 		<requirements>[level:warlock:9],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER,ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_SNIPER_FORM</requirements>
 		<supports>Eldritch Invocation</supports>
@@ -77,7 +77,7 @@
 			<description>As a bonus action, you can enhance your focus to see the weak spots of your foes. For the next minute, attacks you make using your hex gun score a critical hit on a roll of 19 or 20. Once you've used this invocation, you can't use it again until you finish a short or long rest.</description>
 		</sheet>
 	</element>
-	<element name="Quickstep" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_QUICKSTEP">
+	<element name="Quickstep" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_QUICKSTEP">
 		<prerequisite>7th level, Path of the Trigger feature</prerequisite>
 		<requirements>[level:warlock:7],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER</requirements>
 		<supports>Eldritch Invocation</supports>
@@ -90,7 +90,7 @@
 			<description>As a reaction, when an enemy makes a melee attack against you, before being hit, if your speed isn't 0, you can move 5 feet away from the foe without triggering opportunity attacks, potentially avoiding the attack if you leave its range.</description>
 		</sheet>
 	</element>
-	<element name="Reckless Fire" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_RECKLESS_FIRE">
+	<element name="Reckless Fire" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_RECKLESS_FIRE">
 		<prerequisite>Path of the Trigger feature</prerequisite>
 		<requirements>ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER</requirements>
 		<supports>Eldritch Invocation</supports>
@@ -102,7 +102,7 @@
 			<description>When you roll a 1 or 2 on a damage die for a cantrip you cast with your hex gun, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</description>
 		</sheet>
 	</element>
-	<element name="Repeating Cantrips" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_REPEATING_CANTRIPS">
+	<element name="Repeating Cantrips" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_REPEATING_CANTRIPS">
 		<prerequisite>5th level, Path of the Trigger feature</prerequisite>
 		<requirements>[level:warlock:5],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER</requirements>
 		<supports>Eldritch Invocation</supports>
@@ -114,7 +114,7 @@
 			<description>When you fire a cantrip through your hex gun, its non-damaging effects (such as the speed reduction from ray of frost) can apply multiple times but not more than once per creature.</description>
 		</sheet>
 	</element>
-	<element name="Ricochet" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_RICOCHET">
+	<element name="Ricochet" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_RICOCHET">
 		<prerequisite>7th level, Path of the Trigger feature</prerequisite>
 		<requirements>[level:warlock:7],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER</requirements>
 		<supports>Eldritch Invocation</supports>
@@ -131,7 +131,7 @@
 			<stat name="eldritch invocation:ricochet:damage" value="charisma:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Riposte" type="Class Feature" source="Steinhardt's Guide to the Elritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_RIPOSTE">
+	<element name="Riposte" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_ELDRITCH_INVOCATION_RIPOSTE">
 		<prerequisite>7th level, Path of the Trigger feature</prerequisite>
 		<requirements>[level:warlock:7],ID_MDM_SGEH_CLASS_FEATURE_PACT_OF_THE_TRIGGER,ID_MDM_SGEH_CLASS_FEATURE_TRIGGER_REVOLVER_FORM</requirements>
 		<supports>Eldritch Invocation</supports>
