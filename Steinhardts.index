@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="0.1.4">
+    <update version="0.1.5">
       <file name="Steinhardts.index" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Steinhardts.index" />
     </update>
   </info>
   <files>
 
-			<file name="source-SGTTEH.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/source-SGTTEH.xml" /> <!-- Chtulu -->
+      <file name="source-SGTTEH.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/source-SGTTEH.xml" /> <!-- Chtulu -->
 
     <!-- Races -->
       <file name="Cursed-Blood.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Races/Cursed-Blood.xml" />
@@ -56,9 +56,11 @@
       <file name="Circle-of-Symbiosis.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/Circle-of-Symbiosis.xml" />
       
     <!-- Settings -->
-			<file name="Magicitems.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/Magicitems.xml" />
+      <file name="Magicitems.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/Magicitems.xml" />
       <file name="Feats.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/Feats.xml" />
       <file name="Weapons.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/Weapons.xml" />
       <file name="spells.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/spells.xml" /> <!-- Chtulu -->
+      <file name="Eldritch-Carvings.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/Eldritch-Carvings.xml" />
+      <file name="Trick-Weapons.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/Trick-Weapons.xml" />
   </files>
 </index>
