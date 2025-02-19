@@ -3,7 +3,7 @@
 	<info>
 		<name>Steinhardt's Guide to the Eldritch Hunt - Firearms &amp; Ammunition</name>
 		<description>Firearms, Ammunition, and related properties from Steinhardt's Guide.</description>
-		<update version="0.0.2">
+		<update version="0.1.1">
 			<file name="Weapons.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Setting/Weapons.xml" />
 		</update>
 	</info>
@@ -45,7 +45,7 @@
 			<set name="ammunition">ID_LT_SGEH_ITEM_BULLET_LEAD</set>
 		</setters>
 	</element>
-	<element name="Unarmed Strike" type="Weapon" source="Player's Handbook" id="ID_WOTC_PHB_WEAPON_UNARMED STRIKE">
+	<element name="Unarmed Strike" type="Weapon" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_WEAPON_UNARMED STRIKE">
 		<supports>, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description>
 			<p></p>
@@ -111,7 +111,7 @@
 			<set name="proficiency">ID_LT_SGEH_PROFICIENCY_WEAPON_FIREARMS_CANNON</set>
 			<set name="ammunition">ID_LT_SGEH_ITEM_CANNONBALL</set>
 		</setters>
-	</element>
+	</element> 
 	<element name="Rifle" type="Weapon" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_LT_SGEH_WEAPON_RIFLE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_LT_SGEH_WEAPON_PROPERTY_FIREARM_BARREL_2, ID_LT_SGEH_WEAPON_PROPERTY_FIREARM_BLARING, ID_LT_SGEH_WEAPON_PROPERTY_FIREARM_STEADY, ID_LT_SGEH_WEAPON_PROPERTY_FIREARM_TWINNED_BARREL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<description>
