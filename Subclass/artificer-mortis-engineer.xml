@@ -3,7 +3,7 @@
 	<info>
 		<name>Mortis Engineer</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="artificer-mortis-engineer.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Subclass/artificer-mortis-engineer.xml" />
 		</update>
 	</info>
@@ -49,7 +49,7 @@
 	<element name="Mortis Engineer Spells" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_ARCHETYPE_FEATURE_MORTIS_ENGINEER_MORTIS_ENGINEER_SPELLS">
 		<description>
 			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Mortis Enginner Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
-			<p><strong>BATTLE SMITH SPELLS</strong></p>
+			<p><strong>MORTIS ENGINEER SPELLS</strong></p>
 			<table>
 			<thead>
 			<tr><td>Artificer Level</td><td>Spells</td></tr>
@@ -63,16 +63,16 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="3" spellcasting="Artificer" />
-			<grant type="Spell" id="ID_PHB_SPELL_WITCH_BOLT" level="3" spellcasting="Artificer" />
-			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_LIGHTNING_CHARGED" level="5" spellcasting="Artificer" />
-			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="5" spellcasting="Artificer" />
-			<grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9" spellcasting="Artificer" />
-			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="9" spellcasting="Artificer" />
-			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_GRAVEYARD_SHUFFLE" level="13" spellcasting="Artificer" />
-			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_JUMPING_JOLT" level="13" spellcasting="Artificer" />
-			<grant type="Spell" id="ID_XGTE_SPELL_NEGATIVE_ENERGY_FLOOD" level="17" spellcasting="Artificer" />
-			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="17" spellcasting="Artificer" />
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="3" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WITCH_BOLT" level="3" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_LIGHTNING_CHARGED" level="5" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="5" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="9" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_GRAVEYARD_SHUFFLE" level="13" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_MON_SGTTEH_SPELL_JUMPING_JOLT" level="13" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_NEGATIVE_ENERGY_FLOOD" level="17" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="17" spellcasting="Artificer" prepared="true" />
 		</rules>
 	</element>
 	<element name="Jumpstart" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MON_SGTTEH_ARCHETYPE_FEATURE_MORTIS_ENGINEER_JUMPSTART">
