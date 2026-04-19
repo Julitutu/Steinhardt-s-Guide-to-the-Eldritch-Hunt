@@ -3,7 +3,7 @@
 	<info>
 		<name>Jaeger</name>
 		<source>Steinhardt's Guide to the Eldritch Hunt</source>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="class-jaegar.xml" url="https://raw.githubusercontent.com/Julitutu/Steinhardt-s-Guide-to-the-Eldritch-Hunt/refs/heads/main/Class/class-jaegar.xml" />
 		</update>
 	</info>
@@ -824,7 +824,7 @@
 
 	<!-- Focus Arts -->
 	<element name="Weapon Parry" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_WEAPON_PARRY">
-		<!-- doesnt need supports as it is given -->
+		<supports>Jaeger Focus Art</supports>
 		<description>
 			<p><i>Focus Art, reaction</i></p>
 			<p>As a reaction to being hit by a creature you can see within range of a weapon you are holding, you can expend 1 Focus Point to make a special weapon attack against that creature. This attack does no damage, but instead blocks an amount of damage from the incoming attack equal to the weapon's damage roll (including your ability modifier), unless your attack roll is a 1. On a 20, any weapon damage dice are rolled twice (like a critical hit would be), and if this total fully blocks the incoming attack, the target is stunned until the start of its next turn.</p>
@@ -834,7 +834,7 @@
 		</sheet>
 	</element>
 	<element name="Dodge Step" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_DODGE_STEP">
-		<!-- doesnt need supports as it is given -->
+		<supports>Jaeger Focus Art</supports>
 		<description>
 			<p><i>Focus Art, reaction</i></p>
 			<p>As a reaction to being attacked by a creature you can see, if your speed is not 0, you can expend 1 Focus Point to move 5 feet without provoking opportunity attacks and make a Dexterity saving throw with a DC equal to the attacker's attack roll (including modifiers). On a success, you evade completely and take no damage. On a failure, you halve the attack's damage against you.</p>
@@ -844,7 +844,7 @@
 		</sheet>
 	</element>
 	<element name="Prayer of Salvation" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_PRAYER_OF_SALVATION">
-		<!-- granted by Salvation Chapter -->
+		<supports>Jaeger Focus Art</supports>
 		<description>
 			<p><i>Focus Art, bonus action</i></p>
 			<p>As a bonus action, you expend 1 Focus Point. You and one creature of your choice you can see within 60 feet of you each regain 1d6 hit points and gain an equal number of temporary hit points.</p>
@@ -854,7 +854,7 @@
 		</sheet>
 	</element>
 	<element name="Blood Craze" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_BLOOD_CRAZE">
-		<!-- granted by Sanguine Chapter -->
+		<supports>Jaeger Focus Art</supports>
 		<description>
 			<p><i>Focus Art, reaction</i></p>
 			<p>As a reaction to being reduced to 0 hit points but not killed outright, you can expend 1 Focus Point to drop to 1 hit point instead.</p>
@@ -868,7 +868,7 @@
 		</sheet>
 	</element>
 	<element name="Spell Flurry" type="Class Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_MDM_SGEH_CLASS_FEATURE_JAEGER_FOCUS_SPELL_FLURRY">
-		<!-- granted by Heretic Chapter -->
+		<supports>Jaeger Focus Art</supports>
 		<description>
 			<p><i>Focus Art, bonus action</i></p>
 			<p>When you cast a cantrip or a spell of 1st level or higher, you can expend 1 Focus Point to make a single weapon attack as a bonus action.</p>
